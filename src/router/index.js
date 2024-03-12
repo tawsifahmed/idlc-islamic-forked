@@ -326,26 +326,6 @@ const CitizensCharter = resolve => {
   });
 };
 
-const IDLCIslamic = resolve => {
-  require.ensure(["../components/views/idlc-islamic/IDLC-Islamic"], () => {
-    resolve(require("../components/views/idlc-islamic/IDLC-Islamic"));
-  });
-};
-const IDLCIslamicProduct = resolve => {
-  require.ensure(["../components/views/idlc-islamic-product/IDLC-Islamic-Product"], () => {
-    resolve(require("../components/views/idlc-islamic-product/IDLC-Islamic-Product"));
-  });
-};
-const IDLCIslamicFAQ = resolve => {
-  require.ensure(["../components/views/idlc-islamic-faq/IDLC-Islamic"], () => {
-    resolve(require("../components/views/idlc-islamic-faq/IDLC-Islamic"));
-  });
-};
-const IDLCIslamicShariahAdvisory = resolve => {
-  require.ensure(["../components/views/idlc-islamic-shariah-advisory/IDLC-Islamic"], () => {
-    resolve(require("../components/views/idlc-islamic-shariah-advisory/IDLC-Islamic"));
-  });
-};
 
 Vue.use(Router);
 
@@ -829,36 +809,6 @@ export default new Router({
         seo_keyword: ""
       },
       component: OurCommitments
-    },
-    {
-      path: "/idlc-islamic",
-      name: "IDLCIslamic",
-      meta: {
-        title: "IDLC Islamic",
-        description: "Live in the Freedom of your own Home.",
-        seo_keyword: ""
-      },
-      component: IDLCIslamic
-    },
-    {
-      path: "/idlc-islamic/product/:id",
-      name: "IDLCIslamicProduct",
-      meta: {
-        title: "IDLC Islamic",
-        description: "Live in the Freedom of your own Home.",
-        seo_keyword: ""
-      },
-      component: IDLCIslamicProduct
-    },
-    {
-      path: "/idlc-islamic/faq",
-      name: "IDLCIslamicFAQ",
-      meta: {
-        title: "IDLC Islamic",
-        description: "Live in the Freedom of your own Home.",
-        seo_keyword: ""
-      },
-      component: IDLCIslamicFAQ
     },
     {
       path: "/*",
