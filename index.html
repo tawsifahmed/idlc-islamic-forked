@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-TQR5WVD");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <script>
+      function iOS() {
+        return (
+          [
+            "iPad Simulator",
+            "iPhone Simulator",
+            "iPod Simulator",
+            "iPad",
+            "iPhone",
+            "iPod"
+          ].includes(navigator.platform) ||
+          // iPad on iOS 13 detection
+          (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+        );
+      }
+
+      if (iOS()) {
+        if (window.location.protocol == "https:") {
+          if (window.location.pathname != "") {
+            let path = window.location.pathname;
+            let locationUrl = "http://idlc.com" + path;
+            window.location.replace(locationUrl);
+          } else {
+            window.location.replace("http://idlc.com");
+          }
+        }
+      }
+    </script>
+
+    <meta version="55.0.0" />
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <base href="/" />
+    <meta
+      name="description"
+      content="IDLC is the Largest Non-Banking Financial Institution in Bangladesh. See what the largest NBFI in Bangladesh has to offer for all your financial needs"
+    />
+    <meta
+      name="keywords"
+      content="bank, banking, deposit, loan, nbfi, bangladesh, apply loan, nbfi in Bangladesh, Bangladesh"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="IDLC" />
+    <!-- favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/static/Insignia.png"
+
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <meta
+      name="title"
+      content="IDLC Finance PLC - Loans, Deposits, SME and Corporate Finance"
+    />
+    <meta name="msapplication-TileColor" content="#D62E2F" />
+    <meta
+      name="msapplication-TileImage"
+      content="/static/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#D62E2F" />
+    <meta name="version" content="version=2.0.0" />
+
+    <title>
+      IDLC Finance PLC - Loans, Deposits, SME and Corporate Finance
+    </title>
+  </head>
+  <body style="padding: 0 !important;">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TQR5WVD"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="app"></div>
+    <div id="fb-root"></div>
+
+    <!-- <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfACkqgIjjTo6G5bQQxrVazyBPzurFgoE&libraries=&v=weekly"> </script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script> -->
+
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml: true,
+          version: "v9.0"
+        });
+      };
+
+      (function(d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+      // !function(f,b,e,v,n,t,s)
+      // {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      // n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      // if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      // n.queue=[];t=b.createElement(e);t.async=!0;
+      // t.src=v;s=b.getElementsByTagName(e)[0];
+      // s.parentNode.insertBefore(t,s)}(window, document,'script',
+      // 'https://connect.facebook.net/en_US/fbevents.js');
+      // fbq('init', '{906787090152167}');
+
+      // fbq('track', 'PageView');
+
+      /////////////
+      // Facebook Pixel Code
+      !(function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "343562700383615");
+      fbq("track", "PageView");
+      ////////////////////////////////
+
+      (function(h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function() {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2024367, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        style="display:none"
+        src="https://www.facebook.com/tr?id=906787090152167&ev=PageView&noscript=1"
+      />
+      <img
+        height="1"
+        width="1"
+        style="display:none"
+        src="https://www.facebook.com/tr?id=343562700383615&ev=PageView&noscript=1"
+      />
+    </noscript>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-THGRPCENZ5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-THGRPCENZ5");
+    </script>
+    <!-- <div class="fb-customerchat"
+    attribution=setup_tool
+    page_id="1204189226319732"
+    theme_color="#fa3c4c"
+    logged_in_greeting="Hi! Welcome to IDLC Finance PLC. How can we help you?"
+    logged_out_greeting="Hi! Welcome to IDLC Finance PLC. How can we help you?">
+</div> -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfACkqgIjjTo6G5bQQxrVazyBPzurFgoE&libraries=&v=weekly"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TQR5WVD"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe
+    ></noscript>
+    <div
+      class="fb-customerchat"
+      attribution="setup_tool"
+      page_id="1204189226319732"
+      theme_color="#fa3c4c"
+      logged_in_greeting="Hi! Welcome to IDLC Finance PLC. How can we help you?"
+      logged_out_greeting="Hi! Welcome to IDLC Finance PLC. How can we help you?"
+    ></div>
+  </body>
+</html>
