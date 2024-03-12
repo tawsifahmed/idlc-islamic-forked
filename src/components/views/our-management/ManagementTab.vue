@@ -27,7 +27,7 @@
                   <h5>{{ data.name}}</h5>
                   <p>{{ data.designation }}</p>
                 </div>
-                <span v-html="data.description" class="description"></span>
+                <!-- <span v-html="data.description" class="description"></span> -->
                 <button class="tabcontent2Button" @click="viewDetails(data)" >View Details</button>
               </div>
             </div>

@@ -67,6 +67,7 @@
             </div>
           </div>
           <div class="slider">
+
             <div v-if="sliders.length > 0">
               <carousel
                 :autoplay="false"
@@ -108,72 +109,17 @@
         </div>
       </div>
     </div>
-    <!-- <div class="comment_section">
-      <div class="container">
-        <div class="row comment_gap">
-          <div class="col-lg-6 col-12 lg-mb-0 mb-5">
-            <div class="card_body">
-              <div class="main_img">
-                <img v-if="comments.length > 0 && comments[0].image_url" :src="comments[0].image_url">
-              </div>
-              <div class="content text-right pr-5">
-                <img src="~@/assets/img/coma.png" alt="">
-                <div class="d-flex justify-content-end">
-                  <p v-if="comments.length > 0 && comments[0].quote">{{ comments[0].quote }}</p>
-                </div>
-                <h3 v-if="comments.length > 0 && comments[0].name">{{ comments[0].name }}</h3>
-                <div v-if="comments.length > 0 && comments[0].designation">{{ comments[0].designation }}</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-12">
-            <div class="card_body">
-              <div class="content text-left pl-5">
-                <img class="img-fluid" src="~@/assets/img/coma.png" alt="">
-                <div class="d-flex justify-content-start">
-                  <p v-if="comments.length > 0 && comments[1].quote">{{ comments[1].quote }}</p>
-                </div>
-                <h3 v-if="comments.length > 0 && comments[1].name">{{ comments[1].name }}</h3>
-                <div v-if="comments.length > 0 && comments[1].designation">{{ comments[1].designation }}</div>
-              </div>
-              <div class="main_img">
-                <img v-if="comments.length > 0 && comments[1].image_url" :src="comments[1].image_url">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="for_mobile mb-5">
-          <div class="card_wrapper">
-            <div class="comment px-4">
-              <img class="my-3" src="~@/assets/img/coma.png" alt="">
-              <p v-if="comments.length > 0 && comments[0].quote">{{ comments[0].quote }}</p>
-            </div>
-            <div class="name_img">
-              <img v-if="comments.length > 0 && comments[0].image_url" :src="comments[0].image_url">
-              <div class="name text-right mb-4 mr-4">
-                <h3 v-if="comments.length > 0 && comments[0].name">{{ comments[0].name }}</h3>
-                <div v-if="comments.length > 0 && comments[0].designation">{{ comments[0].designation }}</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="for_mobile">
-          <div class="card_wrapper">
-            <div class="comment px-4">
-              <img class="my-3" src="~@/assets/img/coma.png" alt="">
-              <p v-if="comments.length > 0 && comments[1].quote">{{ comments[1].quote }}</p>
-            </div>
-            <div class="name_img">
-              <div class="name text-left mb-4 ml-4">
-                <h3 v-if="comments.length > 0 && comments[1].name">{{ comments[1].name }}</h3>
-                <div v-if="comments.length > 0 && comments[1].designation">{{ comments[1].designation }}</div>
-              </div>
-              <img v-if="comments.length > 0 && comments[1].image_url" :src="comments[1].image_url">
-            </div>
-          </div>
-        </div>
+    <!-- <pre>{{pageSliderHeader}}</pre> -->
+    <div class="container-lg">
+      <div class="productPageTitleDetai sectionTitle">
+        <h2 style="text-align: center; " class="h2Responsive ">
+          {{ pageSliderHeader.second_title }}
+        </h2>
+        <!-- <h6 class="categoriesTagline">{{ itemData.product_tagline }}</h6> -->
+        <span v-html="pageSliderHeader.description"></span>
+
       </div>
-    </div> -->
+    </div>
 
     <div class="container-lg">
       <h2
@@ -353,7 +299,7 @@ export default {
       axios
         .get(`homepage-slider?shortcode=Home`)
         .then(res =>{
-
+          console.log('res =>', res)
           const sliders = res.data
           // sliders.forEach(slider => {
           //   console.log('slider =>', slider)
@@ -1573,5 +1519,10 @@ export default {
     line-height: 22px;
     color: #2E2F2F;
   }
+}
+
+.categoriesTagline {
+  margin-top: 13px;
+  font-size: 1.25rem;
 }
 </style>

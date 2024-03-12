@@ -21,6 +21,7 @@
         </div>
 
         <div class="container-lg " v-show="isImageLoaded">
+          
           <div class="slider_top">
             <h1 class="">{{ this.$parent.pageSliderHeader.first_title }}</h1>
             <div class="buttons">

@@ -14,6 +14,7 @@
         </div>
 
         <div class="container-lg" v-show="isImageLoaded">
+          <pre>{{sliders}}</pre>
           <div class="slider_top">
             <h1>{{ this.$parent.contentData.first_title }}</h1>
             <div class="buttons">
@@ -100,6 +101,7 @@ export default {
           }
         })
         .then(response => {
+
           if (response.status == 200) {
             this.sliders = response.data.details;
           }
