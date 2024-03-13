@@ -3,33 +3,33 @@
     <div class="ourManagementImgBg">
       <div class="container-lg">
         <div class="tab">
-          <button class="tablinks active" @click="openTab( 'bod', $event)" id="defaultOpen">Board of Directors
+          <button class="tablinks active" @click="openTab( 'bod', $event)" id="defaultOpen">Shariah Supervisory Committee Member Details
           </button>
-          <button class="tablinks " @click="openTab( 'mc', $event)">Management Committee
+          <!-- <button class="tablinks " @click="openTab( 'mc', $event)">Management Committee
           </button>
           <button class="tablinks " @click="openTab( 'ec', $event)">Executive Committee
           </button>
           <button class="tablinks " @click="openTab( 'ac', $event)">Audit Committee
-          </button>
+          </button> -->
         </div>
-
-
         <div id="bod" class="tabcontent" style="display: block;">
           <div class="managementTabBody">
-            <div class="member" v-for="data in boardOfDirectors" >
-              <div class="left">
-                <div class="image">
-                  <img v-lazy="data.image" alt="Management Team Member">
+            <div class="row">
+                <div v-for="(data, index) in boardOfDirectors" :class="`${index === 0 ? 'member_two col-12' : 'member_two col-lg-4 col-md-6 col-12'}`">
+                  <div class="left">
+                    <div class="image">
+                      <img v-lazy="data && data.image" alt="Management Team Member">
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="nameAndDesignation">
+                      <h5>{{ data.name}}</h5>
+                      <p>{{ data.designation }}</p>
+                    </div>
+                    <!-- <span v-html="data.description" class="description"></span> -->
+                    <button class="tabcontent2Button" @click="viewDetails(data)" >View Details</button>
+                  </div>
                 </div>
-              </div>
-              <div class="right">
-                <div class="nameAndDesignation">
-                  <h5>{{ data.name}}</h5>
-                  <p>{{ data.designation }}</p>
-                </div>
-                <!-- <span v-html="data.description" class="description"></span> -->
-                <button class="tabcontent2Button" @click="viewDetails(data)" >View Details</button>
-              </div>
             </div>
           </div>
         </div>
@@ -199,7 +199,7 @@
       getBoardOfDirectors() {
         axios.get('get-team', {
           params: {
-            department: 'BoardOfDirectors'
+            department: 'ShariahSupervisoryCommittee'
           }
         }).then((response) => {
           if (response.status == 200) {
@@ -338,6 +338,19 @@
     display: flex;
     border-radius: 7px;
     margin-bottom: 15px;;
+  }
+
+  .ourManagement .tabcontent .managementTabBody .member_two {
+    padding: 20px;
+    background: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    margin-bottom: 15px;
+    text-align: center;
+    gap: 20px;
   }
 
   .ourManagement .tabcontent .managementTabBody .member .left {

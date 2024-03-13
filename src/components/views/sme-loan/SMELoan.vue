@@ -32,20 +32,20 @@ import axios from "axios";
 
 export default {
   metaInfo: {
-    title: 'SME Loan - Apply Online for Small Business and Women Entrepreneur Loans | IDLC',
+    title: 'Financing Products',
     meta: [
       { name: 'description', content: 'Apply for Small Business Loan, Women Entrepreneur Loan, SME Loan Online at flexible terms and interest rates' },
-      { name: 'keywords', content: 'SME Loan, SME, Business Loan, Small Business, Women Entrepreneur, Startup, Loan, calculator, new business, Interest Rate, Eligibility, Criteria, Entreprenuer, business man, term loan, shop' },
+      { name: 'keywords', content: 'Financing Products, SME, Business Loan, Small Business, Women Entrepreneur, Startup, Loan, calculator, new business, Interest Rate, Eligibility, Criteria, Entreprenuer, business man, term loan, shop' },
     ]
   },
-  name: 'SME-loan',
+  name: 'Financing-Products',
   data() {
     return {
-      shortcode: 'SmeLoan',
+      shortcode: 'FinancingProducts',
       relatedProductData: [],
       isMobile: false,
       contentData: "",
-      faqTabName: 'Personal Loan'
+      faqTabName: 'Financing Products'
 
     }
   },

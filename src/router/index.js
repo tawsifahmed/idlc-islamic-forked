@@ -446,10 +446,10 @@ export default new Router({
       component: FinancialInfoForShareholders
     },
     {
-      path: "/shariah-advisory-committee",
+      path: "/shariah-supervisory-committee",
       name: "OurManagement",
       meta: {
-        title: "Shariah Advisory Committee",
+        title: "Shariah supervisory Committee",
         description: "Know More about our Leadership Team",
         seo_keyword: ""
       },

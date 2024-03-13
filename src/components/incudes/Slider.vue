@@ -13,8 +13,13 @@
           </vue-content-loading>
         </div>
 
+
+
         <div class="container-lg" v-show="isImageLoaded">
-          <pre>{{sliders}}</pre>
+          <!-- <pre>{{sliders}}</pre>
+          <div v-for="(slider, index) in sliders">
+             <img :src="slider.image" alt="">
+          </div> -->
           <div class="slider_top">
             <h1>{{ this.$parent.contentData.first_title }}</h1>
             <div class="buttons">

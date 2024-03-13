@@ -155,20 +155,20 @@
             >
               Feature
             </button>
-            <!--            <button class="tablinks1 " @click="openTab( 'eligibility'+itemData.id, $event)">Eligibility</button>-->
+                       <button v-if="itemData.eligibility_description" class="tablinks1 " @click="openTab( 'eligibility'+itemData.id, $event)">Eligibility</button>
             <!--            <button class="tablinks1 " @click="openTab( 'howCanIUse'+itemData.id, $event)">How I can use this loan</button>-->
-            <button
+            <button v-if="itemData.required_document_description"
               class="tablinks1 "
               @click="openTab('requiredDocument' + itemData.id, $event)"
             >
               Required Document
             </button>
-            <button
+            <!-- <button
               class="tablinks1 "
               @click="openTab('contactInformation' + itemData.id, $event)"
             >
               Contact Information
-            </button>
+            </button> -->
           </div>
 
           <div
@@ -182,12 +182,12 @@
 
           <div :id="'eligibility' + itemData.id" class="tabcontent1">
             <span v-html="itemData.eligibility_description"></span>
-            <router-link
+            <!-- <router-link
               :to="{ name: 'ApplyForLoan', params: { applyFor: shortcode } }"
               target="_blank"
               class="tabcontent1Button"
               >Apply Now</router-link
-            >
+            > -->
           </div>
 
           <div :id="'howCanIUse' + itemData.id" class="tabcontent1">

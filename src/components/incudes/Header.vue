@@ -19,9 +19,33 @@
             ><img src="~@/assets/img/logo/IDLC_NEW.png" alt="logo"
           /></router-link>
         </li>
-
         <li class="navSection primary">
+
           <ul class="desktop_menu">
+            <li >
+              <router-link to="/shariah-supervisory-committee" style="color: black;">
+                Shariah Supervisory Committe
+              </router-link>
+
+            </li>
+            <li >
+              <router-link to="/faq" style="color: black;">
+                FAQ
+              </router-link>
+
+            </li>
+            <li >
+              <router-link to="/deposit-products" style="color: black;">
+                Deposit Products
+              </router-link>
+
+            </li>
+            <li >
+              <router-link to="/financing-products" style="color: black;">
+                Financing Products
+              </router-link>
+
+            </li>
             <li class="drop_arrow">
               About Us
               <ul class="desktop_menu_sub">
@@ -110,13 +134,16 @@
                 </div>
               </ul>
             </li>
-            <li class="drop_arrow">
+
+
+            <!-- test -->
+            <!-- <li class="drop_arrow">
               Retail Loans
               <ul class="desktop_menu_sub">
                 <div class="desktop_menu_sub_blocks desktop_menu_sub_blocks_2">
                   <div class="block">
                     <li>
-                      <!-- <a class="menu_link" href="./home-loan"> -->
+
                       <router-link class="menu_link" to="/home-loan">
                         <div class="menuIcon">
                           <img
@@ -172,7 +199,6 @@
                     <a :href="menuVideos.link" target="_blank">
                       <img :src="menuVideos.image" alt="image" />
                     </a>
-                    <!--                    <p class="videoTitle">IDLC Affordable Home Loan</p>-->
                     <p class="videoSubTitle">
                       Through easy financing, we have spread happiness and
                       prospered together.
@@ -180,8 +206,8 @@
                   </div>
                 </div>
               </ul>
-            </li>
-            <li class="drop_arrow">
+            </li> -->
+            <!-- <li class="drop_arrow">
               Business Loans
               <ul class="desktop_menu_sub">
                 <div class="desktop_menu_sub_blocks desktop_menu_sub_blocks_3">
@@ -226,20 +252,7 @@
                         </div>
                       </router-link>
                     </li>
-                    <!--                    <li>-->
-                    <!--                      <router-link class="menu_link" to="/sme-success-stories">-->
-                    <!--                        <div class="menuIcon">-->
-                    <!--                          <img src="~@/assets/img/menu_icon/Menubar/SME-Success-Stories.png" alt="">-->
-                    <!--                        </div>-->
-                    <!--                        <div class="menuContent">-->
-                    <!--                          <h3 class="title">SME Success Stories</h3>-->
-                    <!--                          <p class="subTitle">-->
-                    <!--                            Partnering with people in their journey of success-->
-                    <!--                          </p>-->
-                    <!--                        </div>-->
-                    <!--                      </router-link>-->
-                    <!--                    </li>-->
-                    <!--                    -->
+
                     <li>
                       <router-link class="menu_link" to="/supply-chain-finance">
                         <div class="menuIcon">
@@ -294,8 +307,8 @@
                   </div>
                 </div>
               </ul>
-            </li>
-            <li class="drop_arrow">
+            </li> -->
+            <!-- <li class="drop_arrow">
               Deposit
               <ul class="desktop_menu_sub">
                 <div class="desktop_menu_sub_blocks desktop_menu_sub_blocks_4">
@@ -316,19 +329,6 @@
                         </div>
                       </router-link>
                     </li>
-                    <!--                    <li>-->
-                    <!--                      <router-link class="menu_link" to="/dps">-->
-                    <!--                        <div class="menuIcon">-->
-                    <!--                          <img src="~@/assets/img/menu_icon/Menubar/DPS.png" alt="">-->
-                    <!--                        </div>-->
-                    <!--                        <div class="menuContent">-->
-                    <!--                          <h3 class="title">DPS</h3>-->
-                    <!--                          <p class="subTitle">-->
-                    <!--                            Realize your Goals through Regular Savings-->
-                    <!--                          </p>-->
-                    <!--                        </div>-->
-                    <!--                      </router-link>-->
-                    <!--                    </li>-->
                     <li>
                       <router-link class="menu_link" to="/priority">
                         <div class="menuIcon">
@@ -382,23 +382,11 @@
                       </router-link>
                     </li>
                   </div>
-                  <!-- <div class="block blockRed">
-                    <h6 class="redBlockHeading">MBR</h6>
-                    <div class="heighlighting">
-                      <a href="#">
-                        <img src="~@/assets/img/menuImage/MBR 1.jpg" alt="">
-                        <p>DELIVERY SERVICES AMIDST PANDEMIC</p>
-                      </a>
-                      <a href="#">
-                        <img src="~@/assets/img/menuImage/MBR 2.jpg" alt="">
-                        <p>B2C MODEL IN RMG SECTOR OF BANGLADESH</p>
-                      </a>
-                    </div>
-                  </div> -->
+
                 </div>
               </ul>
-            </li>
-            <li class="drop_arrow">
+            </li> -->
+            <!-- <li class="drop_arrow">
               Capital Market
               <ul class="desktop_menu_sub">
                 <div class="desktop_menu_sub_blocks desktop_menu_sub_blocks_4">
@@ -464,19 +452,11 @@
                       </a>
                     </li>
                   </div>
-                  <!-- <div class="block blockRed" style="height: 280px;">
-                    <h6 class="redBlockHeading">Life at IDLC- Together we are one</h6>
-                    <a href="https://www.youtube.com/watch?v=cTEDEgUxiGM">
-                      <img src="~@/assets/img/menuImage/Thumbnile 03.jpg" alt="image">
-                    </a>
-                    <p class="videoTitle">Every transaction has a purpose</p>
-                    <p class="videoSubTitle">And our purpose is to finance happiness.</p>
-                  </div> -->
                 </div>
               </ul>
-            </li>
+            </li> -->
 
-            <li class="drop_arrow">
+            <!-- <li class="drop_arrow">
               Investor Relations
               <ul class="desktop_menu_sub">
                 <div class="desktop_menu_sub_blocks desktop_menu_sub_blocks_2">
@@ -608,8 +588,8 @@
                   </div>
                 </div>
               </ul>
-            </li>
-            <li class="drop_arrow">
+            </li> -->
+            <!-- <li class="drop_arrow">
               Sustainability
               <ul class="desktop_menu_sub">
                 <div class="desktop_menu_sub_blocks">
@@ -700,66 +680,7 @@
                         </div>
                       </router-link>
                     </li>
-                    <!-- <li>
-                      <a
-                        class="menu_link"
-                        href="https://idlc.com/khushirkheya/"
-                        target="_blank"
-                      >
-                        <div class="menuIcon">
-                          <img
-                            src="~@/assets/img/menu_icon/Menubar/Khushir-Kheya.png"
-                            alt=""
-                          />
-                        </div>
-                        <div class="menuContent">
-                          <h3 class="title">Khushir Kheya</h3>
-                          <p class="subTitle">
-                            Join the Volunteer-Driven Happiness Brigade
-                          </p>
-                        </div>
-                      </a>
-                    </li> -->
-                    <!-- <li>
-                      <a
-                        class="menu_link"
-                        href="https://idlc.com/ortherortho/"
-                        target="_blank"
-                      >
-                        <div class="menuIcon">
-                          <img
-                            src="~@/assets/img/menu_icon/Menubar/Orther-ortho.png"
-                            alt=""
-                          />
-                        </div>
-                        <div class="menuContent">
-                          <h3 class="title">Orther Ortho</h3>
-                          <p class="subTitle">
-                            Easy Methods of Learning Basic Finance
-                          </p>
-                        </div>
-                      </a>
-                    </li> -->
-                    <!-- <li>
-                      <a
-                        class="menu_link"
-                        href="https://idlc.com/oditiya/public/"
-                        target="_blank"
-                      >
-                        <div class="menuIcon">
-                          <img
-                            src="~@/assets/img/menu_icon/Menubar/Oditiya.png"
-                            alt=""
-                          />
-                        </div>
-                        <div class="menuContent">
-                          <h3 class="title">Oditiya</h3>
-                          <p class="subTitle">
-                            Scholarships for Education of Women
-                          </p>
-                        </div>
-                      </a>
-                    </li> -->
+
                     <li>
                       <router-link class="menu_link" to="/idlc-financial-literacy-wing">
                         <div class="menuIcon">
@@ -770,17 +691,14 @@
                         </div>
                         <div class="menuContent">
                           <h3 class="title">IDLC Financial Literacy Wing</h3>
-                          <!-- <p class="subTitle">
-                            Sustainable practices within the organization
-                          </p> -->
                         </div>
                       </router-link>
                     </li>
                   </div>
                 </div>
               </ul>
-            </li>
-            <li class="drop_arrow drop_arrow">
+            </li> -->
+            <!-- <li class="drop_arrow drop_arrow">
               Career
               <ul class="desktop_menu_sub ">
                 <div
@@ -806,45 +724,13 @@
                         </div>
                       </a>
                     </li>
-                    <!-- <li>
-                      <router-link
-                        class="menu_link"
-                        to="/explore-career-at-idlc"
-                      >
-                        <div class="menuIcon">
-                          <img
-                            src="~@/assets/img/menu_icon/Menubar/Explore-jobs-at-IDLC.png"
-                            alt=""
-                          />
-                        </div>
-                        <div class="menuContent">
-                          <h3 class="title">Explore Jobs at IDLC</h3>
-                          <p class="subTitle">
-                            View Latest Vacancies
-                          </p>
-                        </div>
-                      </router-link>
-                    </li>
-                    <li>
-                      <router-link class="menu_link" to="/apply-for-jobs">
-                        <div class="menuIcon">
-                          <img
-                            src="~@/assets/img/menu_icon/Menubar/Apply-for-jobs.png"
-                            alt=""
-                          />
-                        </div>
-                        <div class="menuContent">
-                          <h3 class="title">Apply for Jobs</h3>
-                          <p class="subTitle">
-                            View Latest Vacancies and Apply
-                          </p>
-                        </div>
-                      </router-link>
-                    </li> -->
+
                   </div>
                 </div>
               </ul>
-            </li>
+            </li> -->
+
+            <!-- test -->
           </ul>
           <ul>
             <li style="position: relative;">
@@ -1227,7 +1113,7 @@ export default {
 }
 
 ul.desktop_menu {
-  font-size: 0;
+  font-size: 14px;
   list-style-type: none;
 }
 

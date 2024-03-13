@@ -6,7 +6,7 @@
               </div>
               <br>
                 <div class="container-lg">
-                    <div class="tab">
+                    <!-- <div class="tab">
                       <div v-if="faqTabs.length > 0" style="width:100%;">
                         <carousel  :dots="false" :autoplay="false" :nav="true" :navText="[prev,next]" :responsive="{0:{items: 1,nav:true},600:{items: 1,nav:true},1000:{items: 4,nav:true}}">
                           <div class="slideTabItem" v-for="(faqTabItem,index) in faqTabs" :key="index">
@@ -19,7 +19,7 @@
 
                         </carousel>
                       </div>
-                    </div>
+                    </div> -->
 
                     <div :id="faq_tab_id"  class="tabcontent1" style="display: block;">
                       <b-card  class="product-card">
@@ -61,14 +61,15 @@
         isVisible: false,
         faqTabs: [],
         faqs: [],
-        faq_tab_id: 1,
-        selectedTabName: "Home Loan",
+        faq_tab_id: 7,
+        selectedTabName: "IDLC Islamic",
 
       }
     },
     methods: {
       faqOpenTab(tabID, tabName, event){
         this.faq_tab_id = tabID;
+        console.log('tabID, tabID', tabID);
         this.selectedTabName = tabName;
         this.getFaq(tabID);
         var i, tablinks;
@@ -85,6 +86,7 @@
         axios.get('get-faq-tab').then((response) => {
           if (response.status == 200) {
             this.faqTabs = response.data.details;
+            console.log('faqTabs', this.faqTabs);
           }else{
             console.log(response);
           }
@@ -125,8 +127,10 @@
 
         this.isForeignRouteExist();
       }else{
-        this.getFaq(1);
+        this.getFaq(7);
       }
+      
+
     },
 
   }

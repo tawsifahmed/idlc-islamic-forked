@@ -24,10 +24,10 @@
 import axios from "axios";
 
 export default {
-  name: 'Our-Management',
+  name: 'Shariah-Supervisory-Committee',
   data() {
     return {
-      shortcode: 'OurManagement',
+      shortcode: 'ShariahSupervisoryCommittee',
       contentData: [],
     }
   },

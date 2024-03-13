@@ -109,7 +109,6 @@
         </div>
       </div>
     </div>
-    <!-- <pre>{{pageSliderHeader}}</pre> -->
     <div class="container-lg">
       <div class="productPageTitleDetai sectionTitle">
         <h2 style="text-align: center; " class="h2Responsive ">
@@ -117,11 +116,26 @@
         </h2>
         <!-- <h6 class="categoriesTagline">{{ itemData.product_tagline }}</h6> -->
         <span v-html="pageSliderHeader.description"></span>
+      </div>
+    </div>
+    <div class="container-lg productFeatures">
+      <div class="tab">
+        <button class="tablinks1 active">
+          Key Features
+        </button>
+      </div>
 
+      <div class="tabcontent1 defaultTableDesign" style="display: block; overflow: auto;">
+        <span v-html="homePageData.homePageFeatured.description"></span>
+        <router-link
+
+          target="_blank"
+          class="tabcontent1Button"
+        >Apply Now</router-link>
       </div>
     </div>
 
-    <div class="container-lg">
+    <div class="container-lg my-5">
       <h2
         class="featuredProductHeading h2Responsive "
         style="
@@ -181,7 +195,7 @@
     <!--Latest news and updates part start-->
     <!-- <app-why-choose/> -->
     <!--Why Chose Part Start-->
-    <div class="whyChose">
+    <!-- <div class="whyChose">
       <div class="top_curve"></div>
       <div class="whyChoseBg">
         <div class="container-lg">
@@ -227,7 +241,7 @@
         </div>
       </div>
       <div class="bottom_curve"></div>
-    </div>
+    </div> -->
     <!--Why Chose Part End-->
     <!-- <app-quick-links/> -->
 
@@ -1524,5 +1538,112 @@ export default {
 .categoriesTagline {
   margin-top: 13px;
   font-size: 1.25rem;
+}
+
+
+.productFeatures {
+  margin-bottom: 10px;
+}
+
+.productFeatures .tab {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  border-bottom: 2px solid #d62e2f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.productFeatures .tab .tablinks1 {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 14px;
+  border-right: 1px solid #ddd;
+}
+
+.productFeatures .tab button:hover {
+  background-color: #ddd;
+}
+
+.productFeatures .tab button.active {
+  background-color: #d62e2f;
+  color: #fff;
+}
+
+.productFeatures .tabcontent1 {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-animation: fadebottomToTop 0.5s ease-in-out forwards;
+  animation: fadebottomToTop 0.5s ease-in-out forwards;
+  padding: 30px;
+}
+
+.productFeatures .tabcontent1 ul {
+  margin-bottom: 20px;
+}
+
+.productFeatures .tabcontent1 ul li {
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+.productFeatures .tabcontent1 ul li i {
+  margin-right: 10px;
+}
+
+.productFeatures .tabcontent1 .tabcontent1Button {
+  outline: none;
+  border: 2px solid #d62e2f;
+  padding: 10px 30px;
+  font-size: 14px;
+  border-radius: 100px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-right: 20px;
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+@media screen and (max-width: 600px) {
+  .productFeatures .tabcontent1 .tabcontent1Button {
+    margin-bottom: 15px;
+  }
+}
+
+.productFeatures .tabcontent1 .tabcontent1Button:hover {
+  background: #d62e2f;
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .productFeatures .tab {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .productFeatures .tab .tablinks1 {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+  }
+  .productFeatures .tab .tablinks1:nth-child(1),
+  .productFeatures .tab .tablinks1:nth-child(3) {
+    border-right: 1px solid #d62e2f;
+  }
+  .productFeatures .tab .tablinks1:nth-child(1),
+  .productFeatures .tab .tablinks1:nth-child(2) {
+    border-bottom: 1px solid #d62e2f;
+  }
 }
 </style>

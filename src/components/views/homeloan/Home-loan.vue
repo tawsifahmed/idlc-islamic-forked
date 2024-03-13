@@ -15,10 +15,10 @@
     </div>
     <!--    //page heading end-->
 
-    <app-categorized-product />
-    <app-e-m-i-calculator/>
-    <app-common-w-h-tab/>
-    <app-related-product/>
+    <app-categorized-product class="mb-5" />
+    <!-- <app-e-m-i-calculator/> -->
+    <!-- <app-common-w-h-tab/> -->
+    <!-- <app-related-product/> -->
     <app-footer />
 
 
@@ -31,20 +31,20 @@ import axios from "axios";
 
 export default {
   metaInfo: {
-    title: 'Home Loan - Apply for Home Loan or use our Home Loan Calculators | IDLC',
+    title: 'Deposit Products',
     meta: [
-      { name: 'description', content: 'Apply for Home Loan or Apartment Purchase Loan at affordable interest rates, or use Home Loan calculators to plan' },
-      { name: 'keywords', content: 'Home Loan, Housing Loan, Apartment Loan, Affordable Home Loan, Interest Rate, Mortgage, Home Loan Calculator, Interest rate' },
+      { name: 'description', content: 'Deposit Products' },
+      { name: 'keywords', content: 'Deposit Products, Housing Loan, Apartment Loan, Affordable Home Loan, Interest Rate, Mortgage, Home Loan Calculator, Interest rate' },
     ]
   },
   name: 'Home-loan',
   data() {
     return {
-      shortcode: 'HomeLoan',
+      shortcode: 'DepositProducts:',
       relatedProductData: [],
       isMobile : false,
       contentData: "",
-      faqTabName: 'Home Loan'
+      faqTabName: 'Deposit Products'
     }
   },
   components: {
