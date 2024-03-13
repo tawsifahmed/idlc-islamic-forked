@@ -60,7 +60,7 @@
       <div class="searchData" v-show="searchM" style="max-width: 100%;">
         <button
           @click="CloseSearchM()"
-          style="position: absolute; top: 5px; right: 10px; font-size:30px; padding: 5px 10px; line-height: 1; border-radius: 100px; border: 2px solid #d62e2f; color: #d62e2f"
+          style="position: absolute; top: 5px; right: 10px; font-size:30px; padding: 5px 10px; line-height: 1; border-radius: 100px; border: 2px solid #00a6b4; color: #00a6b4"
         >
           <span class="icon-close"></span>
         </button>
@@ -128,16 +128,40 @@
       <ul class="sideNavUl" v-show="isSearchResult">
         <li class="sidenavLinks" @click="closeNav">
           <router-link to="/"
-            ><img
+            >
+            <!-- <img
               src="~@/assets/img/mobile_menu/H.png"
               alt=""
               style="filter: invert(6%) sepia(100%) saturate(9999%);"
-            />Home</router-link
+            /> -->
+            Home</router-link
+          >
+        </li>
+        <li class="sidenavLinks" @click="closeNav">
+          <router-link to="/shariah-supervisory-committee"
+            >Shariah Supervisory Committee</router-link
+          >
+        </li>
+        <li class="sidenavLinks" @click="closeNav">
+          <router-link to="/deposit-products"
+            >Deposit Products</router-link
+          >
+        </li>
+        <li class="sidenavLinks" @click="closeNav">
+          <router-link to="/financing-products"
+            >Financing Products</router-link
+          >
+        </li>
+        <li class="sidenavLinks" @click="closeNav">
+          <router-link to="/faq"
+            >FAQ</router-link
           >
         </li>
         <li class="sidenavLinks">
           <a
-            ><img src="~@/assets/img/mobile_menu/About-Us.png" alt="" />About Us
+            >
+            <!-- <img src="~@/assets/img/mobile_menu/About-Us.png" alt="" /> -->
+            About Us
           </a>
           <ul styl="margin-left:25px" id="collapseAbout1">
             <li class="sidenavLinkssub" @click="closeNav">
@@ -153,228 +177,6 @@
               <router-link to="/news-and-events">News & Events</router-link>
             </li>
           </ul>
-        </li>
-        <li class="sidenavLinks">
-          <a
-            ><img
-              src="~@/assets/img/mobile_menu/Retail-loan.png"
-              alt=""
-            />Retail Loans</a
-          >
-          <ul styl="margin-left:25px" id="collapseAbout">
-            <li class="sidenavLinkssub" @click="closeNav">
-              <router-link to="/home-loan">Home Loan</router-link>
-            </li>
-            <li class="sidenavLinkssub" @click="closeNav">
-              <router-link to="/car-loan">Car Loan</router-link>
-            </li>
-            <li class="sidenavLinkssub" @click="closeNav">
-              <router-link to="/personal-loan">Personal Loan</router-link>
-            </li>
-          </ul>
-        </li>
-        <li class="sidenavLinks">
-          <a
-            ><img
-              src="~@/assets/img/mobile_menu/Business-loan.png"
-              alt=""
-            />Business Loans</a
-          >
-          <ul styl="margin-left:25px" id="collapseBusinessLoans">
-            <li class="sidenavLinkssub" @click="closeNav">
-              <router-link to="/sme-loan">SME Loan</router-link>
-            </li>
-            <li class="sidenavLinkssub" @click="closeNav">
-              <router-link
-                :to="{ name: 'SMELoan', params: { Purnota: 'Purnota' } }"
-                >Purnota (Women Entrepreneur Loan)</router-link
-              >
-            </li>
-            <!--                <li class="sidenavLinkssub" @click="closeNav"><router-link to="/sme-success-stories">SME Success Stories</router-link></li>-->
-            <li class="sidenavLinkssub" @click="closeNav">
-              <router-link to="/supply-chain-finance"
-                >Supply Chain Finance</router-link
-              >
-            </li>
-            <li class="sidenavLinkssub" @click="closeNav">
-              <router-link to="/corporate-loan">Corporate Loan</router-link>
-            </li>
-            <li class="sidenavLinkssub" @click="closeNav">
-              <router-link to="/structured-finance"
-                >Structured Finance</router-link
-              >
-            </li>
-          </ul>
-        </li>
-        <li class="sidenavLinks">
-          <a
-            ><img src="~@/assets/img/mobile_menu/Deposit.png" alt="" />Deposit
-          </a>
-          <ul styl="margin-left:25px" id="collapseDeposit">
-            <li class="sidenavLinkssub" @click="closeNav">
-              <router-link to="/term-deposit">Term Deposit</router-link>
-            </li>
-            <!--                <li class="sidenavLinkssub" @click="closeNav"><router-link to="/dps">DPS</router-link></li>-->
-            <li class="sidenavLinkssub" @click="closeNav">
-              <router-link to="/priority">Priority</router-link>
-            </li>
-            <li class="sidenavLinkssub" @click="closeNav">
-              <a
-                href="https://www.idlc.com/depositreq"
-                class="online_deposit_click"
-                >Online Deposit</a
-              >
-            </li>
-            <li class="sidenavLinkssub" @click="closeNav">
-              <router-link to="/online-dps">Online DPS</router-link>
-            </li>
-          </ul>
-        </li>
-        <li class="sidenavLinks">
-          <a
-            ><img
-              src="~@/assets/img/mobile_menu/Capital-Market.png"
-              alt=""
-            />Capital Market
-          </a>
-          <ul styl="margin-left:25px" id="collapseCapitalMarket">
-            <li class="sidenavLinkssub" @click="closeNav">
-              <a href="https://idlc.com/aml/"
-                >Mutual Funds (IDLC Asset Management Limited)</a
-              >
-            </li>
-            <li class="sidenavLinkssub" @click="closeNav">
-              <a href="https://securities.idlc.com/"
-                >Stock Brokerage (IDLC Securities Limited)</a
-              >
-            </li>
-            <li class="sidenavLinkssub" @click="closeNav">
-              <a href="https://www.idlc.com/investments/public/"
-                >Investment Bank (IDLC Investments Limited)</a
-              >
-            </li>
-          </ul>
-        </li>
-
-        <li class="sidenavLinks">
-          <a
-            ><img
-              src="~@/assets/img/mobile_menu/Investor-Relations.png"
-              alt=""
-            />Investor Relations
-          </a>
-          <ul styl="margin-left:25px" id="collapseInvestorRelation">
-            <li class="sidenavLinkssub" @click="closeNav">
-              <router-link to="/financial-reports"
-                >Financial Reports</router-link
-              >
-            </li>
-            <li class="sidenavLinkssub" @click="closeNav">
-              <router-link to="/price-sensitive-information-and-notices"
-                >Price-Sensitive Information & Notices</router-link
-              >
-            </li>
-            <li class="sidenavLinkssub" @click="closeNav">
-              <router-link
-                to="/financial-information-for-investors-and-shareholders"
-                >Financial Information for Investors/Shareholders</router-link
-              >
-            </li>
-            <li class="sidenavLinkssub" @click="closeNav">
-              <router-link
-                :to="{ name: 'RegulatoryDisclosure', params: { id: 'rd' } }"
-                >Other Regulatory Disclosures</router-link
-              >
-            </li>
-            <li class="sidenavLinkssub" @click="closeNav">
-              <router-link :to="{ name: 'CorporateGovernance' }"
-                >Corporate Governance</router-link
-              >
-            </li>
-            <li class="sidenavLinkssub" @click="closeNav">
-              <router-link :to="{ name: 'Dividend' }">Dividend</router-link>
-            </li>
-          </ul>
-        </li>
-        <li class="sidenavLinks">
-          <a
-            ><img
-              src="~@/assets/img/mobile_menu/Sustainability.png"
-              alt=""
-            />Sustainability
-          </a>
-          <ul styl="margin-left:25px" id="collapseSustainability">
-            <li class="sidenavLinkssub" @click="closeNav">
-              <router-link to="/csr">CSR</router-link>
-            </li>
-            <li class="sidenavLinkssub" @click="closeNav">
-              <router-link to="/green-finance">Green and Sustainable Finance</router-link>
-            </li>
-            <li class="sidenavLinkssub" @click="closeNav">
-              <router-link to="/unep-fi-activities"
-                >Unep FI Activities</router-link
-              >
-            </li>
-            <li class="sidenavLinkssub" @click="closeNav">
-              <router-link to="/our-commitments">Our Commitments</router-link>
-            </li>
-            <!-- <li class="sidenavLinkssub" @click="closeNav">
-              <a href="https://idlc.com/khushirkheya/">Khushir Kheya</a>
-            </li> -->
-            <!-- <li class="sidenavLinkssub" @click="closeNav">
-              <a href="https://idlc.com/ortherortho/">Orther Ortho</a>
-            </li> -->
-            <!-- <li class="sidenavLinkssub" @click="closeNav">
-              <a href="https://idlc.com/oditiya/public/">Oditiya</a>
-            </li> -->
-            <li class="sidenavLinkssub" @click="closeNav">
-              <a href="https://idlc.com/sustainability-report/" target="_blank"
-                >Annual Sustainability Report</a
-              >
-            </li>
-            <li class="sidenavLinkssub" @click="closeNav">
-              <router-link to="/idlc-financial-literacy-wing">IDLC Financial Literacy Wing</router-link>
-            </li>
-          </ul>
-        </li>
-        <li class="sidenavLinks">
-          <a
-            ><img src="~@/assets/img/mobile_menu/Career.png" alt="" />Careers
-          </a>
-          <ul styl="margin-left:25px" id="collapseCareers">
-            <li class="sidenavLinkssub" @click="closeNav">
-              <!-- <router-link to="/explore-career-at-idlc"
-                >Explore Career at IDLC</router-link
-              > -->
-              <a href="https://apps.idlc.com/career#/" target="_blank"
-              >Explore Jobs at IDLC</a>
-            </li>
-          </ul>
-        </li>
-        <li
-          class="sidenavLinks quick"
-          style="padding-top: 5px;"
-          @click="closeNav"
-        >
-          <router-link to="/calculators"
-            ><img
-              src="~@/assets/img/favoriteIcon/Calculator.png"
-              alt=""
-            />Calculator
-          </router-link>
-        </li>
-        <li class="sidenavLinks quick" @click="closeNav">
-          <a href="tel:16409"
-            ><img src="~@/assets/img/favoriteIcon/Call.png" alt="" />Call Us
-          </a>
-        </li>
-        <li class="sidenavLinks quick" @click="closeNav">
-          <a @click="openModal()"
-            ><img
-              src="~@/assets/img/favoriteIcon/Frequently-Visited-Pages-01.png"
-              alt=""
-            />Favourites
-          </a>
         </li>
         <li class="sidenavLinks quick" @click="closeNav">
           <router-link to="/get-in-touch-with-us"
@@ -566,7 +368,7 @@ export default {
   bottom: 0;
   width: 100vw;
   height: 50px;
-  background: #d62e2f;
+  background: #00a6b4;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -649,7 +451,7 @@ export default {
 
 .sideNavUl .sidenavLinks a {
   font-size: 16px;
-  color: #d62e2e !important;
+  color: #00a6b4 !important;
   padding: 0;
   margin: 0 10px;
   display: block;
@@ -688,7 +490,7 @@ export default {
   right: 10px;
   font-size: 40px;
   padding: 0;
-  color: #d62e2e;
+  color: #00a6b4;
   font-weight: bold;
 }
 .sideNavSearch {
@@ -697,7 +499,7 @@ export default {
   left: 0;
   font-size: 36px;
   padding: 0;
-  color: #d62e2e;
+  color: #00a6b4;
   font-weight: bold;
 }
 
@@ -734,6 +536,6 @@ ul {
   transition: all 0.3s;
 }
 .favoritePages:hover {
-  color: #d62e2f;
+  color: #00a6b4;
 }
 </style>

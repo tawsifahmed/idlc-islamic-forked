@@ -45,7 +45,7 @@
                   </div>
                   <div class="col-md-3">
                     <div>
-                      <input v-on:click="getInvestorCalculation()" type="button" class="tabcontent1Button" value="Calculate" style="width: 100%; padding: 5px; background: #d62e2f; color: #fff;">
+                      <input v-on:click="getInvestorCalculation()" type="button" class="tabcontent1Button" value="Calculate" style="width: 100%; padding: 5px; background: #00a6b4; color: #fff;">
 
                     </div>
                   </div>
@@ -507,7 +507,7 @@
 <style scoped>
 
   .product-card {
-    background: #d62e2f;
+    background: #00a6b4;
     color: #fff;
     margin-bottom: 5px;
   }
@@ -528,7 +528,7 @@
   .tabPanel .tab {
     overflow: hidden;
     background-color: #f1f1f1;
-    border-bottom: 2px solid #d62e2f;
+    border-bottom: 2px solid #00a6b4;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -569,7 +569,7 @@
   }
 
   .tabPanel .tab button.active {
-    background-color: #d62e2f;
+    background-color: #00a6b4;
     color: #fff;
   }
 
@@ -588,7 +588,7 @@
 
   .tabPanel .tabcontent1 .tabcontent1Button {
     outline: none;
-    border: 2px solid #d62e2f;
+    border: 2px solid #00a6b4;
     padding: 10px 30px;
     font-size: 14px;
     border-radius: 100px;
@@ -600,7 +600,7 @@
     display: inline-block;
   }
   .tabPanel .tabcontent1 .tabcontent1Button:hover {
-    background: #d62e2f;
+    background: #00a6b4;
     color: #fff;
 
   }
@@ -665,7 +665,7 @@
     padding: 15px;
     position: absolute;
     bottom: 0;
-    background: #d62e2f;
+    background: #00a6b4;
     font-size: 14px;
     font-weight: 100%;
     width: 100%;
@@ -717,7 +717,7 @@
 
   .tabcontent1Button1 {
     outline: none;
-    border: 2px solid #d62e2f;
+    border: 2px solid #00a6b4;
     padding: 10px 30px;
     font-size: 14px;
     border-radius: 100px;
@@ -739,7 +739,7 @@
     transition: all 0.3s;
     text-decoration: none;
     color: #ffffff;
-    background-color: #d62e2f;
+    background-color: #00a6b4;
     display: inline-block;
     margin: auto;
   }
@@ -758,7 +758,7 @@
 }
 
 .calculatedValu {
-  border: 1px solid #d62e2e80;
+  border: 1px solid #00a6b480;
   border-radius: 7px;
   margin-top: 20px;
   padding: 10px;
@@ -767,11 +767,11 @@
   margin-bottom: 10px;
 }
 .calculatedValu h2{
-  color: #d62e2f
+  color: #00a6b4
 }
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #d62e2f !important;
+    background-color: #00a6b4 !important;
     border-color: rgba(214, 46, 46, 0.664) !important;
 }
 

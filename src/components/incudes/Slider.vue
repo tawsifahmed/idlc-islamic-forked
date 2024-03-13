@@ -171,7 +171,7 @@ export default {
 }
 
 .main_slider .main_slider_bg_part .slider_top .buttons a {
-  background: #ff1818;
+  background: #00a6b4;
   padding: 10px 15px;
   border-radius: 10px 10px 0 0;
   color: #fff;
@@ -187,7 +187,7 @@ export default {
 }
 
 .main_slider .main_slider_bg_part .slider_top .buttons a:nth-child(1) {
-  background: #8c1919;
+  background: #00a6b4;
 }
 
 .main_slider .main_slider_bg_part .slider_top .buttons a:nth-child(2) {
@@ -201,7 +201,7 @@ export default {
   -webkit-box-shadow: 0 0px 20px 8px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0px 20px 8px rgba(0, 0, 0, 0.2);
   text-decoration: none;
-  background: linear-gradient(45deg, #7a1a1b, #ef0934);
+  background: linear-gradient(45deg, #437a7f, #00a6b4);
   color: #fff;
 }
 

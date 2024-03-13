@@ -52,7 +52,7 @@
                 <div class="desktop_menu_sub_blocks desktop_menu_sub_blocks_3">
                   <div class="block">
                     <li>
-                      <router-link class="menu_link" to="/idlc-at-a-glance">
+                      <a target="_blank" class="menu_link" href="https://idlc.com/idlc-at-a-glance">
                         <div class="menuIcon">
                           <img
                             src="~@/assets/img/menu_icon/Menubar/Idlc-at-a-glance.png"
@@ -65,10 +65,10 @@
                             About IDLC | Our Journey
                           </p>
                         </div>
-                      </router-link>
+                      </a>
                     </li>
                     <li>
-                      <router-link class="menu_link" to="/our-management">
+                      <a target="_blank" class="menu_link" href="https://idlc.com/our-management">
                         <div class="menuIcon">
                           <img
                             src="~@/assets/img/menu_icon/Menubar/Our-management.png"
@@ -81,12 +81,12 @@
                             Know More about our Leadership Team
                           </p>
                         </div>
-                      </router-link>
+                      </a>
                     </li>
                   </div>
                   <div class="block">
                     <li>
-                      <router-link class="menu_link" to="/our-achievement">
+                      <a target="_blank" class="menu_link" href="https://idlc.com/our-achievement">
                         <div class="menuIcon">
                           <img
                             src="~@/assets/img/menu_icon/Menubar/Our-achievement.png"
@@ -99,10 +99,10 @@
                             Awards and Accolades
                           </p>
                         </div>
-                      </router-link>
+                      </a>
                     </li>
                     <li>
-                      <router-link class="menu_link" to="/news-and-events">
+                      <a target="_blank" class="menu_link" href="https://idlc.com/news-and-events">
                         <div class="menuIcon">
                           <img
                             src="~@/assets/img/menu_icon/Menubar/News-_-Events.png"
@@ -115,22 +115,10 @@
                             Latest updates and media releases of IDLC
                           </p>
                         </div>
-                      </router-link>
+                      </a>
                     </li>
                   </div>
-                  <div class="block blockRed">
-                    <h6 class="redBlockHeading">Latest News</h6>
-                    <div class="heighlighting">
-                      <a
-                        :href="item.link"
-                        v-for="item in headerData.menuNews"
-                        :key="item.id"
-                      >
-                        <img :src="item.image" alt="image" />
-                        <p>{{ item.title }}</p>
-                      </a>
-                    </div>
-                  </div>
+                 
                 </div>
               </ul>
             </li>
@@ -820,7 +808,7 @@
     <div class="searchData" v-show="search" style="max-width: 100%;">
       <button
         @click="search = ''"
-        style="position: absolute; top: 15px; right: 30px; font-size:30px; padding: 5px 10px; line-height: 1; border-radius: 100px; border: 2px solid #d62e2f; color: #d62e2f;"
+        style="position: absolute; top: 15px; right: 30px; font-size:30px; padding: 5px 10px; line-height: 1; border-radius: 100px; border: 2px solid #00a6b4; color: #00a6b4;"
       >
         <span class="icon-close"></span>
       </button>
@@ -1149,7 +1137,7 @@ ul.desktop_menu li.drop_arrow_red::after {
 }
 
 ul.desktop_menu li.drop_arrow_red::after {
-  background: #d62e2f;
+  background: #00a6b4;
 }
 
 ul.desktop_menu li ul.desktop_menu_sub {
@@ -1268,19 +1256,7 @@ ul.desktop_menu
   .menuIcon {
   background-size: 200% 100%;
   background-position: 100% 0;
-  border: 2px solid #d62e2f;
-}
-
-ul.desktop_menu
-  li
-  ul.desktop_menu_sub
-  .desktop_menu_sub_blocks
-  li
-  a.menu_link:hover
-  .menuIcon
-  img {
-  -webkit-filter: invert(6%) sepia(100%) saturate(9999%);
-  filter: invert(6%) sepia(100%) saturate(9999%);
+  border: 2px solid #00a6b4;
 }
 
 ul.desktop_menu
@@ -1294,7 +1270,7 @@ ul.desktop_menu
 }
 
 ul.desktop_menu li ul.desktop_menu_sub .desktop_menu_sub_blocks .blockRed {
-  background-color: #d62e2e;
+  background-color: #00a6b4;
   width: 250px;
   padding: 15px;
   align-self: stretch;
@@ -1481,7 +1457,7 @@ ul {
   transition: all 0.3s;
 }
 .favoritePages:hover {
-  color: #d62e2f;
+  color: #00a6b4;
 }
 .navRoot .primary {
   position: relative;
@@ -1491,15 +1467,15 @@ ul {
   top: 100%;
   left: -110px;
   width: 300px;
-  background: #d62e2e86;
+  background: #00a6b486;
   border-radius: 5px;
   padding: 10px 0 0 0;
 }
 .recentlyVisitedPages .recentlyVisitedClose {
-  color: #d62e2f;
+  color: #00a6b4;
   background: #fff;
   border-radius: 100px;
-  border: 2px solid #d62e2f;
+  border: 2px solid #00a6b4;
   width: 30px;
   height: 30px;
   position: absolute;
@@ -1514,8 +1490,8 @@ ul {
 }
 .recentlyVisitedPages .recentlyVisitedClose:hover {
   color: #fff;
-  background: #d62e2f;
-  border: 2px solid #d62e2f;
+  background: #00a6b4;
+  border: 2px solid #00a6b4;
 }
 
 .recentlyVisitedPages ul li {
@@ -1537,7 +1513,7 @@ ul {
   transition: all 0.3s;
 }
 .recentlyVisitedPages ul li a:hover h6 {
-  color: #d62e2f;
+  color: #00a6b4;
 }
 .recentlyVisitedPages ul li a p {
   flex: 1;

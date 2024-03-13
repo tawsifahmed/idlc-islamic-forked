@@ -45,7 +45,7 @@
 .owl-page active span {
   filter: Alpha(Opacity=100);
   opacity: 1;
-  color: #d62e2f !important;
+  color: #00a6b4 !important;
 }
 
 /*Footer part*/
@@ -86,7 +86,7 @@ h3.hMainTitle {
 .titleDivider {
   height: 0.4rem;
   width: 6rem;
-  background: #d62e2f;
+  background: #00a6b4;
   margin: 0 auto;
   margin-bottom: 2rem;
 }
@@ -103,7 +103,7 @@ h3.hMainTitle {
   text-align: center;
   border: solid 1px #ededed;
   /* padding: 0.9rem 1.4rem; */
-  border-right: solid 2px #d62e2f;
+  border-right: solid 2px #00a6b4;
   width: 5rem;
   margin: 0;
   float: left;
@@ -158,7 +158,7 @@ h3.hMainTitle {
 .box2.thumbnailBox .thumbCont {
   padding: 0.5rem 1rem;
   z-index: 4;
-  background: #d62e2f;
+  background: #00a6b4;
   color: #fff;
   font-size: 1rem;
   position: absolute;
@@ -176,7 +176,7 @@ h3.hMainTitle {
 .moreDetails {
   text-decoration: none;
   font-size: 0.9rem;
-  color: #d62e2f;
+  color: #00a6b4;
 }
 
 
@@ -449,7 +449,7 @@ h3.hMainTitle {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background: #d62e2f;
+  background: #00a6b4;
   cursor: pointer;
 }
 
@@ -457,7 +457,7 @@ h3.hMainTitle {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background: #d62e2f;
+  background: #00a6b4;
   cursor: pointer;
 }
 
@@ -583,7 +583,7 @@ h3.hMainTitle {
 .employeeDetWrap .rangeSlider .rangeLabel {
   font-size: 1.2rem;
   font-family: 'Helvetica', Open Sans, Segoe UI, sans-serif;
-  color: #d62e2f;
+  color: #00a6b4;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -651,7 +651,7 @@ h3.hMainTitle {
 
 .editableFields ul li span {
   font-size: 1.6rem;
-  color: #d62e2f;
+  color: #00a6b4;
   outline: 0;
   font-weight: bold;
 }
@@ -663,7 +663,7 @@ h3.hMainTitle {
 
 .tabcontent2Button {
   outline: none;
-  border: 2px solid #d62e2f;
+  border: 2px solid #00a6b4;
   padding: 7px 20px;
   font-size: 14px;
   border-radius: 100px;
@@ -678,7 +678,7 @@ h3.hMainTitle {
 .tabcontent2Button:hover,
 .tabcontent2Button:focus {
   outline: none;
-  background: #d62e2f;
+  background: #00a6b4;
   color: #fff;
   text-decoration: none;
 }
@@ -785,7 +785,7 @@ h3.hMainTitle {
 }
 .categoryDetails .categoryPrevButton a span,
 .categoryDetails .categoryNextButton a span{
-  color: #d62e2f;
+  color: #00a6b4;
   font-size: 22px;
   transition: all 0.3s;
 }
@@ -818,7 +818,7 @@ h3.hMainTitle {
 .categoryDetails .categoryNextButton:hover {
     cursor: pointer;
     padding: 10px 13px;
-    background: #d62e2f;
+    background: #00a6b4;
     border-radius: 100px;
 }
 
@@ -884,7 +884,7 @@ h3.hMainTitle {
 }
 .tabcontent1ButtonBase:hover{
   background: #fff;
-  color: #d62e2f;
+  color: #00a6b4;
   text-decoration: none;
 }
 
@@ -1181,7 +1181,7 @@ section.footer-bottom ul li + li::before {
 }
 
 .topShape {
-  background: #d62e2f;
+  background: #00a6b4;
   position: absolute;
   width: 100%;
   overflow: hidden;
@@ -1220,7 +1220,7 @@ section.footer-bottom ul li + li::before {
 }
 
 .topShape #circle3 {
-  background: #d62e2e;
+  background: #00a6b4;
   border-radius: 80rem/40rem;
   height: 80rem;
   -webkit-transform: rotate(-19deg);
@@ -1315,7 +1315,7 @@ section.footer-bottom ul li + li::before {
   position: fixed;
 }
 .cc-contactpop {
-  background-color: #d62e2f;
+  background-color: #00a6b4;
   color: #fff;
   width: 350px;
   bottom: 0;
@@ -1464,7 +1464,7 @@ section.footer-bottom ul li + li::before {
   padding-right: 25px;
 }
 .productsGroupCustom .productsmenuRed{
-  background: #d62e2f;
+  background: #00a6b4;
   border-radius: 0 28px 28px 0;
   padding-left: 15px;;
 }
@@ -1588,7 +1588,7 @@ body {
 }
 
 .select:focus+.spanx {
-  border-bottom-color: #d62e2f;
+  border-bottom-color: #00a6b4;
 }
 .custom-select {
   position: relative;
@@ -1601,7 +1601,7 @@ body {
 }
 
 .select-selected {
-  background-color: #d62e2f;
+  background-color: #00a6b4;
 }
 
 
@@ -1707,7 +1707,7 @@ body {
   height: 5px !important;
 }
 .vs__dropdown-option--highlight {
-  background: #d62e2f !important;
+  background: #00a6b4 !important;
   color: #fff
 }
 .vs__clear{
@@ -1777,7 +1777,7 @@ body {
 }
 
 .download-report-btn {
-  background: #d62e2f;
+  background: #00a6b4;
   color: #fff;
   font-size: 14px;
   padding: 10px;
@@ -1860,7 +1860,7 @@ body {
 }
 .branch-locator .branch-locator-tab-button button{
   margin-bottom: 15px;
-  border: 1px solid #d62e2f;
+  border: 1px solid #00a6b4;
   padding: 10px 15px;
   font-size: 14px;
   flex: 1;
@@ -1906,7 +1906,7 @@ body {
   cursor: pointer;
 }
 .branch-locator .locations .location-list ul li a .title{
-  color: #d62e2f;
+  color: #00a6b4;
   margin-bottom: 10px;
   font-size: 1.25rem;
 }
@@ -1958,7 +1958,7 @@ body {
 
 /* When the checkbox is checked, add a blue background */
 .customSelectBox input:checked ~ .checkmark {
-  background-color: #d62e2f;
+  background-color: #00a6b4;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -2029,7 +2029,7 @@ body {
 .reportCard_22 .downloadIcon .icon{background-image: url("../img/financial-report/download-icon-02.png"); background-size: contain; height: 25px; width: 25px;}
 .reportCard_22:hover .downloadIcon .icon{background-image: url("../img/financial-report/download-icon-01.png");}
 .reportCard_22 .text{
-  background-color: #d62e2f;
+  background-color: #00a6b4;
   color: #fff;
   padding: 10px;
   transition: all 0.3s;
@@ -2040,7 +2040,7 @@ body {
 .reportCard_22 .text p{ font-size: 14px; text-align: center;}
 .search-btn {
   color: #ffffff;
-  background: #d62e2f;
+  background: #00a6b4;
   line-height: 1;
   padding: 8px 10px;
   transition: all 0.3s;
@@ -2178,7 +2178,7 @@ table tbody tr:nth-child(odd) {
   color: #333;
 }
 table tbody tr:first-child {
-  background: #d62e2f;
+  background: #00a6b4;
   color: #fff;
 }
 
@@ -2217,7 +2217,7 @@ table tbody tr td {
 }
 .cModalBClose {
   width: 100%;
-  background: #d62e2f;
+  background: #00a6b4;
   display: block;
   text-align: center;
   padding: 10px;
@@ -2242,7 +2242,7 @@ table tbody tr td {
 }
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #d62e2f !important;
+  background-color: #00a6b4 !important;
   border-color: rgba(214, 46, 46, 0.664) !important;
 }
 .b-calendar-header {
@@ -2261,14 +2261,14 @@ table.fc-scrollgrid-sync-table a{
   color: #333;
 }
 .fc-h-event {
-  background: #d62e2f;
+  background: #00a6b4;
 }
 .fc-h-event {
   display: block;
   border: 1px solid #3788d8;
   border: 1px solid var(--fc-event-border-color, #3788d8);
   background-color: #3788d8;
-  background-color: #d62e2f !important;
+  background-color: #00a6b4 !important;
 }
 @media screen and (max-width: 770px){
   .contact_form_details{
@@ -2277,7 +2277,7 @@ table.fc-scrollgrid-sync-table a{
 }
 
 .bg_color_for_apply_page{
-  background: #d62e2f;
+  background: #00a6b4;
   outline: none;
   padding: 10px 30px;
   font-size: 14px;
@@ -2336,7 +2336,7 @@ table.fc-scrollgrid-sync-table a{
 }
 .upCVandLNButtons .upCVandLNButton .iconAndButton .upCVandINbtn {
   color:#fff;
-  background-color: #d62e2f;
+  background-color: #00a6b4;
   padding: 7px 15px;
   display: inline-block;
   font-size: 10px;

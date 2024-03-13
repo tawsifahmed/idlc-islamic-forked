@@ -47,7 +47,7 @@
 
   .btnBack {
     outline: none;
-    border: 2px solid #d62e2f !important;
+    border: 2px solid #00a6b4 !important;
     padding: 10px 30px;
     font-size: 14px;
     border-radius: 100px;
@@ -62,7 +62,7 @@
 
   .btnBack:hover {
     outline: none;
-    border: 2px solid #d62e2f !important;
+    border: 2px solid #00a6b4 !important;
     padding: 10px 30px;
     font-size: 14px;
     border-radius: 100px;

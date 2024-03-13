@@ -174,7 +174,7 @@
 .our_values ul li i{
    font-size: 16px;
    margin-right: 10px;
-   color: #d62e2f;
+   color: #00a6b4;
    display: none;
 }
 .our_values {}
@@ -188,7 +188,7 @@
     margin: 50px 0 30px 0;
   }
   .iconBlocks .block{
-    background-color: #d62e2f;
+    background-color: #00a6b4;
     flex-basis: 24.8%;
     display: flex;
     flex-direction: column;
@@ -242,7 +242,7 @@
     margin-left: 150px;;
   }
   .ourJourney .timeBlock{
-    color: #d62e2f;
+    color: #00a6b4;
     width: 120px;
     height: 140px;
     display: flex;
@@ -279,12 +279,12 @@
   .ourJourney .timeBlock .circles::before{
     width: 40px;
     height: 40px;
-    border: 3px solid #d62e2f;
+    border: 3px solid #00a6b4;
   }
   .ourJourney .timeBlock .circles::after{
     width: 20px;
     height: 20px;
-    background-color:  #d62e2f;
+    background-color:  #00a6b4;
   }
   .ourJourney .journey .newses .middleLine{
     height: 1px;
@@ -306,7 +306,7 @@
   .ourJourney .journey .newses .news .pin{
     height: 50px;
     width: 3px;
-    background-color: #d62e2f;
+    background-color: #00a6b4;
     position: relative;
     align-self: flex-end;
     margin: 0 10px ;
@@ -317,7 +317,7 @@
     height: 8px;
     border-radius: 100px;
     position: absolute;
-    background-color: #d62e2f;
+    background-color: #00a6b4;
   }
   .ourJourney .journey .newses .topRow .news .pin{
     align-self: flex-end;

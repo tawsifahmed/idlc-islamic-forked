@@ -42,7 +42,7 @@
   }
   .card-title:hover {
     font-size: 1.25rem;
-    color: #d62e2f ;
+    color: #00a6b4 ;
 
   }
 

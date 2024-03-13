@@ -1088,7 +1088,7 @@
 
 
   .error_message{
-    color: #d62e2f;
+    color: #00a6b4;
     font-size: 14px;
   }
 
@@ -1104,17 +1104,17 @@
     font-size: 14px;
   }
   .firsttabcontent1 .nav-pills.nav-wizard>li.active a {
-    background-color: #d62e2f;
+    background-color: #00a6b4;
     color: #fff;
   }
   .nav .nav-pills.nav-wizard>li.active a {
     position: relative;
   }
   .nav-item {
-    background: #d62e2f;
+    background: #00a6b4;
   }
   .btn-warning {
-    background-color: #d62e2f;
+    background-color: #00a6b4;
     color: #fff;
   }
   .loan-select {
@@ -1133,11 +1133,11 @@
     font-size: 14px;
   }
   /* select option[selected]{
-      background-color: #d62e2f;
+      background-color: #00a6b4;
       color: #fff;
   } */
   select option:hover, option:focus{
-    background: #d62e2f;
+    background: #00a6b4;
     color: #fff;
   }
   .term-condition {
@@ -1149,7 +1149,7 @@
   }
   .card-footer > .btn-group > button.btn {
     outline: none;
-    border: 2px solid #d62e2f !important;
+    border: 2px solid #00a6b4 !important;
     padding: 10px 30px;
     font-size: 14px;
     border-radius: 100px;
@@ -1167,7 +1167,7 @@
 
   button.btn {
     outline: none;
-    border: 2px solid #d62e2f !important;
+    border: 2px solid #00a6b4 !important;
     padding: 10px 30px;
     font-size: 14px;
     border-radius: 100px;
@@ -1181,7 +1181,7 @@
   }
   button.btn:hover {
     outline: none;
-    border: 2px solid #d62e2f !important;
+    border: 2px solid #00a6b4 !important;
     padding: 10px 30px;
     font-size: 14px;
     border-radius: 100px;

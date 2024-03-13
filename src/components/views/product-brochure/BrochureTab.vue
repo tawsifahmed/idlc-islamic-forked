@@ -689,7 +689,7 @@
         transition: all 0.3s;
     }
     .categoryBody .mcategory .reason:hover {
-        background: rgba(214, 46, 47, 1);
+        background: #00a6b4;
     }
     .categoryBody .mcategory .reason a {
         display: block;
@@ -784,12 +784,12 @@
  .tab button.active {
    background-color: #F2F2F2 !important;
       color: #000000 !important;
-   border-bottom: 4px solid #d62e2f !important;
+   border-bottom: 4px solid #00a6b4 !important;
     }
  .tab button:focus {
    background-color: #F2F2F2 !important;
       color: #000000 !important;
-   border-bottom: 4px solid #d62e2f !important;
+   border-bottom: 4px solid #00a6b4 !important;
     }
 
 

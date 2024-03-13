@@ -343,7 +343,7 @@ import Datepicker from 'vuejs-datepicker';
 <style scoped>
 
   .error_message {
-    color: #d62e2f;
+    color: #00a6b4;
     font-size: 14px;
   }
 
@@ -392,17 +392,17 @@ import Datepicker from 'vuejs-datepicker';
   .contact_form_details .form-control:focus {
     color: #495057;
     background-color: #fff;
-    border-color: #d62e2f;
+    border-color: #00a6b4;
     outline: 0;
-    -webkit-box-shadow: 0 0 0 0.1rem #d62e2f;
-    box-shadow: 0 0 0 0.1rem #d62e2f;
+    -webkit-box-shadow: 0 0 0 0.1rem #00a6b4;
+    box-shadow: 0 0 0 0.1rem #00a6b4;
     opacity: 1;
   }
 
   .submit_button{
     display: inline-block;
-    border: 1px solid #d62e2f;
-    color: #d62e2f;
+    border: 1px solid #00a6b4;
+    color: #00a6b4;
     padding: 7px 32px;
     font-size: 14px;
     border-radius: 100px;
@@ -417,7 +417,7 @@ import Datepicker from 'vuejs-datepicker';
 
   .submit_button:hover{
     display: inline-block;
-    border: 1px solid #d62e2f;
+    border: 1px solid #00a6b4;
     color: #fff!important;
     padding: 7px 32px;
     font-size: 14px;
@@ -425,7 +425,7 @@ import Datepicker from 'vuejs-datepicker';
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     cursor: pointer;
-    background: #d62e2f!important;
+    background: #00a6b4!important;
     box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.2);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);

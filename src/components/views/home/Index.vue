@@ -115,7 +115,7 @@
           {{ pageSliderHeader.second_title }}
         </h2>
         <!-- <h6 class="categoriesTagline">{{ itemData.product_tagline }}</h6> -->
-        <span v-html="pageSliderHeader.description"></span>
+        <span v-if="pageSliderHeader" v-html="pageSliderHeader.description"></span>
       </div>
     </div>
     <div class="container-lg productFeatures">
@@ -126,7 +126,7 @@
       </div>
 
       <div class="tabcontent1 defaultTableDesign" style="display: block; overflow: auto;">
-        <span v-html="homePageData.homePageFeatured.description"></span>
+        <span v-if="homePageData.homePageFeatured" v-html="homePageData.homePageFeatured.description"></span>
         <router-link
 
           target="_blank"
@@ -535,8 +535,8 @@ export default {
 
 .news_box .news_box_footer .news_box_learnMore_btn {
   display: inline-block;
-  border: 1px solid #d62e2f;
-  color: #d62e2f;
+  border: 1px solid #00a6b4;
+  color: #00a6b4;
   padding: 5px 10px;
   font-size: 12px;
   border-radius: 100px;
@@ -545,12 +545,12 @@ export default {
 
 .news_box .news_box_footer .news_box_learnMore_btn:hover {
   color: #fff;
-  background: #d62e2f;
+  background: #00a6b4;
   text-decoration: none;
 }
 
 .news_box .news_box_share {
-  background: #d62e2f;
+  background: #00a6b4;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -660,7 +660,7 @@ export default {
 }
 
 .quickLinks_career_box:hover .heighlightedText {
-  color: #d62e2f;
+  color: #00a6b4;
 }
 
 .quickLinks_career_box .headPart .icon img {
@@ -711,7 +711,7 @@ export default {
 
 .quickLinks_career_box .headPart .Text a:hover p {
   font-size: 14px;
-  color: #d62e2f;
+  color: #00a6b4;
   text-decoration: none;
 }
 
@@ -744,7 +744,7 @@ export default {
 }
 
 .quickLinks_career_box .jobs a:hover {
-  color: #d62e2f;
+  color: #00a6b4;
   text-decoration: none;
 }
 
@@ -797,7 +797,7 @@ export default {
   display: inline-block;
   font-size: 2.6rem;
   line-height: 2.6rem;
-  color: #d62e2f;
+  color: #00a6b4;
   cursor: pointer;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
@@ -814,12 +814,12 @@ export default {
   cursor: pointer;
   background: #fff;
   padding: 4px 10px;
-  border: 2px solid #d62e2f;
+  border: 2px solid #00a6b4;
   border-radius: 30px;
   text-decoration: none;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
-  color: #d62e2f;
+  color: #00a6b4;
 }
 
 .cardTop h2 {
@@ -895,7 +895,7 @@ export default {
 .fundCard .cardTop:before {
   content: "";
   position: absolute;
-  background: rgba(214, 46, 47, 0.95);
+  background: #00a6b4;
   -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;
   -ms-transition: all 0.3s ease-in;
@@ -926,7 +926,7 @@ export default {
 .fundCard .cardBottom {
   padding: 1rem 1rem;
   border-top: solid 1px #dcdcdc;
-  background-color: #d62e2f;
+  background-color: #00a6b4;
   width: 100%;
   transition: all 0.3s;
 }
@@ -991,7 +991,7 @@ export default {
 }
 
 .main_slider .main_slider_bg_part .slider_top .buttons a {
-  background: #ff1818;
+  background: #00a6b4;
   padding: 10px 15px;
   border-radius: 10px 10px 0 0;
   color: #fff;
@@ -1007,7 +1007,7 @@ export default {
 }
 
 .main_slider .main_slider_bg_part .slider_top .buttons a:nth-child(1) {
-  background: #8c1919;
+  background: #00a6b4;
 }
 
 .main_slider .main_slider_bg_part .slider_top .buttons a:nth-child(2) {
@@ -1021,7 +1021,7 @@ export default {
   -webkit-box-shadow: 0 0px 20px 8px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0px 20px 8px rgba(0, 0, 0, 0.2);
   text-decoration: none;
-  background: linear-gradient(45deg, #7a1a1b, #ef0934);
+  background: linear-gradient(45deg, #437a7f, #00a6b4);
   color: #fff;
 }
 
@@ -1157,7 +1157,7 @@ export default {
   content: "";
   height: 0%;
   width: 0%;
-  background: #d62e2f;
+  background: #00a6b4;
   position: absolute;
   z-index: -1;
   -webkit-transition: all 0.4s;
@@ -1202,7 +1202,7 @@ export default {
 }
 
 .featuredProduct_box_inner .icon_1 {
-  background-image: url("~@/assets/img/menuIcons/personalLoan/Home-Loan.png");
+  background-image: url("~@/assets/img/menuIcons/deposit/Deposits-Icon.png");
 }
 
 .featuredProduct_box_inner .icon_2 {
@@ -1231,9 +1231,9 @@ export default {
 
 .featuredProduct_box_inner button {
   width: 100%;
-  border: 2px solid #d62e2f !important;
+  border: 2px solid #00a6b4 !important;
   color: #fff;
-  background: #d62e2f;
+  background: #00a6b4;
   border: none;
   font-size: 15px;
   cursor: pointer;
@@ -1255,11 +1255,11 @@ export default {
 }
 
 .featuredProduct_box:hover .featuredProduct_box_inner > .icon_1 {
-  background-image: url("~@/assets/img/menuIcons/personalLoan/Home-Loan-02.png");
+  background-image: url("~@/assets/img/menuIcons/deposit/Deposits-Icon.png");
 }
 
 .featuredProduct_box:hover .featuredProduct_box_inner > .icon_2 {
-  background-image: url("~@/assets/img/menuIcons/SME/Small-Business-02.png");
+  background-image: url("~@/assets/img/menuIcons/SME/Small-Business.png");
 }
 
 .featuredProduct_box:hover .featuredProduct_box_inner > .icon_3 {
@@ -1332,7 +1332,7 @@ export default {
 }
 
 .whyChose .whyChoseBg {
-  background: rgba(214, 46, 47, 0.95);
+  background: #00a6b4;
   height: 100%;
   padding: 100px 0px 70px 0px;
   margin: 0 auto;
@@ -1548,7 +1548,7 @@ export default {
 .productFeatures .tab {
   overflow: hidden;
   background-color: #f1f1f1;
-  border-bottom: 2px solid #d62e2f;
+  border-bottom: 2px solid #00a6b4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1575,7 +1575,7 @@ export default {
 }
 
 .productFeatures .tab button.active {
-  background-color: #d62e2f;
+  background-color: #00a6b4;
   color: #fff;
 }
 
@@ -1606,7 +1606,7 @@ export default {
 
 .productFeatures .tabcontent1 .tabcontent1Button {
   outline: none;
-  border: 2px solid #d62e2f;
+  border: 2px solid #00a6b4;
   padding: 10px 30px;
   font-size: 14px;
   border-radius: 100px;
@@ -1624,7 +1624,7 @@ export default {
 }
 
 .productFeatures .tabcontent1 .tabcontent1Button:hover {
-  background: #d62e2f;
+  background: #00a6b4;
   color: #fff;
 }
 
@@ -1639,11 +1639,11 @@ export default {
   }
   .productFeatures .tab .tablinks1:nth-child(1),
   .productFeatures .tab .tablinks1:nth-child(3) {
-    border-right: 1px solid #d62e2f;
+    border-right: 1px solid #00a6b4;
   }
   .productFeatures .tab .tablinks1:nth-child(1),
   .productFeatures .tab .tablinks1:nth-child(2) {
-    border-bottom: 1px solid #d62e2f;
+    border-bottom: 1px solid #00a6b4;
   }
 }
 </style>

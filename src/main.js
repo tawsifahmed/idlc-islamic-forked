@@ -96,11 +96,11 @@ router.beforeResolve((to, from, next) => {
 router.afterEach((to, from) => {});
 
 axios.defaults.headers.common = { Accept: "application/json" };
-//axios.defaults.baseURL = 'https://139.59.241.231/api/v1/';
+//axios.defaults.baseURL = 'http://139.59.241.231/api/v1/';
 
-// axios.defaults.baseURL = "https://web.singularitybd.co/api/v1/";
+axios.defaults.baseURL = "https://web.singularitybd.co/api/v1/";
 // axios.defaults.baseURL = "https://web.idlc.com/api/v1/";
-axios.defaults.baseURL = "http://idlc-islamic-backend.test/api/v1/";
+// axios.defaults.baseURL = "http://idlc-islamic-backend.test/api/v1/";
 
 new Vue({
   router,

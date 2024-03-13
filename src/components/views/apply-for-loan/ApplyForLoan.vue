@@ -61,7 +61,7 @@ export default {
   border: 2px solid #fff;
   border-radius: 100px;
   margin-bottom: 10px;
-  background-color: #d62e2f;
+  background-color: #00a6b4;
   transition: all 0.3s;
 }
 .im_files a:hover {

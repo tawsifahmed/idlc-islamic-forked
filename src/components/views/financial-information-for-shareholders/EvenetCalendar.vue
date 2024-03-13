@@ -150,7 +150,7 @@ export default {
     }
     .eCalendar .body .event {
         flex-basis: 45%;
-        background: #d62e2f;
+        background: #00a6b4;
         color: #fff;
         padding: 40px 40px;
     }

@@ -3,9 +3,9 @@
   "short_name": "IDLC",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#D62E2F",
+  "background_color": "#00a6b4",
   "description": "IDLC - Financing Happiness",
-  "theme_color": "#D62E2F",
+  "theme_color": "#00a6b4",
   "gcm_sender_id": "586313753410",
   "icons": [
     {

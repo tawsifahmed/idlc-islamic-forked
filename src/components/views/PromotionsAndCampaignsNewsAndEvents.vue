@@ -101,8 +101,8 @@ export default {
 
 .offer_button {
   display: inline-block;
-  border: 1px solid #d62e2f;
-  color: #d62e2f;
+  border: 1px solid #00a6b4;
+  color: #00a6b4;
   padding: 5px 10px;
   font-size: 12px;
   border-radius: 100px;
@@ -117,7 +117,7 @@ export default {
 }
 .offer_button:hover{
   color: #fff;
-  background: #d62e2f;
+  background: #00a6b4;
   text-decoration: none;
 }
 .offers {

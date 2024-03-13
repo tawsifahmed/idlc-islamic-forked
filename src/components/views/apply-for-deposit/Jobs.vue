@@ -239,11 +239,11 @@
     color:#4D5154;
   }
   .applyButton{
-    background-color: #d62e2f;
+    background-color: #00a6b4;
     color:#ffffff;
   }
   .shareButton{
-    border:2px solid #d62e2f;
+    border:2px solid #00a6b4;
     color:#4D5154;
   }
   .shareButton:hover {

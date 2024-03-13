@@ -16,11 +16,7 @@
     </div>
     <!--    //page heading end-->
     <app-categorized-product />
-    <app-success-story/>
     <!-- <app-success-strories-button /> -->
-    <app-EMICalculator />
-    <app-WHTab />
-    <app-RelatedProduct />
     <app-footer />
 
   </div>

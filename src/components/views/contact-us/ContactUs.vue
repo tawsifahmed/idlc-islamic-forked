@@ -481,7 +481,7 @@
 
   .allBranches .tab {
     overflow: hidden;
-    border-bottom: 2px solid #d62e2f;
+    border-bottom: 2px solid #00a6b4;
     background: rgba(255, 255, 255, 0.15);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -515,7 +515,7 @@
   }
 
   .allBranches .tab button.active {
-    background-color: #d62e2f;
+    background-color: #00a6b4;
     color: #fff;
   }
 
@@ -549,7 +549,7 @@
     padding: 20px;
   }
   .allBranches .tabcontent .managementTabBody .branch .left.redBG{
-    background: #d62e2f;
+    background: #00a6b4;
     color: #fff;
   }
   .allBranches .tabcontent .managementTabBody .branch .middle{
@@ -614,7 +614,7 @@
   .search-pdf {
     margin-top: 10px;
     border-radius: 40px;
-    border: 1px solid #d62e2f;
+    border: 1px solid #00a6b4;
   }
 
   ul {

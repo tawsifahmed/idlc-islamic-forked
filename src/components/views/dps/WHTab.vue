@@ -233,7 +233,7 @@
   }
 
   .productWhychoose .tab button.active {
-    background-color: #d62e2f;
+    background-color: #00a6b4;
   }
 
   .productWhychoose .tabcontent {

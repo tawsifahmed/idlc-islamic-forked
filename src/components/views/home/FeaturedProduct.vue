@@ -151,7 +151,7 @@
   content: "";
   height: 0%;
   width: 0%;
-  background: #d62e2f;
+  background: #00a6b4;
   position: absolute;
   z-index: -1;
   -webkit-transition: all 0.4s;
@@ -224,9 +224,9 @@
 
 .featuredProduct_box_inner button {
   width: 100%;
-  border: 2px solid #d62e2f !important;
+  border: 2px solid #00a6b4 !important;
   color: #fff;
-  background: #d62e2f;
+  background: #00a6b4;
   border: none;
   font-size: 15px;
   cursor: pointer;

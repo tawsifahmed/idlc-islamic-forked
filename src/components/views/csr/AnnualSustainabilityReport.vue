@@ -111,7 +111,7 @@
     padding: 15px;
     position: absolute;
     bottom: 0;
-    background: #d62e2f;
+    background: #00a6b4;
     font-size: 14px;
     font-weight: 100%;
     width: 100%;
@@ -140,7 +140,7 @@
   
   
   .product-card {
-  background: #d62e2f;
+  background: #00a6b4;
   color: #fff;
   margin-bottom: 5px;
 }

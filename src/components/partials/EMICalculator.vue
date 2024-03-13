@@ -78,7 +78,7 @@
                           <div class="graphTitle text-center pt-3 pb-0">
                             <p><span>Break-down of</span> Total Payment</p>
                           </div>
-                            <div class="semi-donut-model-2 margin" :style="{'--percentage' : principleAmountPercentageData , '--fill': '#d62e2f'}"></div>
+                            <div class="semi-donut-model-2 margin" :style="{'--percentage' : principleAmountPercentageData , '--fill': '#00a6b4'}"></div>
                             <div class="graphDetails">
                                 <div class="detailSingle">
                                     <div class="name">Principal Amount</div>
@@ -203,7 +203,7 @@ export default {
     outline: none;
     padding: 5px 10px;
     font-size: 14px;
-    color: #d62e2f
+    color: #00a6b4
 }
 .calculatorForm .loanAmountInput {
     position: relative;
@@ -218,7 +218,7 @@ export default {
     bottom: 5px;
     padding: 0 7px;
     background-color: #fff;
-    color: #d62e2f;
+    color: #00a6b4;
 }
 .calculatorForm .loanAmountInput input {
     margin: 0;
@@ -250,13 +250,13 @@ export default {
 #EMICalculator .calculatedAmount .totalAmount {
     font-size: 1.5rem;
     margin-bottom: 15px;
-    color: #d62e2f;
+    color: #00a6b4;
 }
 #EMICalculator .calculatedAmount .applyNowButton {
     color: #fff;
     display: inline-block;
     text-decoration: none;
-    background-color: #d62e2f;
+    background-color: #00a6b4;
     padding: 7px 15px;
     font-size: 14px;
     border-radius: 5px;
@@ -338,7 +338,7 @@ export default {
     border-bottom: 1px solid rgba(51, 51, 51, 0.397);
 }
 #EMICalculator .graphChart .graph .graphDetails .detailSingle:first-child .amt {
-    color: #d62e2f;
+    color: #00a6b4;
 }
 #EMICalculator .graphChart .graph .graphDetails .detailSingle .name {
     position: relative; padding-left: 20px;
@@ -347,7 +347,7 @@ export default {
     content: ""; position: absolute; left: 0; top: 50%; transform: translateY(-50%); height: 14px; width: 14px; background-color: rgba(0, 0, 0, 0.25);
 }
 #EMICalculator .graphChart .graph .graphDetails .detailSingle:first-child .name::before {
-    background-color: #d62e2f;
+    background-color: #00a6b4;
 }
 
 @keyframes fillAnimation{

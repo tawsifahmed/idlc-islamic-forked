@@ -30,7 +30,7 @@
     min-height: 45vh;
   }
   .text-4040{
-    color: #d62e2f;
+    color: #00a6b4;
   }
 
 </style>

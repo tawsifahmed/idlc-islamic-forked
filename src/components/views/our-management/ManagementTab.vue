@@ -271,14 +271,14 @@
   }
 
   .ourManagement .ourManagementImgBg {
-    /* background: rgba(214, 46, 47, 0.95); */
+    /* background: #00a6b4; */
     padding: 30px 100px 30px 100px;
   }
 
 
   .ourManagement .tab {
     overflow: hidden;
-    border-bottom: 2px solid #d62e2f;
+    border-bottom: 2px solid #00a6b4;
     background: rgba(255, 255, 255, 0.15);
     display: flex;
   }
@@ -312,7 +312,7 @@
   }
 
   .ourManagement .tab button.active {
-    background-color: #d62e2f;
+    background-color: #00a6b4;
     color: #fff;
   }
 

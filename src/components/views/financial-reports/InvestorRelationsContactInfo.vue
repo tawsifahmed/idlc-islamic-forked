@@ -85,7 +85,7 @@
     list-style: none !important;
   }
   .product-card {
-  background: #d62e2f;
+  background: #00a6b4;
   color: #fff;
   margin-bottom: 5px;
 }

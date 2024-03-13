@@ -125,7 +125,7 @@ export default {
   font-size: 14px;
   margin: 0 10px;
   color: #fff;
-  background: #d62e2f;
+  background: #00a6b4;
   padding: 10px;
   border-radius: 5px;
   transition: all 0.3s;

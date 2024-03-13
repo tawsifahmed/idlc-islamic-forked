@@ -7,7 +7,7 @@
 <style scoped>
     .successStoriesButton {
         outline: none;
-        border: 2px solid #d62e2f;
+        border: 2px solid #00a6b4;
         padding: 10px 30px;
         font-size: 1.25rem;
         border-radius: 100px;
@@ -19,7 +19,7 @@
         display: inline-block;
     }
     .successStoriesButton:hover {
-        background: #d62e2f;
+        background: #00a6b4;
         color: #fff;
     }
 </style>

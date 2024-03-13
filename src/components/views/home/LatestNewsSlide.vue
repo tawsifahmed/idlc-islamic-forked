@@ -84,8 +84,8 @@ export default {
 }
 .news_box .news_box_footer .news_box_learnMore_btn{
   display: inline-block;
-  border: 1px solid #d62e2f;
-  color: #d62e2f;
+  border: 1px solid #00a6b4;
+  color: #00a6b4;
   padding: 5px 10px;
   font-size: 12px;
   border-radius: 100px;
@@ -93,11 +93,11 @@ export default {
 }
 .news_box .news_box_footer .news_box_learnMore_btn:hover{
   color: #fff;
-  background: #d62e2f;
+  background: #00a6b4;
   text-decoration: none;
 }
 .news_box .news_box_share{
-  background: #d62e2f;
+  background: #00a6b4;
   display: flex;
   justify-content: space-around;
   align-items: center;

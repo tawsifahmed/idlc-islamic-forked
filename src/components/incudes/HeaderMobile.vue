@@ -54,7 +54,7 @@
     </div>
 
       <div class="searchData" v-show="search" style="max-width: 100%;">
-        <button @click="search = ''" style="position: absolute; top: 0px; right: 20px; font-size:30px; padding: 5px 10px; line-height: 1; border-radius: 100px; border: 2px solid #d62e2f; color: #d62e2f"><span class="icon-close"></span></button>
+        <button @click="search = ''" style="position: absolute; top: 0px; right: 20px; font-size:30px; padding: 5px 10px; line-height: 1; border-radius: 100px; border: 2px solid #00a6b4; color: #00a6b4"><span class="icon-close"></span></button>
             <div class="searchBody" style="max-width: 100%;">
               <div class="container">
                 <div class="group" v-for="(searchItems,index) in searchData.exceptNews"  :key="index">

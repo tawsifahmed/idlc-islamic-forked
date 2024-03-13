@@ -108,7 +108,7 @@ export default {
   }
   .footer_button .tabcontent1Button{
     outline: none;
-    border: 2px solid #d62e2f;
+    border: 2px solid #00a6b4;
     padding: 10px 30px;
     font-size: 14px;
     border-radius: 100px;
@@ -125,7 +125,7 @@ export default {
   .footer_button .tabcontent1Button:hover{
     text-decoration: none;
     color: #ffffff;
-    background-color: #d62e2f;
+    background-color: #00a6b4;
   }
   @media screen and (max-width: 600px){
     .footer_button{

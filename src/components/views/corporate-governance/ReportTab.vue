@@ -169,7 +169,7 @@ export default {
 
 <style scoped>
 .product-card {
-  background: #d62e2f;
+  background: #00a6b4;
   color: #fff;
   margin-bottom: 5px;
 }
@@ -201,7 +201,7 @@ export default {
 }
 .search-pdf {
   border-radius: 40px;
-  border: 1px solid #d62e2f;
+  border: 1px solid #00a6b4;
 }
 .fa-placholder {
   font-family: "FontAwesome";
@@ -216,7 +216,7 @@ export default {
 .tabPanel .tab {
   overflow: hidden;
   background-color: #f1f1f1;
-  border-bottom: 2px solid #d62e2f;
+  border-bottom: 2px solid #00a6b4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -250,7 +250,7 @@ export default {
 }
 
 .tabPanel .tab button.active {
-  background-color: #d62e2f;
+  background-color: #00a6b4;
   color: #fff;
 }
 
@@ -289,7 +289,7 @@ p.tag span {
 
 .tabPanel .tabcontent1 .tabcontent1Button {
   outline: none;
-  border: 2px solid #d62e2f;
+  border: 2px solid #00a6b4;
   padding: 10px 30px;
   font-size: 14px;
   border-radius: 100px;
@@ -305,7 +305,7 @@ p.tag span {
 
 .footer_button_content .tabcontent1Button:hover {
   outline: none;
-  border: 2px solid #d62e2f;
+  border: 2px solid #00a6b4;
   padding: 10px 30px;
   font-size: 14px;
   border-radius: 100px;
@@ -314,14 +314,14 @@ p.tag span {
   margin-right: 20px;
   text-decoration: none;
   color: #ffffff;
-  background-color: #d62e2f;
+  background-color: #00a6b4;
   display: inline-block;
   margin: auto;
 }
 
 .footer_button2 {
   outline: none;
-  border: 2px solid #d62e2f;
+  border: 2px solid #00a6b4;
   padding: 10px 30px;
   font-size: 14px;
   border-radius: 100px;
@@ -336,7 +336,7 @@ p.tag span {
 
 .footer_button2:hover {
   outline: none;
-  border: 2px solid #d62e2f;
+  border: 2px solid #00a6b4;
   padding: 10px 30px;
   font-size: 14px;
   border-radius: 100px;
@@ -344,7 +344,7 @@ p.tag span {
   transition: all 0.3s;
   text-decoration: none;
   color: #ffffff;
-  background-color: #d62e2f;
+  background-color: #00a6b4;
   display: inline-block;
   margin: auto;
   margin-right: 10px;
@@ -356,11 +356,11 @@ p.tag span {
   align-items: center;
   margin-bottom: 60px;
   padding-top: 30px;
-  border-top: 2px solid #d62e2f;
+  border-top: 2px solid #00a6b4;
 }
 .out_management_btn a{
   outline: none;
-    border: 2px solid #d62e2f;
+    border: 2px solid #00a6b4;
     padding: 7px 20px;
     font-size: 14px;
     border-radius: 100px;
@@ -375,7 +375,7 @@ p.tag span {
 }
 .out_management_btn a:hover {
   outline: none;
-    background: #d62e2f;
+    background: #00a6b4;
     color: #fff;
     text-decoration: none;
     text-decoration: none;
@@ -384,7 +384,7 @@ p.tag span {
 @media screen and (max-width: 600px) {
   .footer_button2 {
     outline: none;
-    border: 2px solid #d62e2f;
+    border: 2px solid #00a6b4;
     padding: 10px 30px;
     font-size: 14px;
     border-radius: 100px;

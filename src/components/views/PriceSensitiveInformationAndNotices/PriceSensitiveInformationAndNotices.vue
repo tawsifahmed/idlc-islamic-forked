@@ -286,7 +286,7 @@ export default {
   .tabPanel .tab {
     overflow: hidden;
     background-color: #f1f1f1;
-    border-bottom: 2px solid #d62e2f;
+    border-bottom: 2px solid #00a6b4;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -326,7 +326,7 @@ export default {
   }
 
   .tabPanel .tab button.active {
-    background-color: #d62e2f;
+    background-color: #00a6b4;
     color: #fff;
   }
     .vs__dropdown-toggle{
@@ -349,7 +349,7 @@ export default {
   }
   .footer_button_content .footer_button2 {
     outline: none;
-    border: 2px solid #d62e2f;
+    border: 2px solid #00a6b4;
     padding: 10px 30px;
     font-size: 14px;
     border-radius: 100px;
@@ -365,7 +365,7 @@ export default {
 
   .footer_button_content .footer_button2:hover {
     outline: none;
-    border: 2px solid #d62e2f;
+    border: 2px solid #00a6b4;
     padding: 10px 30px;
     font-size: 14px;
     border-radius: 100px;
@@ -373,7 +373,7 @@ export default {
     transition: all 0.3s;
     text-decoration: none;
     color: #ffffff;
-    background-color: #d62e2f;
+    background-color: #00a6b4;
     display: inline-block;
     margin: auto;
     margin-right: 10px;
@@ -381,7 +381,7 @@ export default {
     .categoryBody .mcategory .reason {
         flex-basis: 23%;
         background: rgba(255, 255, 255, 0.15);
-        background: rgba(214, 46, 47, 0.95);
+        background: #00a6b4;
         margin: 10px;
         color: #fff;
         padding: 15px;
@@ -389,7 +389,7 @@ export default {
         transition: all 0.3s;
     }
     .categoryBody .mcategory .reason:hover {
-        background: rgba(214, 46, 47, 1);
+        background: #00a6b4;
     }
     .categoryBody .mcategory .reason a {
         display: block;
@@ -443,7 +443,7 @@ export default {
 
       .footer_button_content .footer_button2[data-v-3b5263a2] {
         outline: none;
-        border: 2px solid #d62e2f;
+        border: 2px solid #00a6b4;
         padding: 10px 30px;
         font-size: 14px;
         border-radius: 100px;
@@ -521,8 +521,8 @@ export default {
 }
 .news_box .news_box_footer .news_box_learnMore_btn{
   display: inline-block;
-  border: 1px solid #d62e2f;
-  color: #d62e2f;
+  border: 1px solid #00a6b4;
+  color: #00a6b4;
   padding: 5px 10px;
   font-size: 12px;
   border-radius: 100px;
@@ -530,11 +530,11 @@ export default {
 }
 .news_box .news_box_footer .news_box_learnMore_btn:hover{
   color: #fff;
-  background: #d62e2f;
+  background: #00a6b4;
   text-decoration: none;
 }
 .news_box .news_box_share{
-  background: #d62e2f;
+  background: #00a6b4;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -651,7 +651,7 @@ export default {
     padding: 15px;
     position: absolute;
     bottom: 0;
-    background: #d62e2f;
+    background: #00a6b4;
     font-size: 14px;
     font-weight: 100%;
     width: 100%;

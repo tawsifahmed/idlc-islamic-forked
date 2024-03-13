@@ -368,7 +368,7 @@
 
 <style scoped>
   .brandColor {
-    color: #d62e2f;
+    color: #00a6b4;
   }
 
   #EMICalculator {
@@ -412,7 +412,7 @@
     outline: none;
     padding: 5px 10px;
     font-size: 14px;
-    color: #d62e2f;
+    color: #00a6b4;
     width: 100%;
   }
 
@@ -434,7 +434,7 @@
     bottom: 5px;
     padding: 0 7px;
     background-color: #fff;
-    color: #d62e2f;
+    color: #00a6b4;
   }
 
   .calculatorForm .depositAmountInput input {
@@ -470,14 +470,14 @@
   #EMICalculator .calculatedAmount .totalAmount {
     font-size: 1.5rem;
     margin-bottom: 15px;
-    color: #d62e2f;
+    color: #00a6b4;
   }
 
   #EMICalculator .calculatedAmount .applyNowButton {
     color: #fff;
     display: inline-block;
     text-decoration: none;
-    background-color: #d62e2f;
+    background-color: #00a6b4;
     padding: 7px 15px;
     font-size: 14px;
     border-radius: 5px;
@@ -568,7 +568,7 @@
   }
 
   #EMICalculator .graphChart .graph .graphDetails .detailSingle:first-child .amt {
-    color: #d62e2f;
+    color: #00a6b4;
   }
 
   #EMICalculator .graphChart .graph .graphDetails .detailSingle .name {
@@ -588,7 +588,7 @@
   }
 
   #EMICalculator .graphChart .graph .graphDetails .detailSingle:first-child .name::before {
-    background-color: #d62e2f;
+    background-color: #00a6b4;
   }
 
   .radioBtn input:checked,
@@ -632,7 +632,7 @@
     top: 3px;
     width: 15px;
     height: 15px;
-    border: 1px solid #d62e2f;
+    border: 1px solid #00a6b4;
     border-radius: 100%;
     background: #fff;
   }
@@ -642,7 +642,7 @@
     content: '';
     width: 9px;
     height: 9px;
-    background: #d62e2f;
+    background: #00a6b4;
     position: absolute;
     top: 6px;
     left: 3px;

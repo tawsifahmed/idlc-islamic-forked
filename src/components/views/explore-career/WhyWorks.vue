@@ -132,7 +132,7 @@
 }
 
 .whyChose .whyChoseBg {
-  background: rgba(214, 46, 47, 0.95);
+  background: #00a6b4;
   height: 100%;
   padding: 100px 0px 70px 0px;
   margin: 0 auto;

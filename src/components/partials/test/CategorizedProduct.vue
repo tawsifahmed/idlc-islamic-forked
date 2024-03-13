@@ -702,7 +702,7 @@
     .categoryBody .mcategory .reason {
         flex-basis: 23%;
         background: rgba(255, 255, 255, 0.15);
-        background: rgba(214, 46, 47, 0.95);
+        background: #00a6b4;
         margin: 10px;
         color: #fff;
         padding: 15px;
@@ -710,7 +710,7 @@
         transition: all 0.3s;
     }
     .categoryBody .mcategory .reason:hover {
-        background: rgba(214, 46, 47, 1);
+        background: #00a6b4;
     }
     .categoryBody .mcategory .reason a {
         display: block;

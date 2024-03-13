@@ -48,8 +48,8 @@ export default {
     margin-top: 20px;
   }
   .page-item.active .page-link {
-    background-color: #d62e2f !important;
-    border-color: #d62e2f !important;
+    background-color: #00a6b4 !important;
+    border-color: #00a6b4 !important;
 }
 .green-finance-initiative {
   padding-bottom: 30px;

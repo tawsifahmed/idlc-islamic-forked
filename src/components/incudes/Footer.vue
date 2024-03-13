@@ -21,21 +21,12 @@
                         </h3>
                         <ul class="list-unstyled f_list onMobileDisplayNone">
                           <li>
-                            <router-link to="/home-loan">Home Loan</router-link>
+                            <router-link to="/deposit-products">Deposit Products</router-link>
                           </li>
                           <li>
-                            <router-link to="/sme-loan">SME Loan</router-link>
+                            <router-link to="/financing-products">Financing Products</router-link>
                           </li>
-                          <li>
-                            <router-link to="/corporate-loan"
-                              >Corporate Loan</router-link
-                            >
-                          </li>
-                          <li>
-                            <router-link to="/term-deposit"
-                              >Deposit</router-link
-                            >
-                          </li>
+                          
                         </ul>
                         <br />
                         <div>
@@ -98,24 +89,24 @@
                         </h3>
                         <ul class="list-unstyled f_list">
                           <li>
-                            <router-link to="/idlc-at-a-glance"
-                              >IDLC at a Glance</router-link
+                            <a target="_blank" href="https://idlc.com/idlc-at-a-glance"
+                              >IDLC at a Glance</a
                             >
                           </li>
                           <li>
-                            <router-link to="/our-management"
-                              >Our Management</router-link
+                            <a target="_blank" href="https://idlc.com/our-management"
+                              >Our Management</a
                             >
                           </li>
                           <li>
-                            <router-link to="/financial-reports"
-                              >Financial Reports</router-link
+                            <a target="_blank" href="https://idlc.com/financial-reports"
+                              >Financial Reports</a
                             >
                           </li>
                           <li>
-                            <router-link
-                              to="/promotions-and-campaigns-news-and-events"
-                              >Promotions & Campaigns</router-link
+                            <a target="_blank"
+                              href="https://idlc.com/promotions-and-campaigns-news-and-events"
+                              >Promotions & Campaigns</a
                             >
                           </li>
                         </ul>
@@ -131,50 +122,10 @@
                           Quick Links
                         </h3>
                         <ul class="list-unstyled f_list">
-                          <li>
-                            <router-link to="download-forms-required-documents"
-                              >Download Forms</router-link
-                            >
-                          </li>
-                          <li>
-                            <router-link to="/e-tender">E-Tender</router-link>
-                          </li>
+                        
                           <li><router-link to="/faq">FAQ</router-link></li>
-                          <li>
-                            <router-link
-                              :to="{
-                                name: 'FeedbackAndComplaintCell',
-                                params: { id: 'Feedback' }
-                              }"
-                            >
-                              Feedback
-                            </router-link>
-                          </li>
-                          <li>
-                            <router-link
-                              :to="{
-                                name: 'FeedbackAndComplaintCell',
-                                params: { id: 'Complaint' }
-                              }"
-                            >
-                              Complaint Cell
-                            </router-link>
-                          </li>
-                          <li>
-                            <router-link to="/apply-for-loan">
-                              Apply for Loan
-                            </router-link>
-                          </li>
-                          <li>
-                            <a href="https://idlc.com/login/login.php">
-                              Customer Login
-                            </a>
-                          </li>
-                          <li>
-                            <router-link to="/citizens-charter">
-                              Citizen's Charter
-                            </router-link>
-                          </li>
+                          <li><router-link to="/shariah-supervisory-committee">Shariah Supervisory Committee</router-link></li>
+                         
                         </ul>
                       </div>
                     </div>
@@ -285,9 +236,8 @@
       </section>
     </footer>
 
-    <div id="quick_menu">
+    <!-- <div id="quick_menu">
       <ul>
-        <!-- <li><a ><img src="img/quick_menu_icons/Apply-for-loan.png" alt=""></a></li> -->
 
         <li
           v-b-tooltip.hover.right="'Let us help'"
@@ -325,7 +275,7 @@
           /></a>
         </li>
       </ul>
-    </div>
+    </div> -->
 
     <!-- <div class="cc-contactpop fixed">
       <h3>Let Us Help You</h3>

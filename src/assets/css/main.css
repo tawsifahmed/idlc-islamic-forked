@@ -116,13 +116,13 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #d62e2f;
+  background: #00a6b4;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #d62e2f;
+  background: #00a6b4;
 }
 * {
   -webkit-box-sizing: border-box;
@@ -380,7 +380,7 @@ b {
 .navSection.navSearch form input {
   width: 100%;
   padding: 5px 10px;
-  border: 1px solid #d62e2e;
+  border: 1px solid #00a6b4;
   background: #fff;
   border-radius: 100px;
   width: 200px;
@@ -405,7 +405,7 @@ b {
   transform: translateX(-27px);
   font-size: 17px;
   cursor: pointer;
-  color: #d62e2f;
+  color: #00a6b4;
   display: none;
 }
 
@@ -482,7 +482,7 @@ b {
 }
 
 .linkContainer:hover > .consumer_icon {
-  border: 2px solid #d62e2f;
+  border: 2px solid #00a6b4;
 }
 
 .sme_icon,
@@ -498,7 +498,7 @@ b {
 
 .linkContainer:hover > .sme_icon,
 .linkContainer:hover > .corporateIcon {
-  border: 2px solid #d62e2f;
+  border: 2px solid #00a6b4;
 }
 
 .globalNav a {
@@ -1423,7 +1423,7 @@ div.globalFooterCard.card-radar {
   background: #f4f4f4;
 }
 .similarProductSection .similarProduct .right .products .product:hover .text a {
-  color: #d62e2f;
+  color: #00a6b4;
   animation: viewmore 0.4s ease-in-out forwards;
 }
 @keyframes viewmore {
@@ -1437,7 +1437,7 @@ div.globalFooterCard.card-radar {
   }
 }
 .similarProductSection .similarProduct .right .products .product:hover h5 {
-  color: #d62e2f;
+  color: #00a6b4;
 }
 
 .similarProductSection .similarProduct .right .products .product:hover .icon_1 {
@@ -1520,7 +1520,7 @@ div.globalFooterCard.card-radar {
 .productFeatures .tab {
   overflow: hidden;
   background-color: #f1f1f1;
-  border-bottom: 2px solid #d62e2f;
+  border-bottom: 2px solid #00a6b4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1547,7 +1547,7 @@ div.globalFooterCard.card-radar {
 }
 
 .productFeatures .tab button.active {
-  background-color: #d62e2f;
+  background-color: #00a6b4;
   color: #fff;
 }
 
@@ -1578,7 +1578,7 @@ div.globalFooterCard.card-radar {
 
 .productFeatures .tabcontent1 .tabcontent1Button {
   outline: none;
-  border: 2px solid #d62e2f;
+  border: 2px solid #00a6b4;
   padding: 10px 30px;
   font-size: 14px;
   border-radius: 100px;
@@ -1596,7 +1596,7 @@ div.globalFooterCard.card-radar {
 }
 
 .productFeatures .tabcontent1 .tabcontent1Button:hover {
-  background: #d62e2f;
+  background: #00a6b4;
   color: #fff;
 }
 
@@ -1611,11 +1611,11 @@ div.globalFooterCard.card-radar {
   }
   .productFeatures .tab .tablinks1:nth-child(1),
   .productFeatures .tab .tablinks1:nth-child(3) {
-    border-right: 1px solid #d62e2f;
+    border-right: 1px solid #00a6b4;
   }
   .productFeatures .tab .tablinks1:nth-child(1),
   .productFeatures .tab .tablinks1:nth-child(2) {
-    border-bottom: 1px solid #d62e2f;
+    border-bottom: 1px solid #00a6b4;
   }
 }
 
@@ -1687,13 +1687,13 @@ div.globalFooterCard.card-radar {
 }
 
 .job_post {
-  border: 1px solid #d62e2f;
+  border: 1px solid #00a6b4;
   margin-bottom: 15px;
   border-radius: 5px;
   transition: all 0.4s;
 }
 .job_post:hover {
-  background: #d62e2f;
+  background: #00a6b4;
   color: #fff;
 }
 .job_post a {
@@ -1729,7 +1729,7 @@ div.globalFooterCard.card-radar {
   bottom: calc(100px);
   z-index: 1000;
   color: rgb(255, 255, 255);
-  background-color: #d62e2f !important;
+  background-color: #00a6b4 !important;
   border-radius: 50%;
 }
 .vue-go-top:active,
@@ -1809,13 +1809,13 @@ div.globalFooterCard.card-radar {
   color: #fff;
 }
 .nav-pills.nav-wizard > li.active:not(:last-child) a:after {
-  border-color: transparent transparent transparent #d62e2f !important;
+  border-color: transparent transparent transparent #00a6b4 !important;
 }
 .nav-pills.nav-wizard > li.active:not(:first-child) a:before {
-  border-color: #d62e2f #d62e2f #d62e2f transparent;
+  border-color: #00a6b4 #00a6b4 #00a6b4 transparent;
 }
 .nav-pills.nav-wizard > li.active a {
-  background-color: #d62e2f !important;
+  background-color: #00a6b4 !important;
   color: #fff !important;
 }
 .tabStatus {
@@ -1842,12 +1842,12 @@ div.globalFooterCard.card-radar {
   width: 50px !important;
 }
 .btn-warning {
-  background-color: #d62e2f;
+  background-color: #00a6b4;
   color: #fff;
 }
 .card-footer > .btn-group > button.btn {
   outline: none !important;
-  border: 2px solid #d62e2f !important;
+  border: 2px solid #00a6b4 !important;
   padding: 10px 30px !important;
   font-size: 14px !important;
   border-radius: 100px !important;
@@ -1860,7 +1860,7 @@ div.globalFooterCard.card-radar {
   margin-right: 10px !important;
 }
 .card-footer > .btn-group > button.btn:hover {
-  background-color: #d62e2f !important;
+  background-color: #00a6b4 !important;
   color: #fff !important;
 }
 option:hover {
@@ -1892,7 +1892,7 @@ option:hover {
   transition: all 0.3s;
 }
 .pdfDownloadItem:hover {
-  border: 1px solid #d62e2f;
+  border: 1px solid #00a6b4;
   overflow: hidden;
   border-radius: 5px;
   margin-bottom: 15px;
@@ -1905,7 +1905,7 @@ option:hover {
   transition: all 0.3s;
 }
 .pdfDownloadItem:hover p {
-  color: #d62e2f;
+  color: #00a6b4;
 }
 .pdfDownloadItem .d_button {
   color: inherit;
@@ -1915,10 +1915,10 @@ option:hover {
   transition: all 0.3s;
 }
 .pdfDownloadItem:hover .d_button {
-  color: #d62e2f;
+  color: #00a6b4;
 }
 .pdfDownloadItem .d_button:hover {
-  background: #d62e2f;
+  background: #00a6b4;
   color: #fff;
 }
 .pdfDownloadItem .d_button img {

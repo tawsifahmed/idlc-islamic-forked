@@ -137,7 +137,7 @@ export default {
   margin-bottom: 2.5rem;
 }
 .commitment_card {
-  background: #d62e2f;
+  background: #00a6b4;
   color: #f1f1f1;
   flex-basis: calc(33.33% - 20px);
   padding: 1.5rem 2rem;
@@ -204,7 +204,7 @@ export default {
 .customPopUp .commitmentModalBody {
   flex-direction: row;
   position: relative;
-  border: 1px solid #d62e2f;
+  border: 1px solid #00a6b4;
 }
 .customPopUp .commitmentModalBody .closeCommitmentModal {
   position: absolute;
@@ -238,7 +238,7 @@ export default {
 }
 .customPopUp .commitmentModalBody .commitmentModalContent .title {
   position: relative;
-  background: #d62e2f;
+  background: #00a6b4;
   padding: 7px 5px;
 }
 .customPopUp .commitmentModalBody .commitmentModalContent .title::before {
@@ -248,7 +248,7 @@ export default {
   top: 0;
   height: 100%;
   width: 7px;
-  background: #d62e2f;
+  background: #00a6b4;
 }
 .customPopUp .commitmentModalBody .commitmentModalContent .title h6 {
   color: #fff;

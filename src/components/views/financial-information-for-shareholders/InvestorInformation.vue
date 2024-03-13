@@ -187,7 +187,7 @@
 <style scoped>
 
   .error_message {
-    color: #d62e2f;
+    color: #00a6b4;
     font-size: 14px;
   }
 
@@ -237,14 +237,14 @@
     padding: 7px 15px;
     font-size: 14px;
     border-radius: 5px;
-    border: 1px solid #d62e2e7c;
+    border: 1px solid #00a6b47c;
   }
 
   .tabcontent1Button {
     padding: 5px 20px;
     background: #fff;
     outline: none;
-    border: 2px solid #d62e2f;
+    border: 2px solid #00a6b4;
     font-size: 14px;
     border-radius: 100px;
     color: #333;
@@ -255,7 +255,7 @@
   }
 
   .tabcontent1Button:hover {
-    background: #d62e2f;
+    background: #00a6b4;
     color: #fff;
   }
 

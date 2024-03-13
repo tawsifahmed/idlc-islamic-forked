@@ -113,7 +113,7 @@
     min-height: 200px;
     /*background-color: red;*/
 
-    border: 1px solid #d62e2f;
+    border: 1px solid #00a6b4;
     position: relative;
     margin-bottom: 20px;
   }

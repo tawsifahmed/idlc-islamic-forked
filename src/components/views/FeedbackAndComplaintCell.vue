@@ -489,7 +489,7 @@
 </script>
 <style lang="" scoped>
   .error_message {
-    color: #d62e2f;
+    color: #00a6b4;
     font-size: 14px;
   }
 
@@ -530,7 +530,7 @@
 
   .categoryBody .mcategory .reason {
     flex-basis: 23%;
-    background: rgba(214, 46, 47, 0.95);
+    background: #00a6b4;
     margin: 10px;
     color: #fff;
     padding: 15px;
@@ -539,7 +539,7 @@
   }
 
   .categoryBody .mcategory .reason:hover {
-    background: rgba(214, 46, 47, 1);
+    background: #00a6b4;
   }
 
   .categoryBody .mcategory .reason a {
@@ -692,8 +692,8 @@
 
   .news_box .news_box_footer .news_box_learnMore_btn {
     display: inline-block;
-    border: 1px solid #d62e2f;
-    color: #d62e2f;
+    border: 1px solid #00a6b4;
+    color: #00a6b4;
     padding: 5px 10px;
     font-size: 12px;
     border-radius: 100px;
@@ -702,12 +702,12 @@
 
   .news_box .news_box_footer .news_box_learnMore_btn:hover {
     color: #fff;
-    background: #d62e2f;
+    background: #00a6b4;
     text-decoration: none;
   }
 
   .news_box .news_box_share {
-    background: #d62e2f;
+    background: #00a6b4;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -816,7 +816,7 @@
     list-style: none !important;
   }
   .product-card {
-  background: #d62e2f;
+  background: #00a6b4;
   color: #fff;
   margin-bottom: 5px;
 }

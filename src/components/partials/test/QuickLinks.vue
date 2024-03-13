@@ -270,7 +270,7 @@ export default {
         transition: all 0.4s;
     }
     .quickLinks_career_box:hover .heighlightedText{
-        color: #d62e2f;
+        color: #00a6b4;
     }
     .quickLinks_career_box .headPart .icon img{
         width: 100%;
@@ -314,7 +314,7 @@ export default {
     }
     .quickLinks_career_box .headPart .Text a:hover p{
         font-size: 14px;
-        color: #d62e2f;
+        color: #00a6b4;
         text-decoration: none;
     }
     .quickLinks_career_box:hover .headPart .Text a{
@@ -341,7 +341,7 @@ export default {
         font-size: 14px
     }
     .quickLinks_career_box .jobs a:hover{
-        color: #d62e2f;
+        color: #00a6b4;
         text-decoration: none;
     }
     .quickLinks_career_box.review {
@@ -387,7 +387,7 @@ export default {
   display: inline-block;
   font-size: 2.6rem;
   line-height: 2.6rem;
-  color: #d62e2f;
+  color: #00a6b4;
   cursor: pointer;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
@@ -404,12 +404,12 @@ export default {
   cursor: pointer;
   background: #fff;
   padding: 4px 10px;
-  border: 2px solid #d62e2f;
+  border: 2px solid #00a6b4;
   border-radius: 30px;
   text-decoration: none;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
-  color: #d62e2f;
+  color: #00a6b4;
 }
 .cardTop h2 {
   padding-bottom: 1.25rem;
@@ -479,7 +479,7 @@ export default {
 .fundCard .cardTop:before {
   content: "";
   position: absolute;
-  background: rgba(214, 46, 47, 0.95);
+  background: #00a6b4;
   -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;
   -ms-transition: all 0.3s ease-in;
@@ -508,7 +508,7 @@ export default {
 .fundCard .cardBottom {
   padding: 1rem 1rem;
   border-top: solid 1px #dcdcdc;
-  background-color: #d62e2f;
+  background-color: #00a6b4;
   width: 100%;
   transition: all 0.3s;
 }

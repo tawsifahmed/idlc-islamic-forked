@@ -493,7 +493,7 @@
   .tabPanel .tab {
     overflow: hidden;
     background-color: #f1f1f1;
-    border-bottom: 2px solid #d62e2f;
+    border-bottom: 2px solid #00a6b4;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -526,7 +526,7 @@
   }
 
   .tabPanel .tab button.active {
-    background-color: #d62e2f;
+    background-color: #00a6b4;
     color: #fff;
   }
 
@@ -545,7 +545,7 @@
 
   .tabPanel .tabcontent1 .tabcontent1Button {
     outline: none;
-    border: 2px solid #d62e2f;
+    border: 2px solid #00a6b4;
     padding: 10px 30px;
     font-size: 14px;
     border-radius: 100px;
@@ -625,7 +625,7 @@
     -webkit-transition: 0.3s;
     transition: 0.3s;
     font-size: 14px;
-    background-color:#d62e2f;
+    background-color:#00a6b4;
     color: #fff;
   }
 @media screen and (max-width: 600px){
@@ -637,7 +637,7 @@
   }
   .tabPanel .subTab button.active {
     background-color: #f2f2f2;
-    color: #d62e2f;
+    color: #00a6b4;
   }
   .tabPanel  .subTabContent {
     overflow-x: scroll;
@@ -707,7 +707,7 @@
     padding: 15px;
     position: absolute;
     bottom: 0;
-    background: #d62e2f;
+    background: #00a6b4;
     font-size: 14px;
     font-weight: 100%;
     width: 100%;
@@ -752,7 +752,7 @@
 
   .footer_button .tabcontent1Button{
     outline: none;
-    border: 2px solid #d62e2f;
+    border: 2px solid #00a6b4;
     padding: 10px 30px;
     font-size: 14px;
     border-radius: 100px;
@@ -765,7 +765,7 @@
   }
    .tabcontent1Button{
     outline: none;
-    border: 2px solid #d62e2f;
+    border: 2px solid #00a6b4;
     padding: 10px 30px;
     font-size: 14px;
     border-radius: 100px;
@@ -788,7 +788,7 @@
     margin-right: 20px;
     text-decoration: none;
     color: #ffffff;
-    background-color: #d62e2f;
+    background-color: #00a6b4;
     display: inline-block;
   }
 
@@ -798,13 +798,13 @@
 
 
 .tabcontent1Button:hover {
-  background-color: #d62e2f;
+  background-color: #00a6b4;
   color: #fff !important;
 }
 
 
   .product-card {
-  background: #d62e2f;
+  background: #00a6b4;
   color: #fff;
   margin-bottom: 5px;
 }

@@ -416,7 +416,7 @@
   .categoryBody .mcategory .reason {
     flex-basis: 23%;
     background: rgba(255, 255, 255, 0.15);
-    background: rgba(214, 46, 47, 0.95);
+    background: #00a6b4;
     margin: 10px;
     color: #fff;
     padding: 15px;
@@ -425,7 +425,7 @@
   }
 
   .categoryBody .mcategory .reason:hover {
-    background: rgba(214, 46, 47, 1);
+    background: #00a6b4;
   }
 
   .categoryBody .mcategory .reason a {
@@ -465,7 +465,7 @@
   }
 
   .container-lg .tab {
-    border-bottom: 2px solid #d62e2f;
+    border-bottom: 2px solid #00a6b4;
   }
 
   .categoryDetails .tabcontent1 {
@@ -478,7 +478,7 @@
     }
 
     .tablinks1 {
-      border: 2px solid #d62e2f !important;
+      border: 2px solid #00a6b4 !important;
     }
 
     .tablinks1.active {
@@ -573,8 +573,8 @@
 
   .news_box .news_box_footer .news_box_learnMore_btn {
     display: inline-block;
-    border: 1px solid #d62e2f;
-    color: #d62e2f;
+    border: 1px solid #00a6b4;
+    color: #00a6b4;
     padding: 5px 10px;
     font-size: 12px;
     border-radius: 100px;
@@ -583,12 +583,12 @@
 
   .news_box .news_box_footer .news_box_learnMore_btn:hover {
     color: #fff;
-    background: #d62e2f;
+    background: #00a6b4;
     text-decoration: none;
   }
 
   .news_box .news_box_share {
-    background: #d62e2f;
+    background: #00a6b4;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -649,7 +649,7 @@
 
 
   .tab button.active {
-    background-color: #d62e2f !important;
+    background-color: #00a6b4 !important;
     color: #fff !important;
   }
 
@@ -702,7 +702,7 @@
 
   .footer_button .tabcontent1Button {
     outline: none;
-    border: 2px solid #d62e2f;
+    border: 2px solid #00a6b4;
     padding: 10px 30px;
     font-size: 14px;
     border-radius: 100px;
@@ -723,13 +723,13 @@
     transition: all 0.3s;
     text-decoration: none;
     color: #ffffff;
-    background-color: #d62e2f;
+    background-color: #00a6b4;
     display: inline-block;
   }
 
   .tabcontent1Button {
     outline: none;
-    border: 2px solid #d62e2f;
+    border: 2px solid #00a6b4;
     padding: 10px 30px;
     font-size: 14px;
     border-radius: 100px;
@@ -742,8 +742,8 @@
   }
 
   .tabcontent1Button:hover {
-    border: 2px solid #d62e2f;
-    background: #d62e2f;
+    border: 2px solid #00a6b4;
+    background: #00a6b4;
     color: #fff;
   }
 

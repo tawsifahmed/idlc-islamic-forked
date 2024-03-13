@@ -123,7 +123,7 @@ margin-bottom: 30px;
 }
 
 .productWhychoose .productWhychooseImgBg {
-  background: rgba(214, 46, 47, 0.95);
+  background: #00a6b4;
   padding: 125px 100px 100px 100px;
   height: 625px;
 }
