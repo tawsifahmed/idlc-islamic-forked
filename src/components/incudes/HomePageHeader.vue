@@ -46,7 +46,7 @@
               </router-link>
 
             </li>
-            <li class="drop_arrow">
+            <!-- <li class="drop_arrow">
               About Us
               <ul class="desktop_menu_sub">
                 <div class="desktop_menu_sub_blocks desktop_menu_sub_blocks_3">
@@ -118,15 +118,15 @@
                       </a>
                     </li>
                   </div>
-                  
+
                 </div>
               </ul>
-            </li>
+            </li> -->
             <!--  -->
 
           </ul>
           <ul>
-            <li style="position: relative;">
+            <!-- <li style="position: relative;">
               <a
                 class="rootLink item-company colorize"
                 style="padding: 10px 10px 0 10px; "
@@ -154,17 +154,17 @@
                   </li>
                 </ul>
               </div>
-            </li>
+            </li> -->
           </ul>
 
-          <router-link
+          <!-- <router-link
             v-b-tooltip.hover.bottom="'Locate Us'"
             class="rootLink item-company colorize"
             style="padding: 10px 10px 0 10px"
             :to="{ name: 'ContactUs', params: { branchId: '0' } }"
           >
             <div class="mainmenuIcon comparisonIcon"></div>
-          </router-link>
+          </router-link> -->
         </li>
 
         <li class="navSection secondary" style="display: none">

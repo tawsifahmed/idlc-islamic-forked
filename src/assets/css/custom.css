@@ -1192,7 +1192,7 @@ section.footer-bottom ul li + li::before {
 
 .topShape .circle {
   position: absolute;
-  background: #cf2829;
+  background: #00a6b4;
 }
 
 .topShape #circle1 {
@@ -1235,7 +1235,7 @@ section.footer-bottom ul li + li::before {
 }
 
 .topShape #circle4 {
-  background: #d62e2d;
+  background: #00a6b4;
   border-radius: 125rem/110rem;
   height: 78rem;
   -webkit-transform: rotate(25deg);
@@ -2357,11 +2357,11 @@ table.fc-scrollgrid-sync-table a{
   .upCVandLNButtons {
     flex-direction: column;
   }
-  
+
   .upCVandLNButtons .upCVandLNButton {
     padding: 15px;
   }
-  
+
   .upCVandLNButtons .upCVandLNButton:not(:last-child) {
     margin-bottom: 20px;
   }

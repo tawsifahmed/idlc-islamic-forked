@@ -157,10 +157,9 @@
             >FAQ</router-link
           >
         </li>
-        <li class="sidenavLinks">
+        <!-- <li class="sidenavLinks">
           <a
             >
-            <!-- <img src="~@/assets/img/mobile_menu/About-Us.png" alt="" /> -->
             About Us
           </a>
           <ul styl="margin-left:25px" id="collapseAbout1">
@@ -177,8 +176,8 @@
               <router-link to="/news-and-events">News & Events</router-link>
             </li>
           </ul>
-        </li>
-        <li class="sidenavLinks quick" @click="closeNav">
+        </li> -->
+        <!-- <li class="sidenavLinks quick" @click="closeNav">
           <router-link to="/get-in-touch-with-us"
             ><img src="~@/assets/img/favoriteIcon/Get in touch.png" alt="" />Get
             in Touch
@@ -191,7 +190,7 @@
               alt=""
             />Locate Us</router-link
           >
-        </li>
+        </li> -->
       </ul>
     </div>
     <div
