@@ -23,10 +23,10 @@
 
                     <div :id="faq_tab_id"  class="tabcontent1" style="display: block;">
                       <b-card  class="product-card">
-                        <a  v-b-toggle.collapse-1  class="d-flex">
+                        <a   class="d-flex">
                           <strong class="question_product">{{ selectedTabName}}</strong>
-                          <strong v-if="isVisible" aria-hidden="true" class="ml-auto">-</strong>
-                          <strong v-else aria-hidden="true" class="ml-auto">+</strong>
+                          <!-- <strong v-if="isVisible" aria-hidden="true" class="ml-auto ">-</strong>
+                          <strong v-else aria-hidden="true" class="ml-auto d-none">+</strong> -->
                         </a>
 
                         <b-collapse id="collapse-1"  style="display: block;">
@@ -86,7 +86,6 @@
         axios.get('get-faq-tab').then((response) => {
           if (response.status == 200) {
             this.faqTabs = response.data.details;
-            console.log('faqTabs', this.faqTabs);
           }else{
             console.log(response);
           }
@@ -129,7 +128,7 @@
       }else{
         this.getFaq(7);
       }
-      
+
 
     },
 
