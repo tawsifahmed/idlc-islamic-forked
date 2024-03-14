@@ -26,7 +26,7 @@
                           <li>
                             <router-link to="/financing-products">Financing Products</router-link>
                           </li>
-                          
+
                         </ul>
                         <br />
                         <div>
@@ -93,22 +93,6 @@
                               >IDLC at a Glance</a
                             >
                           </li>
-                          <li>
-                            <a target="_blank" href="https://idlc.com/our-management"
-                              >Our Management</a
-                            >
-                          </li>
-                          <li>
-                            <a target="_blank" href="https://idlc.com/financial-reports"
-                              >Financial Reports</a
-                            >
-                          </li>
-                          <li>
-                            <a target="_blank"
-                              href="https://idlc.com/promotions-and-campaigns-news-and-events"
-                              >Promotions & Campaigns</a
-                            >
-                          </li>
                         </ul>
                       </div>
                     </div>
@@ -122,10 +106,10 @@
                           Quick Links
                         </h3>
                         <ul class="list-unstyled f_list">
-                        
+
                           <li><router-link to="/faq">FAQ</router-link></li>
                           <li><router-link to="/shariah-supervisory-committee">Shariah Supervisory Committee</router-link></li>
-                         
+
                         </ul>
                       </div>
                     </div>
@@ -201,7 +185,7 @@
         </div>
       </section>
 
-      <section class="footer-bottom" style="background-color: #161616;">
+      <!-- <section class="footer-bottom" style="background-color: #161616;">
         <div class="container">
           <ul>
             <li>
@@ -233,7 +217,7 @@
             <li><router-link to="#">ACC Hotline Number - 106</router-link></li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </footer>
 
     <!-- <div id="quick_menu">

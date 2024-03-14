@@ -25,11 +25,11 @@
           <vue-typed-js
             :strings="[
               'Search...',
-              'Home Loan',
-              'Car Loan',
-              'Personal Loan',
-              'SME Term Loan',
-              'Working Capital Loan'
+                'IDLC Islamic',
+                'Shariah Supervisory Committee',
+                'Financing Products',
+                'Deposit Products',
+                'FAQ'
             ]"
             :loop="true"
             :attr="'placeholder'"
@@ -234,9 +234,9 @@
     </div>
 
     <div class="mobile_menu_bar">
-      <router-link to="/apply-for-loan">
+      <!-- <router-link to="/apply-for-loan">
         <img src="~@/assets/img/menu_icon/Loan.png" alt="" />
-      </router-link>
+      </router-link> -->
       <!-- <button class="footer_serch"><i class="fa fa-search"></i></button> -->
       <a class="footer_menu" @click="openNav">
         <img
@@ -245,9 +245,9 @@
           style="width: 100%; filter: invert(1);"
         />
       </a>
-      <a href="https://idlc.com/login/login.php">
+      <!-- <a href="https://idlc.com/login/login.php">
         <img src="~@/assets/img/menu_icon/Log-IN.png" alt="" />
-      </a>
+      </a> -->
     </div>
   </div>
 </template>

@@ -777,11 +777,11 @@
             <vue-typed-js
               :strings="[
                 'Search...',
-                'SME Loan',
-                'Home Loan',
-                'Corporate Loan',
-                'Deposit',
-                'Jobs'
+                'IDLC Islamic',
+                'Shariah Supervisory Committee',
+                'Financing Products',
+                'Deposit Products',
+                'FAQ'
               ]"
               :loop="true"
               :attr="'placeholder'"

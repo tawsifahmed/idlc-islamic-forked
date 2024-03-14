@@ -31,7 +31,7 @@ export default {
     title: 'Financing Products',
     meta: [
       { name: 'description', content: 'Apply for Small Business Loan, Women Entrepreneur Loan, SME Loan Online at flexible terms and interest rates' },
-      { name: 'keywords', content: 'Financing Products, SME, Business Loan, Small Business, Women Entrepreneur, Startup, Loan, calculator, new business, Interest Rate, Eligibility, Criteria, Entreprenuer, business man, term loan, shop' },
+      { name: 'keywords', content: 'Financing Products, SME, Islamic Finance, Small Business, Loan, new business, Interest Rate, Eligibility, Criteria, Entreprenuer, business man, term loan, shop' },
     ]
   },
   name: 'Financing-Products',

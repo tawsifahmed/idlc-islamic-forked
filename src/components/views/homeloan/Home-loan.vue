@@ -34,7 +34,7 @@ export default {
     title: 'Deposit Products',
     meta: [
       { name: 'description', content: 'Deposit Products' },
-      { name: 'keywords', content: 'Deposit Products, Housing Loan, Apartment Loan, Affordable Home Loan, Interest Rate, Mortgage, Home Loan Calculator, Interest rate' },
+      { name: 'keywords', content: 'Deposit Products, IDLC Islamic, Financing Products, Islamic Finance, Interest Rate' },
     ]
   },
   name: 'Home-loan',

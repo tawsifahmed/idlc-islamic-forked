@@ -188,62 +188,6 @@
         </div>
       </div>
     </div>
-    <!--Product Feature  Part End-->
-    <!-- <app-latest-news-slide/> -->
-    <!--Latest news and updates part start-->
-
-    <!--Latest news and updates part start-->
-    <!-- <app-why-choose/> -->
-    <!--Why Chose Part Start-->
-    <!-- <div class="whyChose">
-      <div class="top_curve"></div>
-      <div class="whyChoseBg">
-        <div class="container-lg">
-          <div class="header">
-            <h2 class="h2Responsive">WHY CHOOSE IDLC?</h2>
-          </div>
-          <div class="body">
-            <div class="reason">
-              <img
-                :src="homePageLowerTabContent.why_choose_one_image"
-                alt=""
-                v-if="homePageLowerTabContent"
-              />
-              <h5>{{ homePageLowerTabContent.why_choose_one_title }}</h5>
-              <div class="line"></div>
-              <p>{{ homePageLowerTabContent.why_choose_one_subtitle }}</p>
-            </div>
-            <div class="reason">
-              <img :src="homePageLowerTabContent.why_choose_two_image" alt="" />
-              <h5>{{ homePageLowerTabContent.why_choose_two_title }}</h5>
-              <div class="line"></div>
-              <p>{{ homePageLowerTabContent.why_choose_two_subtitle }}</p>
-            </div>
-            <div class="reason">
-              <img
-                :src="homePageLowerTabContent.why_choose_three_image"
-                alt=""
-              />
-              <h5>{{ homePageLowerTabContent.why_choose_three_title }}</h5>
-              <div class="line"></div>
-              <p>{{ homePageLowerTabContent.why_choose_three_subtitle }}</p>
-            </div>
-            <div class="reason">
-              <img
-                :src="homePageLowerTabContent.why_choose_four_image"
-                alt=""
-              />
-              <h5>{{ homePageLowerTabContent.why_choose_four_title }}</h5>
-              <div class="line"></div>
-              <p>{{ homePageLowerTabContent.why_choose_four_subtitle }}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="bottom_curve"></div>
-    </div> -->
-    <!--Why Chose Part End-->
-    <!-- <app-quick-links/> -->
 
     <app-footer />
   </div>
@@ -260,17 +204,17 @@ import axios from "axios";
 
 export default {
   metaInfo: {
-    title: "IDLC Finance PLC - Loans, Deposits, SME and Corporate Finance",
+    title: "IDLC Islamic",
     meta: [
       {
         name: "description",
         content:
-          "IDLC is the Largest Non-Banking Financial Institution in Bangladesh. See what the largest NBFI in Bangladesh has to offer for all your financial needs"
+          "IDLC Islamic is the islamic financing window of IDLC Finance PLC. Objective of IDLC Islamic is to deliver Shariah compliance - in principle, in practice - in the deposit as well financing products it offers to the clients."
       },
       {
         name: "keywords",
         content:
-          "bank, banking, deposit, loan, nbfi, bangladesh, apply loan, nbfi in Bangladesh, Bangladesh"
+          "idlc, banking, deposit, loan, nbfi, bangladesh, apply loan, nbfi in Bangladesh, Bangladesh, islamic finance"
       }
     ]
   },
