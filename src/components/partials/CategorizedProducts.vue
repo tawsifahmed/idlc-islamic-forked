@@ -142,7 +142,7 @@
               {{ itemData.name }}
             </h2>
             <h6 class="categoriesTagline">{{ itemData.product_tagline }}</h6>
-            <span v-html="itemData.description"></span>
+            <span class="specific-product-details" v-html="itemData.description"></span>
           </div>
         </div>
 
@@ -666,6 +666,10 @@ export default {
   .mcategory {
     display: block !important;
   }
+}
+
+.specific-product-details{
+  font-size: 13.75px;
 }
 
 </style>

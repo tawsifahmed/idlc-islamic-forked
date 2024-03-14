@@ -11,7 +11,7 @@
         {{ contentData.second_title }}
       </h2>
       <h6>{{ contentData.tagline }}</h6>
-      <span v-html="contentData.description"></span>
+      <span class="product-description" v-html="contentData.description"></span>
     </div>
     <!--    //page heading end-->
 
@@ -107,5 +107,7 @@ export default {
 }
 </script>
 <style scoped>
-
+.product-description{
+  font-size: 14px;
+}
 </style>
