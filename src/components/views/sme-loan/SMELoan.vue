@@ -12,7 +12,7 @@
         {{ contentData.second_title }}
       </h2>
       <h6>{{ contentData.tagline }}</h6>
-      <span v-html="contentData.description"></span>
+      <span class="product-description" v-html="contentData.description"></span>
     </div>
     <!--    //page heading end-->
     <app-categorized-product />
@@ -112,6 +112,11 @@ export default {
 table tbody tr td {
       /* border: 1px solid #333; */
       padding: 10px;
+  }
+
+
+  .product-description{
+    font-size: 14px;
   }
 </style>
 
