@@ -25,145 +25,14 @@ const OurManagement = resolve => {
     resolve(require("../components/views/our-management/OurManagement"));
   });
 };
-const ContactUs = resolve => {
-  require.ensure(["../components/views/contact-us/ContactUs"], () => {
-    resolve(require("../components/views/contact-us/ContactUs"));
-  });
-};
+
 
 const FAQ = resolve => {
   require.ensure(["../components/views/faq/FAQ"], () => {
     resolve(require("../components/views/faq/FAQ"));
   });
 };
-const ProductBrochure = resolve => {
-  require.ensure(
-    ["../components/views/product-brochure/ProductBrochure"],
-    () => {
-      resolve(require("../components/views/product-brochure/ProductBrochure"));
-    }
-  );
-};
 
-const OurAchivement = resolve => {
-  require.ensure(["../components/views/our-achivement/OurAchivement"], () => {
-    resolve(require("../components/views/our-achivement/OurAchivement"));
-  });
-};
-const NewsAndEvents = resolve => {
-  require.ensure(["../components/views/news-events/NewsAndEvents"], () => {
-    resolve(require("../components/views/news-events/NewsAndEvents"));
-  });
-};
-const News = resolve => {
-  require.ensure(["../components/views/news-events/News"], () => {
-    resolve(require("../components/views/news-events/News"));
-  });
-};
-const TheWorldOfIDLC = resolve => {
-  require.ensure(["../components/views/world-of-idlc/TheWorldOfIDLC"], () => {
-    resolve(require("../components/views/world-of-idlc/TheWorldOfIDLC"));
-  });
-};
-const GreenFinance = resolve => {
-  require.ensure(["../components/views/green-finance/GreenFinance"], () => {
-    resolve(require("../components/views/green-finance/GreenFinance"));
-  });
-};
-const UnepFIActivities = resolve => {
-  require.ensure(
-    ["../components/views/unep-fi-activities/UnepFIActivities"],
-    () => {
-      resolve(
-        require("../components/views/unep-fi-activities/UnepFIActivities")
-      );
-    }
-  );
-};
-const ExploreCareerAtIDLC = resolve => {
-  require.ensure(
-    ["../components/views/explore-career/ExploreCareerAtIDLC"],
-    () => {
-      resolve(
-        require("../components/views/explore-career/ExploreCareerAtIDLC")
-      );
-    }
-  );
-};
-const ApplyForJobs = resolve => {
-  require.ensure(["../components/views/apply-for-job/ApplyForJobs"], () => {
-    resolve(require("../components/views/apply-for-job/ApplyForJobs"));
-  });
-};
-const PriceSensitiveInformationAndNotices = resolve => {
-  require.ensure(
-    [
-      "../components/views/PriceSensitiveInformationAndNotices/PriceSensitiveInformationAndNotices"
-    ],
-    () => {
-      resolve(
-        require("../components/views/PriceSensitiveInformationAndNotices/PriceSensitiveInformationAndNotices")
-      );
-    }
-  );
-};
-const BranchLoacator = resolve => {
-  require.ensure(["../components/views/contact-us/branch-locator"], () => {
-    resolve(require("../components/views/contact-us/branch-locator"));
-  });
-};
-const Calculators = resolve => {
-  require.ensure(["../components/views/calculators/Calculators"], () => {
-    resolve(require("../components/views/calculators/Calculators"));
-  });
-};
-const AppliedCareer = resolve => {
-  require.ensure(["../components/views/apply-resume/AppliedCareer"], () => {
-    resolve(require("../components/views/apply-resume/AppliedCareer"));
-  });
-};
-const Sitemap = resolve => {
-  require.ensure(["../components/views/Sitemap"], () => {
-    resolve(require("../components/views/Sitemap"));
-  });
-};
-
-const WarningMessage = resolve => {
-  require.ensure(["../components/views/WarningMessage"], () => {
-    resolve(require("../components/views/WarningMessage"));
-  });
-};
-const OurCommitments = resolve => {
-  require.ensure(
-    ["../components/views/our-commitments/OurCommitments.vue"],
-    () => {
-      resolve(
-        require("../components/views/our-commitments/OurCommitments.vue")
-      );
-    }
-  );
-};
-
-const CorporateGovernance = resolve => {
-  require.ensure(
-    ["../components/views/corporate-governance/CorporateGovernance"],
-    () => {
-      resolve(
-        require("../components/views/corporate-governance/CorporateGovernance")
-      );
-    }
-  );
-};
-const Dividend = resolve => {
-  require.ensure(["../components/views/dividend/Dividend"], () => {
-    resolve(require("../components/views/dividend/Dividend"));
-  });
-};
-const CitizensCharter = resolve => {
-  require.ensure(["../components/views/citizens-charter/citizens-charter"], () => {
-    resolve(require("../components/views/citizens-charter/citizens-charter"));
-  });
-};
 
 
 Vue.use(Router);
@@ -455,15 +324,15 @@ export default new Router({
     //   },
     //   component: DownloadFormsRequiredDocuments
     // },
-    {
-      path: "/contact-us/:branchId",
-      name: "ContactUs",
-      meta: {
-        title: "Contact Us",
-        description: "We are There to Help"
-      },
-      component: ContactUs
-    },
+    // {
+    //   path: "/contact-us/:branchId",
+    //   name: "ContactUs",
+    //   meta: {
+    //     title: "Contact Us",
+    //     description: "We are There to Help"
+    //   },
+    //   component: ContactUs
+    // },
     // {
     //   path: "/promotions-and-campaigns-news-and-events",
     //   name: "Promotions And Campaigns News And Events",
@@ -619,16 +488,16 @@ export default new Router({
     //   },
     //   component: AppliedCareer
     // },
-    {
-      path: "/sitemap",
-      name: "Sitemap",
-      meta: {
-        title: "Sitemap",
-        description: "IDLC Sitemap",
-        seo_keyword: ""
-      },
-      component: Sitemap
-    },
+    // {
+    //   path: "/sitemap",
+    //   name: "Sitemap",
+    //   meta: {
+    //     title: "Sitemap",
+    //     description: "IDLC Sitemap",
+    //     seo_keyword: ""
+    //   },
+    //   component: Sitemap
+    // },
     // {
     //   path: "/warning-message",
     //   name: "WarningMessage",
