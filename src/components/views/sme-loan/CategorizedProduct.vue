@@ -87,7 +87,7 @@
                         class="reason productsItem"
                         :data-id="productData[i].id"
                       >
-                        <a>
+                        <a class="product-card">
                           <h6>
                             {{ productData[i].title }}
                           </h6>

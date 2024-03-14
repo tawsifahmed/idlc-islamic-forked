@@ -557,6 +557,7 @@ export default {
 }
 .categoryBody .categories .reason a h6 {
   color: #fff;
+  height: 30%;
 }
 .categoryBody .categories .reason a img {
   transition: all 0.3s;
@@ -573,6 +574,7 @@ export default {
 }
 .categoryBody .reason a {
   text-decoration: none;
+  height: 100%;
 }
 
 .categoryBody .reason:hover .nextArrow a .arrow {
@@ -665,4 +667,5 @@ export default {
     display: block !important;
   }
 }
+
 </style>
