@@ -7,23 +7,21 @@
           {{ this.$parent.contentData.page_name }}
         </h2>
         <div class="container-lg"   v-show="isPlaceholder" >
-          <vue-content-loading :width="300" :height="115"  >
+          <!-- <vue-content-loading :width="300" :height="115"  >
             <img @load="onImageLoad" hidden>
             <rect  x="0" y="0" rx="2" ry="2" width="300" height="105" />
-          </vue-content-loading>
+          </vue-content-loading> -->
         </div>
 
 
         <div class="container-lg" v-show="isImageLoaded">
-          <div class="slider">
+          <!-- <div class="slider">
             <div class="item">
               <picture>
-                <!--                <source :srcset="this.$parent.contentData.static_image" media="(max-width: 600px)">-->
-                <!--                <source :srcset="this.$parent.contentData.static_image">-->
                 <img :src="this.$parent.contentData.static_image" alt="Slider Image" @load="onImageLoad">
               </picture>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

@@ -268,6 +268,7 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     margin-bottom: 30px;
+    margin-top: 50px;
   }
 
   .ourManagement .ourManagementImgBg {

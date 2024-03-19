@@ -15,7 +15,7 @@
       <span class="product-description" v-html="contentData.description"></span>
     </div>
     <!--    //page heading end-->
-    <app-categorized-product />
+    <app-categorized-product class="mb-5" />
     <!-- <app-success-strories-button /> -->
     <app-footer />
 

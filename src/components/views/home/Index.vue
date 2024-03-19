@@ -257,7 +257,7 @@ export default {
       axios
         .get(`homepage-slider?shortcode=Home`)
         .then(res =>{
-          console.log('res =>', res)
+         
           const sliders = res.data
           // sliders.forEach(slider => {
           //   console.log('slider =>', slider)
