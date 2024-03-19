@@ -32,7 +32,7 @@
             <li>
               <router-link to="/financing-products">Financing Products</router-link>
             </li>
-            <li><router-link to="/shariah-supervisory-committee">SHARIAH SUPERVISORY COMMITTEE</router-link></li>
+            <li><router-link to="/shariah-supervisory-committee">Shariah Supervisory Committee</router-link></li>
             <li><router-link to="/faq">FAQ</router-link></li>
 
           </ul>
