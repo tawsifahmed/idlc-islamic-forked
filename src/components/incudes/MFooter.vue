@@ -10,20 +10,7 @@
         <b-card-body>
           <ul class="list-unstyled f_list">
             <li>
-              <router-link to="/idlc-at-a-glance">IDLC at a Glance</router-link>
-            </li>
-            <li>
-              <router-link to="/our-management">Our Management</router-link>
-            </li>
-            <li>
-              <router-link to="/financial-reports"
-                >Financial Reports</router-link
-              >
-            </li>
-            <li>
-              <router-link to="/promotions-and-campaigns-news-and-events"
-                >Promotions & Campaigns</router-link
-              >
+              <a href="https://idlc.com/idlc-at-a-glance" target="_blank">IDLC at a Glance</a>
             </li>
           </ul>
         </b-card-body>
@@ -39,37 +26,15 @@
       <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
         <b-card-body>
           <ul class="list-unstyled f_list">
+
+            <li><router-link to="/deposit-products">Deposit Products</router-link></li>
+
             <li>
-              <router-link to="/download-forms-required-documents"
-                >Download Forms</router-link
-              >
+              <router-link to="/financing-products">Financing Products</router-link>
             </li>
-            <li><router-link to="/e-tender">E-Tender</router-link></li>
+            <li><router-link to="/shariah-supervisory-committee">SHARIAH SUPERVISORY COMMITTEE</router-link></li>
             <li><router-link to="/faq">FAQ</router-link></li>
-            <li>
-              <router-link
-                :to="{
-                  name: 'FeedbackAndComplaintCell',
-                  params: { id: 'Feedback' }
-                }"
-                >Feedback</router-link
-              >
-            </li>
-            <li>
-              <router-link
-                :to="{
-                  name: 'FeedbackAndComplaintCell',
-                  params: { id: 'Complaint' }
-                }"
-                >Complaint Cell</router-link
-              >
-            </li>
-            <li>
-              <router-link to="/apply-for-loan">Apply for Loan</router-link>
-            </li>
-            <li>
-              <a href="https://idlc.com/login/login.php">Customer Login</a>
-            </li>
+
           </ul>
         </b-card-body>
       </b-collapse>
