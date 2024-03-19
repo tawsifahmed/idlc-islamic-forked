@@ -139,7 +139,7 @@
             <br>
             <div  class="details">
               <h4 class="text-center" style="margin-bottom: 10px;">{{ this.managementProfileDetail.name }} </h4>
-              <div v-html="this.managementProfileDetail.description"></div>
+              <div class="view-descrip" v-html="this.managementProfileDetail.description"></div>
 
             </div>
           </div>
@@ -347,7 +347,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 7px;
     margin-bottom: 15px;
     text-align: center;
     gap: 20px;
@@ -550,6 +549,10 @@
 
   .modal-leave-active {
     animation: modal-out 0.5s ease-out forwards;
+  }
+
+  .view-descrip{
+    font-size: 14px;
   }
 
   @keyframes modal-in {
