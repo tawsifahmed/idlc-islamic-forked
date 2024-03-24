@@ -10,7 +10,7 @@
       <!-- <h2 style="text-align: center; text-transform: uppercase;" class="h2Responsive ">
         {{ this.contentData.page_name }}
       </h2> -->
-      <!-- <h6 style="margin-top: unset;">{{ contentData.tagline }}</h6> -->
+      <h6 style="margin-top: unset;">{{ contentData.tagline }}</h6>
       <p><span v-html="contentData.description"></span>
       </p>
     </div>
@@ -69,10 +69,5 @@ export default {
   .topShape {
       max-height: 170px;
   }
-  .homePageTitleDetails {
-    margin-top: 100px;
-  }
 }
-
-
 </style>

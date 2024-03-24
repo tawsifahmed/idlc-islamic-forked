@@ -139,7 +139,7 @@
             <br>
             <div  class="details">
               <h4 class="text-center" style="margin-bottom: 10px;">{{ this.managementProfileDetail.name }} </h4>
-              <div class="view-descrip" v-html="this.managementProfileDetail.description"></div>
+              <div v-html="this.managementProfileDetail.description"></div>
 
             </div>
           </div>
@@ -268,7 +268,6 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     margin-bottom: 30px;
-    margin-top: 50px;
   }
 
   .ourManagement .ourManagementImgBg {
@@ -290,18 +289,15 @@
     float: left;
     border: none;
     outline: none;
-    cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
     font-size: 14px;
-    margin-right: 1px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #f2f2f2;
     border: none;
-    border-right: 1px solid #ddd;
   }
 
   .ourManagement .tab .tablinks img {
@@ -328,7 +324,6 @@
   .ourManagement .tabcontent .managementTabBody {
     margin: 25px 0 0px 0;
     text-align: center;
-    background: #f2f2f2;
     padding: 30px;
     text-align: justify;
   }
@@ -552,10 +547,6 @@
     animation: modal-out 0.5s ease-out forwards;
   }
 
-  .view-descrip{
-    font-size: 14px;
-  }
-
   @keyframes modal-in {
     from {
       transform: rotateY(90deg);
@@ -573,8 +564,5 @@
       transform: rotateY(90deg);
     }
   }
-
-
-
 
 </style>
