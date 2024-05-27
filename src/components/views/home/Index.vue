@@ -121,6 +121,22 @@
     <div class="container-lg productFeatures">
       <div class="tab">
         <button class="tablinks1 active">
+          Why Us?
+        </button>
+      </div>
+
+      <div class="tabcontent1 defaultTableDesign" style="display: block; overflow: auto;">
+        <span v-if="homePageData.homePageFeatured" v-html="homePageData.homePageFeatured"></span>
+        <router-link
+
+          target="_blank"
+          class="tabcontent1Button"
+        >Apply Now</router-link>
+      </div>
+    </div>
+    <div class="container-lg productFeatures">
+      <div class="tab">
+        <button class="tablinks1 active">
           Key Features
         </button>
       </div>
@@ -186,7 +202,56 @@
             </div>
           </router-link>
         </div>
+
       </div>
+
+    </div>
+    <div class="whyChose">
+      <div class="top_curve"></div>
+      <div class="whyChoseBg">
+        <div class="container-lg">
+          <div class="header">
+            <h2 class="h2Responsive">WHY CHOOSE IDLC Islamic?</h2>
+          </div>
+          <div class="body">
+            <div class="reason">
+              <img
+                :src="homePageLowerTabContent.why_choose_one_image"
+                alt=""
+                v-if="homePageLowerTabContent"
+              />
+              <h5>{{ homePageLowerTabContent.why_choose_one_title }}</h5>
+              <div class="line"></div>
+              <p>{{ homePageLowerTabContent.why_choose_one_subtitle }}</p>
+            </div>
+            <div class="reason">
+              <img :src="homePageLowerTabContent.why_choose_two_image" alt="" />
+              <h5>{{ homePageLowerTabContent.why_choose_two_title }}</h5>
+              <div class="line"></div>
+              <p>{{ homePageLowerTabContent.why_choose_two_subtitle }}</p>
+            </div>
+            <div class="reason">
+              <img
+                :src="homePageLowerTabContent.why_choose_three_image"
+                alt=""
+              />
+              <h5>{{ homePageLowerTabContent.why_choose_three_title }}</h5>
+              <div class="line"></div>
+              <p>{{ homePageLowerTabContent.why_choose_three_subtitle }}</p>
+            </div>
+            <div class="reason">
+              <img
+                :src="homePageLowerTabContent.why_choose_four_image"
+                alt=""
+              />
+              <h5>{{ homePageLowerTabContent.why_choose_four_title }}</h5>
+              <div class="line"></div>
+              <p>{{ homePageLowerTabContent.why_choose_four_subtitle }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom_curve"></div>
     </div>
 
     <app-footer />
@@ -257,7 +322,7 @@ export default {
       axios
         .get(`homepage-slider?shortcode=Home`)
         .then(res =>{
-         
+
           const sliders = res.data
           // sliders.forEach(slider => {
           //   console.log('slider =>', slider)

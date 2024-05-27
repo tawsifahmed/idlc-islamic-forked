@@ -16,6 +16,8 @@
     </div>
     <!--    //page heading end-->
     <app-categorized-product class="mb-5" />
+    <app-faq-tab/>
+
     <!-- <app-success-strories-button /> -->
     <app-footer />
 
@@ -53,6 +55,7 @@ export default {
     AppSlider: () => import('../../incudes/Slider'),
     // AppSuccessStroriesButton: () => import('./SuccessStroriesButton'),
     AppCategorizedProduct: () => import('../../partials/CategorizedProducts'),
+    AppFaqTab: () => import('./TabComponent'),
     AppSuccessStory: () => import('./SuccessStory'),
     AppEMICalculator: () => import('../../partials/EMICalculator'),
     AppWHTab: () => import('./WHTab'),

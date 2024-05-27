@@ -14,11 +14,12 @@
       <span class="product-description" v-html="contentData.description"></span>
     </div>
     <!--    //page heading end-->
-
     <app-categorized-product class="mb-5" />
+    <app-faq-tab/>
     <!-- <app-e-m-i-calculator/> -->
     <!-- <app-common-w-h-tab/> -->
     <!-- <app-related-product/> -->
+
     <app-footer />
 
 
@@ -56,6 +57,7 @@ export default {
     AppCategorizedProduct: () => import('../../partials/CategorizedProducts'),
     AppEMICalculator: () => import('../../partials/EMICalculator'),
     // AppWHTab: () => import('./WHTab'),
+    AppFaqTab: () => import('./TabComponent'),
     AppCommonWHTab: () => import('../../partials/CommonWHTab'),
     AppRelatedProduct: () => import('../../partials/RelatedProduct'),
     AppFooter: () => import('../../incudes/Footer'),
