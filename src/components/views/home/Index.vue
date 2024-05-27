@@ -126,7 +126,7 @@
       </div>
 
       <div class="tabcontent1 defaultTableDesign" style="display: block; overflow: auto;">
-        <span v-if="homePageData.homePageFeatured" v-html="homePageData.homePageFeatured"></span>
+        <span v-if="homePageData" v-html="homePageData.homePageFeatured.why_us"></span>
         <router-link
 
           target="_blank"
@@ -342,6 +342,7 @@ export default {
         .then(response => {
           if (response.status == 200) {
             this.homePageData = response.data.details;
+            console.log("homePageData", this.homePageData);
             this.pageSliderHeader = response.data.details.page_data;
             this.allNews = response.data.details.allNews;
             this.homePageLowerTabContent =
