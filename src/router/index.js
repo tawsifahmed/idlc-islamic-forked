@@ -26,10 +26,33 @@ const OurManagement = resolve => {
   });
 };
 
-
 const FAQ = resolve => {
   require.ensure(["../components/views/faq/FAQ"], () => {
     resolve(require("../components/views/faq/FAQ"));
+  });
+};
+
+const TheWorldOfIDLC = resolve => {
+  require.ensure(["../components/views/world-of-idlc/TheWorldOfIDLC"], () => {
+    resolve(require("../components/views/world-of-idlc/TheWorldOfIDLC"));
+  });
+};
+
+const ContactUs = resolve => {
+  require.ensure(["../components/views/contact-us/ContactUs"], () => {
+    resolve(require("../components/views/contact-us/ContactUs"));
+  });
+};
+
+const BranchLoacator = resolve => {
+  require.ensure(["../components/views/contact-us/branch-locator"], () => {
+    resolve(require("../components/views/contact-us/branch-locator"));
+  });
+};
+
+const Sitemap = resolve => {
+  require.ensure(["../components/views/Sitemap"], () => {
+    resolve(require("../components/views/Sitemap"));
   });
 };
 
@@ -324,15 +347,15 @@ export default new Router({
     //   },
     //   component: DownloadFormsRequiredDocuments
     // },
-    // {
-    //   path: "/contact-us/:branchId",
-    //   name: "ContactUs",
-    //   meta: {
-    //     title: "Contact Us",
-    //     description: "We are There to Help"
-    //   },
-    //   component: ContactUs
-    // },
+    {
+      path: "/contact-us/:branchId",
+      name: "ContactUs",
+      meta: {
+        title: "Contact Us",
+        description: "We are There to Help"
+      },
+      component: ContactUs
+    },
     // {
     //   path: "/promotions-and-campaigns-news-and-events",
     //   name: "Promotions And Campaigns News And Events",
@@ -410,16 +433,16 @@ export default new Router({
     //   },
     //   component: News
     // },
-    // {
-    //   path: "/idlc-at-a-glance",
-    //   name: "TheWorldOfIDLC",
-    //   meta: {
-    //     title: "IDLC at a Glance",
-    //     description: "About IDLC | Our Journey",
-    //     seo_keyword: ""
-    //   },
-    //   component: TheWorldOfIDLC
-    // },
+    {
+      path: "/idlc-at-a-glance",
+      name: "TheWorldOfIDLC",
+      meta: {
+        title: "IDLC at a Glance",
+        description: "About IDLC | Our Journey",
+        seo_keyword: ""
+      },
+      component: TheWorldOfIDLC
+    },
     // {
     //   path: "/green-finance",
     //   name: "GreenFinance",

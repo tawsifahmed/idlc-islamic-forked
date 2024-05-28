@@ -137,11 +137,11 @@
             Home</router-link
           >
         </li>
-        <li class="sidenavLinks" @click="closeNav">
+        <!-- <li class="sidenavLinks" @click="closeNav">
           <router-link to="/shariah-supervisory-committee"
             >Shariah Supervisory Committee</router-link
           >
-        </li>
+        </li> -->
         <li class="sidenavLinks" @click="closeNav">
           <router-link to="/deposit-products"
             >Deposit Products</router-link
@@ -157,7 +157,7 @@
             >FAQ</router-link
           >
         </li>
-        <!-- <li class="sidenavLinks">
+        <li class="sidenavLinks">
           <a
             >
             About Us
@@ -167,16 +167,16 @@
               <router-link to="/idlc-at-a-glance">IDLC at a Glance</router-link>
             </li>
             <li class="sidenavLinkssub" @click="closeNav">
-              <router-link to="/our-management">Our Management</router-link>
+              <router-link to="/shariah-supervisory-committee">Shariah Supervisory Committee</router-link>
             </li>
-            <li class="sidenavLinkssub" @click="closeNav">
+            <!-- <li class="sidenavLinkssub" @click="closeNav">
               <router-link to="/our-achievement">Our Achievements</router-link>
             </li>
             <li class="sidenavLinkssub" @click="closeNav">
               <router-link to="/news-and-events">News & Events</router-link>
-            </li>
+            </li> -->
           </ul>
-        </li> -->
+        </li>
         <!-- <li class="sidenavLinks quick" @click="closeNav">
           <router-link to="/get-in-touch-with-us"
             ><img src="~@/assets/img/favoriteIcon/Get in touch.png" alt="" />Get

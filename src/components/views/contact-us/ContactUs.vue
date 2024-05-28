@@ -51,7 +51,7 @@
               </div>
               <div class="location-list">
                 <ul>
-          
+
                   <ul>
                     <li v-for="(item, index) in branches" :key="item.id">
                       <a v-on:click="setLocation(item.id)">
@@ -68,10 +68,10 @@
                 </ul>
               </div>
             </div>
-            
+
           </div>
-          
-         
+
+
 
 
           <div v-if="!isMobile()" >
@@ -158,7 +158,7 @@
               </div>
             </div>
             <br>
-          
+
             <div v-for="idlcTabContentItem in filteredList" :key="idlcTabContentItem.id" class="branch" >
               <div class="left redBG">
                 <h5>{{idlcTabContentItem.name}}</h5>
@@ -186,9 +186,9 @@
 
       </div>
     </div>
-    <div class="container text-center">
+    <!-- <div class="container text-center">
       <router-link to="/get-in-touch-with-us" class="tabcontent2Button">Get in Touch With US</router-link>
-    </div>
+    </div> -->
     <br><br>
     <app-footer />
 
@@ -389,7 +389,7 @@
         }
       },
       getIdlcTabContentData(){
-        
+
         axios.get('get-branch',{
           params: {
             idlc_category: 'idlc'

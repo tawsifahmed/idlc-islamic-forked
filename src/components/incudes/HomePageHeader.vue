@@ -22,12 +22,12 @@
 
         <li class="navSection primary">
           <ul class="desktop_menu">
-            <li >
+            <!-- <li >
               <router-link to="/shariah-supervisory-committee" style="color: black;">
                 Shariah Supervisory Committe
               </router-link>
 
-            </li>
+            </li> -->
             <li >
               <router-link to="/faq" style="color: black;">
                 FAQ
@@ -46,13 +46,13 @@
               </router-link>
 
             </li>
-            <!-- <li class="drop_arrow">
-              About Us
+            <li class="drop_arrow">
+              About
               <ul class="desktop_menu_sub">
                 <div class="desktop_menu_sub_blocks desktop_menu_sub_blocks_3">
                   <div class="block">
                     <li>
-                      <a target="_blank" class="menu_link" href="https://idlc.com/idlc-at-a-glance">
+                      <router-link class="menu_link" to="/idlc-at-a-glance">
                         <div class="menuIcon">
                           <img
                             src="~@/assets/img/menu_icon/Menubar/Idlc-at-a-glance.png"
@@ -65,10 +65,13 @@
                             About IDLC | Our Journey
                           </p>
                         </div>
-                      </a>
+                      </router-link>
                     </li>
+
+                  </div>
+                  <div class="block">
                     <li>
-                      <a target="_blank" class="menu_link" href="https://idlc.com/our-management">
+                      <router-link class="menu_link" to="/shariah-supervisory-committee">
                         <div class="menuIcon">
                           <img
                             src="~@/assets/img/menu_icon/Menubar/Our-management.png"
@@ -76,16 +79,14 @@
                           />
                         </div>
                         <div class="menuContent">
-                          <h3 class="title">Our Management</h3>
+                          <h3 class="title">Shariah Supervisory Committe</h3>
                           <p class="subTitle">
-                            Know More about our Leadership Team
+                            Know about our Shariah Supervisory Team
                           </p>
                         </div>
-                      </a>
+                      </router-link>
                     </li>
-                  </div>
-                  <div class="block">
-                    <li>
+                    <!-- <li>
                       <a target="_blank" class="menu_link" href="https://idlc.com/our-achievement">
                         <div class="menuIcon">
                           <img
@@ -116,12 +117,12 @@
                           </p>
                         </div>
                       </a>
-                    </li>
+                    </li> -->
                   </div>
 
                 </div>
               </ul>
-            </li> -->
+            </li>
             <!--  -->
 
           </ul>
@@ -575,7 +576,7 @@ ul.desktop_menu li ul.desktop_menu_sub .desktop_menu_sub_blocks li {
 
 ul.desktop_menu li ul.desktop_menu_sub .desktop_menu_sub_blocks li a.menu_link {
   display: flex;
-  align-items: flex-start;
+  /*align-items: flex-start;*/
   text-decoration: none;
 }
 
@@ -802,7 +803,7 @@ ul.desktop_menu li ul.desktop_menu_sub .desktop_menu_sub_blocks_2 {
 }
 
 ul.desktop_menu li ul.desktop_menu_sub .desktop_menu_sub_blocks_3 {
-  width: 750px;
+  /*width: 750px;*/
 }
 ul.desktop_menu li ul.desktop_menu_sub .desktop_menu_sub_blocks_4 {
   width: 350px;
