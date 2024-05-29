@@ -29,7 +29,6 @@ export default {
     AppHeader: () => import('../../incudes/Header'),
     AppSideNav: () => import('../../incudes/SideNav'),
     AppTopCurve: () => import('../../incudes/SlimTopCurve'),
-    AppCoverImage: () => import('../../incudes/CoverImage'),
     AppTabContent: () => import('./TabComponent'),
     AppFooter: () => import('../../incudes/Footer'),
 
