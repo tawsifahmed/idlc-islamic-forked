@@ -28,7 +28,7 @@
             <div class="locations mobileLoacations" v-show="tabContentList">
               <div class="location_entry">
                 <form action="">
-                  <input type="text" placeholder="Enter a location" v-on:keyup="onChangeSearch($event)">
+                  <input type="text" placeholder="Enter a location" v-model="searchF">
                   <br> <br>
 <!--                  <label class="customSelectBox" @change="onChange($event)">IDLC-->
 <!--                    <input type="checkbox" value="IDLC" checked="checked" name="category" v-model="category" >-->
@@ -53,7 +53,7 @@
                 <ul>
 
                   <ul>
-                    <li v-for="(item, index) in branches" :key="item.id">
+                    <li v-for="(item, index) in filteredListFirst" :key="item.id">
                       <a v-on:click="setLocation(item.id)">
                         <h6 class="title">{{item.name}}</h6>
                         <p class="branch-address">
@@ -78,7 +78,7 @@
             <div class="locations">
               <div class="location_entry">
                 <form action="">
-                  <input type="text" class="locationIputFiled" v-on:keyup="onChangeSearch($event)" placeholder="Enter a location">
+                  <input type="text" class="locationIputFiled" v-model="searchF" placeholder="Enter a location">
 <!--                  <label class="customSelectBox" @change="onChange($event)">IDLC-->
 <!--                    <input type="checkbox" value="IDLC" checked v-model="category" >-->
 <!--                    <span class="checkmark"></span>-->
@@ -99,7 +99,7 @@
               </div>
               <div class="location-list">
                 <ul>
-                  <li v-for="(item, index) in branches" :key="item.id">
+                  <li v-for="(item, index) in filteredListFirst" :key="item.id">
                     <a v-on:click="setLocation(item.id)">
                       <h6 class="title">{{item.name}}</h6>
                       <p class="branch-address">
@@ -206,6 +206,7 @@
       return {
         tabContentMap: false,
         tabContentList: false,
+        searchF: '',
         search: '',
         idlcTabContent: [],
         markers: [],
@@ -278,7 +279,12 @@
         axios.get('get-branch')
           .then((response) => {
             if(response.status == 200){
-              this.branches = response.data.details;
+              console.log(response.data.details);
+              this.branches = [];
+              this.branches = response.data.details.allBranches;
+              console.log('all', this.branches);
+              // this.clearMarkers();
+              // this.buildMarkers();
             }else{
               alert("Server returned " + response.code + " : " + response.user_message)
             }
@@ -286,44 +292,44 @@
           .catch(error =>  console.log(error));
       },
 
-      fetchCategorizedAPIData(option) {
-        // return
-        axios.get('get-branch', {
-          params: {
-            query_parameter: option
-          }
-        })
-          .then((response) => {
-            if(response.status == 200){
-              this.branches = [];
-              this.branches = response.data.details;
-              this.clearMarkers();
+      // fetchCategorizedAPIData(option) {
+      //   // return
+      //   axios.get('get-branch', {
+      //     params: {
+      //       idlc_category: option
+      //     }
+      //   })
+      //     .then((response) => {
+      //       if(response.status == 200){
+      //         this.branches = [];
+      //         this.branches = response.data.details;
+      //         this.clearMarkers();
 
-              this.buildMarkers();
-            }else{
-              alert("Server returned " + response.code + " : " + response.user_message)
-            }
-          })
-          .catch(error =>  console.log(error));
-      },
-      fetchSearchAPIData(option) {
-        axios.get('get-branch', {
-          params: {
-            query_parameter: option
-          }
-        })
-          .then((response) => {
-            if(response.status == 200){
-              this.branches = [];
-              this.branches = response.data.details;
-              this.clearMarkers();
-              this.buildMarkers();
-            }else{
-              alert("Server returned " + response.code + " : " + response.user_message)
-            }
-          })
-          .catch(error =>  console.log(error));
-      },
+      //         this.buildMarkers();
+      //       }else{
+      //         alert("Server returned " + response.code + " : " + response.user_message)
+      //       }
+      //     })
+      //     .catch(error =>  console.log(error));
+      // },
+      // fetchSearchAPIData(option) {
+      //   axios.get('get-branch', {
+      //     params: {
+      //       query_parameter: option
+      //     }
+      //   })
+      //     .then((response) => {
+      //       if(response.status == 200){
+      //         this.branches = [];
+      //         this.branches = response.data.details;
+      //         this.clearMarkers();
+      //         this.buildMarkers();
+      //       }else{
+      //         alert("Server returned " + response.code + " : " + response.user_message)
+      //       }
+      //     })
+      //     .catch(error =>  console.log(error));
+      // },
       clearMarkers(){
         this.markers.forEach(function(marker) {
           marker.setMap(null);
@@ -335,7 +341,7 @@
         // var option = this.getAllCheckbox();
         var option = this.category;
         option = option.toString()
-
+        // this.fetchAPIData();
         this.fetchCategorizedAPIData(option);
       },
       onChangeSearch(event){
@@ -390,13 +396,9 @@
       },
       getIdlcTabContentData(){
 
-        axios.get('get-branch',{
-          params: {
-            idlc_category: 'idlc'
-          }
-        }).then((response) => {
+        axios.get('get-branch').then((response) => {
           if(response.status == 200){
-            this.idlcTabContent = response.data.details;
+            this.idlcTabContent = response.data.details.allBranches;
             this.$store.state.isLoading = false;
             // console.log(this.idlcTabContent);
           }
@@ -420,7 +422,6 @@
     },
     computed: {
       filteredList() {
-
         if (this.search == '') {
           return this.idlcTabContent;
         } else {
@@ -429,13 +430,26 @@
               || data.address.toLowerCase().match(this.search.toLowerCase());
           })
         }
-      }
+      },
+
+      filteredListFirst() {
+        if (this.searchF == '') {
+          return this.branches;
+        } else {
+          return this.branches.filter(data => {
+            return data.name.toLowerCase().match(this.searchF.toLowerCase())
+              || data.address.toLowerCase().match(this.searchF.toLowerCase());
+          })
+        }
+      },
+
 
     },
     created() {
       // this.clearMarkers();
     },
     mounted() {
+      this.fetchAPIData();
       this.$store.state.isLoading;
       this.map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: this.latitude, lng: this.longitude},
