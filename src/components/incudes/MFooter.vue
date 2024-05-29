@@ -34,6 +34,7 @@
             </li>
             <li><router-link to="/shariah-supervisory-committee">Shariah Supervisory Committee</router-link></li>
             <li><router-link to="/faq">FAQ</router-link></li>
+            <li><router-link to="/content-repository">Content Repository</router-link></li>
 
           </ul>
         </b-card-body>

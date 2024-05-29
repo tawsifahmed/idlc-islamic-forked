@@ -16,7 +16,6 @@
                     >I am interested to know about</label
                   >
                   <div class="col-md-6 col-sm-12">
-                    <pre>{{productData}}</pre>
                     <div class="custom-select">
                       <select>
                         <option>Select One</option>
