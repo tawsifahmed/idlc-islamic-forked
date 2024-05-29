@@ -16,6 +16,7 @@
                     >I am interested to know about</label
                   >
                   <div class="col-md-6 col-sm-12">
+                    <pre>{{productData}}</pre>
                     <div class="custom-select">
                       <select>
                         <option>Select One</option>
@@ -153,15 +154,35 @@
               @click="openTab('feature' + itemData.id, $event)"
               :id="'defaultOpen' + index"
             >
-              Feature
+              Features
             </button>
-                       <button v-if="itemData.eligibility_description" class="tablinks1 " @click="openTab( 'eligibility'+itemData.id, $event)">Eligibility</button>
+            <button v-if="itemData.eligibility_description" class="tablinks1 " @click="openTab( 'eligibility'+itemData.id, $event)">
+              Eligibility
+            </button>
             <!--            <button class="tablinks1 " @click="openTab( 'howCanIUse'+itemData.id, $event)">How I can use this loan</button>-->
             <button v-if="itemData.required_document_description"
               class="tablinks1 "
               @click="openTab('requiredDocument' + itemData.id, $event)"
             >
               Required Document
+            </button>
+            <button v-if="itemData.psr_actual_profit"
+              class="tablinks1 "
+              @click="openTab('psr&ActualProfit' + itemData.id, $event)"
+            >
+              PSR & Actual Profit
+            </button>
+            <button v-if="itemData.rate_of_rent"
+              class="tablinks1 "
+              @click="openTab('rateOfRant' + itemData.id, $event)"
+            >
+              Rate of Rent
+            </button>
+            <button v-if="itemData.underlying_contract"
+              class="tablinks1 "
+              @click="openTab('underyingContract' + itemData.id, $event)"
+            >
+            Underlying Contract
             </button>
             <!-- <button
               class="tablinks1 "
@@ -209,6 +230,39 @@
               download
               >Download</a
             >
+          </div>
+          <div :id="'psr&ActualProfit' + itemData.id" class="tabcontent1">
+            <span v-html="itemData.psr_actual_profit"></span>
+            <!--            <router-link :to="{ name: 'ApplyForLoan', params: { applyFor : shortcode}}"  target="_blank" class="tabcontent1Button">Apply Now</router-link>-->
+            <!-- <a
+              :href="itemData.required_document_file"
+              class="tabcontent1Button"
+              target="_blank"
+              download
+              >Download</a
+            > -->
+          </div>
+          <div :id="'rateOfRant' + itemData.id" class="tabcontent1">
+            <span v-html="itemData.rate_of_rent"></span>
+            <!--            <router-link :to="{ name: 'ApplyForLoan', params: { applyFor : shortcode}}"  target="_blank" class="tabcontent1Button">Apply Now</router-link>-->
+            <!-- <a
+              :href="itemData.required_document_file"
+              class="tabcontent1Button"
+              target="_blank"
+              download
+              >Download</a
+            > -->
+          </div>
+          <div :id="'underyingContract' + itemData.id" class="tabcontent1">
+            <span v-html="itemData.underlying_contract"></span>
+            <!--            <router-link :to="{ name: 'ApplyForLoan', params: { applyFor : shortcode}}"  target="_blank" class="tabcontent1Button">Apply Now</router-link>-->
+            <!-- <a
+              :href="itemData.required_document_file"
+              class="tabcontent1Button"
+              target="_blank"
+              download
+              >Download</a
+            > -->
           </div>
 
           <div :id="'contactInformation' + itemData.id" class="tabcontent1">

@@ -32,6 +32,12 @@ const FAQ = resolve => {
   });
 };
 
+const ContentRepository = resolve => {
+  require.ensure(["../components/views/content-repository/ContentRepository"], () => {
+    resolve(require("../components/views/content-repository/ContentRepository"));
+  });
+};
+
 const TheWorldOfIDLC = resolve => {
   require.ensure(["../components/views/world-of-idlc/TheWorldOfIDLC"], () => {
     resolve(require("../components/views/world-of-idlc/TheWorldOfIDLC"));
@@ -397,6 +403,16 @@ export default new Router({
         seo_keyword: ""
       },
       component: FAQ
+    },
+    {
+      path: "/content-repository",
+      name: "Content Repository",
+      meta: {
+        title: "Content Repository",
+        description: "Content Repository to upload and show required files",
+        seo_keyword: ""
+      },
+      component: ContentRepository
     },
     // {
     //   path: '/product-brochure',
