@@ -156,8 +156,8 @@
                         >
                           <ul class="list-unstyled social  address_text">
                             <li>
-                              <a
-                                href="/contact-us/0"
+                              <router-link
+                                to="/contact-us/0"
                                 class="f-title  t_color f_size_18"
                                 style="font-size: 12px; "
                               >
@@ -167,7 +167,7 @@
                                 >
                                 <br />
                                 Bay’s Galleria (1st Floor), 57 Gulshan Avenue,
-                                Dhaka 1212, Bangladesh</a
+                                Dhaka 1212, Bangladesh</router-link
                               >
                             </li>
                           </ul>
