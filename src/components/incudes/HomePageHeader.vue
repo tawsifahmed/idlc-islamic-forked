@@ -29,12 +29,6 @@
 
             </li> -->
             <li >
-              <router-link to="/faq" style="color: black;">
-                FAQ
-              </router-link>
-
-            </li>
-            <li >
               <router-link to="/deposit-products" style="color: black;">
                 Deposit Products
               </router-link>
@@ -45,6 +39,11 @@
                 Financing Products
               </router-link>
 
+            </li>
+            <li >
+              <router-link to="/faq" style="color: black;">
+                FAQ
+              </router-link>
             </li>
             <li class="drop_arrow">
               About

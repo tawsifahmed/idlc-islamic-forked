@@ -23,8 +23,7 @@
                       <img src="../../../assets/img/report/PDF-File.png" alt="" />
                     </div>
                     <div class="report-name">
-                      <h6 class="file-name" :title="file.downloadable_title">{{ file.downloadable_title.substring(0, 20)
-                        }}...{{ file.downloadable_title.substring(file.downloadable_title.length - 14) }}</h6>
+                      <h6 class="file-name" :title="file.downloadable_title">{{ file.downloadable_title.length >= 20 ? file.downloadable_title.substring(0, 20) + '...' + file.downloadable_title.substring(file.downloadable_title.length - 14) : file.downloadable_title }}</h6>
                     </div>
                     <div class="download-report-btn">
                       <a :href="file.downloadable_file" target="_blank" style="color: white !important;"
