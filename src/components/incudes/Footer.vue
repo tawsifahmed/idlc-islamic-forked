@@ -89,9 +89,9 @@
                         </h3>
                         <ul class="list-unstyled f_list">
                           <li>
-                            <a target="_blank" href="https://idlc.com/idlc-at-a-glance"
-                              >IDLC at a Glance</a
-                            >
+                            <router-link to="/idlc-at-a-glance"
+                              >IDLC at a Glance
+                              </router-link>
                           </li>
                         </ul>
                       </div>

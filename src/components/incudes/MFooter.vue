@@ -10,7 +10,7 @@
         <b-card-body>
           <ul class="list-unstyled f_list">
             <li>
-              <a href="https://idlc.com/idlc-at-a-glance" target="_blank">IDLC at a Glance</a>
+              <router-link to="/idlc-at-a-glance">IDLC at a Glance</router-link>
             </li>
           </ul>
         </b-card-body>
