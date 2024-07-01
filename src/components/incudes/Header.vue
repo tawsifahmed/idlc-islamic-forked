@@ -77,9 +77,9 @@
                           />
                         </div>
                         <div class="menuContent">
-                          <h3 class="title">Shariah Supervisory Committe</h3>
+                          <h3 class="title">Shariah Committe</h3>
                           <p class="subTitle">
-                            Know about our Shariah Supervisory Team
+                            See our Shariah Team
                           </p>
                         </div>
                       </router-link>
@@ -1107,7 +1107,8 @@ ul.desktop_menu {
 ul.desktop_menu li {
   font-weight: 400;
   display: inline-block;
-  padding: 15px 7px 20px 7px;
+  /* padding: 15px 7px 20px 7px; */
+  padding: 15px 7px 15px 7px;
   position: relative;
 }
 
@@ -1159,6 +1160,7 @@ ul.desktop_menu li ul.desktop_menu_sub .desktop_menu_sub_blocks {
   border-radius: 7px;
   overflow: hidden;
   padding-left: 15px;
+  top: -3px;
 }
 
 ul.desktop_menu li ul.desktop_menu_sub .desktop_menu_sub_blocks .block {
@@ -1167,12 +1169,12 @@ ul.desktop_menu li ul.desktop_menu_sub .desktop_menu_sub_blocks .block {
 }
 
 ul.desktop_menu li ul.desktop_menu_sub .desktop_menu_sub_blocks li {
-  padding: 15px 0 0 0;
+  padding: 0px 0 0 0;
 }
 
 ul.desktop_menu li ul.desktop_menu_sub .desktop_menu_sub_blocks li a.menu_link {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   text-decoration: none;
 }
 

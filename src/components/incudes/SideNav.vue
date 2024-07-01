@@ -26,7 +26,7 @@
             :strings="[
               'Search...',
                 'IDLC Islamic',
-                'Shariah Supervisory Committee',
+                'Shariah Committee',
                 'Financing Products',
                 'Deposit Products',
                 'FAQ'
