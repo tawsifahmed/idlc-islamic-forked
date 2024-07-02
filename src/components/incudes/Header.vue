@@ -34,11 +34,69 @@
               </router-link>
 
             </li>
-            <li >
-              <router-link to="/financing-products" style="color: black;">
-                Financing Products
-              </router-link>
 
+            <li class="drop_arrow">
+              Financing Products
+              <ul class="desktop_menu_sub">
+                <div class="desktop_menu_sub_blocks desktop_menu_sub_blocks_3" style="width: 250px;">
+                  <div class="block">
+                    <li>
+                      <router-link class="menu_link" to="/idlc-at-a-glance">
+                        <div class="menuIcon">
+                          <img
+                            src="~@/assets/img/menu_icon/Menubar/Idlc-at-a-glance.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="menuContent">
+                          <h3 class="title">Consumer Products</h3>
+                          <!-- <p class="subTitle">
+                            About IDLC | Our Journey
+                          </p> -->
+                        </div>
+                      </router-link>
+                    </li>
+
+                    <li style="padding-top: 12.5px">
+                      <router-link class="menu_link" to="/idlc-at-a-glance" style="margin-bottom: 0px;">
+                        <div class="menuIcon">
+                          <img
+                            src="~@/assets/img/menu_icon/Menubar/News-_-Events.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="menuContent">
+                          <h3 class="title">Business Products</h3>
+                          <!-- <p class="subTitle">
+                            Latest updates of IDLC
+                          </p> -->
+                        </div>
+                      </router-link>
+                    </li>
+
+                  </div>
+                  <!-- <div class="block">
+                    <li>
+                      <router-link class="menu_link" to="/shariah-supervisory-committee">
+                        <div class="menuIcon">
+                          <img
+                            src="~@/assets/img/menu_icon/Menubar/Our-management.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="menuContent">
+                          <h3 class="title">Shariah Committe</h3>
+                          <p class="subTitle">
+                            See our Shariah Team
+                          </p>
+                        </div>
+                      </router-link>
+                    </li>
+
+                  </div> -->
+
+                </div>
+              </ul>
             </li>
             <li >
               <router-link to="/faq" style="color: black;">
@@ -66,6 +124,24 @@
                         </div>
                       </router-link>
                     </li>
+
+                    <li style="padding-top: 10px">
+                      <router-link class="menu_link" to="/news-and-events" style="margin-bottom: 0px;">
+                        <div class="menuIcon">
+                          <img
+                            src="~@/assets/img/menu_icon/Menubar/News-_-Events.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="menuContent">
+                          <h3 class="title">News & Events</h3>
+                          <p class="subTitle">
+                            Latest updates of IDLC
+                          </p>
+                        </div>
+                      </router-link>
+                    </li>
+
                   </div>
                   <div class="block">
                     <li>
@@ -77,7 +153,7 @@
                           />
                         </div>
                         <div class="menuContent">
-                          <h3 class="title">Shariah Committe</h3>
+                          <h3 class="title">Shariah Committee</h3>
                           <p class="subTitle">
                             See our Shariah Team
                           </p>
@@ -1154,7 +1230,7 @@ ul.desktop_menu li ul.desktop_menu_sub .desktop_menu_sub_blocks {
   width: 500px;
   display: flex;
   transform: translateX(-25%);
-  align-items: center;
+  align-items: start;
   color: #fff;
   position: relative;
   border-radius: 7px;

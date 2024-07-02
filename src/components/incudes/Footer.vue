@@ -93,6 +93,16 @@
                               >IDLC at a Glance
                               </router-link>
                           </li>
+                          <li>
+                            <router-link to="/news-events"
+                              >News & Events
+                              </router-link>
+                          </li>
+                          <li>
+                            <router-link to="/shariah-supervisory-committee"
+                              >Shariah Supervisory Committee
+                              </router-link>
+                          </li>
                         </ul>
                       </div>
                     </div>

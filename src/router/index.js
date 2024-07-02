@@ -62,6 +62,17 @@ const Sitemap = resolve => {
   });
 };
 
+const NewsAndEvents = resolve => {
+  require.ensure(["../components/views/news-events/NewsAndEvents"], () => {
+    resolve(require("../components/views/news-events/NewsAndEvents"));
+  });
+};
+const News = resolve => {
+  require.ensure(["../components/views/news-events/News"], () => {
+    resolve(require("../components/views/news-events/News"));
+  });
+};
+
 
 
 Vue.use(Router);
@@ -429,16 +440,16 @@ export default new Router({
     //   },
     //   component: OurAchivement
     // },
-    // {
-    //   path: "/news-and-events",
-    //   name: "NewsAndEvents",
-    //   meta: {
-    //     title: "News And Events",
-    //     description: "Latest Updates and Media Releases of IDLC",
-    //     seo_keyword: ""
-    //   },
-    //   component: NewsAndEvents
-    // },
+    {
+      path: "/news-and-events",
+      name: "NewsAndEvents",
+      meta: {
+        title: "News And Events",
+        description: "Latest Updates and Media Releases of IDLC",
+        seo_keyword: ""
+      },
+      component: NewsAndEvents
+    },
     // {
     //   path: "/news/:newsId",
     //   name: "News",
