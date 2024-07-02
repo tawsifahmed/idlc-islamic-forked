@@ -114,11 +114,11 @@
 <!--                                :url="shareBase+newsData.id"-->
 <!--                              ><span class="icon-linkedin"></span></ShareNetwork>-->
 
-                              <a class=""  title="Share on Facebook" target="_blank" :href="'https://www.facebook.com/sharer/sharer.php?u=https://web.idlc.com/share/'+newsData.id">
+                              <a class=""  title="Share on Facebook" target="_blank" :href="'https://www.facebook.com/sharer/sharer.php?u=https://idlc-islamic.netlify.app/news/'+newsData.id">
                                 <span class="icon-facebook-f"></span>
 
                               </a>
-                              <a title="Share on Linked In" target="_blank" :href="'https://www.linkedin.com/sharer/sharer.php?u=https://web.idlc.com/share/'+newsData.id">
+                              <a title="Share on Linked In" target="_blank" :href="'https://www.linkedin.com/sharer/sharer.php?u=https://idlc-islamic.netlify.app/news/'+newsData.id">
                                 <span class="icon-linkedin"></span>
                               </a>
 
@@ -249,6 +249,9 @@
         selected: null,
         years: [
           {value: '', text: 'All'},
+          {value: 2024, text: '2024'},
+          {value: 2023, text: '2023'},
+          {value: 2022, text: '2022'},
           {value: 2021, text: '2021'},
           {value: 2020, text: '2020'},
           {value: 2019, text: '2019'},

@@ -38,6 +38,18 @@ const ContentRepository = resolve => {
   });
 };
 
+const DocumentsContentRepository = resolve => {
+  require.ensure(["../components/views/content-repository/ContentRepository"], () => {
+    resolve(require("../components/views/content-repository/ContentRepository"));
+  });
+};
+
+const VideoContentRepository = resolve => {
+  require.ensure(["../components/views/content-repository/Videos"], () => {
+    resolve(require("../components/views/content-repository/Videos"));
+  });
+};
+
 const TheWorldOfIDLC = resolve => {
   require.ensure(["../components/views/world-of-idlc/TheWorldOfIDLC"], () => {
     resolve(require("../components/views/world-of-idlc/TheWorldOfIDLC"));
@@ -415,15 +427,35 @@ export default new Router({
       },
       component: FAQ
     },
+    // {
+    //   path: "/content-repository",
+    //   name: "Content Repository",
+    //   meta: {
+    //     title: "Content Repository",
+    //     description: "Content Repository to upload and show required files",
+    //     seo_keyword: ""
+    //   },
+    //   component: ContentRepository
+    // },
     {
-      path: "/content-repository",
-      name: "Content Repository",
+      path: "/content-repository/documents",
+      name: "Content Repository - Documents",
       meta: {
-        title: "Content Repository",
+        title: "Content Repository - Documents",
         description: "Content Repository to upload and show required files",
         seo_keyword: ""
       },
-      component: ContentRepository
+      component: DocumentsContentRepository
+    },
+    {
+      path: "/content-repository/videos",
+      name: "Content Repository - Videos",
+      meta: {
+        title: "Content Repository - Videos",
+        description: "Content Repository to upload and show required files",
+        seo_keyword: ""
+      },
+      component: VideoContentRepository
     },
     // {
     //   path: '/product-brochure',
@@ -450,16 +482,16 @@ export default new Router({
       },
       component: NewsAndEvents
     },
-    // {
-    //   path: "/news/:newsId",
-    //   name: "News",
-    //   meta: {
-    //     title: "News",
-    //     description: "Latest News",
-    //     seo_keyword: ""
-    //   },
-    //   component: News
-    // },
+    {
+      path: "/news/:newsId",
+      name: "News",
+      meta: {
+        title: "News",
+        description: "Latest News",
+        seo_keyword: ""
+      },
+      component: News
+    },
     {
       path: "/idlc-at-a-glance",
       name: "TheWorldOfIDLC",

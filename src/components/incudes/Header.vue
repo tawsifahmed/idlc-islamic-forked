@@ -15,8 +15,8 @@
       <ul class="navRoot">
         <li style="display: none;"></li>
         <li class="navSection logo">
-          <router-link class="rootLink item-home colorize" to="/"
-            ><img src="~@/assets/img/logo/IDLC_NEW.png" alt="logo"
+          <router-link style="display: flex;" class="rootLink item-home colorize" to="/"
+            ><img src="~@/assets/img/logo/IDLC_NEW2.png" style="width: 160px;" alt="logo"
           /></router-link>
         </li>
         <li class="navSection primary">
@@ -39,7 +39,7 @@
               Financing Products
               <ul class="desktop_menu_sub">
                 <div class="desktop_menu_sub_blocks desktop_menu_sub_blocks_3" style="width: 250px;">
-                  <div class="block">
+                  <div class="block" style="padding: 11px;">
                     <li>
                       <router-link class="menu_link" to="/idlc-at-a-glance">
                         <div class="menuIcon">
@@ -57,7 +57,7 @@
                       </router-link>
                     </li>
 
-                    <li style="padding-top: 12.5px">
+                    <li style="padding-top: 4.5px">
                       <router-link class="menu_link" to="/idlc-at-a-glance" style="margin-bottom: 0px;">
                         <div class="menuIcon">
                           <img
@@ -67,6 +67,69 @@
                         </div>
                         <div class="menuContent">
                           <h3 class="title">Business Products</h3>
+                          <!-- <p class="subTitle">
+                            Latest updates of IDLC
+                          </p> -->
+                        </div>
+                      </router-link>
+                    </li>
+
+                  </div>
+                  <!-- <div class="block">
+                    <li>
+                      <router-link class="menu_link" to="/shariah-supervisory-committee">
+                        <div class="menuIcon">
+                          <img
+                            src="~@/assets/img/menu_icon/Menubar/Our-management.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="menuContent">
+                          <h3 class="title">Shariah Committe</h3>
+                          <p class="subTitle">
+                            See our Shariah Team
+                          </p>
+                        </div>
+                      </router-link>
+                    </li>
+
+                  </div> -->
+
+                </div>
+              </ul>
+            </li>
+            <li class="drop_arrow">
+              Content Repository
+              <ul class="desktop_menu_sub">
+                <div class="desktop_menu_sub_blocks desktop_menu_sub_blocks_3" style="width: 250px;">
+                  <div class="block" style="padding: 11px;">
+                    <li>
+                      <router-link class="menu_link" to="/content-repository/documents">
+                        <div class="menuIcon">
+                          <img
+                            src="~@/assets/img/menu_icon/Menubar/08-old.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="menuContent">
+                          <h3 class="title">Documents</h3>
+                          <!-- <p class="subTitle">
+                            About IDLC | Our Journey
+                          </p> -->
+                        </div>
+                      </router-link>
+                    </li>
+
+                    <li style="padding-top: 4.5px">
+                      <router-link class="menu_link" to="/content-repository/videos" style="margin-bottom: 0px;">
+                        <div class="menuIcon">
+                          <img
+                            src="~@/assets/img/menu_icon/Menubar/News-_-Events.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="menuContent">
+                          <h3 class="title">Videos</h3>
                           <!-- <p class="subTitle">
                             Latest updates of IDLC
                           </p> -->
@@ -1236,7 +1299,7 @@ ul.desktop_menu li ul.desktop_menu_sub .desktop_menu_sub_blocks {
   border-radius: 7px;
   overflow: hidden;
   padding-left: 15px;
-  top: -3px;
+  top: -5px;
 }
 
 ul.desktop_menu li ul.desktop_menu_sub .desktop_menu_sub_blocks .block {

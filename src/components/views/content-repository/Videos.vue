@@ -8,12 +8,12 @@
     <div class="homePageTitleDetails sectionTitle dFTagline">
       <div class="page_heading">
         <h2 style="text-align: center; " class="h2Responsive textUpperCase">
-        Content Repository - Documents
+        Content Repository - Videos
       </h2>
       </div>
     </div>
     <div class="container">
-      <app-tab-content/>
+      <app-video-tab-content/>
 
     </div>
     <app-footer />
@@ -29,7 +29,7 @@ export default {
     AppHeader: () => import('../../incudes/Header'),
     AppSideNav: () => import('../../incudes/SideNav'),
     AppTopCurve: () => import('../../incudes/SlimTopCurve'),
-    AppTabContent: () => import('./TabComponent'),
+    AppVideoTabContent: () => import('./VideoTabComponent'),
     AppFooter: () => import('../../incudes/Footer'),
 
   },

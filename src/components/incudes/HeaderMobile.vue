@@ -11,7 +11,7 @@
         <li class="navSection logo">
           <router-link class="rootLink item-home colorize" to="/"
           ><img
-            src="~@/assets/img/logo/IDLC_NEW.png"
+            src="~@/assets/img/logo/IDLC_NEW2.png"
             alt="logo"
           /></router-link>
         </li>
