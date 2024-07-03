@@ -1,6 +1,7 @@
 <template>
   <section class="container my-5">
     <b-card class="product-card">
+      <!-- <pre>asd{{baseUrl}}</pre> -->
       <a v-b-toggle="'annualReportcollapse' + 2" block class="d-flex cursor_pointer">
         <strong class="question_product" style="color:white; font-size: 1.25rem;">
           Videos
@@ -27,7 +28,7 @@
                           data-poster="poster.jpg"
                         >
                           <source
-                            :src="`http://idlc-islamic-backend.test/uploads/video_file/${file.video_link}`"
+                            :src="`${baseUrl}/uploads/video_file/${file.video_link}`"
 
                           />
                         </video>
@@ -46,11 +47,7 @@
                       </vue-plyr>
                     </div>
                     <p>{{file.title}}</p>
-
-
-
                   </div>
-
                 </div>
               </div>
             </div>
@@ -73,6 +70,7 @@ export default {
       isVisible: false,
       files: [],
       contentFiles: [],
+      baseUrl: axios.defaults.baseURL.replace('/api/v1/', ''),
     }
   },
   methods: {

@@ -20,6 +20,11 @@ const SMELoan = resolve => {
     resolve(require("../components/views/sme-loan/SMELoan"));
   });
 };
+const FinancingProductsBusiness = resolve => {
+  require.ensure(["../components/views/financing-business/SMELoan"], () => {
+    resolve(require("../components/views/financing-business/SMELoan"));
+  });
+};
 const OurManagement = resolve => {
   require.ensure(["../components/views/our-management/OurManagement"], () => {
     resolve(require("../components/views/our-management/OurManagement"));
@@ -149,15 +154,26 @@ export default new Router({
     //   component: PersonalLoan
     // },
     {
-      path: "/financing-products",
+      path: "/financing-products/consumer",
       name: "SMELoan",
       meta: {
-        title: "SME Loan",
+        title: "Financing Products - Consumer",
         description: "Grow your Business. Achieve your Dreams",
         seo_keyword: ""
       },
 
       component: SMELoan
+    },
+    {
+      path: "/financing-products/business",
+      name: "FinancingProductsBusiness",
+      meta: {
+        title: "Financing Products - Business",
+        description: "Grow your Business. Achieve your Dreams",
+        seo_keyword: ""
+      },
+
+      component: FinancingProductsBusiness
     },
     // {
     //   path: "/corporate-loan",
