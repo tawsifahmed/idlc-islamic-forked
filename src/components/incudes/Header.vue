@@ -41,7 +41,7 @@
                 <div class="desktop_menu_sub_blocks desktop_menu_sub_blocks_3" style="width: 250px;">
                   <div class="block" style="padding: 11px;">
                     <li>
-                      <router-link class="menu_link" to="/idlc-at-a-glance">
+                      <router-link class="menu_link" to="/financing-products/consumer">
                         <div class="menuIcon">
                           <img
                             src="~@/assets/img/menu_icon/Menubar/Idlc-at-a-glance.png"
@@ -58,7 +58,7 @@
                     </li>
 
                     <li style="padding-top: 4.5px">
-                      <router-link class="menu_link" to="/idlc-at-a-glance" style="margin-bottom: 0px;">
+                      <router-link class="menu_link" to="/financing-products/business" style="margin-bottom: 0px;">
                         <div class="menuIcon">
                           <img
                             src="~@/assets/img/menu_icon/Menubar/News-_-Events.png"

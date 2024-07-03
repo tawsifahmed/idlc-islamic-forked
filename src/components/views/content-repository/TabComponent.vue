@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="container my-5">
     <b-card class="product-card">
       <a v-b-toggle="'annualReportcollapse' + 2" block class="d-flex cursor_pointer">
         <strong class="question_product" style="color:white; font-size: 1.25rem;">
@@ -746,23 +746,15 @@ p.tag span {
     padding: 2px 6px 9px 7px;
   }
   .card-body p{
-    padding: 13px 0px 12px 14px !important;
+    padding: 10px 0px 12px 0px !important;
   }
-  .card{
-    margin-bottom: 15px !important;
-  }
+
+
   .product-card {
-    background-color: #F2F2F2 !important;
-
+    padding: 0px;
+    color: white !important;
   }
-  .product-card .card-body{
-    padding: 0.25rem !important;
 
-  }
-  .question_product{
-    color: #000000 !important;
-
-  }
   .ml-auto, .mx-auto {
     color: #BFBFBF !important;
   }
@@ -923,6 +915,9 @@ p.tag span {
     .file-name{
       cursor: pointer !important;
     }
+
+
+
 
 
 </style>

@@ -22,6 +22,8 @@ import VueMeta from "vue-meta";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
+import VuePlyr from 'vue-plyr'
+import 'vue-plyr/dist/vue-plyr.css'
 
 import {
   TooltipPlugin,
@@ -38,7 +40,9 @@ import {
 
 import LazyTube from "vue-lazytube";
 Vue.use(LazyTube);
-
+Vue.use(VuePlyr, {
+  plyr: {}
+});
 Vue.use(CollapsePlugin);
 Vue.use(TooltipPlugin);
 Vue.use(LayoutPlugin);
@@ -92,8 +96,8 @@ router.afterEach((to, from) => {});
 axios.defaults.headers.common = { Accept: "application/json" };
 // axios.defaults.baseURL = "https://web.singularitybd.co/api/v1/";
 // axios.defaults.baseURL = "https://web.idlc.com/api/v1/";
-// axios.defaults.baseURL = "http://idlc-islamic-backend.test/api/v1/";
-axios.defaults.baseURL = "http://139.59.241.231/api/v1/";
+axios.defaults.baseURL = "http://idlc-islamic-backend.test/api/v1/";
+// axios.defaults.baseURL = "http://139.59.241.231/api/v1/";
 // axios.defaults.baseURL = "http://127.0.0.1:8000/api/v1/";
 
 new Vue({

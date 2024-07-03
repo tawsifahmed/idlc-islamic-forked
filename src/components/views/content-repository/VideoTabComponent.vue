@@ -1,9 +1,9 @@
 <template>
-  <section>
+  <section class="container my-5">
     <b-card class="product-card">
       <a v-b-toggle="'annualReportcollapse' + 2" block class="d-flex cursor_pointer">
         <strong class="question_product" style="color:white; font-size: 1.25rem;">
-          Files
+          Videos
         </strong>
       </a>
       <div v-bind:id="'annualReportcollapse' + 2">
@@ -13,23 +13,42 @@
           </b-card>
           <div v-else class="row">
             <div class="latest_news slider multiple-items col-md-12">
-              <div class="row">
+              <div class="row p-2">
 
 
-                <div v-for="file in files" :key="file.id" class="col-lg-3 col-ms-6 col-12">
-                  <div class="card-single-pdf">
-                    <div class="title-report-pdf"></div>
-                    <div class="single-report-img">
-                      <img src="../../../assets/img/report/PDF-File.png" alt="" />
+                <div v-for="file in files" :key="file.id" class="col-lg-4 col-md-6 col-12">
+                  <div >
+                    <div v-if="file.video_type == 'upload'" class="video-wrapper">
+                      <vue-plyr :options="options">
+                        <video
+                          controls
+                          crossorigin
+                          playsinline
+                          data-poster="poster.jpg"
+                        >
+                          <source
+                            :src="`http://idlc-islamic-backend.test/uploads/video_file/${file.video_link}`"
+
+                          />
+                        </video>
+                      </vue-plyr>
                     </div>
-                    <div class="report-name">
-                      <h6 class="file-name" :title="file.downloadable_title">{{ file.downloadable_title.length >= 20 ? file.downloadable_title.substring(0, 20) + '...' + file.downloadable_title.substring(file.downloadable_title.length - 14) : file.downloadable_title }}</h6>
+                    <div v-else class=" video-wrapper">
+                      <vue-plyr >
+                        <div class="plyr__video-embed">
+                          <iframe
+                            :src="file.video_link"
+                            allowfullscreen
+                            allowtransparency
+                            allow="autoplay"
+                          ></iframe>
+                        </div>
+                      </vue-plyr>
                     </div>
-                    <div class="download-report-btn">
-                      <a :href="file.downloadable_file" target="_blank" style="color: white !important;"
-                        download>Download</a>
-                      <img src="../../../assets/img/report/Download-PDF.png" alt="" />
-                    </div>
+                    <p>{{file.title}}</p>
+
+
+
                   </div>
 
                 </div>
@@ -58,8 +77,10 @@ export default {
   },
   methods: {
     getContentFiles() {
-      axios.get('get-downloadable-file').then(res => {
+      axios.get('get-video-file').then(res => {
+
         this.contentFiles = res.data.details
+        console.log('vid',this.contentFiles)
         this.contentFiles.filter(item => {
           this.files.push(item)
           // this.showViewMorePdf = true
@@ -746,23 +767,15 @@ p.tag span {
     padding: 2px 6px 9px 7px;
   }
   .card-body p{
-    padding: 13px 0px 12px 14px !important;
+    padding: 10px 0px 12px 0px !important;
   }
-  .card{
-    margin-bottom: 15px !important;
-  }
+
+
   .product-card {
-    background-color: #F2F2F2 !important;
-
+    padding: 0px;
+    color: white !important;
   }
-  .product-card .card-body{
-    padding: 0.25rem !important;
 
-  }
-  .question_product{
-    color: #000000 !important;
-
-  }
   .ml-auto, .mx-auto {
     color: #BFBFBF !important;
   }
@@ -923,6 +936,9 @@ p.tag span {
     .file-name{
       cursor: pointer !important;
     }
+
+
+
 
 
 </style>

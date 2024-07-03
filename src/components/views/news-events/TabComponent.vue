@@ -23,7 +23,7 @@
             </button>
             <button class="tablinks1" @click="keyFeatureTabOpen( 'eligibility',$event)">Media Resources</button>
             <button class="tablinks1" @click="keyFeatureTabOpen( 'howCanIUse',$event)">Media Contact</button>
-            <button class="tablinks1" @click="keyFeatureTabOpen( 'c_19_poliicy',$event)">Covid-19 Policy</button>
+            <!-- <button class="tablinks1" @click="keyFeatureTabOpen( 'c_19_poliicy',$event)">Covid-19 Policy</button> -->
           </div>
 
           <div id="feature" class="tabcontent">
