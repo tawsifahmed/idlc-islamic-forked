@@ -80,7 +80,7 @@ export default {
 }
 
 .whyChose .bottom_curve {
-  background: url("~@/assets/img/curveShapeWhiteUp.png") top center;
+  background: url("~@/assets/img/download-tow.png") top center;
   bottom: 0rem;
   background-size: cover;
   height: 5rem;

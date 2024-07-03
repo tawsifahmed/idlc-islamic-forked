@@ -24,7 +24,10 @@
                             <router-link to="/deposit-products">Deposit Products</router-link>
                           </li>
                           <li>
-                            <router-link to="/financing-products">Financing Products</router-link>
+                            <router-link to="/financing-products/consumer">Financing Products (Consumer)</router-link>
+                          </li>
+                          <li>
+                            <router-link to="/financing-products/business">Financing Products (Business)</router-link>
                           </li>
 
                         </ul>
@@ -119,7 +122,8 @@
 
                           <li><router-link to="/faq">FAQ</router-link></li>
                           <li><router-link to="/shariah-supervisory-committee">Shariah Supervisory Committee</router-link></li>
-                          <li><router-link to="/content-repository">Content Repository</router-link></li>
+                          <li><router-link to="/content-repository/documents">Content Repository (Documents)</router-link></li>
+                          <li><router-link to="/content-repository/documents">Content Repository (Videos)</router-link></li>
 
                         </ul>
                       </div>

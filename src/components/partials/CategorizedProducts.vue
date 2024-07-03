@@ -149,135 +149,22 @@
 
         <div class="container-lg">
           <div class="tab">
-            <button
-              class="tablinks1 active"
-              @click="openTab('feature' + itemData.id, $event)"
+            <button v-for="(tabF, index) in itemData.tabs"
+              :class=" index == 0 ?'tablinks1 active':'tablinks1'"
+              @click="openTab('tab_ID_' + tabF.id, $event)"
               :id="'defaultOpen' + index"
             >
-              Features
+              {{tabF.tab_title}}
             </button>
-            <button v-if="itemData.eligibility_description" class="tablinks1 " @click="openTab( 'eligibility'+itemData.id, $event)">
-              Eligibility
-            </button>
-            <!--            <button class="tablinks1 " @click="openTab( 'howCanIUse'+itemData.id, $event)">How I can use this loan</button>-->
-            <button v-if="itemData.required_document_description"
-              class="tablinks1 "
-              @click="openTab('requiredDocument' + itemData.id, $event)"
-            >
-              Required Document
-            </button>
-            <button v-if="itemData.psr_actual_profit"
-              class="tablinks1 "
-              @click="openTab('psr&ActualProfit' + itemData.id, $event)"
-            >
-              PSR & Actual Profit
-            </button>
-            <button v-if="itemData.rate_of_rent"
-              class="tablinks1 "
-              @click="openTab('rateOfRant' + itemData.id, $event)"
-            >
-              Rate of Rent
-            </button>
-            <button v-if="itemData.underlying_contract"
-              class="tablinks1 "
-              @click="openTab('underyingContract' + itemData.id, $event)"
-            >
-            Underlying Contract
-            </button>
-            <!-- <button
-              class="tablinks1 "
-              @click="openTab('contactInformation' + itemData.id, $event)"
-            >
-              Contact Information
-            </button> -->
           </div>
 
-          <div
-            :id="'feature' + itemData.id"
+          <div v-for="(tabS, index) in itemData.tabs"
+            :id="'tab_ID_' + tabS.id"
             class="tabcontent1"
-            style="display: block; overflow: auto;"
+            :style="index == 0 ?'display: block; overflow: auto;':''"
           >
-            <span v-html="itemData.feature_description"></span>
+            <span v-html="tabS.tab_details"></span>
             <!--            <router-link :to="{ name: 'ApplyForLoan', params: { applyFor : shortcode}}"  target="_blank" class="tabcontent1Button">Apply Now</router-link>-->
-          </div>
-
-          <div :id="'eligibility' + itemData.id" class="tabcontent1">
-            <span v-html="itemData.eligibility_description"></span>
-            <!-- <router-link
-              :to="{ name: 'ApplyForLoan', params: { applyFor: shortcode } }"
-              target="_blank"
-              class="tabcontent1Button"
-              >Apply Now</router-link
-            > -->
-          </div>
-
-          <div :id="'howCanIUse' + itemData.id" class="tabcontent1">
-            <span v-html="itemData.how_can_use_description"></span>
-            <router-link
-              :to="{ name: 'ApplyForLoan', params: { applyFor: shortcode } }"
-              target="_blank"
-              class="tabcontent1Button"
-              >Apply Now</router-link
-            >
-          </div>
-          <div :id="'requiredDocument' + itemData.id" class="tabcontent1">
-            <span v-html="itemData.required_document_description"></span>
-            <!--            <router-link :to="{ name: 'ApplyForLoan', params: { applyFor : shortcode}}"  target="_blank" class="tabcontent1Button">Apply Now</router-link>-->
-            <a
-              :href="itemData.required_document_file"
-              class="tabcontent1Button"
-              target="_blank"
-              download
-              >Download</a
-            >
-          </div>
-          <div :id="'psr&ActualProfit' + itemData.id" class="tabcontent1">
-            <span v-html="itemData.psr_actual_profit"></span>
-            <!--            <router-link :to="{ name: 'ApplyForLoan', params: { applyFor : shortcode}}"  target="_blank" class="tabcontent1Button">Apply Now</router-link>-->
-            <!-- <a
-              :href="itemData.required_document_file"
-              class="tabcontent1Button"
-              target="_blank"
-              download
-              >Download</a
-            > -->
-          </div>
-          <div :id="'rateOfRant' + itemData.id" class="tabcontent1">
-            <span v-html="itemData.rate_of_rent"></span>
-            <!--            <router-link :to="{ name: 'ApplyForLoan', params: { applyFor : shortcode}}"  target="_blank" class="tabcontent1Button">Apply Now</router-link>-->
-            <!-- <a
-              :href="itemData.required_document_file"
-              class="tabcontent1Button"
-              target="_blank"
-              download
-              >Download</a
-            > -->
-          </div>
-          <div :id="'underyingContract' + itemData.id" class="tabcontent1">
-            <span v-html="itemData.underlying_contract"></span>
-            <!--            <router-link :to="{ name: 'ApplyForLoan', params: { applyFor : shortcode}}"  target="_blank" class="tabcontent1Button">Apply Now</router-link>-->
-            <!-- <a
-              :href="itemData.required_document_file"
-              class="tabcontent1Button"
-              target="_blank"
-              download
-              >Download</a
-            > -->
-          </div>
-
-          <div :id="'contactInformation' + itemData.id" class="tabcontent1">
-            <!--            <span  v-html="itemData.required_document_description" ></span>-->
-
-            <h6>Corporate Division</h6>
-            <p style="font-size: 16px;">IDLC Finance PLC</p>
-
-            <p>
-              Bay’s Galleria (1st Floor), 57 Gulshan Avenue, Dhaka 1212,
-              Bangladesh
-            </p>
-            <p class="text-bold">Contact No: 16409, +8809609994352</p>
-            <!--            <router-link :to="{ name: 'ApplyForLoan', params: { applyFor : shortcode}}"  target="_blank" class="tabcontent1Button">Apply Now</router-link>-->
-            <!--            <a :href="itemData.required_document_file" class="tabcontent1Button" target="_blank" download>Download</a>-->
           </div>
         </div>
       </div>

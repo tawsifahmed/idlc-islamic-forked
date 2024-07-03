@@ -44,7 +44,7 @@
                       <router-link class="menu_link" to="/financing-products/consumer">
                         <div class="menuIcon">
                           <img
-                            src="~@/assets/img/menu_icon/Menubar/Idlc-at-a-glance.png"
+                            src="~@/assets/img/menu_icon/Menubar/Personal-loan.png"
                             alt=""
                           />
                         </div>
@@ -61,7 +61,7 @@
                       <router-link class="menu_link" to="/financing-products/business" style="margin-bottom: 0px;">
                         <div class="menuIcon">
                           <img
-                            src="~@/assets/img/menu_icon/Menubar/News-_-Events.png"
+                            src="~@/assets/img/menu_icon/Menubar/SME-loan.png"
                             alt=""
                           />
                         </div>

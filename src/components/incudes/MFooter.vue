@@ -37,8 +37,9 @@
               <router-link to="/financing-products/business">Financing Products (Business)</router-link>
             </li>
             <li><router-link to="/shariah-supervisory-committee">Shariah Supervisory Committee</router-link></li>
+            <li><router-link to="/content-repository/documents">Content Repository (Documents)</router-link></li>
+            <li><router-link to="/content-repository/videos">Content Repository (Videos)</router-link></li>
             <li><router-link to="/faq">FAQ</router-link></li>
-            <li><router-link to="/content-repository">Content Repository</router-link></li>
             <li>
               <router-link to="/news-and-events">News & Events</router-link>
             </li>
