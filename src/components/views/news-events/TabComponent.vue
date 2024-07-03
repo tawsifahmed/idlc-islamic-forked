@@ -143,21 +143,21 @@
                 LOGOS
               </h2>
               <!-- <h6>{{ contentData.tagline }}</h6> -->
-              <p>IDLC Finance logo packages for print (.EPS), broadcast and web (.SVG and .PNG) use. For more
+              <p>IDLC Islamic logo packages for print (.EPS), broadcast and web (.SVG and .PNG) use. For more
                 information, view logo usage guidelines.</p>
-              <p>IDLC Finance grants you a limited license to download and use the logos and imagery solely for
+              <p>IDLC Islamic grants you a limited license to download and use the logos and imagery solely for
                 editorial use.</p>
               <div class="logo">
                 <!-- <img src="../../../assets/img/logo.png" height="200px" width="300px"> -->
                 <!-- <img src="../../../assets/img/logo/IDLC_NEW_PLC.png" height="200px" width="300px"> -->
-                <img src="../../../assets/img/logo/IDLC_PLC_Logo.png" height="200px" width="300px">
+                <img src="../../../assets/img/logo/IDLC_NEW2.png" width="300px">
               </div>
             </div>
             <div class="footer_button">
               <!-- <a href="/static/IDLC_NEW.png" class="tabcontent1Button" download>Download (.PNG) File</a>
               <a href="/static/IDLC_PLC_newlogo.ai" class="tabcontent1Button" download>Download (.AI) File</a> -->
-              <a href="/static/IDLC_PLC_Logo.png" class="tabcontent1Button" download>Download (.PNG) File</a>
-              <a href="/static/IDLC_FL_PLC.ai" class="tabcontent1Button" download>Download (.AI) File</a>
+              <a href="/static/IDLC_NEW2.png" class="tabcontent1Button" download>Download (.PNG) File</a>
+              <a href="/static/IF_Logo_Final.ai" class="tabcontent1Button" download>Download (.AI) File</a>
             </div>
           </div>
 

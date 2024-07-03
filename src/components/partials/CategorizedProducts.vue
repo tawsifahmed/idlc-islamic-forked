@@ -117,6 +117,7 @@
     <!-- <div id="topBreak"></div> -->
     <!--CATEGORIZED PORDUCT Part End-->
     <div class="productFeatures">
+      <!-- <pre>{{productData}}</pre> -->
       <div
         v-for="(itemData, index) in productData"
         class="categoryDetails "
