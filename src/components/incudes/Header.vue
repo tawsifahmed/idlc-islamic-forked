@@ -107,7 +107,7 @@
                       <router-link class="menu_link" to="/content-repository/documents">
                         <div class="menuIcon">
                           <img
-                            src="~@/assets/img/menu_icon/Menubar/08-old.png"
+                            src="~@/assets/img/menu_icon/Menubar/icons8-document-50.png"
                             alt=""
                           />
                         </div>
@@ -124,7 +124,7 @@
                       <router-link class="menu_link" to="/content-repository/videos" style="margin-bottom: 0px;">
                         <div class="menuIcon">
                           <img
-                            src="~@/assets/img/menu_icon/Menubar/News-_-Events.png"
+                            src="~@/assets/img/menu_icon/Menubar/icons8-video-48.png"
                             alt=""
                           />
                         </div>

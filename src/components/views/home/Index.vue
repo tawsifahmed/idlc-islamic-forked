@@ -169,12 +169,11 @@
             <div class="featuredProduct_box_inner">
               <div class="icon icon_1"></div>
               <div class="heading">
-                <h1>Deposit Products</h1>
+                <h1>Mudarabah Deposit Products</h1>
               </div>
               <div class="short_detail">
                 <p>
-                  IDLC Home Loan gives you the confidence to purchase own space
-                  to live in freedom.
+                  Experience the tranquility of financial growth with IDLC Islamic Finance's deposit solutions.
                 </p>
               </div>
               <button>
@@ -188,12 +187,29 @@
             <div class="featuredProduct_box_inner">
               <div class="icon icon_2"></div>
               <div class="heading">
-                <h1>Financing Products</h1>
+                <h1>Home Financing (Consumer)</h1>
               </div>
               <div class="short_detail">
                 <p>
-                  IDLC SME Loan features convenient repayment to reduce the
-                  burden on your finances.
+                  Where dreams of home ownership meet Shariah-compliant solutions.
+                </p>
+              </div>
+              <button>
+                <router-link to="/sme-loan">Learn More</router-link>
+              </button>
+            </div>
+          </router-link>
+        </div>
+        <div class="featuredProduct_box">
+          <router-link to="/financing-products">
+            <div class="featuredProduct_box_inner">
+              <div class="icon icon_2"></div>
+              <div class="heading">
+                <h1>SME Financing (Business)</h1>
+              </div>
+              <div class="short_detail">
+                <p>
+                  Elevate your business aspirations with IDLC Islamic Finance's SME Term Financing.
                 </p>
               </div>
               <button>
@@ -1143,6 +1159,13 @@ export default {
   -ms-flex-pack: justify;
   justify-content: center;
   padding: 20px 0 15px 0;
+}
+
+@media (min-width: 768px) {
+  .featuredProduct {
+    margin: 0 auto;
+    width: 95%;
+  }
 }
 
 .featuredProduct_box {
