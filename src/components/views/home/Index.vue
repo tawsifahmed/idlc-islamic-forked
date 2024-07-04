@@ -5,32 +5,12 @@
     <app-side-nav />
     <div>
       <div class="topShape" style="">
-        <div
-          class="circle"
-          id="circle1"
-          style="left: -220.281px; top: 216.45px"
-        ></div>
-        <div
-          class="circle"
-          id="circle2"
-          style="left: 770.742px; top: -550.55px"
-        ></div>
-        <div
-          class="circle"
-          id="circle3"
-          style="left: 160.403px; top: -162.05px"
-        ></div>
-        <div
-          class="circle"
-          id="circle4"
-          style="left: 725.069px; top: 26.45px"
-        ></div>
+        <div class="circle" id="circle1" style="left: -220.281px; top: 216.45px"></div>
+        <div class="circle" id="circle2" style="left: 770.742px; top: -550.55px"></div>
+        <div class="circle" id="circle3" style="left: 160.403px; top: -162.05px"></div>
+        <div class="circle" id="circle4" style="left: 725.069px; top: 26.45px"></div>
         <div class="headerSvg">
-          <img
-            src="~@/assets/img/home-reverse.svg"
-            height="auto"
-            width="auto"
-          />
+          <img src="~@/assets/img/home-reverse.svg" height="auto" width="auto" />
         </div>
       </div>
     </div>
@@ -50,18 +30,10 @@
             <!--            <h1 class="">Welcome to financing happiness!</h1>-->
             <h1>{{ pageSliderHeader.first_title }}</h1>
             <div class="buttons">
-              <a
-                href="/apply-for-loan"
-                target="_blank"
-                class="home-apply-for-loan-button"
-              >
+              <a href="/apply-for-loan" target="_blank" class="home-apply-for-loan-button">
                 <h6 class="home-apply-for-loan-button">Apply For Loan</h6>
               </a>
-              <a
-                href="https://idlc.com/login/login.php"
-                target="_blank"
-                class="home-account-login-button"
-              >
+              <a href="https://idlc.com/login/login.php" target="_blank" class="home-account-login-button">
                 <h6 class="home-account-login-button">Customer Login</h6>
               </a>
             </div>
@@ -69,22 +41,9 @@
           <div class="slider">
 
             <div v-if="sliders.length > 0">
-              <carousel
-                :autoplay="false"
-                :nav="false"
-                :items="1"
-                :dots="true"
-                id="items"
-              >
-                <a
-                  class="item slideItem"
-                  v-for="(slideItem, index) in sliders"
-                  :key="slideItem.id"
-                  :id="'slide_' + index"
-                  :href="slideItem.button_link"
-                  target="_blank"
-                  style="display: none"
-                >
+              <carousel :autoplay="false" :nav="false" :items="1" :dots="true" id="items">
+                <a class="item slideItem" v-for="(slideItem, index) in sliders" :key="slideItem.id"
+                  :id="'slide_' + index" :href="slideItem.button_link" target="_blank" style="display: none">
                   <div class="item_overlay">
                     <div class="item_tex">
                       <h2 class="animate__animated animate__backInLeft">
@@ -96,11 +55,7 @@
                     </div>
                   </div>
                   <picture>
-                    <img
-                      :src="slideItem.image"
-                      @load="onImageLoad"
-                      alt="Slider Image"
-                    />
+                    <img :src="slideItem.image" @load="onImageLoad" alt="Slider Image" />
                   </picture>
                 </a>
               </carousel>
@@ -127,40 +82,67 @@
 
       <div class="tabcontent1 defaultTableDesign" style="display: block; overflow: auto;">
         <span v-if="homePageData.homePageFeatured" v-html="homePageData.homePageFeatured.why_us"></span>
-        <router-link
-
-          target="_blank"
-          class="tabcontent1Button"
-        >Apply Now</router-link>
-      </div>
-    </div>
-    <div class="container-lg productFeatures">
-      <div class="tab">
-        <button class="tablinks1 active">
-          Key Features
-        </button>
-      </div>
-
-      <div class="tabcontent1 defaultTableDesign" style="display: block; overflow: auto;">
-        <span v-if="homePageData.homePageFeatured" v-html="homePageData.homePageFeatured.description"></span>
-        <router-link
-
-          target="_blank"
-          class="tabcontent1Button"
-        >Apply Now</router-link>
+        <router-link target="_blank" class="tabcontent1Button">Apply Now</router-link>
       </div>
     </div>
 
-    <div class="container-lg my-5">
-      <h2
-        class="featuredProductHeading h2Responsive "
-        style="
+
+
+    <div v-if="homeKeyFeature" class="container-lg productFeatures mt-3 pt-2 pb-4">
+      <h2 class="featuredProductHeading h2Responsive mb-3" style="
           text-align: center;
           margin-top: 45px;
           color: #2d2a29;
           text-transform: uppercase;
-        "
-      >
+        ">
+        Key Features
+      </h2>
+      <div class="featuredProduct">
+
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-3"  v-for="keyFeature in homeKeyFeature">
+              <div class="serviceBox">
+                <div class="icon mb-3">
+                  <img :src="`${baseUrl}/uploads/${keyFeature.icon_link}`" alt="">
+                </div>
+                <h3 class="title">{{ keyFeature.title }}</h3>
+                <p class="description">{{ keyFeature.description }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="" >
+
+          <div class="border">
+            <div class="featuredProduct_box_inner">
+              <div class="icon ">
+                <img :src="`${baseUrl}/uploads/${keyFeature.icon_link}`" alt="">
+              </div>
+              <div class="heading">
+                <h1>{{ keyFeature.title }}</h1>
+              </div>
+              <div class="short_detail">
+                <p>
+                  {{ keyFeature.description }}
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div> -->
+
+      </div>
+    </div>
+
+    <div class="container-lg my-5">
+      <h2 class="featuredProductHeading h2Responsive " style="
+          text-align: center;
+          margin-top: 45px;
+          color: #2d2a29;
+          text-transform: uppercase;
+        ">
         Featured Products
       </h2>
       <div class="featuredProduct">
@@ -183,7 +165,7 @@
           </router-link>
         </div>
         <div class="featuredProduct_box">
-          <router-link to="/financing-products">
+          <router-link to="/financing-products/consumer">
             <div class="featuredProduct_box_inner">
               <div class="icon icon_2"></div>
               <div class="heading">
@@ -195,13 +177,13 @@
                 </p>
               </div>
               <button>
-                <router-link to="/sme-loan">Learn More</router-link>
+                <router-link to="/financing-products/consumer">Learn More</router-link>
               </button>
             </div>
           </router-link>
         </div>
         <div class="featuredProduct_box">
-          <router-link to="/financing-products">
+          <router-link to="/financing-products/business">
             <div class="featuredProduct_box_inner">
               <div class="icon icon_2"></div>
               <div class="heading">
@@ -213,7 +195,7 @@
                 </p>
               </div>
               <button>
-                <router-link to="/sme-loan">Learn More</router-link>
+                <router-link to="/financing-products/business">Learn More</router-link>
               </button>
             </div>
           </router-link>
@@ -231,11 +213,7 @@
           </div>
           <div class="body">
             <div class="reason">
-              <img
-                :src="homePageLowerTabContent.why_choose_one_image"
-                alt=""
-                v-if="homePageLowerTabContent"
-              />
+              <img :src="homePageLowerTabContent.why_choose_one_image" alt="" v-if="homePageLowerTabContent" />
               <h5>{{ homePageLowerTabContent.why_choose_one_title }}</h5>
               <div class="line"></div>
               <p>{{ homePageLowerTabContent.why_choose_one_subtitle }}</p>
@@ -247,19 +225,13 @@
               <p>{{ homePageLowerTabContent.why_choose_two_subtitle }}</p>
             </div>
             <div class="reason">
-              <img
-                :src="homePageLowerTabContent.why_choose_three_image"
-                alt=""
-              />
+              <img :src="homePageLowerTabContent.why_choose_three_image" alt="" />
               <h5>{{ homePageLowerTabContent.why_choose_three_title }}</h5>
               <div class="line"></div>
               <p>{{ homePageLowerTabContent.why_choose_three_subtitle }}</p>
             </div>
             <div class="reason">
-              <img
-                :src="homePageLowerTabContent.why_choose_four_image"
-                alt=""
-              />
+              <img :src="homePageLowerTabContent.why_choose_four_image" alt="" />
               <h5>{{ homePageLowerTabContent.why_choose_four_title }}</h5>
               <div class="line"></div>
               <p>{{ homePageLowerTabContent.why_choose_four_subtitle }}</p>
@@ -322,8 +294,10 @@ export default {
       financialData: "",
       menuVideos: "",
       menuNews: [],
+      homeKeyFeature: null,
       shareBase: this.$store.state.shareBaseUrl,
       comments: [],
+      baseUrl: axios.defaults.baseURL.replace('/api/v1/', ''),
       get requestPermission() {
         return localStorage.getItem("notificationPref") === null;
       },
@@ -334,10 +308,10 @@ export default {
   },
   name: "Index",
   methods: {
-    getHomeSliderData(){
+    getHomeSliderData() {
       axios
         .get(`homepage-slider?shortcode=Home`)
-        .then(res =>{
+        .then(res => {
 
           const sliders = res.data
           // sliders.forEach(slider => {
@@ -373,6 +347,15 @@ export default {
         })
         .catch(error => console.log(error));
     },
+    getHomePageKeyFeature() {
+      axios.get('get-key-feature').then(res => {
+        console.log('res =>', res)
+        this.homeKeyFeature = res.data.data;
+        console.log('homeKeyFeature =>', this.homeKeyFeature)
+      }).catch(err => {
+        console.log(err);
+      })
+    },
     onImageLoad() {
       this.isPlaceholder = false;
       this.isImageLoaded = true;
@@ -383,15 +366,15 @@ export default {
       document.getElementById("slide_1").style.display = "block";
       document.getElementById("slide_2").style.display = "block";
     },
-    async getComments(){
-      try{
+    async getComments() {
+      try {
         await axios.get('homepage-quote').then(res => {
           this.comments = res.data.homeQuote;
 
         }).catch(err => {
           console.log(err);
         })
-      }catch(error){
+      } catch (error) {
         console.log('error =>', error)
       }
     }
@@ -407,6 +390,7 @@ export default {
     // this.getHomePageData()
     this.getHomeSliderData()
     this.getComments()
+    this.getHomePageKeyFeature()
   },
 
   mounted() {
@@ -442,9 +426,9 @@ export default {
             .then(response => {
               if (response.status < 200 || response.status >= 400) {
                 throw "Error subscribing to topic: " +
-                  response.status +
-                  " - " +
-                  response.text();
+                response.status +
+                " - " +
+                response.text();
               }
             })
             .catch(error => {
@@ -1077,9 +1061,11 @@ export default {
   -webkit-animation: slidetext 0.4s ease-in-out 0.5s forwards;
   animation: slidetext 0.4s ease-in-out 0.5s forwards;
 }
+
 .main_slider .main_slider_bg_part .slider .item .item_tex h2 {
   font-size: 2rem;
 }
+
 .main_slider .main_slider_bg_part .slider .item .item_tex p {
   font-size: 1.25rem;
 }
@@ -1097,30 +1083,37 @@ export default {
   .main_slider .main_slider_bg_part {
     margin-top: 15px;
   }
+
   .main_slider .main_slider_bg_part .slider_top {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
+
   .main_slider .main_slider_bg_part .slider_top h1 {
     font-size: 25px !important;
   }
+
   .main_slider .main_slider_bg_part .slider_top .buttons {
     -ms-flex-item-align: end;
     align-self: flex-end;
   }
+
   .main_slider .main_slider_bg_part .slider #owl-demo .item img {
     height: 200px !important;
   }
+
   .main_slider .main_slider_bg_part .slider .item .item_tex {
     width: 100%;
     bottom: 15px;
     right: 8px;
   }
+
   .main_slider .main_slider_bg_part .slider .item .item_tex h2 {
     font-size: 20px;
   }
+
   .main_slider .main_slider_bg_part .slider .item .item_tex p {
     font-size: 1rem;
   }
@@ -1130,6 +1123,7 @@ export default {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -1139,6 +1133,7 @@ export default {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -1151,6 +1146,7 @@ export default {
   bottom: 80px;
   left: 105px;
 }
+
 .featuredProduct {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1245,6 +1241,7 @@ export default {
 .featuredProduct_box_inner .icon_3 {
   background-image: url("~@/assets/img/menuIcons/deposit/Deposits-Icon.png");
 }
+
 .featuredProduct_box_inner .icon_4 {
   background-image: url("~@/assets/img/menuIcons/deposit/Corporate-Loan-01.png");
   background-size: 100% 100%;
@@ -1282,23 +1279,24 @@ export default {
   transition: all 0.3s;
 }
 
-.featuredProduct_box:hover .featuredProduct_box_inner > button {
+.featuredProduct_box:hover .featuredProduct_box_inner>button {
   visibility: visible;
   opacity: 1;
 }
 
-.featuredProduct_box:hover .featuredProduct_box_inner > .icon_1 {
+.featuredProduct_box:hover .featuredProduct_box_inner>.icon_1 {
   background-image: url("~@/assets/img/menuIcons/deposit/Deposits-Icon.png");
 }
 
-.featuredProduct_box:hover .featuredProduct_box_inner > .icon_2 {
+.featuredProduct_box:hover .featuredProduct_box_inner>.icon_2 {
   background-image: url("~@/assets/img/menuIcons/SME/Small-Business.png");
 }
 
-.featuredProduct_box:hover .featuredProduct_box_inner > .icon_3 {
+.featuredProduct_box:hover .featuredProduct_box_inner>.icon_3 {
   background-image: url("~@/assets/img/menuIcons/deposit/Deposits-Icon-02.png");
 }
-.featuredProduct_box:hover .featuredProduct_box_inner > .icon_4 {
+
+.featuredProduct_box:hover .featuredProduct_box_inner>.icon_4 {
   background-image: url("~@/assets/img/menuIcons/deposit/Corporate-Loan-02.png");
 }
 
@@ -1306,6 +1304,7 @@ export default {
   .featuredProductHeading {
     font-size: 25px;
   }
+
   .featuredProduct {
     margin-top: 15px;
     padding: 0px 0 35px 0;
@@ -1314,21 +1313,26 @@ export default {
     -ms-flex-direction: column;
     flex-direction: column;
   }
+
   .featuredProduct_box {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     /* z-index: -1; */
   }
+
   .featuredProduct_box_inner {
     padding: 20px;
     padding: 15px 30px 50px 30px;
   }
+
   .featuredProduct_box_inner .heading {
     margin-bottom: 10px;
   }
+
   .featuredProduct_box_inner .heading h1 {
     font-size: 1.4rem;
   }
+
   .featuredProduct_box_inner button {
     visibility: visible;
     opacity: 1;
@@ -1336,6 +1340,7 @@ export default {
     transform: translateY(0);
   }
 }
+
 .whyChose {
   /* height: 530px; */
   /* background-image: url("~@/assets/img/whyChoose.jpg"); */
@@ -1428,42 +1433,50 @@ export default {
   .whyChose {
     height: auto;
   }
+
   .whyChose .top_curve {
     top: -0.1rem;
   }
+
   .whyChose .bottom_curve {
     bottom: -0.1rem;
   }
+
   .whyChose .whyChoseBg {
     padding: 100px 0px;
   }
+
   .whyChose .whyChoseBg .header h2 {
     width: unset;
     font-size: 25px;
   }
+
   .whyChose .whyChoseBg .body {
     margin: 25px 0 25px 0;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
+
   .whyChose .whyChoseBg .body .reason {
     -ms-flex-preferred-size: 49%;
     flex-basis: 49%;
     margin-bottom: 7px;
     padding: 10px;
   }
+
   .whyChose .whyChoseBg .body .reason img {
     width: 50px;
     margin-bottom: 10px;
   }
 }
+
 .comment_section {
   margin: 60px 0;
 }
-.comment_section .comment_gap{
 
-}
-.comment_section .comment_gap .card_body{
+.comment_section .comment_gap {}
+
+.comment_section .comment_gap .card_body {
   background-image: url('~@/assets/img/comment_bg.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -1473,21 +1486,25 @@ export default {
   border-radius: 14.2963px;
   overflow: hidden;
 }
+
 .comment_section .comment_gap .card_body .main_img {
   width: 50%;
   height: 100%;
 }
-.comment_section .comment_gap .card_body .main_img img{
+
+.comment_section .comment_gap .card_body .main_img img {
   width: 100%;
   height: 300px;
   object-fit: cover;
   object-position: center;
 }
+
 .comment_section .comment_gap .card_body .content {
   width: 50%;
   height: 100%;
 }
-.comment_section .comment_gap .card_body .content p{
+
+.comment_section .comment_gap .card_body .content p {
   font-weight: 400;
   font-size: 12.0148px;
   line-height: 21px;
@@ -1495,39 +1512,46 @@ export default {
   margin-top: 14px;
   width: 234px;
 }
-.comment_section .comment_gap .card_body .content h3{
+
+.comment_section .comment_gap .card_body .content h3 {
   font-weight: 700;
   font-size: 15.0148px;
   line-height: 21px;
   color: #2E2F2F;
   margin-top: 12px;
 }
-.comment_section .comment_gap .card_body .content div{
+
+.comment_section .comment_gap .card_body .content div {
   font-weight: 500;
   font-size: 14.0148px;
   line-height: 21px;
   color: #2E2F2F;
 }
-.comment_section .comment_gap .card_body .content img{
+
+.comment_section .comment_gap .card_body .content img {
   width: 40px;
 }
+
 .for_mobile {
   display: none;
 }
+
 @media (max-width: 1199.99px) {
-  .comment_section .comment_gap .card_body .main_img img{
+  .comment_section .comment_gap .card_body .main_img img {
     height: 255px;
   }
 
-  .comment_section .comment_gap .card_body .content p{
+  .comment_section .comment_gap .card_body .content p {
     font-size: 11.0148px;
     line-height: 15px;
   }
 }
+
 @media (max-width: 499.99px) {
   .comment_gap {
     display: none !important;
   }
+
   .for_mobile {
     display: block;
     background-image: url('~@/assets/img/comment_bg.png');
@@ -1537,30 +1561,37 @@ export default {
     border-radius: 10px;
     overflow: hidden;
   }
-  .for_mobile .card_wrapper{
+
+  .for_mobile .card_wrapper {
     width: 100%;
     height: 100%;
   }
-  .for_mobile .card_wrapper .comment img{
+
+  .for_mobile .card_wrapper .comment img {
     width: 40px
   }
-  .for_mobile .card_wrapper .name_img{
+
+  .for_mobile .card_wrapper .name_img {
     display: flex;
     align-items: end;
   }
-  .for_mobile .card_wrapper .name_img img{
+
+  .for_mobile .card_wrapper .name_img img {
     width: 50%;
   }
-  .for_mobile .card_wrapper .name_img .name{
+
+  .for_mobile .card_wrapper .name_img .name {
     width: 50%;
   }
-  .for_mobile .card_wrapper .name_img .name h3{
+
+  .for_mobile .card_wrapper .name_img .name h3 {
     font-weight: 700;
     font-size: 15.6429px;
     line-height: 22px;
     color: #2E2F2F;
   }
-  .for_mobile .card_wrapper .name_img .name div{
+
+  .for_mobile .card_wrapper .name_img .name div {
     font-weight: 400;
     font-size: 14.6429px;
     line-height: 22px;
@@ -1650,6 +1681,7 @@ export default {
   color: inherit;
   display: inline-block;
 }
+
 @media screen and (max-width: 600px) {
   .productFeatures .tabcontent1 .tabcontent1Button {
     margin-bottom: 15px;
@@ -1666,17 +1698,97 @@ export default {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
+
   .productFeatures .tab .tablinks1 {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
   }
+
   .productFeatures .tab .tablinks1:nth-child(1),
   .productFeatures .tab .tablinks1:nth-child(3) {
     border-right: 1px solid #00a6b4;
   }
+
   .productFeatures .tab .tablinks1:nth-child(1),
   .productFeatures .tab .tablinks1:nth-child(2) {
     border-bottom: 1px solid #00a6b4;
+  }
+}
+
+.serviceBox {
+  color: var(--main-color);
+  background: #fff;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  padding: 50px 15px;
+  border-radius: 30px 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.serviceBox:before,
+.serviceBox:after {
+  content: "";
+  background: var(--main-color);
+  width: 150px;
+  height: 150px;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.15);
+  transform: rotate(45deg);
+  position: absolute;
+  top: -85px;
+  left: -85px;
+  background: #00a6b4;
+}
+
+.serviceBox:after {
+  top: auto;
+  bottom: -85px;
+  left: auto;
+  right: -85px;
+  box-shadow: -5px -5px 5px 0px rgba(0, 0, 0, 0.15);
+  background: #00a6b4;
+}
+
+.serviceBox .service-icon {
+  color: var(--main-color);
+  font-size: 45px;
+  line-height: 45px;
+  margin: 0 0 15px;
+}
+
+.serviceBox .title {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+
+.serviceBox .description {
+  color: #000000;
+  font-size: 15px;
+  line-height: 20px;
+  margin: 0 0 15px;
+}
+
+.serviceBox.red {
+  --main-color: #F12945;
+}
+
+.serviceBox.yellow {
+  --main-color: #F3B202;
+}
+
+.serviceBox.grey {
+  --main-color: #2F5560;
+}
+
+@media only screen and (max-width: 1199px) {
+  .serviceBox {
+    margin: 0 0 30px;
   }
 }
 </style>
