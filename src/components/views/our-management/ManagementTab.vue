@@ -18,7 +18,7 @@
                 <div v-for="(data, index) in boardOfDirectors" :class="`${index === 0 ? 'member_two col-12' : 'member_two col-lg-4 col-md-6 col-12'}`">
                   <div class="left">
                     <div class="image">
-                      <img style="width: 245px; height: 242px" v-lazy="data && data.image" alt="Management Team Member">
+                      <img style="width: 242px; height: 242px;" v-lazy="data && data.image" alt="Management Team Member">
                     </div>
                   </div>
                   <div class="right">
@@ -27,7 +27,7 @@
                       <p>{{ data.designation }}</p>
                     </div>
                     <!-- <span v-html="data.description" class="description"></span> -->
-                    <button class="tabcontent2Button" @click="viewDetails(data)" >View Details</button>
+                    <button class="tabcontent2Button mr-0" @click="viewDetails(data)" >View Details</button>
                   </div>
                 </div>
             </div>

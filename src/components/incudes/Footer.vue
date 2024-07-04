@@ -32,7 +32,7 @@
 
                         </ul>
                         <br />
-                        <div>
+                        <div style="margin-bottom: 25px;">
                           <h3 class="f-title f_600 t_color f_size_18 mb-0">
                             Connect With Us
                           </h3>
