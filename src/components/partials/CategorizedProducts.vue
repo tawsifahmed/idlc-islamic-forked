@@ -38,9 +38,11 @@
                   v-for="(pData, index) in productData"
                   :key="pData.id"
                 >
-                  <a>
+                  <a class="d-flex flex-column justify-content-between align-items-center">
                     <h6>{{ pData.name }}</h6>
-                    <img alt="Retirement" v-lazy="pData.image" />
+                    <div>
+                      <img alt="Retirement" v-lazy="pData.image" />
+                    </div>
                     <div class="nextArrow">
                       <a>
                         <div class="arrow"></div>
@@ -165,8 +167,8 @@
           >
             <span v-html="tabS.tab_details"></span>
             <a v-if="tabS.attachment"
-              :href="tabS.attachment"
-              class="tabcontent1Button"
+              :href="`${baseUrl}/${tabS.attachment}`"
+              class="tabcontent1Button mt-3"
               target="_blank"
               download
               >Download</a
@@ -190,7 +192,8 @@ export default {
       productData: [],
       ProductDetailData: [],
       isMobile: false,
-      shortcode: this.$parent.shortcode
+      shortcode: this.$parent.shortcode,
+      baseUrl: axios.defaults.baseURL.replace('/api/v1/', ''),
     };
   },
   methods: {
@@ -505,7 +508,6 @@ export default {
 }
 .categoryBody .categories .reason a h6 {
   color: #fff;
-  height: 30%;
 }
 .categoryBody .categories .reason a img {
   transition: all 0.3s;

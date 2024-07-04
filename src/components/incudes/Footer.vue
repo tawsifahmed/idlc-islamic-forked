@@ -121,7 +121,6 @@
                         <ul class="list-unstyled f_list">
 
                           <li><router-link to="/faq">FAQ</router-link></li>
-                          <li><router-link to="/shariah-supervisory-committee">Shariah Supervisory Committee</router-link></li>
                           <li><router-link to="/content-repository/documents">Content Repository (Documents)</router-link></li>
                           <li><router-link to="/content-repository/documents">Content Repository (Videos)</router-link></li>
 
@@ -623,12 +622,18 @@ ul {
 .footerSocialIcons li a.footerCallBtn:hover {
   background-image: url("~@/assets/img/quick_menu_icons/01.png");
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .footerSocialIcons {
     justify-content: center;
   }
   .footerSocialIcons li {
     margin: 0 5px;
+  }
+}
+
+@media (max-width: 768px){
+  .footerSocialIcons{
+    margin-bottom: 1rem;
   }
 }
 </style>

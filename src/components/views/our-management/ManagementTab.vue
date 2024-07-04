@@ -18,7 +18,7 @@
                 <div v-for="(data, index) in boardOfDirectors" :class="`${index === 0 ? 'member_two col-12' : 'member_two col-lg-4 col-md-6 col-12'}`">
                   <div class="left">
                     <div class="image">
-                      <img v-lazy="data && data.image" alt="Management Team Member">
+                      <img style="width: 245px; height: 242px" v-lazy="data && data.image" alt="Management Team Member">
                     </div>
                   </div>
                   <div class="right">

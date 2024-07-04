@@ -3,7 +3,7 @@
     <b-card no-body class="mb-1 mFootter firstCard">
       <b-card-header header-tag="header" class="p-1" role="tab">
         <b-button block v-b-toggle.accordion-1 variant="info"
-          >About <i class="fa fa-angle-up"></i
+          >About Us <i class="fa fa-angle-up"></i
         ></b-button>
       </b-card-header>
       <b-collapse id="accordion-1" accordion="my-accordion" role="tabpanel">
@@ -12,7 +12,32 @@
             <li>
               <router-link to="/idlc-at-a-glance">About IDLC</router-link>
             </li>
+            <li>
+              <router-link to="/news-and-events">News & Events</router-link>
+            </li>
+            <li><router-link to="/shariah-supervisory-committee">Shariah Supervisory Committee</router-link></li>
 
+          </ul>
+        </b-card-body>
+      </b-collapse>
+    </b-card>
+    <b-card no-body class="mb-1 mFootter firstCard">
+      <b-card-header header-tag="header" class="p-1" role="tab">
+        <b-button block v-b-toggle.accordion-1 variant="info"
+          >Our Products<i class="fa fa-angle-up"></i
+        ></b-button>
+      </b-card-header>
+      <b-collapse id="accordion-1" accordion="my-accordion" role="tabpanel">
+        <b-card-body>
+          <ul class="list-unstyled f_list">
+            <li><router-link to="/deposit-products">Deposit Products</router-link></li>
+
+            <li>
+              <router-link to="/financing-products/consumer">Financing Products (Consumer)</router-link>
+            </li>
+            <li>
+              <router-link to="/financing-products/business">Financing Products (Business)</router-link>
+            </li>
           </ul>
         </b-card-body>
       </b-collapse>
@@ -28,24 +53,13 @@
         <b-card-body>
           <ul class="list-unstyled f_list">
 
-            <li><router-link to="/deposit-products">Deposit Products</router-link></li>
 
-            <li>
-              <router-link to="/financing-products/consumer">Financing Products (Consumer)</router-link>
-            </li>
-            <li>
-              <router-link to="/financing-products/business">Financing Products (Business)</router-link>
-            </li>
-            <li><router-link to="/shariah-supervisory-committee">Shariah Supervisory Committee</router-link></li>
+
+            <li><router-link to="/faq">FAQ</router-link></li>
             <li><router-link to="/content-repository/documents">Content Repository (Documents)</router-link></li>
             <li><router-link to="/content-repository/videos">Content Repository (Videos)</router-link></li>
-            <li><router-link to="/faq">FAQ</router-link></li>
-            <li>
-              <router-link to="/news-and-events">News & Events</router-link>
-            </li>
-            <li>
-              <router-link to="/shariah-supervisory-committee">Shariah Supervisory Committee</router-link>
-            </li>
+
+
 
           </ul>
         </b-card-body>

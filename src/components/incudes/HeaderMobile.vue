@@ -1,12 +1,15 @@
 <template>
-  <header class="globalNav noDropdownTransition" v-if="isMobile()" v-bind:style="mHeaderStyle">
+  <header style="
+  display: flex;
+  align-items: center;
+  " class="globalNav noDropdownTransition" v-if="isMobile()" v-bind:style="mHeaderStyle">
     <div class="headerContainer">
       <div class="sideNavOpen" onclick="openNav()">
         <span class="sideNavOpenBar"></span>
         <span class="sideNavOpenBar"></span>
         <span class="sideNavOpenBar"></span>
       </div>
-      <ul class="navRoot">
+      <ul class="navRoot justify-content-between">
         <li style="display: none;"></li>
         <li class="navSection logo">
           <router-link class="rootLink item-home colorize" to="/"

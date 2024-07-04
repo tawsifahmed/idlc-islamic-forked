@@ -167,6 +167,11 @@
     width: 35%;
   }
 
+  @media(max-width: 768px){
+    .productFeatures .tab .tablinks1 img{
+      width: 25%;
+    }
+  }
 
   .faq-item{
     background: #F2F2F2;

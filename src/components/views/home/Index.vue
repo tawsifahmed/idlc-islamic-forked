@@ -107,7 +107,7 @@
                   <img :src="`${baseUrl}/uploads/${keyFeature.icon_link}`" alt="">
                 </div>
                 <h3 class="title">{{ keyFeature.title }}</h3>
-                <p class="description">{{ keyFeature.description }}</p>
+                <h2 class="description">{{ keyFeature.description }}</h2>
               </div>
             </div>
           </div>
@@ -136,7 +136,7 @@
       </div>
     </div>
 
-    <div class="container-lg my-5">
+    <div class="container-lg my-3">
       <h2 class="featuredProductHeading h2Responsive " style="
           text-align: center;
           margin-top: 45px;
@@ -1772,6 +1772,7 @@ export default {
   font-size: 15px;
   line-height: 20px;
   margin: 0 0 15px;
+  font-weight: 400;
 }
 
 .serviceBox.red {
