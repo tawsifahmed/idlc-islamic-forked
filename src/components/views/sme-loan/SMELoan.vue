@@ -39,7 +39,7 @@ export default {
   name: 'Financing-Products',
   data() {
     return {
-      shortcode: 'FinancingProducts',
+      shortcode: 'FinancingConsumer',
       relatedProductData: [],
       isMobile: false,
       contentData: "",

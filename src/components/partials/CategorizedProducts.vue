@@ -119,20 +119,20 @@
     <div class="productFeatures">
       <!-- <pre>{{productData}}</pre> -->
       <div
-        v-for="(itemData, index) in productData"
+        v-for="(itemData, i) in productData"
         class="categoryDetails "
-        :id="'categoryFeature' + index"
+        :id="'categoryFeature' + i"
         ref="'id_'+itemData.id"
-        :key="'categoryFeature' + index"
+        :key="'categoryFeature' + i"
       >
         <span
-          @click="categoryPrevButton(index)"
+          @click="categoryPrevButton(i)"
           class="categoryPrevButton"
           :data-id="itemData.id"
           ><a><span class="icon-arrow-left"></span></a
         ></span>
         <span
-          @click="categoryNextButton(index)"
+          @click="categoryNextButton(i)"
           class="categoryNextButton"
           :data-id="itemData.id"
           ><a><span class="icon-arrow-right"></span></a
@@ -152,7 +152,7 @@
             <button v-for="(tabF, index) in itemData.tabs"
               :class=" index == 0 ?'tablinks1 active':'tablinks1'"
               @click="openTab('tab_ID_' + tabF.id, $event)"
-              :id="'defaultOpen' + index"
+              :id="'defaultOpen' + i"
             >
               {{tabF.tab_title}}
             </button>
@@ -161,7 +161,7 @@
           <div v-for="(tabS, index) in itemData.tabs"
             :id="'tab_ID_' + tabS.id"
             class="tabcontent1"
-            :style="index == 0 ?'display: block; overflow: auto;':''"
+            :style="index == 0 ? 'display: block; overflow: auto;':'display: none; overflow: auto;'"
           >
             <span v-html="tabS.tab_details"></span>
             <!--            <router-link :to="{ name: 'ApplyForLoan', params: { applyFor : shortcode}}"  target="_blank" class="tabcontent1Button">Apply Now</router-link>-->

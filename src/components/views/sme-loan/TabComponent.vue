@@ -65,7 +65,7 @@
         faqTabs: [],
         faqs: [],
         faq_tab_id: 11,
-        selectedTabName: "Financing Products",
+        selectedTabName: "Consumer Financing Products",
 
       }
     },
