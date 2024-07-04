@@ -64,7 +64,7 @@
         isVisible: false,
         faqTabs: [],
         faqs: [],
-        faq_tab_id: 13,
+        faq_tab_id: 12,
         selectedTabName: "Business Financing Products",
 
       }
@@ -130,7 +130,7 @@
 
         this.isForeignRouteExist();
       }else{
-        this.getFaq(13);
+        this.getFaq(12);
       }
 
 

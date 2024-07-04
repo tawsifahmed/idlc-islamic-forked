@@ -43,7 +43,7 @@ export default {
       relatedProductData: [],
       isMobile: false,
       contentData: "",
-      faqTabName: 'Financing Products'
+      faqTabName: 'Business Financing Products'
 
     }
   },

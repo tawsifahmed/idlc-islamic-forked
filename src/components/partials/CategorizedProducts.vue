@@ -164,6 +164,13 @@
             :style="index == 0 ? 'display: block; overflow: auto;':'display: none; overflow: auto;'"
           >
             <span v-html="tabS.tab_details"></span>
+            <a v-if="tabS.attachment"
+              :href="tabS.attachment"
+              class="tabcontent1Button"
+              target="_blank"
+              download
+              >Download</a
+            >
             <!--            <router-link :to="{ name: 'ApplyForLoan', params: { applyFor : shortcode}}"  target="_blank" class="tabcontent1Button">Apply Now</router-link>-->
           </div>
         </div>
