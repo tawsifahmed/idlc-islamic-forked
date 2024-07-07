@@ -91,7 +91,7 @@
     <div v-if="homeKeyFeature" class="container-lg productFeatures mt-3 pt-2 pb-4">
       <h2 class="featuredProductHeading h2Responsive mb-3" style="
           text-align: center;
-          margin-top: 45px;
+          margin-top: 30px;
           color: #2d2a29;
           text-transform: uppercase;
         ">
@@ -139,7 +139,7 @@
     <div class="container-lg my-3">
       <h2 class="featuredProductHeading h2Responsive " style="
           text-align: center;
-          margin-top: 45px;
+          margin-top: 15px;
           color: #2d2a29;
           text-transform: uppercase;
         ">
