@@ -45,11 +45,11 @@
 
     <b-card no-body class="mb-1 mFootter">
       <b-card-header header-tag="header" class="p-1" role="tab">
-        <b-button block v-b-toggle.accordion-2 variant="info"
+        <b-button block v-b-toggle.accordion-3 variant="info"
           >Quick Links <i class="fa fa-angle-up"></i
         ></b-button>
       </b-card-header>
-      <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
+      <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
         <b-card-body>
           <ul class="list-unstyled f_list">
 
