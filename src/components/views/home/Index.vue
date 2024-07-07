@@ -104,7 +104,7 @@
             <div class="col-lg-3 col-md-4 col-sm-6 mb-3"  v-for="keyFeature in homeKeyFeature">
               <div class="serviceBox">
                 <div class="icon mb-3">
-                  <img :src="`${baseUrl}/uploads/${keyFeature.icon_link}`" alt="">
+                  <img width="60px" :src="`${baseUrl}/uploads/${keyFeature.icon_link}`" alt="">
                 </div>
                 <h3 class="title">{{ keyFeature.title }}</h3>
                 <h2 class="description">{{ keyFeature.description }}</h2>
@@ -1769,7 +1769,7 @@ export default {
 
 .serviceBox .description {
   color: #000000;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 20px;
   margin: 0 0 15px;
   font-weight: 400;

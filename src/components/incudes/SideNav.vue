@@ -143,28 +143,13 @@
           >
         </li> -->
         <li class="sidenavLinks" @click="closeNav">
-          <router-link to="/deposit-products"
-            >Deposit Products</router-link
-          >
-        </li>
-        <li class="sidenavLinks" @click="closeNav">
-          <router-link to="/financing-products"
-            >Consumer Financing Products</router-link
-          >
-        </li>
-        <li class="sidenavLinks" @click="closeNav">
-          <router-link to="/financing-products"
-            >Business Financing Products</router-link
-          >
-        </li>
-        <li class="sidenavLinks" @click="closeNav">
           <router-link to="/faq"
             >FAQ</router-link
           >
         </li>
         <b-card no-body class="mb-1 mFootter firstCard sidenavLinks">
-          <b-card-header class="bg-white ml-3" role="tab" style="width: 95%; margin: 0 auto; border-bottom: 1px solid #ccc;">
-            <b-button block v-b-toggle.accordion-1 variant="white" style="color: #00a6b4 !important; outline: none;"
+          <b-card-header class="bg-white pl-3" role="tab" style="width: 95%; margin: 0 auto; border-bottom: 1px solid #ccc;">
+            <b-button block v-b-toggle.accordion-1 variant="white" style="color: #00a6b4 !important;"
               >Our Products <span><svg xmlns="http://www.w3.org/2000/svg" width="20" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
               </svg>
@@ -173,21 +158,23 @@
           <b-collapse id="accordion-1" accordion="my-accordion" role="tabpanel">
             <b-card-body style="padding: 0px;">
               <ul class="list-unstyled f_list">
-                <li><router-link to="/deposit-products" style="color: #00a6b4 !important;">Deposit Products</router-link></li>
-
-                <li>
-                  <router-link to="/financing-products/consumer" style="color: #00a6b4 !important;">Financing Products (Consumer)</router-link>
+                <li style="background: #fbfbfb;">
+                  <router-link to="/deposit-products" class="py-3" style="color: #00a6b4 !important;">Deposit Products</router-link>
                 </li>
-                <li>
-                  <router-link to="/financing-products/business" style="color: #00a6b4 !important;">Financing Products (Business)</router-link>
+
+                <li style="background: #fbfbfb;">
+                  <router-link to="/financing-products/consumer" class="py-3" style="color: #00a6b4 !important;">Financing Products (Consumer)</router-link>
+                </li>
+                <li style="background: #fbfbfb;">
+                  <router-link to="/financing-products/business" class="py-3" style="color: #00a6b4 !important;">Financing Products (Business)</router-link>
                 </li>
               </ul>
             </b-card-body>
           </b-collapse>
         </b-card>
         <b-card no-body class="mb-1 mFootter firstCard sidenavLinks">
-          <b-card-header class="bg-white ml-3" role="tab" style="width: 95%; margin: 0 auto; border-bottom: 1px solid #ccc;">
-            <b-button block v-b-toggle.accordion-2 variant="white" style="color: #00a6b4 !important; outline: none;"
+          <b-card-header class="bg-white pl-3" role="tab" style="width: 95%; margin: 0 auto; border-bottom: 1px solid #ccc;">
+            <b-button block v-b-toggle.accordion-2 variant="white" style="color: #00a6b4 !important;"
               >Content Repository <span><svg xmlns="http://www.w3.org/2000/svg" width="20" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
               </svg>
@@ -196,18 +183,19 @@
           <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
             <b-card-body style="padding: 0px;">
               <ul class="list-unstyled f_list">
-                <li><router-link to="/content-repository/documents" style="color: #00a6b4 !important;">Documents</router-link></li>
-
-                <li>
-                  <router-link to="/content-repository/videos" style="color: #00a6b4 !important;">Videos</router-link>
+                <li style="background: #fbfbfb;">
+                  <router-link to="/content-repository/documents" class="py-3" style="color: #00a6b4 !important;">Documents</router-link>
+                </li>
+                <li style="background: #fbfbfb;">
+                  <router-link to="/content-repository/videos" class="py-3" style="color: #00a6b4 !important;">Videos</router-link>
                 </li>
               </ul>
             </b-card-body>
           </b-collapse>
         </b-card>
         <b-card no-body class="mb-1 mFootter firstCard sidenavLinks">
-          <b-card-header class="bg-white ml-3" role="tab" style="width: 95%; margin: 0 auto; border-bottom: 1px solid #ccc;">
-            <b-button block v-b-toggle.accordion-3 variant="white" style="color: #00a6b4 !important; outline: none;"
+          <b-card-header class="bg-white pl-3" role="tab" style="width: 95%; margin: 0 auto; border-bottom: 1px solid #ccc;">
+            <b-button block v-b-toggle.accordion-3 variant="white" style="color: #00a6b4 !important;"
               >About Us <span><svg xmlns="http://www.w3.org/2000/svg" width="20" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
               </svg>
@@ -216,13 +204,14 @@
           <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
             <b-card-body style="padding: 0px;">
               <ul class="list-unstyled f_list">
-                <li><router-link to="/idlc-at-a-glance" style="color: #00a6b4 !important;">IDLC at a Glance</router-link></li>
-
-                <li>
-                  <router-link to="/news-and-events" style="color: #00a6b4 !important;">News & Events</router-link>
+                <li style="background: #fbfbfb;">
+                  <router-link to="/idlc-at-a-glance" class="py-3" style="color: #00a6b4 !important;">IDLC at a Glance</router-link>
                 </li>
-                <li>
-                  <router-link to="/shariah-supervisory-committee" style="color: #00a6b4 !important;">Shariah Supervisory Committee</router-link>
+                <li style="background: #fbfbfb;">
+                  <router-link to="/news-and-events" class="py-3" style="color: #00a6b4 !important;">News & Events</router-link>
+                </li>
+                <li style="background: #fbfbfb;">
+                  <router-link to="/shariah-supervisory-committee" class="py-3" style="color: #00a6b4 !important;">Shariah Supervisory Committee</router-link>
                 </li>
               </ul>
             </b-card-body>
@@ -590,4 +579,12 @@ ul {
 .favoritePages:hover {
   color: #00a6b4;
 }
+
+
+.btn:focus{
+  box-shadow: none !important;
+
+}
+
+
 </style>

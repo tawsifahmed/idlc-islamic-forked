@@ -38,7 +38,7 @@ export default {
       { name: 'keywords', content: 'Deposit Products, IDLC Islamic, Financing Products, Islamic Finance, Interest Rate' },
     ]
   },
-  name: 'Home-loan',
+  name: 'deposit-products',
   data() {
     return {
       shortcode: 'DepositProducts:',

@@ -122,7 +122,7 @@
 
                           <li><router-link to="/faq">FAQ</router-link></li>
                           <li><router-link to="/content-repository/documents">Content Repository (Documents)</router-link></li>
-                          <li><router-link to="/content-repository/documents">Content Repository (Videos)</router-link></li>
+                          <li><router-link to="/content-repository/videos">Content Repository (Videos)</router-link></li>
 
                         </ul>
                       </div>
@@ -190,8 +190,8 @@
                   </div>
                 </div>
                 <div class="footer_bg">
-                  <div class="footer_bg_one"></div>
-                  <div class="footer_bg_two"></div>
+                  <!-- <div class="footer_bg_one"></div>
+                  <div class="footer_bg_two"></div> -->
                 </div>
               </div>
             </footer>
@@ -430,7 +430,7 @@ export default {
 .new_footer_top .footer_bg {
   position: absolute;
   bottom: 0;
-  background: url("~@/assets/img/Footer_BG-03.png") no-repeat scroll center 0;
+  background: url("~@/assets/img/Footer_BG.png") no-repeat scroll center 0;
   width: 100%;
   height: 266px;
   z-index: -1;

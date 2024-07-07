@@ -1604,6 +1604,12 @@ body {
   background-color: #00a6b4;
 }
 
+@media(max-width: 600px) {
+  .select-selected {
+    
+  }
+}
+
 
 /*style the arrow inside the select element:*/
 .select-selected:after {
@@ -1763,12 +1769,17 @@ body {
   text-transform: uppercase;
   color: rgb(59, 58, 58);
   text-align: center;
-  padding: 20px;
-  height: 100px;
+
+  height: max-content;
+}
+
+.report-name h6{
+  padding-top: 20px;
 }
 
 .report-name p{
   text-transform: uppercase;
+
   font-size: 14px;
   overflow: hidden;
    text-overflow: ellipsis;

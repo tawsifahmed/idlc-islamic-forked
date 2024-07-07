@@ -114,11 +114,11 @@
 <!--                                :url="shareBase+newsData.id"-->
 <!--                              ><span class="icon-linkedin"></span></ShareNetwork>-->
 
-                              <a class=""  title="Share on Facebook" target="_blank" :href="'https://www.facebook.com/sharer/sharer.php?u=https://idlc-islamic.netlify.app/news/'+newsData.id">
+                              <a class=""  title="Share on Facebook" target="_blank" :href="'https://www.facebook.com/sharer/sharer.php?u=https://tm.singularitybd.co/news/'+newsData.id">
                                 <span class="icon-facebook-f"></span>
 
                               </a>
-                              <a title="Share on Linked In" target="_blank" :href="'https://www.linkedin.com/sharer/sharer.php?u=https://idlc-islamic.netlify.app/news/'+newsData.id">
+                              <a title="Share on Linked In" target="_blank" :href="'https://www.linkedin.com/sharer/sharer.php?u=https://tm.singularitybd.co/news/'+newsData.id">
                                 <span class="icon-linkedin"></span>
                               </a>
 
@@ -749,5 +749,7 @@
     background: #00a6b4;
     color: #fff;
   }
+
+ 
 
 </style>

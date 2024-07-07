@@ -32,11 +32,11 @@
       </div>
       <div class="newsShare">
         <span>Share On:</span>
-        <a class=""  title="Share on Facebook" target="_blank" :href="'https://www.facebook.com/sharer/sharer.php?u=https://idlc-islamic.netlify.app/news/'+contentData.id">
+        <a class=""  title="Share on Facebook" target="_blank" :href="'https://www.facebook.com/sharer/sharer.php?u=https://tm.singularitybd.co/news/'+contentData.id">
           <span class="icon-facebook-f"></span>
         </a>
 
-        <a title="Share on Linked In" target="_blank" :href="'https://www.linkedin.com/sharer/sharer.php?u=https://idlc-islamic.netlify.app/news/'+contentData.id">
+        <a title="Share on Linked In" target="_blank" :href="'https://www.linkedin.com/sharer/sharer.php?u=https://tm.singularitybd.co/news/'+contentData.id">
           <span class="icon-linkedin"></span>
         </a>
 

@@ -24,10 +24,11 @@
                     </div>
                     <div class="report-name">
                       <h6 class="file-name" :title="file.downloadable_title">{{ file.downloadable_title.length >= 20 ? file.downloadable_title.substring(0, 20) + '...' + file.downloadable_title.substring(file.downloadable_title.length - 14) : file.downloadable_title }}</h6>
+                      <p class="file-brief" v-b-tooltip.hover.bottom="file.description">{{file.description.length >= 35 ? file.description.substring(0, 35) + '...' : file.description}}</p>
                     </div>
                     <div class="download-report-btn">
                       <a :href="file.downloadable_file" target="_blank" style="color: white !important;"
-                        download>Download</a>
+                        download>View</a>
                       <img src="../../../assets/img/report/Download-PDF.png" alt="" />
                     </div>
                   </div>
@@ -759,7 +760,7 @@ p.tag span {
     color: #BFBFBF !important;
   }
   .question-card p{
-    background-color: #ffffff !important;
+
     color: #000000 !important;
   }
   .question-card .card-body{
@@ -916,8 +917,11 @@ p.tag span {
       cursor: pointer !important;
     }
 
-
-
+    .file-brief{
+      cursor: pointer !important;
+      padding: 0px !important;
+      font-size: 11.75px !important;
+    }
 
 
 </style>

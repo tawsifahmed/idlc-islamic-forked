@@ -23,11 +23,11 @@
     </b-card>
     <b-card no-body class="mb-1 mFootter firstCard">
       <b-card-header header-tag="header" class="p-1" role="tab">
-        <b-button block v-b-toggle.accordion-1 variant="info"
+        <b-button block v-b-toggle.accordion-2 variant="info"
           >Our Products<i class="fa fa-angle-up"></i
         ></b-button>
       </b-card-header>
-      <b-collapse id="accordion-1" accordion="my-accordion" role="tabpanel">
+      <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
         <b-card-body>
           <ul class="list-unstyled f_list">
             <li><router-link to="/deposit-products">Deposit Products</router-link></li>
