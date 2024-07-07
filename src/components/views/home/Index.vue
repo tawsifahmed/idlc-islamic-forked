@@ -137,7 +137,7 @@
     </div>
 
     <div class="container-lg my-3">
-      <h2 class="featuredProductHeading h2Responsive " style="
+      <h2 class="featuredProductHeading h2Responsive fpt" style="
           text-align: center;
           margin-top: 15px;
           color: #2d2a29;
@@ -1790,6 +1790,18 @@ export default {
 @media only screen and (max-width: 1199px) {
   .serviceBox {
     margin: 0 0 30px;
+  }
+}
+
+@media (max-width: 768px){
+  .fpt{
+    margin-top: -15px !important;
+  }
+}
+
+@media (max-width: 450px){
+  .fpt{
+    margin-top: -20px !important;
   }
 }
 </style>
