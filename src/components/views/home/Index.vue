@@ -185,7 +185,7 @@
         <div class="featuredProduct_box">
           <router-link to="/financing-products/business">
             <div class="featuredProduct_box_inner">
-              <div class="icon icon_2"></div>
+              <div class="icon icon_3"></div>
               <div class="heading">
                 <h1>SME Financing (Business)</h1>
               </div>
@@ -1239,7 +1239,7 @@ export default {
 }
 
 .featuredProduct_box_inner .icon_3 {
-  background-image: url("~@/assets/img/menuIcons/deposit/Deposits-Icon.png");
+  background-image: url("~@/assets/img/menuIcons/SME/Medium-Business.png");
 }
 
 .featuredProduct_box_inner .icon_4 {
@@ -1293,7 +1293,7 @@ export default {
 }
 
 .featuredProduct_box:hover .featuredProduct_box_inner>.icon_3 {
-  background-image: url("~@/assets/img/menuIcons/deposit/Deposits-Icon-02.png");
+  background-image: url("~@/assets/img/menuIcons/SME/Medium-Business.png");
 }
 
 .featuredProduct_box:hover .featuredProduct_box_inner>.icon_4 {
