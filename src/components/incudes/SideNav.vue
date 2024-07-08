@@ -342,7 +342,7 @@ export default {
         this.displayStatus = "block";
         this.bottomPos = "50px";
         this.mNavWidthIsOpen = true;
-        this.crossbuttonPos = "50px";
+        this.crossbuttonPos = "47px";
       } else if (this.mNavWidthIsOpen === true) {
         this.mNavWidth = 0;
         this.topPosMenu = "100vh";
