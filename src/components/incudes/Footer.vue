@@ -97,7 +97,7 @@
                               </router-link>
                           </li>
                           <li>
-                            <router-link to="/news-events"
+                            <router-link to="/news-and-events"
                               >News & Events
                               </router-link>
                           </li>
