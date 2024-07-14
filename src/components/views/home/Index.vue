@@ -73,6 +73,45 @@
         <span v-if="pageSliderHeader" v-html="pageSliderHeader.description"></span>
       </div>
     </div>
+
+    <div class="whyChose">
+      <div class="top_curve"></div>
+      <div class="whyChoseBg">
+        <div class="container-lg">
+          <div class="header">
+            <h2 class="h2Responsive">WHY CHOOSE IDLC Islamic?</h2>
+          </div>
+          <div class="body">
+            <div class="reason">
+              <img :src="homePageLowerTabContent.why_choose_one_image" alt="" v-if="homePageLowerTabContent" />
+              <h5>{{ homePageLowerTabContent.why_choose_one_title }}</h5>
+              <div class="line"></div>
+              <p>{{ homePageLowerTabContent.why_choose_one_subtitle }}</p>
+            </div>
+            <div class="reason">
+              <img :src="homePageLowerTabContent.why_choose_two_image" alt="" />
+              <h5>{{ homePageLowerTabContent.why_choose_two_title }}</h5>
+              <div class="line"></div>
+              <p>{{ homePageLowerTabContent.why_choose_two_subtitle }}</p>
+            </div>
+            <div class="reason">
+              <img :src="homePageLowerTabContent.why_choose_three_image" alt="" />
+              <h5>{{ homePageLowerTabContent.why_choose_three_title }}</h5>
+              <div class="line"></div>
+              <p>{{ homePageLowerTabContent.why_choose_three_subtitle }}</p>
+            </div>
+            <div class="reason">
+              <img :src="homePageLowerTabContent.why_choose_four_image" alt="" />
+              <h5>{{ homePageLowerTabContent.why_choose_four_title }}</h5>
+              <div class="line"></div>
+              <p>{{ homePageLowerTabContent.why_choose_four_subtitle }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom_curve"></div>
+    </div>
+
     <div class="container-lg productFeatures">
       <div class="tab">
         <button class="tablinks1 active">
@@ -204,43 +243,7 @@
       </div>
 
     </div>
-    <div class="whyChose">
-      <div class="top_curve"></div>
-      <div class="whyChoseBg">
-        <div class="container-lg">
-          <div class="header">
-            <h2 class="h2Responsive">WHY CHOOSE IDLC Islamic?</h2>
-          </div>
-          <div class="body">
-            <div class="reason">
-              <img :src="homePageLowerTabContent.why_choose_one_image" alt="" v-if="homePageLowerTabContent" />
-              <h5>{{ homePageLowerTabContent.why_choose_one_title }}</h5>
-              <div class="line"></div>
-              <p>{{ homePageLowerTabContent.why_choose_one_subtitle }}</p>
-            </div>
-            <div class="reason">
-              <img :src="homePageLowerTabContent.why_choose_two_image" alt="" />
-              <h5>{{ homePageLowerTabContent.why_choose_two_title }}</h5>
-              <div class="line"></div>
-              <p>{{ homePageLowerTabContent.why_choose_two_subtitle }}</p>
-            </div>
-            <div class="reason">
-              <img :src="homePageLowerTabContent.why_choose_three_image" alt="" />
-              <h5>{{ homePageLowerTabContent.why_choose_three_title }}</h5>
-              <div class="line"></div>
-              <p>{{ homePageLowerTabContent.why_choose_three_subtitle }}</p>
-            </div>
-            <div class="reason">
-              <img :src="homePageLowerTabContent.why_choose_four_image" alt="" />
-              <h5>{{ homePageLowerTabContent.why_choose_four_title }}</h5>
-              <div class="line"></div>
-              <p>{{ homePageLowerTabContent.why_choose_four_subtitle }}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="bottom_curve"></div>
-    </div>
+
 
     <app-footer />
   </div>
@@ -1360,13 +1363,13 @@ export default {
 }
 
 .whyChose .bottom_curve {
-  background: url("~@/assets/img/download-tow.png") top center;
+  background: url("~@/assets/img/curveShapeWhiteUp.png") top center;
   bottom: 0rem;
   background-size: cover;
   height: 5rem;
   width: 100%;
   position: absolute;
-  z-index: 100;
+  z-index: 0;
 }
 
 .whyChose .whyChoseBg {
@@ -1607,6 +1610,12 @@ export default {
 
 .productFeatures {
   margin-bottom: 10px;
+}
+
+@media(min-width: 768px) {
+  .productFeatures {
+    margin-top: 30px;
+  }
 }
 
 .productFeatures .tab {

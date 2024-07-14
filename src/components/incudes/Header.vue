@@ -28,6 +28,100 @@
               </router-link>
 
             </li> -->
+            <li class="drop_arrow">
+              About
+              <ul class="desktop_menu_sub">
+                <div class="desktop_menu_sub_blocks desktop_menu_sub_blocks_3">
+                  <div class="block">
+                    <li>
+                      <router-link class="menu_link" to="/idlc-at-a-glance">
+                        <div class="menuIcon">
+                          <img
+                            src="~@/assets/img/menu_icon/Menubar/Idlc-at-a-glance.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="menuContent">
+                          <h3 class="title">IDLC at a Glance</h3>
+                          <p class="subTitle">
+                            About IDLC | Our Journey
+                          </p>
+                        </div>
+                      </router-link>
+                    </li>
+
+                    <li style="padding-top: 10px">
+                      <router-link class="menu_link" to="/news-and-events" style="margin-bottom: 0px;">
+                        <div class="menuIcon">
+                          <img
+                            src="~@/assets/img/menu_icon/Menubar/News-_-Events.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="menuContent">
+                          <h3 class="title">News & Events</h3>
+                          <p class="subTitle">
+                            Latest updates of IDLC
+                          </p>
+                        </div>
+                      </router-link>
+                    </li>
+
+                  </div>
+                  <div class="block">
+                    <li>
+                      <router-link class="menu_link" to="/shariah-supervisory-committee">
+                        <div class="menuIcon">
+                          <img
+                            src="~@/assets/img/menu_icon/Menubar/Our-management.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="menuContent">
+                          <h3 class="title">Shariah Committee</h3>
+                          <p class="subTitle">
+                            See our Shariah Team
+                          </p>
+                        </div>
+                      </router-link>
+                    </li>
+                    <!-- <li>
+                      <a target="_blank" class="menu_link" href="https://idlc.com/our-achievement">
+                        <div class="menuIcon">
+                          <img
+                            src="~@/assets/img/menu_icon/Menubar/Our-achievement.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="menuContent">
+                          <h3 class="title">Our Achievements</h3>
+                          <p class="subTitle">
+                            Awards and Accolades
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a target="_blank" class="menu_link" href="https://idlc.com/news-and-events">
+                        <div class="menuIcon">
+                          <img
+                            src="~@/assets/img/menu_icon/Menubar/News-_-Events.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="menuContent">
+                          <h3 class="title">News & Events</h3>
+                          <p class="subTitle">
+                            Latest updates and media releases of IDLC
+                          </p>
+                        </div>
+                      </a>
+                    </li> -->
+                  </div>
+
+                </div>
+              </ul>
+            </li>
             <li >
               <router-link to="/deposit-products" style="color: black;">
                 Deposit Products
@@ -165,100 +259,6 @@
               <router-link to="/faq" style="color: black;">
                 FAQ
               </router-link>
-            </li>
-            <li class="drop_arrow">
-              About
-              <ul class="desktop_menu_sub">
-                <div class="desktop_menu_sub_blocks desktop_menu_sub_blocks_3">
-                  <div class="block">
-                    <li>
-                      <router-link class="menu_link" to="/idlc-at-a-glance">
-                        <div class="menuIcon">
-                          <img
-                            src="~@/assets/img/menu_icon/Menubar/Idlc-at-a-glance.png"
-                            alt=""
-                          />
-                        </div>
-                        <div class="menuContent">
-                          <h3 class="title">IDLC at a Glance</h3>
-                          <p class="subTitle">
-                            About IDLC | Our Journey
-                          </p>
-                        </div>
-                      </router-link>
-                    </li>
-
-                    <li style="padding-top: 10px">
-                      <router-link class="menu_link" to="/news-and-events" style="margin-bottom: 0px;">
-                        <div class="menuIcon">
-                          <img
-                            src="~@/assets/img/menu_icon/Menubar/News-_-Events.png"
-                            alt=""
-                          />
-                        </div>
-                        <div class="menuContent">
-                          <h3 class="title">News & Events</h3>
-                          <p class="subTitle">
-                            Latest updates of IDLC
-                          </p>
-                        </div>
-                      </router-link>
-                    </li>
-
-                  </div>
-                  <div class="block">
-                    <li>
-                      <router-link class="menu_link" to="/shariah-supervisory-committee">
-                        <div class="menuIcon">
-                          <img
-                            src="~@/assets/img/menu_icon/Menubar/Our-management.png"
-                            alt=""
-                          />
-                        </div>
-                        <div class="menuContent">
-                          <h3 class="title">Shariah Committee</h3>
-                          <p class="subTitle">
-                            See our Shariah Team
-                          </p>
-                        </div>
-                      </router-link>
-                    </li>
-                    <!-- <li>
-                      <a target="_blank" class="menu_link" href="https://idlc.com/our-achievement">
-                        <div class="menuIcon">
-                          <img
-                            src="~@/assets/img/menu_icon/Menubar/Our-achievement.png"
-                            alt=""
-                          />
-                        </div>
-                        <div class="menuContent">
-                          <h3 class="title">Our Achievements</h3>
-                          <p class="subTitle">
-                            Awards and Accolades
-                          </p>
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <a target="_blank" class="menu_link" href="https://idlc.com/news-and-events">
-                        <div class="menuIcon">
-                          <img
-                            src="~@/assets/img/menu_icon/Menubar/News-_-Events.png"
-                            alt=""
-                          />
-                        </div>
-                        <div class="menuContent">
-                          <h3 class="title">News & Events</h3>
-                          <p class="subTitle">
-                            Latest updates and media releases of IDLC
-                          </p>
-                        </div>
-                      </a>
-                    </li> -->
-                  </div>
-
-                </div>
-              </ul>
             </li>
 
 
