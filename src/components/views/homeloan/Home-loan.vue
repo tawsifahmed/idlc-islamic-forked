@@ -15,7 +15,36 @@
     </div>
     <!--    //page heading end-->
     <app-categorized-product class="mb-5" />
-    <app-faq-tab/>
+
+    <div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="header sectionTitle text-uppercase text-center">
+              <h2 class="h2Responsive" style="margin-bottom: 30px;">PSR Table</h2>
+            </div>
+            <div v-html="depositPSR" style="overflow-x: auto;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="header sectionTitle text-uppercase text-center">
+              <h2 class="h2Responsive" style="margin-bottom: 30px;">Actual Previous Profits</h2>
+            </div>
+            <div v-html="depositPSR" style="overflow-x: auto;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <app-deposit-calculator />
+    <app-faq-tab />
     <!-- <app-e-m-i-calculator/> -->
     <!-- <app-common-w-h-tab/> -->
     <!-- <app-related-product/> -->
@@ -43,9 +72,11 @@ export default {
     return {
       shortcode: 'DepositProducts:',
       relatedProductData: [],
-      isMobile : false,
+      isMobile: false,
       contentData: "",
-      faqTabName: 'Deposit Products'
+      faqTabName: 'Deposit Products',
+      depositPSR: null,
+      depoPrevProfits: null,
     }
   },
   components: {
@@ -56,6 +87,7 @@ export default {
     AppSlider: () => import('../../incudes/Slider'),
     AppCategorizedProduct: () => import('../../partials/CategorizedProducts'),
     AppEMICalculator: () => import('../../partials/EMICalculator'),
+    AppDepositCalculator: () => import("../calculators/DepositCalculator"),
     // AppWHTab: () => import('./WHTab'),
     AppFaqTab: () => import('./TabComponent'),
     AppCommonWHTab: () => import('../../partials/CommonWHTab'),
@@ -77,21 +109,31 @@ export default {
       }).catch(error => console.log(error));
     },
 
-    getHeaderContent(){
+    getHeaderContent() {
       axios.get('get-page-content', {
         params: {
           shortcode: this.shortcode
         }
       }).then((response) => {
-        if(response.status == 200){
+        if (response.status == 200) {
           this.contentData = response.data.details;
         }
       }).catch(error => console.log(error));
     },
+    getDepositPSR() {
+      axios.get('deposite-page-asset').then((response) => {
+        if (response.status == 200) {
+          this.depositPSR = response.data.data.psr_table;
+          this.depoPrevProfits = response.data.data.tabs;
+          console.log('this.depositPSR', response);
+        }
+      }).catch(error => console.log(error));
+    }
   },
   created() {
     this.getHeaderContent();
     this.getRelatedProducts();
+    this.getDepositPSR();
 
   },
   mounted() {
@@ -109,7 +151,7 @@ export default {
 }
 </script>
 <style scoped>
-.product-description{
+.product-description {
   font-size: 14px;
 }
 </style>
