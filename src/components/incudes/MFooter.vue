@@ -30,7 +30,7 @@
       <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
         <b-card-body>
           <ul class="list-unstyled f_list">
-            <li><router-link to="/deposit-products">Islamic Deposits</router-link></li>
+            <li><router-link to="/islamic-deposits">Islamic Deposits</router-link></li>
             <li><router-link to="/islamic-reatils" >Islamic Retail</router-link></li>
             <li>
               <router-link to="/islamic-sme">Islamic SME</router-link>

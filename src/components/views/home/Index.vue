@@ -187,11 +187,11 @@
       </h2>
       <div class="featuredProduct">
         <div class="featuredProduct_box">
-          <router-link to="/deposit-products">
+          <router-link to="/islamic-deposits">
             <div class="featuredProduct_box_inner">
               <div class="icon icon_1"></div>
               <div class="heading">
-                <h1>Mudarabah Islamic Deposits</h1>
+                <h1>Islamic Deposits</h1>
               </div>
               <div class="short_detail">
                 <p>
@@ -199,7 +199,25 @@
                 </p>
               </div>
               <button>
-                <router-link to="/home-loan">Learn More</router-link>
+                <router-link to="/islamic-deposits">Learn More</router-link>
+              </button>
+            </div>
+          </router-link>
+        </div>
+        <div class="featuredProduct_box">
+          <router-link to="/islamic-retail">
+            <div class="featuredProduct_box_inner">
+              <div class="icon icon_11"></div>
+              <div class="heading">
+                <h1>Islamic Retail</h1>
+              </div>
+              <div class="short_detail">
+                <p>
+                  Discover our Shariah-compliant retail financing product, tailored to meet your need for home, car or any household items
+                </p>
+              </div>
+              <button>
+                <router-link to="/islamic-retail">Learn More</router-link>
               </button>
             </div>
           </router-link>
@@ -209,7 +227,7 @@
             <div class="featuredProduct_box_inner">
               <div class="icon icon_2"></div>
               <div class="heading">
-                <h1>Home Financing (Consumer)</h1>
+                <h1>Islamic SME</h1>
               </div>
               <div class="short_detail">
                 <p>
@@ -227,7 +245,7 @@
             <div class="featuredProduct_box_inner">
               <div class="icon icon_3"></div>
               <div class="heading">
-                <h1>SME Financing (Business)</h1>
+                <h1>Islamic Corporate</h1>
               </div>
               <div class="short_detail">
                 <p>
@@ -1240,6 +1258,10 @@ export default {
   background-image: url("~@/assets/img/menuIcons/deposit/Deposits-Icon.png");
 }
 
+.featuredProduct_box_inner .icon_11 {
+  background-image: url("~@/assets/img/menuIcons/institution/Term-Deposit.png");
+}
+
 .featuredProduct_box_inner .icon_2 {
   background-image: url("~@/assets/img/menuIcons/SME/Small-Business.png");
 }
@@ -1292,6 +1314,10 @@ export default {
 
 .featuredProduct_box:hover .featuredProduct_box_inner>.icon_1 {
   background-image: url("~@/assets/img/menuIcons/deposit/Deposits-Icon.png");
+}
+
+.featuredProduct_box:hover .featuredProduct_box_inner>.icon_11 {
+  background-image: url("~@/assets/img/menuIcons/institution/Term-Deposit.png");
 }
 
 .featuredProduct_box:hover .featuredProduct_box_inner>.icon_2 {

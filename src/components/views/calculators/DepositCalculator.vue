@@ -143,8 +143,8 @@
                   <div class="result mt-3">
                     <div class="row align-items-center">
                       <div class="col-md-12 text-center">
-                        <router-link to="apply-for-deposit" target="_blank" :class="this.$parent.shortcode"  class="applyNowButton">Apply For Deposit
-                        </router-link>
+                        <!-- <router-link to="apply-for-deposit" target="_blank" :class="this.$parent.shortcode"  class="applyNowButton">Apply For Deposit
+                        </router-link> -->
                       </div>
                     </div>
                   </div>

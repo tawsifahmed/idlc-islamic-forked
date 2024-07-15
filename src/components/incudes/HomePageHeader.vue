@@ -124,7 +124,7 @@
               </ul>
             </li>
             <li >
-              <router-link to="/deposit-products" style="color: black;">
+              <router-link to="/islamic-deposits" style="color: black;">
                 Islamic Deposits
               </router-link>
 

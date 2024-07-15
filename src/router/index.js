@@ -117,7 +117,7 @@ export default new Router({
       component: Index
     },
     {
-      path: "/deposit-products",
+      path: "/islamic-deposits",
       name: "Home-loan",
       meta: {
         title: "Home Loan",
