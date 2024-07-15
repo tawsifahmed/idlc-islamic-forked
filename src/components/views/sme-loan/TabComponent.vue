@@ -65,7 +65,7 @@
         faqTabs: [],
         faqs: [],
         faq_tab_id: 11,
-        selectedTabName: "Consumer Financing Products",
+        selectedTabName: "Islamic SME",
 
       }
     },

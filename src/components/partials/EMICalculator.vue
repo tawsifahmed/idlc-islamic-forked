@@ -64,7 +64,7 @@
                                 <div class="calculatedAmount">
                                     <h4 class="text">Equal Monthly Installment(EMI)</h4>
                                     <h3 class="totalAmount">{{ReplaceNumberWithCommas(emi.toFixed(0))}} BDT</h3>
-                                    <router-link :to="{ name: 'ApplyForLoan', params: { applyFor : this.$parent.shortcode }}"  target="_blank" :class="this.$parent.shortcode" class="applyNowButton ">Apply Now</router-link>
+                                    <!-- <router-link :to="{ name: 'ApplyForLoan', params: { applyFor : this.$parent.shortcode }}"  target="_blank" :class="this.$parent.shortcode" class="applyNowButton ">Apply Now</router-link> -->
                                 </div>
                             </div>
                         </div>

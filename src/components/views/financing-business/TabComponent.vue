@@ -64,8 +64,8 @@
         isVisible: false,
         faqTabs: [],
         faqs: [],
-        faq_tab_id: 12,
-        selectedTabName: "Business Financing Products",
+        faq_tab_id: 14,
+        selectedTabName: "Islamic Corporate",
 
       }
     },
@@ -130,7 +130,7 @@
 
         this.isForeignRouteExist();
       }else{
-        this.getFaq(12);
+        this.getFaq(14);
       }
 
 

@@ -65,7 +65,7 @@
         faqTabs: [],
         faqs: [],
         faq_tab_id: 10,
-        selectedTabName: "Deposit Products",
+        selectedTabName: "Islamic Deposits",
 
       }
     },

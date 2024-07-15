@@ -39,9 +39,9 @@
             </div>
             <pre>{{depoPrevProfits}}</pre>
             <div class="row filterOptions">
-              <div class="col-md-12"  v-for="(tabData, index) in depoPrevProfits"   :key="tabData.id">
-                <b-card  class="product-card py-3" style="background-color: #00a6b4;">
-                  <a  v-b-toggle="'annualReportcollapse' + index" block class="d-flex px-2 text-decoration-none cursor-pointer">
+              <div class="col-md-12">
+                <b-card  class="product-card acb1" style="background-color: #00a6b4;">
+                  <a  v-b-toggle="'annualReportcollapse' + index" block class="d-flex px-2 py-2 text-decoration-none cursor-pointer">
                     <strong class="question_product" style="color:white; font-size: 1.25rem;">Actual Previous Profits
                     </strong>
                     <!-- replace these with your preferred icons -->
@@ -50,30 +50,17 @@
                   </a>
                   <b-collapse v-bind:id="'annualReportcollapse' + index">
                     <b-card class="question-card d-flex flex-row">
-                      <a v-b-toggle.collapse-home-loan-1 block>
+                      <a  v-b-toggle.collapse-home-loan-1 block>
                         <div class="row">
                           <div class="col-12">
                             <ul class="all-report">
-                              <li class="" style="" v-if="tabData.file">
+                              <li  v-for="(tabData, index) in depoPrevProfits"   :key="tabData.id" class="" style="" v-if="tabData.file">
                                 <a :href="tabData.file" download target="_blank">
                                   <div class="f_icon">
-                                    <img src="./../../../assets/img/financial-report/Q1.png" alt="">
+                                    <img src="./../../../assets/img/financial-report/Q.png" alt="">
                                   </div>
                                   <div class="title">
-                                    <h6>{{tabData.title}}</h6>
-                                  </div>
-                                  <div class="download-icon" style="padding: 5px 32px;">
-                                    <div class="d_icon"></div>
-                                  </div>
-                                </a>
-                              </li>
-                              <li class="" style="" v-if="tabData.file">
-                                <a :href="tabData.file" download target="_blank">
-                                  <div class="f_icon">
-                                    <img src="./../../../assets/img/financial-report/Q1.png" alt="">
-                                  </div>
-                                  <div class="title">
-                                    <h6>{{tabData.title}}</h6>
+                                    <h6 class="text-black">{{tabData.title}}</h6>
                                   </div>
                                   <div class="download-icon" style="padding: 5px 32px;">
                                     <div class="d_icon"></div>
@@ -282,5 +269,9 @@ background-size: contain;
 }
 .all-report li > a:hover .d_icon{
 background-image: url("./../../../assets/img/financial-report/download-icon-01.png");
+}
+
+.acb1 > .card-body{
+  padding:  0px !important;
 }
 </style>

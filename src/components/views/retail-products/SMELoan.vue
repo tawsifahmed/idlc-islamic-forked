@@ -41,7 +41,7 @@ export default {
   name: 'Financing-Products',
   data() {
     return {
-      shortcode: 'FinancingBusiness',
+      shortcode: 'IslamicRetail',
       relatedProductData: [],
       isMobile: false,
       contentData: "",
