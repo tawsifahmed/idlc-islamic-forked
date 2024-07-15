@@ -37,7 +37,7 @@
             <div class="header sectionTitle text-uppercase text-center">
               <h2 class="h2Responsive" style="margin-bottom: 30px;">Actual Previous Profits</h2>
             </div>
-            <pre>{{depoPrevProfits}}</pre>
+            <!-- <pre>{{depoPrevProfits}}</pre> -->
             <div class="row filterOptions">
               <div class="col-md-12">
                 <b-card  class="product-card acb1" style="background-color: #00a6b4;">
@@ -60,7 +60,7 @@
                                     <img src="./../../../assets/img/financial-report/Q.png" alt="">
                                   </div>
                                   <div class="title">
-                                    <h6 class="text-black">{{tabData.title}}</h6>
+                                    <h6 class="tab_title">{{tabData.title}}</h6>
                                   </div>
                                   <div class="download-icon" style="padding: 5px 32px;">
                                     <div class="d_icon"></div>
@@ -273,5 +273,9 @@ background-image: url("./../../../assets/img/financial-report/download-icon-01.p
 
 .acb1 > .card-body{
   padding:  0px !important;
+}
+
+.tab_title{
+  color: #000 !important;
 }
 </style>
