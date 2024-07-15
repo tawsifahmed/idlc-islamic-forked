@@ -191,7 +191,7 @@
             <div class="featuredProduct_box_inner">
               <div class="icon icon_1"></div>
               <div class="heading">
-                <h1>Mudarabah Deposit Products</h1>
+                <h1>Mudarabah Islamic Deposits</h1>
               </div>
               <div class="short_detail">
                 <p>

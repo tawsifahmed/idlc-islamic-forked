@@ -21,7 +21,10 @@
                         </h3>
                         <ul class="list-unstyled f_list onMobileDisplayNone">
                           <li>
-                            <router-link to="/deposit-products">Deposit Products</router-link>
+                            <router-link to="/deposit-products">Islamic Deposits</router-link>
+                          </li>
+                          <li >
+                            <router-link to="/islamic-reatils">Islamic Retail</router-link>
                           </li>
                           <li>
                             <router-link to="/islamic-sme">Islamic SME</router-link>

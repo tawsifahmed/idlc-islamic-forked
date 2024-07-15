@@ -117,10 +117,10 @@ import axios from "axios";
 
 export default {
   metaInfo: {
-    title: 'Deposit Products',
+    title: 'Islamic Deposits',
     meta: [
-      { name: 'description', content: 'Deposit Products' },
-      { name: 'keywords', content: 'Deposit Products, IDLC Islamic, Financing Products, Islamic Finance, Interest Rate' },
+      { name: 'description', content: 'Islamic Deposits' },
+      { name: 'keywords', content: 'Islamic Deposits, IDLC Islamic, Financing Products, Islamic Finance, Interest Rate' },
     ]
   },
   name: 'deposit-products',
@@ -130,7 +130,7 @@ export default {
       relatedProductData: [],
       isMobile: false,
       contentData: "",
-      faqTabName: 'Deposit Products',
+      faqTabName: 'Islamic Deposits',
       depositPSR: null,
       depoPrevProfits: null,
     }

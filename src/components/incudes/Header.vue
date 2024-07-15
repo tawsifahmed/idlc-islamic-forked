@@ -124,7 +124,13 @@
             </li>
             <li >
               <router-link to="/deposit-products" style="color: black;">
-                Deposit Products
+                Islamic Deposits
+              </router-link>
+
+            </li>
+            <li >
+              <router-link to="/islamic-reatils" style="color: black;">
+                Islamic Retail
               </router-link>
 
             </li>
@@ -918,7 +924,7 @@
                 'IDLC Islamic',
                 'Shariah Supervisory Committee',
                 'Financing Products',
-                'Deposit Products',
+                'Islamic Deposits',
                 'FAQ'
               ]"
               :loop="true"

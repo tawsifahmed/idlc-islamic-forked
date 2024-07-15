@@ -25,6 +25,13 @@ const FinancingProductsBusiness = resolve => {
     resolve(require("../components/views/financing-business/SMELoan"));
   });
 };
+
+const RetailProducts = resolve => {
+  require.ensure(["../components/views/retail-products/SMELoan"], () => {
+    resolve(require("../components/views/retail-products/SMELoan"));
+  });
+};
+
 const OurManagement = resolve => {
   require.ensure(["../components/views/our-management/OurManagement"], () => {
     resolve(require("../components/views/our-management/OurManagement"));
@@ -174,6 +181,17 @@ export default new Router({
       },
 
       component: FinancingProductsBusiness
+    },
+    {
+      path: "/islamic-reatils",
+      name: "RetailProducts",
+      meta: {
+        title: "Retail Products",
+        description: "Grow your Business. Achieve your Dreams",
+        seo_keyword: ""
+      },
+
+      component: RetailProducts
     },
     // {
     //   path: "/corporate-loan",

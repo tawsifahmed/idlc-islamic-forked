@@ -28,7 +28,7 @@
                 'IDLC Islamic',
                 'Shariah Committee',
                 'Financing Products',
-                'Deposit Products',
+                'Islamic Deposits',
                 'FAQ'
             ]"
             :loop="true"
@@ -159,7 +159,7 @@
             <b-card-body style="padding: 0px;">
               <ul class="list-unstyled f_list">
                 <li style="background: #fbfbfb;">
-                  <router-link to="/deposit-products" class="py-3" style="color: #00a6b4 !important;">Deposit Products</router-link>
+                  <router-link to="/deposit-products" class="py-3" style="color: #00a6b4 !important;">Islamic Deposits</router-link>
                 </li>
 
                 <li style="background: #fbfbfb;">
