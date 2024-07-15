@@ -15,6 +15,7 @@
 
 
 
+        <!-- <pre>{{slidersTab}}</pre> -->
         <div class="container-lg" v-show="isImageLoaded">
           <!-- <pre>{{sliders}}</pre>
           <div v-for="(slider, index) in sliders">
@@ -23,22 +24,15 @@
           <div class="slider_top">
             <h1>{{ this.$parent.contentData.first_title }}</h1>
             <div class="buttons">
-              <router-link
-                v-if="shortcode == 'TermDeposit' || shortcode == 'Priority'"
-                to="/apply-for-deposit"
+              <a v-for="(tab, index) in slidersTab" :key="index" :href="tab.tab_link"
+                v-if="slidersTab.length > 0"
+
               >
-                <h6>Apply For Deposit</h6>
-              </router-link>
-              <router-link
-                v-else
-                :to="{ name: 'ApplyForLoan', params: { applyFor: shortcode } }"
-                target="_blank"
-              >
-                <h6>Apply For Loan</h6>
-              </router-link>
-              <a href="https://idlc.com/login/login.php" target="_blank">
-                <h6>Customer Login</h6>
+                <h6>{{tab.tab_name}}</h6>
               </a>
+              <!-- <a href="https://idlc.com/login/login.php" target="_blank">
+                <h6>Customer Login</h6>
+              </a> -->
             </div>
           </div>
           <div class="slider">
@@ -93,7 +87,8 @@ export default {
       sliders: [],
       isImageLoaded: false,
       isPlaceholder: true,
-      singleSlide: []
+      singleSlide: [],
+      slidersTab: [],
     };
   },
   methods: {
@@ -109,6 +104,8 @@ export default {
 
           if (response.status == 200) {
             this.sliders = response.data.details;
+            this.slidersTab = response.data.details[0].tabs
+            console.log('this.slidersSing =>', this.slidersTab);
           }
         })
         .catch(error => console.log(error));
@@ -186,13 +183,14 @@ export default {
   transition: all 0.4s;
 }
 
-.main_slider .main_slider_bg_part .slider_top .buttons a:nth-child(1) {
-  background: #00a6b4;
+
+.main_slider .main_slider_bg_part .slider_top .buttons a:nth-child(odd) {
+  background: #fff;
+  color: black;
 }
 
-.main_slider .main_slider_bg_part .slider_top .buttons a:nth-child(2) {
-  background: #fff;
-  color: #2d2a29;
+.main_slider .main_slider_bg_part .slider_top .buttons a:nth-child(even) {
+  background: #00a6b4;
 }
 
 .main_slider .main_slider_bg_part .slider_top .buttons a:hover {

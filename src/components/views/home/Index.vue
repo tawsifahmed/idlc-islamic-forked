@@ -323,10 +323,9 @@ export default {
           //   console.log('slider =>', slider)
           // });
           const newArray = sliders.sort((a, b) => Number(a.order) - Number(b.order))
-          console.log('sli =>', res.data)
           this.sliders = res.data
           this.slidersTab = res.data[0].tabs
-          console.log('slidersTab =>', this.slidersTab)
+
         })
         .catch(err => {
           console.log(err)
