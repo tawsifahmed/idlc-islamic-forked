@@ -183,7 +183,7 @@ export default new Router({
       component: FinancingProductsBusiness
     },
     {
-      path: "/islamic-reatils",
+      path: "/islamic-reatil",
       name: "RetailProducts",
       meta: {
         title: "Retail Products",

@@ -161,6 +161,9 @@
                 <li style="background: #fbfbfb;">
                   <router-link to="/islamic-deposits" class="py-3" style="color: #00a6b4 !important;">Islamic Deposits</router-link>
                 </li>
+                <li style="background: #fbfbfb;">
+                  <router-link to="/islamic-retail" class="py-3" style="color: #00a6b4 !important;">Islamic Retail</router-link>
+                </li>
 
                 <li style="background: #fbfbfb;">
                   <router-link to="/islamic-sme" class="py-3" style="color: #00a6b4 !important;">Islamic SME</router-link>

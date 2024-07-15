@@ -127,15 +127,23 @@
               <router-link to="/islamic-deposits" style="color: black;">
                 Islamic Deposits
               </router-link>
-
             </li>
             <li >
-              <router-link to="/islamic-reatils" style="color: black;">
+              <router-link to="/islamic-reatil" style="color: black;">
                 Islamic Retail
               </router-link>
-
             </li>
-            <li class="drop_arrow">
+            <li >
+              <router-link to="/islamic-sme" style="color: black;">
+                Islamic SME
+              </router-link>
+            </li>
+            <li >
+              <router-link to="/islamic-corporate" style="color: black;">
+                Islamic Corporate
+              </router-link>
+            </li>
+            <!-- <li class="drop_arrow">
               Financing Products
               <ul class="desktop_menu_sub">
                 <div class="desktop_menu_sub_blocks desktop_menu_sub_blocks_3" style="width: 250px;">
@@ -150,9 +158,9 @@
                         </div>
                         <div class="menuContent">
                           <h3 class="title">Islamic SME</h3>
-                          <!-- <p class="subTitle">
+                          <p class="subTitle">
                             About IDLC | Our Journey
-                          </p> -->
+                          </p>
                         </div>
                       </router-link>
                     </li>
@@ -167,15 +175,15 @@
                         </div>
                         <div class="menuContent">
                           <h3 class="title">Islamic Corporate</h3>
-                          <!-- <p class="subTitle">
+                          <p class="subTitle">
                             Latest updates of IDLC
-                          </p> -->
+                          </p>
                         </div>
                       </router-link>
                     </li>
 
                   </div>
-                  <!-- <div class="block">
+                  <div class="block">
                     <li>
                       <router-link class="menu_link" to="/shariah-supervisory-committee">
                         <div class="menuIcon">
@@ -193,11 +201,11 @@
                       </router-link>
                     </li>
 
-                  </div> -->
+                  </div>
 
                 </div>
               </ul>
-            </li>
+            </li> -->
             <li class="drop_arrow">
               Content Repository
               <ul class="desktop_menu_sub">
