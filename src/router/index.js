@@ -154,7 +154,7 @@ export default new Router({
     //   component: PersonalLoan
     // },
     {
-      path: "/financing-products/consumer",
+      path: "/islamic-sme",
       name: "SMELoan",
       meta: {
         title: "Financing Products - Consumer",
@@ -165,7 +165,7 @@ export default new Router({
       component: SMELoan
     },
     {
-      path: "/financing-products/business",
+      path: "/islamic-corporate",
       name: "FinancingProductsBusiness",
       meta: {
         title: "Financing Products - Business",

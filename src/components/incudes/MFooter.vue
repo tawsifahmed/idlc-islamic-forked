@@ -33,10 +33,10 @@
             <li><router-link to="/deposit-products">Deposit Products</router-link></li>
 
             <li>
-              <router-link to="/financing-products/consumer">Financing Products (Consumer)</router-link>
+              <router-link to="/islamic-sme">Islamic SME</router-link>
             </li>
             <li>
-              <router-link to="/financing-products/business">Financing Products (Business)</router-link>
+              <router-link to="/islamic-corporate">Islamic Corporate</router-link>
             </li>
           </ul>
         </b-card-body>

@@ -135,7 +135,7 @@
                 <div class="desktop_menu_sub_blocks desktop_menu_sub_blocks_3" style="width: 250px;">
                   <div class="block" style="padding: 11px;">
                     <li>
-                      <router-link class="menu_link" to="/financing-products/consumer">
+                      <router-link class="menu_link" to="/islamic-sme">
                         <div class="menuIcon">
                           <img
                             src="~@/assets/img/menu_icon/Menubar/Personal-loan.png"
@@ -143,7 +143,7 @@
                           />
                         </div>
                         <div class="menuContent">
-                          <h3 class="title">Consumer Products</h3>
+                          <h3 class="title">Islamic SME</h3>
                           <!-- <p class="subTitle">
                             About IDLC | Our Journey
                           </p> -->
@@ -152,7 +152,7 @@
                     </li>
 
                     <li style="padding-top: 4.5px">
-                      <router-link class="menu_link" to="/financing-products/business" style="margin-bottom: 0px;">
+                      <router-link class="menu_link" to="/islamic-corporate" style="margin-bottom: 0px;">
                         <div class="menuIcon">
                           <img
                             src="~@/assets/img/menu_icon/Menubar/SME-loan.png"
@@ -160,7 +160,7 @@
                           />
                         </div>
                         <div class="menuContent">
-                          <h3 class="title">Business Products</h3>
+                          <h3 class="title">Islamic Corporate</h3>
                           <!-- <p class="subTitle">
                             Latest updates of IDLC
                           </p> -->

@@ -163,10 +163,10 @@
                 </li>
 
                 <li style="background: #fbfbfb;">
-                  <router-link to="/financing-products/consumer" class="py-3" style="color: #00a6b4 !important;">Financing Products (Consumer)</router-link>
+                  <router-link to="/islamic-sme" class="py-3" style="color: #00a6b4 !important;">Islamic SME</router-link>
                 </li>
                 <li style="background: #fbfbfb;">
-                  <router-link to="/financing-products/business" class="py-3" style="color: #00a6b4 !important;">Financing Products (Business)</router-link>
+                  <router-link to="/islamic-corporate" class="py-3" style="color: #00a6b4 !important;">Islamic Corporate</router-link>
                 </li>
               </ul>
             </b-card-body>

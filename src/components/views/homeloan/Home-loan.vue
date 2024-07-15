@@ -40,27 +40,20 @@
             <pre>{{depoPrevProfits}}</pre>
             <div class="row filterOptions">
               <div class="col-md-12"  v-for="(tabData, index) in depoPrevProfits"   :key="tabData.id">
-                <b-card  class="product-card" style="background-color: #00a6b4;">
-                  <a  v-b-toggle="'annualReportcollapse' + index" block class="d-flex">
-                    <strong class="question_product" style="color:white; font-size: 1.25rem;">2024</strong>
+                <b-card  class="product-card py-3" style="background-color: #00a6b4;">
+                  <a  v-b-toggle="'annualReportcollapse' + index" block class="d-flex px-2 text-decoration-none cursor-pointer">
+                    <strong class="question_product" style="color:white; font-size: 1.25rem;">Actual Previous Profits
+                    </strong>
                     <!-- replace these with your preferred icons -->
                     <strong v-if="isVisible" aria-hidden="true" class="ml-auto"><span class="icon"><span class="icon-caret-down" style="color: #fff; font-size: 18px;"></span></span></strong>
                     <strong v-else aria-hidden="true" class="ml-auto"><span class="icon-caret-down" style="color: #fff; font-size: 18px;"></span></strong>
                   </a>
                   <b-collapse v-bind:id="'annualReportcollapse' + index">
-                    <b-card class="question-card">
-                      <a  v-b-toggle.collapse-home-loan-1 block>
+                    <b-card class="question-card d-flex flex-row">
+                      <a v-b-toggle.collapse-home-loan-1 block>
                         <div class="row">
-                          <div class="col-md-2" >
-                            <img :src="tabData.image" width="100%" alt="" v-if="tabData">
-                          </div>
-                          <div class="col-md-2 text-btn"  >
-                            <h6 class="annual_report_heading" v-if="tabData.title" >{{tabData.title}}</h6>
-                            <a :href="tabData.file" class="footer_button2" download target="_blank" v-if="tabData.title">Download</a>
-                          </div>
-
-                          <div class="col-md-8">
-                            <ul class="all-report float-right">
+                          <div class="col-12">
+                            <ul class="all-report">
                               <li class="" style="" v-if="tabData.file">
                                 <a :href="tabData.file" download target="_blank">
                                   <div class="f_icon">
@@ -74,39 +67,13 @@
                                   </div>
                                 </a>
                               </li>
-                              <li class="" style=""  v-if="tabData.title">
+                              <li class="" style="" v-if="tabData.file">
                                 <a :href="tabData.file" download target="_blank">
                                   <div class="f_icon">
-                                    <img src="./../../../assets/img/financial-report/Q2.png" alt="">
+                                    <img src="./../../../assets/img/financial-report/Q1.png" alt="">
                                   </div>
                                   <div class="title">
                                     <h6>{{tabData.title}}</h6>
-                                  </div>
-                                  <div class="download-icon" style="padding: 5px 32px;">
-                                    <div class="d_icon"></div>
-                                  </div>
-                                </a>
-                              </li>
-                              <li class="" style="" v-if="tabData.report_three_title">
-                                <a :href="tabData.report_three_file" download target="_blank">
-                                  <div class="f_icon">
-                                    <img src="./../../../assets/img/financial-report/Q3.png" alt="">
-                                  </div>
-                                  <div class="title">
-                                    <h6>{{tabData.report_three_title}}</h6>
-                                  </div>
-                                  <div class="download-icon" style="padding: 5px 32px;">
-                                    <div class="d_icon"></div>
-                                  </div>
-                                </a>
-                              </li>
-                              <li class="" style="" v-if="tabData.report_four_title">
-                                <a :href="tabData.report_four_file" download target="_blank">
-                                  <div class="f_icon">
-                                    <img src="./../../../assets/img/financial-report/Q4.png" alt="">
-                                  </div>
-                                  <div class="title">
-                                    <h6>{{tabData.report_four_title}}</h6>
                                   </div>
                                   <div class="download-icon" style="padding: 5px 32px;">
                                     <div class="d_icon"></div>
@@ -242,5 +209,78 @@ export default {
 <style scoped>
 .product-description {
   font-size: 14px;
+}
+
+
+.all-report {
+  width: 100%;
+display: flex;
+justify-content: flex-start;
+flex-wrap: wrap;
+}
+.all-report li{
+flex-basis: 15% !important;
+flex-shrink: 0;
+flex-grow: 0;
+margin-left: 20px;
+
+}
+.all-report_q {
+justify-content: center;
+}
+.all-report_q li {
+flex-basis: 10% !important;
+}
+@media screen and (max-width: 600px){
+.all-report {
+justify-content: space-around;
+flex-wrap: wrap;
+}
+.all-report li{
+flex-basis: 35% !important;
+margin-left: 0px;
+}
+.all-report_q {
+justify-content: space-around;
+}
+.all-report_q li {
+flex-basis: 35% !important;
+}
+}
+.all-report_q li:first-child {
+margin: 0 !important;
+}
+.all-report li > a{
+display: block;
+width: 100%;
+}
+.all-report li > a .f_icon{
+background: #eeeeee;
+padding: 15px;
+border-radius: 100px;
+transition: all 0.3s;
+}
+.all-report li > a .title{
+height: 60px;
+overflow: hidden;
+}
+.all-report li > a .title{
+text-align: center;
+}
+.all-report li > a:hover .f_icon{
+background: #8bdce4;
+}
+.all-report li > a > .f_icon img{
+width: 100%;
+}
+.all-report li > a .d_icon{
+height: 30px;
+width: 30px;
+margin: auto;
+background-image: url("./../../../assets/img/financial-report/download-icon-02.png");
+background-size: contain;
+}
+.all-report li > a:hover .d_icon{
+background-image: url("./../../../assets/img/financial-report/download-icon-01.png");
 }
 </style>

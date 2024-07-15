@@ -25,17 +25,18 @@
           </vue-content-loading>
         </div>
 
+        <!-- <pre>{{slidersTab}}</pre> -->
         <div class="container-lg" v-show="isImageLoaded">
           <div class="slider_top">
             <!--            <h1 class="">Welcome to financing happiness!</h1>-->
             <h1>{{ pageSliderHeader.first_title }}</h1>
             <div class="buttons">
-              <a href="/apply-for-loan" target="_blank" class="home-apply-for-loan-button">
-                <h6 class="home-apply-for-loan-button">Apply For Loan</h6>
+              <a v-for="tab in slidersTab" v-if="slidersTab.length > 0" :href="tab.tab_link" target="_blank" class="home-apply-for-loan-button">
+                <h6 class="home-apply-for-loan-button">{{tab.tab_name}}</h6>
               </a>
-              <a href="https://idlc.com/login/login.php" target="_blank" class="home-account-login-button">
+              <!-- <a href="https://idlc.com/login/login.php" target="_blank" class="home-account-login-button">
                 <h6 class="home-account-login-button">Customer Login</h6>
-              </a>
+              </a> -->
             </div>
           </div>
           <div class="slider">
@@ -204,7 +205,7 @@
           </router-link>
         </div>
         <div class="featuredProduct_box">
-          <router-link to="/financing-products/consumer">
+          <router-link to="/islamic-sme">
             <div class="featuredProduct_box_inner">
               <div class="icon icon_2"></div>
               <div class="heading">
@@ -216,13 +217,13 @@
                 </p>
               </div>
               <button>
-                <router-link to="/financing-products/consumer">Learn More</router-link>
+                <router-link to="/islamic-sme">Learn More</router-link>
               </button>
             </div>
           </router-link>
         </div>
         <div class="featuredProduct_box">
-          <router-link to="/financing-products/business">
+          <router-link to="/islamic-corporate">
             <div class="featuredProduct_box_inner">
               <div class="icon icon_3"></div>
               <div class="heading">
@@ -234,7 +235,7 @@
                 </p>
               </div>
               <button>
-                <router-link to="/financing-products/business">Learn More</router-link>
+                <router-link to="/islamic-corporate">Learn More</router-link>
               </button>
             </div>
           </router-link>
@@ -290,6 +291,7 @@ export default {
       isPlaceholder: true,
       homePageData: 0,
       sliders: [],
+      slidersTab: [],
       pageSliderHeader: "",
       allNews: [],
       homePageLowerTabContent: "",
@@ -321,8 +323,10 @@ export default {
           //   console.log('slider =>', slider)
           // });
           const newArray = sliders.sort((a, b) => Number(a.order) - Number(b.order))
-
+          console.log('sli =>', res.data)
           this.sliders = res.data
+          this.slidersTab = res.data[0].tabs
+          console.log('slidersTab =>', this.slidersTab)
         })
         .catch(err => {
           console.log(err)
@@ -999,7 +1003,7 @@ export default {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+  justify-content: flex-end;
   gap: 10px;
 }
 
@@ -1019,13 +1023,13 @@ export default {
   transition: all 0.4s;
 }
 
-.main_slider .main_slider_bg_part .slider_top .buttons a:nth-child(1) {
-  background: #00a6b4;
+.main_slider .main_slider_bg_part .slider_top .buttons a:nth-child(odd) {
+  background: #fff;
+  color: black;
 }
 
-.main_slider .main_slider_bg_part .slider_top .buttons a:nth-child(2) {
-  background: #fff;
-  color: #2d2a29;
+.main_slider .main_slider_bg_part .slider_top .buttons a:nth-child(even) {
+  background: #00a6b4;
 }
 
 .main_slider .main_slider_bg_part .slider_top .buttons a:hover {
