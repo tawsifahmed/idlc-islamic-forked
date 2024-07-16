@@ -1958,3 +1958,12 @@ p {
   width: 100%;
 }
 
+.product-description > div > span > span > span{
+  width: auto !important;
+  height: auto !important;
+  padding: 0 30px !important;
+}
+
+.product-description img{
+  width: 100% !important;
+}
