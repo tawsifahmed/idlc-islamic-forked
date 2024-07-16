@@ -14,6 +14,11 @@ const HomeLoan = resolve => {
     resolve(require("../components/views/homeloan/Home-loan"));
   });
 };
+const OnlineMudarabahDeposit = resolve => {
+  require.ensure(["../components/views/online-mudarabah-deposit/index"], () => {
+    resolve(require("../components/views/online-mudarabah-deposit/index"));
+  });
+};
 
 const SMELoan = resolve => {
   require.ensure(["../components/views/sme-loan/SMELoan"], () => {
@@ -118,14 +123,25 @@ export default new Router({
     },
     {
       path: "/islamic-deposits",
-      name: "Home-loan",
+      name: "IslamicDeposits",
       meta: {
-        title: "Home Loan",
+        title: "Islamic Deposits",
         description: "Live in the Freedom of your own Home.",
         seo_keyword: ""
       },
 
       component: HomeLoan
+    },
+    {
+      path: "/online-mudarabah-deposit",
+      name: "OnlineMudarabahDeposit",
+      meta: {
+        title: "Online Mudarabah Deposit",
+        description: "Live in the Freedom of your own Home.",
+        seo_keyword: ""
+      },
+
+      component: OnlineMudarabahDeposit
     },
     // {
     //   path: "/citizens-charter",

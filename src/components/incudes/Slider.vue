@@ -12,9 +12,6 @@
             <rect x="0" y="15" rx="2" ry="2" width="300" height="105" />
           </vue-content-loading>
         </div>
-
-
-
         <!-- <pre>{{slidersTab}}</pre> -->
         <div class="container-lg" v-show="isImageLoaded">
           <!-- <pre>{{sliders}}</pre>
@@ -40,7 +37,7 @@
               <carousel :autoplay="true" :nav="false" :items="1" :dots="true">
                 <div
                   class="item"
-                  style="display: none"
+                  style="display: initial"
                   v-for="(slideItem, index) in sliders"
                   :key="slideItem.id"
                   :id="'slide_' + index"

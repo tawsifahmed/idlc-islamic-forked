@@ -44,7 +44,7 @@
             <div v-if="sliders.length > 0">
               <carousel :autoplay="false" :nav="false" :items="1" :dots="true" id="items">
                 <a class="item slideItem" v-for="(slideItem, index) in sliders" :key="slideItem.id"
-                  :id="'slide_' + index" :href="slideItem.button_link" target="_blank" style="display: none">
+                  :id="'slide_' + index" :href="slideItem.button_link" target="_blank" style="display: initial">
                   <div class="item_overlay">
                     <div class="item_tex">
                       <h2 class="animate__animated animate__backInLeft">
@@ -335,14 +335,10 @@ export default {
       axios
         .get(`homepage-slider?shortcode=Home`)
         .then(res => {
-
           const sliders = res.data
-          // sliders.forEach(slider => {
-          //   console.log('slider =>', slider)
-          // });
           const newArray = sliders.sort((a, b) => Number(a.order) - Number(b.order))
           this.sliders = res.data
-          this.slidersTab = res.data[0].tabs
+          this.slidersTab = res.data[0].tabs;
 
         })
         .catch(err => {
@@ -362,11 +358,9 @@ export default {
             this.homePageLowerTabContent =
               response.data.details.homePageTabContent;
             this.mbr = response.data.details.mbr;
-            //this.sliders = response.data.details.slider;
             this.financialData = response.data.details.financialData;
             this.menuVideos = response.data.details.menuVideos;
             this.menuNews = response.data.details.menuNews;
-            // console.log(response.data.details.financialData);
           }
         })
         .catch(error => console.log(error));
