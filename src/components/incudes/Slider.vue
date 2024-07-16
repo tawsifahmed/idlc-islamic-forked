@@ -184,12 +184,12 @@ export default {
 }
 
 
-.main_slider .main_slider_bg_part .slider_top .buttons a:nth-child(odd) {
+.main_slider .main_slider_bg_part .slider_top .buttons a:nth-child(even) {
   background: #fff;
   color: black;
 }
 
-.main_slider .main_slider_bg_part .slider_top .buttons a:nth-child(even) {
+.main_slider .main_slider_bg_part .slider_top .buttons a:nth-child(odd) {
   background: #00a6b4;
 }
 

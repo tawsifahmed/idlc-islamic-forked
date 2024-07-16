@@ -123,10 +123,86 @@
                 </div>
               </ul>
             </li>
-            <li >
+            <!-- <li >
               <router-link to="/islamic-deposits" style="color: black;">
                 Islamic Deposits
               </router-link>
+            </li> -->
+             <li class="drop_arrow">
+              Islamic Deposits
+              <ul class="desktop_menu_sub">
+                <div class="desktop_menu_sub_blocks desktop_menu_sub_blocks_3" style="width: 280px;">
+                  <div class="block" style="padding: 11px;">
+                    <li>
+                      <router-link class="menu_link" to="/islamic-deposits">
+                        <div class="menuIcon">
+                          <img
+                            src="~@/assets/img/menu_icon/Menubar/Fixed-deposit.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="menuContent">
+                          <h3 class="title">Islamic Mudarabah Deposits</h3>
+                          <!-- <p class="subTitle">
+                            About IDLC | Our Journey
+                          </p> -->
+                        </div>
+                      </router-link>
+                    </li>
+
+                    <li style="padding-top: 4.5px">
+                      <router-link class="menu_link" to="/priority" style="margin-bottom: 0px;">
+                        <div class="menuIcon">
+                          <img
+                            src="~@/assets/img/menu_icon/Menubar/Priority.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="menuContent">
+                          <h3 class="title">Priority</h3>
+                          <!-- <p class="subTitle">
+                            Latest updates of IDLC
+                          </p> -->
+                        </div>
+                      </router-link>
+                    </li>
+                    <li style="padding-top: 9.5px">
+                      <router-link class="menu_link" to="/online-mudarabah-deposit" style="margin-bottom: 0px;">
+                        <div class="menuIcon">
+                          <img
+                            src="~@/assets/img/menu_icon/Menubar/online-deposit-icon.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="menuContent">
+                          <h3 class="title">Online Mudarabah Deposit</h3>
+                          <!-- <p class="subTitle">
+                            Latest updates of IDLC
+                          </p> -->
+                        </div>
+                      </router-link>
+                    </li>
+                    <li style="padding-top: 9.5px">
+                      <router-link class="menu_link" to="/online-mudarabah-dps" style="margin-bottom: 0px;">
+                        <div class="menuIcon">
+                          <img
+                            src="~@/assets/img/menu_icon/Menubar/Online-DPS.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="menuContent">
+                          <h3 class="title">Online Mudarabah DPS</h3>
+                          <!-- <p class="subTitle">
+                            Latest updates of IDLC
+                          </p> -->
+                        </div>
+                      </router-link>
+                    </li>
+
+                  </div>
+
+                </div>
+              </ul>
             </li>
             <li >
               <router-link to="/islamic-reatil" style="color: black;">
@@ -814,6 +890,19 @@ ul.desktop_menu
   background-size: 200% 100%;
   background-position: 100% 0;
   border: 2px solid #00a6b4;
+}
+
+ul.desktop_menu
+  li
+  ul.desktop_menu_sub
+  .desktop_menu_sub_blocks
+  li
+  a.menu_link:hover
+  .menuIcon
+  img {
+    -webkit-filter: invert(38%) sepia(36%) saturate(5978%) hue-rotate(170deg) brightness(90%) contrast(93%);
+    filter: invert(38%) sepia(36%) saturate(5978%) hue-rotate(170deg) brightness(90%) contrast(93%);
+
 }
 
 
