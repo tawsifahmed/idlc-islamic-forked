@@ -159,7 +159,16 @@
             <b-card-body style="padding: 0px;">
               <ul class="list-unstyled f_list">
                 <li style="background: #fbfbfb;">
-                  <router-link to="/islamic-deposits" class="py-3" style="color: #00a6b4 !important;">Islamic Deposits</router-link>
+                  <router-link to="/islamic-deposits" class="py-3" style="color: #00a6b4 !important;">Islamic Mudarabah Deposits</router-link>
+                </li>
+                <li style="background: #fbfbfb;">
+                  <router-link to="" class="py-3" style="color: #00a6b4 !important;">Priority</router-link>
+                </li>
+                <li style="background: #fbfbfb;">
+                  <router-link to="/online-mudarabah-deposit" class="py-3" style="color: #00a6b4 !important;">Online Mudarabah Deposit</router-link>
+                </li>
+                <li style="background: #fbfbfb;">
+                  <router-link to="/online-mudarabah-dps" class="py-3" style="color: #00a6b4 !important;">Online Mudarabah DPS</router-link>
                 </li>
                 <li style="background: #fbfbfb;">
                   <router-link to="/islamic-retail" class="py-3" style="color: #00a6b4 !important;">Islamic Retail</router-link>

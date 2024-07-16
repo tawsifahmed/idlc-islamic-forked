@@ -38,10 +38,10 @@ export default {
       { name: 'keywords', content: 'Financing Products, SME, Islamic Finance, Small Business, Loan, new business, Interest Rate, Eligibility, Criteria, Entreprenuer, business man, term loan, shop' },
     ]
   },
-  name: 'Financing-Products',
+  name: 'Financing-Corporate',
   data() {
     return {
-      shortcode: 'FinancingBusiness',
+      shortcode: 'IslamicCorporate',
       relatedProductData: [],
       isMobile: false,
       contentData: "",

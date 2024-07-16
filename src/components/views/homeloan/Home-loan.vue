@@ -55,10 +55,10 @@ export default {
       { name: 'keywords', content: 'Islamic Deposits, IDLC Islamic, Financing Products, Islamic Finance, Interest Rate' },
     ]
   },
-  name: 'deposit-products',
+  name: 'islamic-deposits',
   data() {
     return {
-      shortcode: 'DepositProducts:',
+      shortcode: 'IslamicDeposits',
       relatedProductData: [],
       isMobile: false,
       contentData: "",
@@ -223,5 +223,10 @@ background-image: url("./../../../assets/img/financial-report/download-icon-01.p
 
 .tab_title{
   color: #000 !important;
+}
+
+
+.product-description > .note-float-left{
+  width: 40% !important;
 }
 </style>

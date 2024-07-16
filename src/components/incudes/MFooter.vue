@@ -30,7 +30,18 @@
       <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
         <b-card-body>
           <ul class="list-unstyled f_list">
-            <li><router-link to="/islamic-deposits">Islamic Deposits</router-link></li>
+            <li>
+              <router-link to="/islamic-deposits">Islamic Mudarabah Deposits</router-link>
+            </li>
+            <li>
+              <router-link to="">Priority</router-link>
+            </li>
+            <li>
+              <router-link to="/online-mudarabah-deposit">Online Mudarabah Deposit</router-link>
+            </li>
+            <li>
+              <router-link to="/online-mudarabah-dps">Online Mudarabah DPS</router-link>
+            </li>
             <li><router-link to="/islamic-reatil" >Islamic Retail</router-link></li>
             <li>
               <router-link to="/islamic-sme">Islamic SME</router-link>
