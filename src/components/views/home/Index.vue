@@ -85,31 +85,31 @@
           <div class="body">
             <div class="reason">
               <img :src="homePageLowerTabContent.why_choose_one_image" alt="" v-if="homePageLowerTabContent" />
-              <h5>{{ homePageLowerTabContent.why_choose_one_title }}</h5>
+              <h6 class="text-white">{{ homePageLowerTabContent.why_choose_one_title }}</h6>
               <div class="line"></div>
               <p>{{ homePageLowerTabContent.why_choose_one_subtitle }}</p>
             </div>
             <div class="reason">
               <img :src="homePageLowerTabContent.why_choose_two_image" alt="" />
-              <h5>{{ homePageLowerTabContent.why_choose_two_title }}</h5>
+              <h6 class="text-white">{{ homePageLowerTabContent.why_choose_two_title }}</h6>
               <div class="line"></div>
               <p>{{ homePageLowerTabContent.why_choose_two_subtitle }}</p>
             </div>
             <div class="reason">
               <img :src="homePageLowerTabContent.why_choose_three_image" alt="" />
-              <h5>{{ homePageLowerTabContent.why_choose_three_title }}</h5>
+              <h6 class="text-white">{{ homePageLowerTabContent.why_choose_three_title }}</h6>
               <div class="line"></div>
               <p>{{ homePageLowerTabContent.why_choose_three_subtitle }}</p>
             </div>
             <div class="reason">
               <img :src="homePageLowerTabContent.why_choose_four_image" alt="" />
-              <h5>{{ homePageLowerTabContent.why_choose_four_title }}</h5>
+              <h6 class="text-white">{{ homePageLowerTabContent.why_choose_four_title }}</h6>
               <div class="line"></div>
               <p>{{ homePageLowerTabContent.why_choose_four_subtitle }}</p>
             </div>
             <div class="reason">
               <img :src="homePageLowerTabContent.why_choose_five_image" alt="" />
-              <h5>{{ homePageLowerTabContent.why_choose_five_title }}</h5>
+              <h6 class="text-white">{{ homePageLowerTabContent.why_choose_five_title }}</h6>
               <div class="line"></div>
               <p>{{ homePageLowerTabContent.why_choose_five_subtitle }}</p>
             </div>
@@ -1434,7 +1434,7 @@ export default {
 
 .whyChose .whyChoseBg .body .reason {
   -ms-flex-preferred-size: 23%;
-  flex-basis: 23%;
+  flex-basis: 19%;
   padding: 15px;
   background: rgba(255, 255, 255, 0.15);
   border-radius: 5px;
@@ -1454,7 +1454,7 @@ export default {
 }
 
 .whyChose .whyChoseBg .body .reason p {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .whyChose .whyChoseBg .body .reason:hover {
