@@ -24,7 +24,7 @@
                       </div>
                     </div> -->
 
-                    <div :id="faq_tab_id"  class="tabcontent1" style="display: block;">
+                    <div :id="faq_tab_id"  class="tabcontent1" style="display: block; padding: 30px 0;">
                       <b-card  class="product-card">
                         <a   class="d-flex">
                           <strong class="question_product">{{ selectedTabName}}</strong>

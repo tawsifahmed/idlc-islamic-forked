@@ -107,6 +107,12 @@
               <div class="line"></div>
               <p>{{ homePageLowerTabContent.why_choose_four_subtitle }}</p>
             </div>
+            <div class="reason">
+              <img :src="homePageLowerTabContent.why_choose_five_image" alt="" />
+              <h5>{{ homePageLowerTabContent.why_choose_five_title }}</h5>
+              <div class="line"></div>
+              <p>{{ homePageLowerTabContent.why_choose_five_subtitle }}</p>
+            </div>
           </div>
         </div>
       </div>
