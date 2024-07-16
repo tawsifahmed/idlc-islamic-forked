@@ -12,7 +12,7 @@
             <rect x="0" y="15" rx="2" ry="2" width="300" height="105" />
           </vue-content-loading>
         </div>
-        <!-- <pre>{{slidersTab}}</pre> -->
+        <pre>{{slidersTab}}</pre>
         <div class="container-lg" v-show="isImageLoaded">
           <!-- <pre>{{sliders}}</pre>
           <div v-for="(slider, index) in sliders">
@@ -22,7 +22,7 @@
             <h1>{{ this.$parent.contentData.first_title }}</h1>
             <div class="buttons">
               <a v-for="(tab, index) in slidersTab" :key="index" :href="tab.tab_link"
-                v-if="slidersTab.length > 0"
+                v-if="slidersTab.length > 0 && tab.tab_name !== null"
 
               >
                 <h6>{{tab.tab_name}}</h6>

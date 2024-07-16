@@ -14,9 +14,16 @@ const HomeLoan = resolve => {
     resolve(require("../components/views/homeloan/Home-loan"));
   });
 };
+
 const OnlineMudarabahDeposit = resolve => {
   require.ensure(["../components/views/online-mudarabah-deposit/index"], () => {
     resolve(require("../components/views/online-mudarabah-deposit/index"));
+  });
+};
+
+const OnlineMudarabahDPS = resolve => {
+  require.ensure(["../components/views/online-mudarabah-dps/index"], () => {
+    resolve(require("../components/views/online-mudarabah-dps/index"));
   });
 };
 
@@ -142,6 +149,17 @@ export default new Router({
       },
 
       component: OnlineMudarabahDeposit
+    },
+    {
+      path: "/online-mudarabah-dps",
+      name: "OnlineMudarabahDPS",
+      meta: {
+        title: "Online Mudarabah DPS",
+        description: "Live in the Freedom of your own Home.",
+        seo_keyword: ""
+      },
+
+      component: OnlineMudarabahDPS
     },
     // {
     //   path: "/citizens-charter",
