@@ -478,7 +478,7 @@ h3.hMainTitle {
 }
 .reason h6 {
   text-align: center;
-  padding-left: 10px;
+  /* padding-left: 10px; */
   padding-bottom: 5px;
   color: #000000;
   margin-bottom: 10px;
@@ -1606,7 +1606,7 @@ body {
 
 @media(max-width: 600px) {
   .select-selected {
-    
+
   }
 }
 

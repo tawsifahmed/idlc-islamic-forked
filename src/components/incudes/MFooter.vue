@@ -34,7 +34,7 @@
               <router-link to="/islamic-deposits">Islamic Mudarabah Deposits</router-link>
             </li>
             <li>
-              <router-link to="">Priority</router-link>
+              <router-link to="/priority">Priority</router-link>
             </li>
             <li>
               <router-link to="/online-mudarabah-deposit">Online Mudarabah Deposit</router-link>

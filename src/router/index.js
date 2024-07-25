@@ -56,6 +56,12 @@ const FAQ = resolve => {
   });
 };
 
+const Priority = resolve => {
+  require.ensure(["../components/views/priority/Priority"], () => {
+    resolve(require("../components/views/priority/Priority"));
+  });
+};
+
 const ContentRepository = resolve => {
   require.ensure(["../components/views/content-repository/ContentRepository"], () => {
     resolve(require("../components/views/content-repository/ContentRepository"));
@@ -85,6 +91,7 @@ const ContactUs = resolve => {
     resolve(require("../components/views/contact-us/ContactUs"));
   });
 };
+
 
 const BranchLoacator = resolve => {
   require.ensure(["../components/views/contact-us/branch-locator"], () => {
@@ -303,16 +310,16 @@ export default new Router({
     //   },
     //   component: DPS
     // },
-    // {
-    //   path: "/priority",
-    //   name: "Priority",
-    //   meta: {
-    //     title: "Priority",
-    //     description: "Gain your Access to Privilege",
-    //     seo_keyword: ""
-    //   },
-    //   component: Priority
-    // },
+    {
+      path: "/priority",
+      name: "Priority",
+      meta: {
+        title: "Priority",
+        description: "Gain your Access to Privilege",
+        seo_keyword: ""
+      },
+      component: Priority
+    },
     // {
     //   path: "/online-dps",
     //   name: "OnlineDPS",

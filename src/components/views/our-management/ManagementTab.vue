@@ -15,7 +15,7 @@
         <div id="bod" class="tabcontent" style="display: block;">
           <div class="managementTabBody">
             <div class="row">
-                <div v-for="(data, index) in boardOfDirectors" :class="`${index === 0 ? 'member_two col-12' : 'member_two col-lg-4 col-md-6 col-12'}`">
+                <div v-for="(data, index) in boardOfDirectors" :class="`${index === 0 ? 'member_two col-12' : 'member_two col-lg-6 col-md-6 col-12'}`">
                   <div class="left">
                     <div class="image">
                       <img style="width: 242px; height: 242px;" v-lazy="data && data.image" alt="Management Team Member">

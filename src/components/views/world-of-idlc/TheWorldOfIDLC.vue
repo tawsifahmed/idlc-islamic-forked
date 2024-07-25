@@ -53,7 +53,7 @@
         </div>
       </div>
     </div>
-    <!-- <div class="ourJourneyHeading">
+    <div class="ourJourneyHeading">
       <h2>Our Journey</h2>
     </div>
     <div class="ourJourney">
@@ -83,7 +83,7 @@
         </div>
       </div>
 
-    </div> -->
+    </div>
 
     <app-footer />
 
@@ -137,20 +137,20 @@ export default {
         }
       }).catch(error => console.log(error));
     },
-    // getJourneyContent(){
-    //   axios.get('get-our-journey').then((response) => {
+    getJourneyContent(){
+      axios.get('get-our-journey').then((response) => {
 
-    //       // console.log(response.data);
-    //     if(response.status == 200){
-    //       this.journeyData = response.data;
-    //     }
-    //   }).catch(error => console.log(error));
-    // },
+          // console.log(response.data);
+        if(response.status == 200){
+          this.journeyData = response.data;
+        }
+      }).catch(error => console.log(error));
+    },
   },
   created() {
     this.getArticleContent();
     this.getHeaderContent();
-    // this.getJourneyContent();
+    this.getJourneyContent();
   },
 
 

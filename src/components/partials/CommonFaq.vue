@@ -1,6 +1,7 @@
 <template>
   <div>
       <ul class="FAQList">
+        <pre>{{faqs}}</pre>
         <li v-if="faqs.length > 0" v-for="(item, index) in faqs" :key="index">
           <router-link :to="{ name: 'FAQ', params: { faq : item.id, tabType:item.faq_tab_id, tabName: faqTabName}}">
             {{ item.question }}    <span class="icon-external-link"></span>
@@ -37,6 +38,7 @@
             }
           }).then((response) => {
             if (response.status == 200) {
+              // console.log('resFAQPRio', response)
               this.faqs = response.data.details;
               this.faqData =   response.data.details[0];
             }else{

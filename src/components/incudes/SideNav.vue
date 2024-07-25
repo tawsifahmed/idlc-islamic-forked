@@ -162,7 +162,7 @@
                   <router-link to="/islamic-deposits" class="py-3" style="color: #00a6b4 !important;">Islamic Mudarabah Deposits</router-link>
                 </li>
                 <li style="background: #fbfbfb;">
-                  <router-link to="" class="py-3" style="color: #00a6b4 !important;">Priority</router-link>
+                  <router-link to="/priority" class="py-3" style="color: #00a6b4 !important;">Priority</router-link>
                 </li>
                 <li style="background: #fbfbfb;">
                   <router-link to="/online-mudarabah-deposit" class="py-3" style="color: #00a6b4 !important;">Online Mudarabah Deposit</router-link>

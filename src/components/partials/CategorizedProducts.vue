@@ -73,7 +73,7 @@
                       >
                         <a>
                           <h6>
-                            {{ productData[i - 1].title }}
+                            {{ productData[i - 1].name }}
                           </h6>
                           <img
                             alt="Retirement"
@@ -93,7 +93,7 @@
                       >
                         <a>
                           <h6>
-                            {{ productData[i].title }}
+                            {{ productData[i].name }}
                           </h6>
                           <img
                             alt="Retirement"
