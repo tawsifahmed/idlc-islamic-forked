@@ -23,6 +23,10 @@
           <img src="~@/assets/img/atAGlance/Employees.gif" alt="Icon">
           <p>1400+ Employees</p>
         </div>
+        <div class="block">
+          <img src="~@/assets/img/atAGlance/Employees.gif" alt="Icon">
+          <p>Dummy</p>
+        </div>
       </div>
       <div class="homePageTitleDetails sectionTitle" style="padding-top: 0;">
         <!-- <h2 style="text-align: center; " class="h2Responsive ">
@@ -54,6 +58,7 @@
       </div>
     </div>
     <div class="ourJourneyHeading">
+      <!-- <pre>{{journeyData}}</pre> -->
       <h2>Our Journey</h2>
     </div>
     <div class="ourJourney">
@@ -140,7 +145,7 @@ export default {
     getJourneyContent(){
       axios.get('get-our-journey').then((response) => {
 
-          // console.log(response.data);
+          // console.log('journey', response);
         if(response.status == 200){
           this.journeyData = response.data;
         }

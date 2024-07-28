@@ -1,7 +1,7 @@
 <template>
   <div>
       <ul class="FAQList">
-        <pre>{{faqs}}</pre>
+        <!-- <pre>{{faqs}}</pre> -->
         <li v-if="faqs.length > 0" v-for="(item, index) in faqs" :key="index">
           <router-link :to="{ name: 'FAQ', params: { faq : item.id, tabType:item.faq_tab_id, tabName: faqTabName}}">
             {{ item.question }}    <span class="icon-external-link"></span>

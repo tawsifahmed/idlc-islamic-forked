@@ -205,7 +205,7 @@
               </ul>
             </li>
             <li >
-              <router-link to="/islamic-reatil" style="color: black;">
+              <router-link to="/islamic-retail" style="color: black;">
                 Islamic Retail
               </router-link>
             </li>

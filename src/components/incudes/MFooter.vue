@@ -42,7 +42,7 @@
             <li>
               <router-link to="/online-mudarabah-dps">Online Mudarabah DPS</router-link>
             </li>
-            <li><router-link to="/islamic-reatil" >Islamic Retail</router-link></li>
+            <li><router-link to="/islamic-retail" >Islamic Retail</router-link></li>
             <li>
               <router-link to="/islamic-sme">Islamic SME</router-link>
             </li>

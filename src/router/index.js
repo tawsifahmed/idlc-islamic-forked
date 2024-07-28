@@ -224,7 +224,7 @@ export default new Router({
       component: FinancingProductsBusiness
     },
     {
-      path: "/islamic-reatil",
+      path: "/islamic-retail",
       name: "RetailProducts",
       meta: {
         title: "Retail Products",
