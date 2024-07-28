@@ -88,7 +88,7 @@
             </div>
             <div class="sort_detail">
               <p>{{ lowerTabContents.download_text }}</p>
-              <a :href="lowerTabContents.brochure_download" class="tabcontent1ButtonBase" target="_blank" download>Download Now</a>
+              <a :href="lowerTabContents.brochure_download" style="cursor: pointer;" class="tabcontent1ButtonBase" target="_blank" download>Download Now</a>
             </div>
           </div>
         </div>
@@ -191,6 +191,7 @@ margin-bottom: 30px;
   width: 100%;
   position: absolute;
   z-index: 100;
+  border-bottom: 1px solid white;
 }
 
 .productWhychoose .tab {
