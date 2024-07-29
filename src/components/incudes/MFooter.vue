@@ -31,7 +31,7 @@
         <b-card-body>
           <ul class="list-unstyled f_list">
             <li>
-              <router-link to="/islamic-deposits">Islamic Mudarabah Deposits</router-link>
+              <router-link to="/islamic-deposits">Islamic Deposit Products</router-link>
             </li>
             <li>
               <router-link to="/priority">Priority</router-link>

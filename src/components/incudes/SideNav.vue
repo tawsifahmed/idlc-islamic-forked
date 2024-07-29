@@ -159,7 +159,7 @@
             <b-card-body style="padding: 0px;">
               <ul class="list-unstyled f_list">
                 <li style="background: #fbfbfb;">
-                  <router-link to="/islamic-deposits" class="py-3" style="color: #00a6b4 !important;">Islamic Mudarabah Deposits</router-link>
+                  <router-link to="/islamic-deposits" class="py-3" style="color: #00a6b4 !important;">Islamic Deposit Products</router-link>
                 </li>
                 <li style="background: #fbfbfb;">
                   <router-link to="/priority" class="py-3" style="color: #00a6b4 !important;">Priority</router-link>

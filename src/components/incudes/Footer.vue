@@ -21,7 +21,7 @@
                         </h3>
                         <ul class="list-unstyled f_list onMobileDisplayNone">
                           <li>
-                            <router-link to="/islamic-deposits">Islamic Mudarabah Deposits</router-link>
+                            <router-link to="/islamic-deposits">Islamic Deposit Products</router-link>
                           </li>
                           <li>
                             <router-link to="/priority">Priority</router-link>

@@ -142,7 +142,7 @@
                           />
                         </div>
                         <div class="menuContent">
-                          <h3 class="title">Islamic Mudarabah Deposits</h3>
+                          <h3 class="title">Islamic Deposit Products</h3>
                           <!-- <p class="subTitle">
                             About IDLC | Our Journey
                           </p> -->
