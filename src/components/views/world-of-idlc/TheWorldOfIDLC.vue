@@ -7,25 +7,9 @@
     <app-static-image />
     <div class="container mb-4">
       <div class="iconBlocks">
-        <div class="block">
-          <img src="~@/assets/img/atAGlance/FInancial Products _ Services.gif" alt="Icon">
-          <p>FInancial Products & Services</p>
-        </div>
-        <div class="block">
-          <img src="~@/assets/img/atAGlance/Products _ Services.gif" alt="Icon">
-          <p>Investment Products & Services</p>
-        </div>
-        <div class="block">
-          <img src="~@/assets/img/atAGlance/Branch.gif" alt="Icon">
-          <p>40 Branches</p>
-        </div>
-        <div class="block">
-          <img src="~@/assets/img/atAGlance/Employees.gif" alt="Icon">
-          <p>1400+ Employees</p>
-        </div>
-        <div class="block">
-          <img src="~@/assets/img/atAGlance/Employees.gif" alt="Icon">
-          <p>Dummy</p>
+        <div class="block" v-for="(icon, index) in aboutIcons" :key="icon">
+          <img :src="`${baseUrl}/${icon.icon}`" width="80" height="80" alt="Icon">
+          <p>{{icon.name}}</p>
         </div>
       </div>
       <div class="homePageTitleDetails sectionTitle" style="padding-top: 0;">
@@ -104,8 +88,10 @@ export default {
     return {
       contentData: "",
       articleData: "",
+      aboutIcons: null,
       journeyData: [],
       shortcode: 'about',
+      baseUrl: axios.defaults.baseURL.replace('/api/v1/', ''),
     }
   },
   components: {
@@ -128,6 +114,13 @@ export default {
       axios.get('get-world-idlc').then((response) => {
         if (response.status == 200) {
           this.articleData = response.data.details;
+        }
+      }).catch(error => console.log(error));
+    },
+    getAboutIcons() {
+      axios.get('get-world-idlc-icon').then((response) => {
+        if (response.status == 200) {
+          this.aboutIcons = response.data.details
         }
       }).catch(error => console.log(error));
     },
@@ -156,9 +149,8 @@ export default {
     this.getArticleContent();
     this.getHeaderContent();
     this.getJourneyContent();
+    this.getAboutIcons();
   },
-
-
 }
 
 </script>
@@ -182,8 +174,6 @@ export default {
   display: none;
 }
 
-.our_values {}
-
 h2 {
   text-transform: uppercase;
 }
@@ -197,7 +187,7 @@ h2 {
 
 .iconBlocks .block {
   background-color: #00a6b4;
-  flex-basis: 24.8%;
+  flex-basis: 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
