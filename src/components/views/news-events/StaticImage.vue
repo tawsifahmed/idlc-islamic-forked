@@ -4,7 +4,7 @@
     <div class="main_slider">
       <div class="main_slider_bg_part">
         <h2 style="text-align: center; text-transform: uppercase; color: #fff; margin-bottom: 10px;" class="h2Responsive ">
-          {{ this.$parent.contentData.second_title }}
+          {{ this.$parent.contentData.page_name }}
         </h2>
         <div class="container-lg"   v-show="isPlaceholder" >
           <vue-content-loading :width="300" :height="115"  >

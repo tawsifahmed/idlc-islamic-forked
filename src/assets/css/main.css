@@ -1610,6 +1610,7 @@ div.globalFooterCard.card-radar {
   .productFeatures .tab .tablinks1 {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
+    border: 1px solid #00a6b4;
   }
   .productFeatures .tab .tablinks1:nth-child(1),
   .productFeatures .tab .tablinks1:nth-child(3) {
@@ -1963,6 +1964,7 @@ p {
   height: auto !important;
   padding: 0 30px !important;
 }
+
 
 .product-description img{
   width: 100% !important;

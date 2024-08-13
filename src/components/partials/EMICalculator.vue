@@ -1,6 +1,6 @@
 <template>
     <div id="EMICalculator">
-        <div class="container">
+        <div class="container-lg">
             <div class="row">
                 <div class="col-md-12">
                     <div class="header sectionTitle text-uppercase text-center">
@@ -9,7 +9,7 @@
                 </div>
             </div>
             <div class="row align-items-streach">
-                <div class="col-md-8">
+                <div class="col-lg-8">
                     <div class="calculator">
                         <div class="row align-items-streach">
                             <div class="col-md-8">
@@ -71,7 +71,7 @@
                     </div>
 
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4">
                     <div class="graphChart">
 
                         <div class="graph">
@@ -180,7 +180,7 @@ export default {
     padding: 15px;
     border: 1px solid rgba(51, 51, 51, 0.397);
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 991px){
   #EMICalculator .calculator {
       margin-bottom: 15px;
   }

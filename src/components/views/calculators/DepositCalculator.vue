@@ -17,7 +17,7 @@
                   <div class="row">
                     <div class="col-md-6">
                       <div class="DepositInput FDType">
-                        <div class="col-md-12 align-items-center  mb-2">
+                        <div class=" align-items-center  mb-2">
                           <label>Type of Fixed Deposit</label>
                           <select @change="onChangeTypeOfFD($event)">
                             <option value="" disabled selected>Choose One</option>
@@ -25,7 +25,7 @@
                             </option>
                           </select>
                         </div>
-                        <div class="col-md-12 align-items-center  mb-2" v-show="isTypeOfFD">
+                        <div class=" align-items-center  mb-2" v-show="isTypeOfFD">
                           <label for=""></label>
                           <select @change="onChangeResultOfFD($event)">
                             <option value="" disabled selected>Choose One</option>
@@ -35,7 +35,7 @@
                       </div>
 
                       <div class="DepositInput FDType">
-                        <div class="col-md-12 align-items-center">
+                        <div class="align-items-center">
                           <label for="">Tenure {{ dateType}}</label>
                           <input type="number" min="0" :placeholder="dateType" v-model="tenure" class="tenure">
                           <span style="opacity: .8; font-size: 12px;">{{ note }}</span>

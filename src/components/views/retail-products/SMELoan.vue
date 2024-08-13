@@ -32,7 +32,7 @@ import axios from "axios";
 
 export default {
   metaInfo: {
-    title: 'Islamic Corporate',
+    title: 'Islamic Retail',
     meta: [
       { name: 'description', content: 'Apply for Small Business Loan, Women Entrepreneur Loan, SME Loan Online at flexible terms and interest rates' },
       { name: 'keywords', content: 'Financing Products, SME, Islamic Finance, Small Business, Loan, new business, Interest Rate, Eligibility, Criteria, Entreprenuer, business man, term loan, shop' },

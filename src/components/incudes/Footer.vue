@@ -8,7 +8,7 @@
               <div class="new_footer_top">
                 <div class="container">
                   <div class="row">
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-4">
                       <div
                         class="f_widget about-widget wow fadeInLeft social_icons "
                         data-wow-delay="0.2s"
@@ -93,7 +93,7 @@
                       </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 onMobileDisplayNone">
+                    <div class="col-lg-3 col-md-4 onMobileDisplayNone">
                       <div
                         class="f_widget about-widget pl_70 wow fadeInLeft"
                         data-wow-delay="0.4s"
@@ -121,7 +121,7 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 onMobileDisplayNone">
+                    <div class="col-lg-3 col-md-4 onMobileDisplayNone">
                       <div
                         class="f_widget about-widget pl_70 wow fadeInLeft"
                         data-wow-delay="0.6s"
@@ -139,7 +139,7 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 onMobileDisplayNone">
+                    <div class="col-lg-3 col-md-12 onMobileDisplayNone">
                       <div
                         class="f_widget social-widget pl_70 wow fadeInLeft"
                         data-wow-delay="0.8s"
