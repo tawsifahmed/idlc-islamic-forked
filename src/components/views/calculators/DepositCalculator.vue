@@ -88,10 +88,10 @@
                 <div class="calculatedAmount">
                   <div class="result mb-2 " v-show="isEarnerDeposit">
                     <div class="row align-items-center">
-                      <div class="col-md-6">
+                      <div class="col-6">
                         <h6>Maturity Value</h6>
                       </div>
-                      <div class="col-md-6 brandColor text-right">
+                      <div class="col-6 brandColor text-right">
                         <h6>{{ this.ReplaceNumberWithCommas(total.toFixed(2)) }}</h6>
                       </div>
                     </div>
@@ -99,10 +99,10 @@
 
                   <div class="result  mb-2" v-show="isEarnerDeposit">
                     <div class="row align-items-center">
-                      <div class="col-md-6">
+                      <div class="col-6">
                         <h6>Gross Interest Amount</h6>
                       </div>
-                      <div class="col-md-6 text-right">
+                      <div class="col-6 text-right">
                         <h6>{{ this.ReplaceNumberWithCommas(grossInterestAmount.toFixed(2)) }} </h6>
                       </div>
                     </div>
@@ -110,10 +110,10 @@
 
                   <div class="result  mb-2" v-show="!isEarnerDeposit">
                     <div class="row align-items-center">
-                      <div class="col-md-6">
+                      <div class="col-6">
                         <h6>Gross {{monthlyOrQuaterly}} Interest Amount</h6>
                       </div>
-                      <div class="col-md-6 text-right">
+                      <div class="col-6 text-right">
                         <h6>{{ this.ReplaceNumberWithCommas(total.toFixed(2)) }} </h6>
                       </div>
                     </div>
@@ -122,10 +122,10 @@
 
                   <div class="result mb-4 ">
                     <div class="row align-items-center">
-                      <div class="col-md-6">
+                      <div class="col-6">
                         <h6>Rate of Interest</h6>
                       </div>
-                      <div class="col-md-6 text-right">
+                      <div class="col-6 text-right">
                         <h6>{{rateOfInterest}}%</h6>
                       </div>
                     </div>

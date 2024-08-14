@@ -45,7 +45,7 @@ export default {
       relatedProductData: [],
       isMobile: false,
       contentData: "",
-      faqTabName: 'Islamic Corporate'
+      faqTabName: 'Islamic Retail'
 
     }
   },
