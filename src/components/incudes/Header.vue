@@ -982,14 +982,14 @@
             </li> -->
           </ul>
 
-          <!-- <router-link
+          <router-link
             v-b-tooltip.hover.bottom="'Locate Us'"
             class="rootLink item-company colorize"
             style="padding: 10px 10px 0 10px"
             :to="{ name: 'ContactUs', params: { branchId: '0' } }"
           >
             <div class="mainmenuIcon comparisonIcon"></div>
-          </router-link> -->
+          </router-link>
         </li>
 
         <li class="navSection secondary" style="display: none">

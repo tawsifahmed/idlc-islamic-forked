@@ -246,7 +246,7 @@
       </section> -->
     </footer>
 
-    <!-- <div id="quick_menu">
+    <div id="quick_menu">
       <ul>
 
         <li
@@ -285,7 +285,7 @@
           /></a>
         </li>
       </ul>
-    </div> -->
+    </div>
 
     <!-- <div class="cc-contactpop fixed">
       <h3>Let Us Help You</h3>
@@ -551,7 +551,7 @@ div#quick_menu li a {
 }
 
 div#quick_menu li:hover {
-  background-color: #d23839;
+  background-color: #00a6b4;
   color: #fff;
   cursor: pointer;
 }
