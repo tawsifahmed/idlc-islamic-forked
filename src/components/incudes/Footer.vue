@@ -131,7 +131,7 @@
                           Quick Links
                         </h3>
                         <ul class="list-unstyled f_list">
-
+                          <li><router-link to="download-forms-required-documents">Download Forms</router-link></li>
                           <li><router-link to="/faq">FAQ</router-link></li>
                           <li><router-link to="/content-repository/documents">Content Repository (Documents)</router-link></li>
                           <li><router-link to="/content-repository/videos">Content Repository (Videos)</router-link></li>

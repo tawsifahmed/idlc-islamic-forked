@@ -122,5 +122,12 @@ table tbody tr td {
   .product-description{
     font-size: 14px;
   }
+
+  @media(max-width: 575px){
+    .homePageTitleDetails{
+      padding: 0 20px !important;
+      padding-top: 50px !important;
+    }
+  }
 </style>
 

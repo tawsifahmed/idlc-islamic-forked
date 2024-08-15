@@ -68,6 +68,17 @@ const ContentRepository = resolve => {
   });
 };
 
+const DownloadFormsRequiredDocuments = resolve => {
+  require.ensure(
+    ["../components/views/download-forms/DownloadFormsRequiredDocuments"],
+    () => {
+      resolve(
+        require("../components/views/download-forms/DownloadFormsRequiredDocuments")
+      );
+    }
+  );
+};
+
 const DocumentsContentRepository = resolve => {
   require.ensure(["../components/views/content-repository/ContentRepository"], () => {
     resolve(require("../components/views/content-repository/ContentRepository"));
@@ -441,16 +452,16 @@ export default new Router({
     //   },
     //   component: GetInTouchWithUs
     // },
-    // {
-    //   path: "/download-forms-required-documents",
-    //   name: "DownloadFormsRequiredDocuments",
-    //   meta: {
-    //     title: "Download Forms Required Documents",
-    //     description: "Download your Required Forms",
-    //     seo_keyword: ""
-    //   },
-    //   component: DownloadFormsRequiredDocuments
-    // },
+    {
+      path: "/download-forms-required-documents",
+      name: "DownloadFormsRequiredDocuments",
+      meta: {
+        title: "Download Forms Required Documents",
+        description: "Download your Required Forms",
+        seo_keyword: ""
+      },
+      component: DownloadFormsRequiredDocuments
+    },
     {
       path: "/contact-us/:branchId",
       name: "ContactUs",
