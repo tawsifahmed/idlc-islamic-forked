@@ -250,16 +250,16 @@
       <ul>
 
         <li
-          v-b-tooltip.hover.right="'Let us help'"
+          v-b-tooltip.hover.right="'Reach out to us'"
           data-toggle="tooltip"
           data-placement="right"
-          title="Let us help"
+          title="Reach out to us"
         >
-          <router-link to="/get-in-touch-with-us" class=""
+          <router-link to="/contact-us/0" class=""
             ><img src="~@/assets/img/quick_menu_icons/Get-in-touch.png" alt=""
           /></router-link>
         </li>
-        <li
+        <!-- <li
           v-b-tooltip.hover.right="'Calculators'"
           data-toggle="tooltip"
           data-placement="right"
@@ -268,7 +268,7 @@
           <router-link to="/calculators"
             ><img src="~@/assets/img/quick_menu_icons/Calculator.png" alt=""
           /></router-link>
-        </li>
+        </li> -->
         <li
           v-b-tooltip.hover.right="'Call us'"
           data-toggle="tooltip"
