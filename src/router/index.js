@@ -103,6 +103,12 @@ const ContactUs = resolve => {
   });
 };
 
+const GetInTouchWithUs = resolve => {
+  require.ensure(["../components/views/get-in-touch/GetInTouchWithUs"], () => {
+    resolve(require("../components/views/get-in-touch/GetInTouchWithUs"));
+  });
+};
+
 
 const BranchLoacator = resolve => {
   require.ensure(["../components/views/contact-us/branch-locator"], () => {
@@ -442,16 +448,16 @@ export default new Router({
     //   },
     //   component: OpenOnlineDepositAccount
     // },
-    // {
-    //   path: "/get-in-touch-with-us",
-    //   name: "GetInTouchWithUs",
-    //   meta: {
-    //     title: "Get In Touch With Us",
-    //     description: "Let us Help",
-    //     seo_keyword: ""
-    //   },
-    //   component: GetInTouchWithUs
-    // },
+    {
+      path: "/get-in-touch-with-us",
+      name: "GetInTouchWithUs",
+      meta: {
+        title: "Get In Touch With Us",
+        description: "Let us Help",
+        seo_keyword: ""
+      },
+      component: GetInTouchWithUs
+    },
     {
       path: "/download-forms-required-documents",
       name: "DownloadFormsRequiredDocuments",

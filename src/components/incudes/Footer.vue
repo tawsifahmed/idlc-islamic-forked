@@ -250,12 +250,12 @@
       <ul>
 
         <li
-          v-b-tooltip.hover.right="'Reach out to us'"
+          v-b-tooltip.hover.right="'Let us help'"
           data-toggle="tooltip"
           data-placement="right"
-          title="Reach out to us"
+          title="Let us help"
         >
-          <router-link to="/contact-us/0" class=""
+          <router-link to="/get-in-touch-with-us" class=""
             ><img src="~@/assets/img/quick_menu_icons/Get-in-touch.png" alt=""
           /></router-link>
         </li>
