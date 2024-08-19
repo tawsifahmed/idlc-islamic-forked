@@ -102,7 +102,7 @@ export default {
           if (response.status == 200) {
             this.sliders = response.data.details;
             this.slidersTab = response.data.details[0].tabs
-            console.log('this.slidersSing =>', this.slidersTab);
+            // console.log('this.slidersSing =>', this.slidersTab);
           }
         })
         .catch(error => console.log(error));

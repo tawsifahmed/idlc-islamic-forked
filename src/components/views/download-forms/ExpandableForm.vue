@@ -266,7 +266,7 @@ export default {
         .then(response => {
           if (response.status == 200) {
             this.downloadableDocuments = response.data.details;
-            console.log(this.downloadableDocuments);
+            // console.log(this.downloadableDocuments);
           }
         })
         .catch(error => console.log(error));

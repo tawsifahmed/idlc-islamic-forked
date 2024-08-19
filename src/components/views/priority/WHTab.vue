@@ -170,7 +170,7 @@ margin-bottom: 30px;
   background: rgba(51, 51, 51, 0.949);
   padding: 125px 0px 100px 0px;
   margin: 0 auto;
-  height: 625px;
+  /*height: 625px;*/
 }
 
 .productWhychoose .top_curve {

@@ -72,7 +72,7 @@
     methods: {
       faqOpenTab(tabID, tabName, event){
         this.faq_tab_id = tabID;
-        console.log('tabID, tabID', tabID);
+        // console.log('tabID, tabID', tabID);
         this.selectedTabName = tabName;
         this.getFaq(tabID);
         var i, tablinks;
@@ -89,7 +89,7 @@
         axios.get('get-faq-tab').then((response) => {
           if (response.status == 200) {
             this.faqTabs = response.data.details;
-            console.log(this.faqTabs);
+            // console.log(this.faqTabs);
           }else{
             console.log(response);
           }

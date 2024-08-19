@@ -153,7 +153,7 @@
 
             this.$store.dispatch("submitContactForm", data)
               .then(response => {
-                console.log(response);
+                // console.log(response);
                 this.$fire({
                   title: "Thank you for your submission! Our representative will get in touch with you within 2 working days.",
                   type: "success",

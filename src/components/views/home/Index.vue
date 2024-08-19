@@ -358,7 +358,7 @@ export default {
         .then(response => {
           if (response.status == 200) {
             this.homePageData = response.data.details;
-            console.log("homePageData", this.homePageData);
+            // console.log("homePageData", this.homePageData);
             this.pageSliderHeader = response.data.details.page_data;
             this.allNews = response.data.details.allNews;
             this.homePageLowerTabContent =
@@ -373,9 +373,9 @@ export default {
     },
     getHomePageKeyFeature() {
       axios.get('get-key-feature').then(res => {
-        console.log('res =>', res)
+        // console.log('res =>', res)
         this.homeKeyFeature = res.data.data;
-        console.log('homeKeyFeature =>', this.homeKeyFeature)
+        // console.log('homeKeyFeature =>', this.homeKeyFeature)
       }).catch(err => {
         console.log(err);
       })

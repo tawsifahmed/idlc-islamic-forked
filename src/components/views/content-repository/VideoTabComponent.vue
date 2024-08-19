@@ -78,7 +78,7 @@ export default {
       axios.get('get-video-file').then(res => {
 
         this.contentFiles = res.data.details
-        console.log('vid',this.contentFiles)
+        // console.log('vid',this.contentFiles)
         this.contentFiles.filter(item => {
           this.files.push(item)
           // this.showViewMorePdf = true

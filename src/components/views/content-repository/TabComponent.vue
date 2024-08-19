@@ -67,7 +67,7 @@ export default {
           this.files.push(item)
           // this.showViewMorePdf = true
         })
-        console.log('files', this.files)
+        // console.log('files', this.files)
       }).catch(error => {
         console.log(error)
       })

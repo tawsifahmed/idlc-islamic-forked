@@ -279,10 +279,10 @@
         axios.get('get-branch')
           .then((response) => {
             if(response.status == 200){
-              console.log(response.data.details);
+              // console.log(response.data.details);
               this.branches = [];
               this.branches = response.data.details.allBranches;
-              console.log('all', this.branches);
+              // console.log('all', this.branches);
               // this.clearMarkers();
               // this.buildMarkers();
             }else{

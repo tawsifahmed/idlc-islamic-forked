@@ -114,7 +114,7 @@ export default {
         if (response.status == 200) {
           this.depositPSR = response.data.data.psr_table;
           this.depoPrevProfits = response.data.data.tabs;
-          console.log('this.depositPSR', response);
+          // console.log('this.depositPSR', response);
         }
       }).catch(error => console.log(error));
     }

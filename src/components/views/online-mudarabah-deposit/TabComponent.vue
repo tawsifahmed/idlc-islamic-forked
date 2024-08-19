@@ -72,7 +72,7 @@
     methods: {
       faqOpenTab(tabID, tabName, event){
         this.faq_tab_id = tabID;
-        console.log('tabID, tabID', tabID);
+        // console.log('tabID, tabID', tabID);
         this.selectedTabName = tabName;
         this.getFaq(tabID);
         var i, tablinks;

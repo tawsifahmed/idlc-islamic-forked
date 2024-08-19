@@ -85,7 +85,7 @@ export default {
       const monthNames = ["January", "February", "March", "April", "May", "June",
         "July", "August", "September", "October", "November", "December"
       ];
-      console.log(month);
+      // console.log(month);
       return day+' '+ monthNames[month-1] +' '+year;
     },
     getNewsContent(){
@@ -96,7 +96,7 @@ export default {
       }).then((response) => {
         if(response.status == 200){
           this.contentData = response.data.details;
-          console.log(this.contentData);
+          // console.log(this.contentData);
         }
       }).catch(error => console.log(error));
     },
