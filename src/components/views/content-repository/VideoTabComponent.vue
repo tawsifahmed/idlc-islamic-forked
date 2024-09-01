@@ -1,5 +1,5 @@
 <template>
-  <section class="">
+  <section class="my-5">
     <b-card class="product-card">
       <a v-b-toggle="'annualReportcollapse' + 2" block class="d-flex cursor_pointer">
         <strong class="question_product" style="color:white; font-size: 1.25rem;">
@@ -54,7 +54,7 @@
                       </vue-plyr>
                     </div>
 
-                    <p class="vid-title">{{ file.title }}</p>
+                    <p v-b-tooltip.hover.bottom="file.title" class="vid-title ">{{ file.title }}</p>
                   </div>
                 </div>
               </div>
@@ -110,7 +110,7 @@ export default {
           }
         }
 
-        
+
         if (this.files[index].video_type !== 'upload') {
           const iframeElement = this.$refs.iframePlayer[index];
           if (iframeElement) {
@@ -151,6 +151,10 @@ export default {
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
 }
 
 
@@ -172,7 +176,8 @@ export default {
 }
 
 .video-wrapper {
-  /* margin-top: 15px; */
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 
