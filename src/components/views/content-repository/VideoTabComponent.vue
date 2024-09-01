@@ -13,7 +13,7 @@
           </b-card>
           <div v-else class="row">
             <div class="latest_news slider multiple-items col-md-12">
-              <div class="row">
+              <div class="row p-2">
                 <div v-for="(file, index) in files" :key="file.id" class="col-lg-4 col-md-6 col-12 ">
                   <div class="">
                     <!-- Thumbnail with play button -->
@@ -54,7 +54,7 @@
                       </vue-plyr>
                     </div>
 
-                    <p v-b-tooltip.hover.bottom="file.title" class="vid-title ">{{ file.title }}</p>
+                    <p v-b-tooltip.hover.left="file.title" class="vid-title" style="padding-top: 5px !important;">{{ file.title }}</p>
                   </div>
                 </div>
               </div>
@@ -84,7 +84,6 @@ export default {
   methods: {
     getContentFiles() {
       axios.get('get-video-file').then(res => {
-        console.log('rest',res.data);
         this.files = res.data.details.map(file => ({
           ...file,
           showPlayer: false,
@@ -144,17 +143,18 @@ export default {
 
 .thumb-img{
   width: 100%;
-  height: 192.38px;
+  height: 190.2px;
   border-radius: 8px;
 }
 .vid-title{
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   line-height: 1.75rem;
   font-weight: 600;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
+
 }
 
 
