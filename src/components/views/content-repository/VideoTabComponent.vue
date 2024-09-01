@@ -1,7 +1,6 @@
 <template>
-  <section class="container my-5">
+  <section class="">
     <b-card class="product-card">
-      <!-- <pre>asd{{baseUrl}}</pre> -->
       <a v-b-toggle="'annualReportcollapse' + 2" block class="d-flex cursor_pointer">
         <strong class="question_product" style="color:white; font-size: 1.25rem;">
           Videos
@@ -14,31 +13,39 @@
           </b-card>
           <div v-else class="row">
             <div class="latest_news slider multiple-items col-md-12">
-              <div class="row p-2">
+              <div class="row">
+                <div v-for="(file, index) in files" :key="file.id" class="col-lg-4 col-md-6 col-12 ">
+                  <div class="">
+                    <!-- Thumbnail with play button -->
+                    <div v-if="!file.showPlayer" class="thumbnail-wrapper" @click="playVideo(index)">
+                      <img  class="thumb-img" :src="`${baseUrl}/uploads/video_file/${file.thumbnail}`" />
+                      <div class="play-button">
+                        <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="32.5" cy="32.5" r="32.5" fill="white" fill-opacity="0.5" />
+                          <ellipse cx="32.4991" cy="32.5011" rx="20.546" ry="20.546" fill="white" />
+                          <path
+                              d="M41.0035 32.128C41.2901 32.2935 41.2901 32.7072 41.0035 32.8727L28.5673 40.0527C28.2807 40.2182 27.9223 40.0114 27.9223 39.6803L27.9223 25.3203C27.9223 24.9893 28.2807 24.7824 28.5673 24.9479L41.0035 32.128Z"
+                              fill="#00a6b4" />
+                      </svg>
+                      </div>
+                    </div>
 
-
-                <div v-for="file in files" :key="file.id" class="col-lg-4 col-md-6 col-12">
-                  <div >
-                    <div v-if="file.video_type == 'upload'" class="video-wrapper">
+                    <!-- Video player -->
+                    <div v-else class="video-wrapper">
                       <vue-plyr :options="options">
                         <video
+                          v-if="file.video_type === 'upload'"
+                          :id="`up${index}`"
                           controls
                           crossorigin
                           playsinline
-                          data-poster="poster.jpg"
                         >
-                          <source
-                            :src="`${baseUrl}/uploads/video_file/${file.video_link}`"
-
-                          />
+                          <source :src="`${baseUrl}/uploads/video_file/${file.video_link}`" />
                         </video>
-                      </vue-plyr>
-                    </div>
-                    <div v-else class=" video-wrapper">
-                      <vue-plyr >
-                        <div class="plyr__video-embed">
+                        <div v-else class="plyr__video-embed">
                           <iframe
-                            :src="file.video_link"
+                            ref="iframePlayer"
+                            :src="getYouTubeEmbedUrl(file.video_link)"
                             allowfullscreen
                             allowtransparency
                             allow="autoplay"
@@ -46,7 +53,8 @@
                         </div>
                       </vue-plyr>
                     </div>
-                    <p>{{file.title}}</p>
+
+                    <p class="vid-title">{{ file.title }}</p>
                   </div>
                 </div>
               </div>
@@ -57,9 +65,9 @@
     </b-card>
   </section>
 </template>
+
 <script>
 import axios from "axios";
-
 
 export default {
   name: "FileTab",
@@ -69,41 +77,104 @@ export default {
       next: "<span class='icon-chevron-right'></span>",
       isVisible: false,
       files: [],
-      contentFiles: [],
       baseUrl: axios.defaults.baseURL.replace('/api/v1/', ''),
-    }
+      thumbnailUrl: 'https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    };
   },
   methods: {
     getContentFiles() {
       axios.get('get-video-file').then(res => {
-
-        this.contentFiles = res.data.details
-        // console.log('vid',this.contentFiles)
-        this.contentFiles.filter(item => {
-          this.files.push(item)
-          // this.showViewMorePdf = true
-        })
+        console.log('rest',res.data);
+        this.files = res.data.details.map(file => ({
+          ...file,
+          showPlayer: false,
+        }));
       }).catch(error => {
-        console.log(error)
-      })
+        console.error(error);
+      });
     },
+     playVideo(index) {
+      console.log(this.$refs.videoPlayer);
+      this.$set(this.files, index, { ...this.files[index], showPlayer: true });
+
+      this.$nextTick(() => {
+        // Play the uploaded video if it's the upload type
+        if (this.files[index].video_type === 'upload') {
+          const videoElement = document.getElementById(`up${index}`);
+          if (videoElement) {
+            videoElement.play().catch(error => {
+              console.error('Error playing video:', error);
+            });
+          } else {
+            console.log('Video Element not found');
+          }
+        }
+
+        
+        if (this.files[index].video_type !== 'upload') {
+          const iframeElement = this.$refs.iframePlayer[index];
+          if (iframeElement) {
+            iframeElement.src = this.getYouTubeEmbedUrl(this.files[index].video_link, true);
+          }
+        }
+      });
+    },
+    getYouTubeEmbedUrl(url, autoplay = true) {
+      let embedUrl = url;
+      if (autoplay) {
+        if (embedUrl.includes("?")) {
+          embedUrl += "&autoplay=1";
+        } else {
+          embedUrl += "?autoplay=1";
+        }
+      }
+      return embedUrl;
+    }
   },
   created() {
     this.getContentFiles();
-    this.getFaqTab();
-    if (this.$route.params.tabName) {
-
-      this.isForeignRouteExist();
-    } else {
-      this.getFaq(7);
-    }
-
-
-  },
-
-}
+  }
+};
 </script>
 <style lang="" scoped>
+.video-thumbnail {
+  width: 100%;
+  cursor: pointer;
+}
+
+.thumb-img{
+  width: 100%;
+  height: 192.38px;
+  border-radius: 8px;
+}
+.vid-title{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+}
+
+.thumbnail-wrapper {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+}
+
+.video-wrapper {
+  /* margin-top: 15px; */
+}
+
 
 .cursor_pointer {
   cursor: pointer;
