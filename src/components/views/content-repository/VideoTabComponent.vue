@@ -1,66 +1,63 @@
 <template>
   <section class="my-5">
-      <div v-bind:id="'annualReportcollapse' + 2">
-          <b-card v-if="files.length <= 0" class="question-card loading">
-            <div>No Content Available</div>
-          </b-card>
-          <div v-else>
-            <div class="latest_news slider multiple-items col-md-12">
-              <div class="row">
-                <div v-for="(file, index) in files" :key="file.id" class="col-lg-4 col-md-6 col-12 mb-3" style="    padding-right: 10px !important; padding-left: 10px !important;">
-                  <div class="border rounded p-3">
-                    <!-- Thumbnail with play button -->
-                    <div v-if="!file.showPlayer" class="thumbnail-wrapper" @click="playVideo(index)">
-                      <img  class="thumb-img" :src="`${baseUrl}/uploads/video_file/${file.thumbnail}`" />
-                      <div class="play-button">
-                        <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="32.5" cy="32.5" r="32.5" fill="white" fill-opacity="0.5" />
-                          <ellipse cx="32.4991" cy="32.5011" rx="20.546" ry="20.546" fill="white" />
-                          <path
-                              d="M41.0035 32.128C41.2901 32.2935 41.2901 32.7072 41.0035 32.8727L28.5673 40.0527C28.2807 40.2182 27.9223 40.0114 27.9223 39.6803L27.9223 25.3203C27.9223 24.9893 28.2807 24.7824 28.5673 24.9479L41.0035 32.128Z"
-                              fill="#00a6b4" />
-                      </svg>
-                      </div>
-                    </div>
-
-                    <!-- Video player -->
-                    <div v-else class="video-wrapper">
-                      <vue-plyr :options="options">
-                        <video
-                          v-if="file.video_type === 'upload'"
-                          :id="`up${index}`"
-                          controls
-                          crossorigin
-                          playsinline
-                        >
-                          <source :src="`${baseUrl}/uploads/video_file/${file.video_link}`" />
-                        </video>
-                        <div v-else class="plyr__video-embed">
-                          <iframe
-                            ref="iframePlayer"
-                            :src="getYouTubeEmbedUrl(file.video_link)"
-                            allowfullscreen
-                            allowtransparency
-                            allow="autoplay"
-                          ></iframe>
-                        </div>
-                      </vue-plyr>
-                    </div>
-
-                    <p v-b-tooltip.hover.left="file.title" class="vid-title" style="padding-top: 0.7rem !important; padding-bottom: 0px !important">{{ file.title }}</p>
-                    <h6 v-b-tooltip.hover.left="file.subtitle" v-if="file.subtitle" class="vid-description ">{{file.subtitle}}
-                      <br>
-                      <span class="invisible">
-                        1
-                      </span>
-                    </h6>
-                    <h6 v-else class="vid-description invisible">asd alskdjaskjd a slaksjd laksdj as;ldkj aslkdj aslkdj as;kjd as;kjkd ;asljkd asdkj;l asdlk jasd ;kjasd ;kjasd lkjasd </h6>
+    <div v-bind:id="'annualReportcollapse' + 2">
+      <b-card v-if="files.length <= 0" class="question-card loading">
+        <div>No Content Available</div>
+      </b-card>
+      <div v-else>
+        <div class="latest_news slider multiple-items col-md-12">
+          <div class="row">
+            <div v-for="(file, index) in files" :key="file.id" class="col-lg-4 col-md-6 col-12 mb-3"
+              style="    padding-right: 10px !important; padding-left: 10px !important;">
+              <div class="border rounded p-3">
+                <!-- Thumbnail with play button -->
+                <div v-if="!file.showPlayer" class="thumbnail-wrapper" @click="playVideo(index)">
+                  <img class="thumb-img" :src="`${baseUrl}/uploads/video_file/${file.thumbnail}`" />
+                  <div class="play-button">
+                    <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="32.5" cy="32.5" r="32.5" fill="white" fill-opacity="0.5" />
+                      <ellipse cx="32.4991" cy="32.5011" rx="20.546" ry="20.546" fill="white" />
+                      <path
+                        d="M41.0035 32.128C41.2901 32.2935 41.2901 32.7072 41.0035 32.8727L28.5673 40.0527C28.2807 40.2182 27.9223 40.0114 27.9223 39.6803L27.9223 25.3203C27.9223 24.9893 28.2807 24.7824 28.5673 24.9479L41.0035 32.128Z"
+                        fill="#00a6b4" />
+                    </svg>
                   </div>
                 </div>
+
+                <!-- Video player -->
+                <div v-else class="video-wrapper">
+                  <vue-plyr v-if="file.video_type === 'upload'" :options="options">
+                    <video :id="`up${index}`" controls crossorigin playsinline>
+                      <source :src="`${baseUrl}/uploads/video_file/${file.video_link}`" />
+                    </video>
+                  </vue-plyr>
+                  <div v-else>
+                    <iframe class="yt-iframe" :src="getYouTubeEmbedUrl(file.video_link)"
+                      title="YouTube video player" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <!-- <iframe ref="iframePlayer"  allowfullscreen
+                      allowtransparency allow="autoplay"></iframe> -->
+                  </div>
+                </div>
+
+                <p v-b-tooltip.hover.left="file.title" class="vid-title"
+                  style="padding-top: 0.7rem !important; padding-bottom: 0px !important">{{ file.title }}</p>
+                <h6 v-b-tooltip.hover.left="file.subtitle" v-if="file.subtitle" class="vid-description ">
+                  {{ file.subtitle }}
+                  <br>
+                  <span class="invisible">
+                    1
+                  </span>
+                </h6>
+                <h6 v-else class="vid-description invisible">asd alskdjaskjd a slaksjd laksdj as;ldkj aslkdj aslkdj
+                  as;kjd as;kjkd ;asljkd asdkj;l asdlk jasd ;kjasd ;kjasd lkjasd </h6>
               </div>
             </div>
           </div>
+        </div>
       </div>
+    </div>
   </section>
 </template>
 
@@ -90,7 +87,7 @@ export default {
         console.error(error);
       });
     },
-     playVideo(index) {
+    playVideo(index) {
       console.log(this.$refs.videoPlayer);
       this.$set(this.files, index, { ...this.files[index], showPlayer: true });
 
@@ -134,7 +131,11 @@ export default {
 };
 </script>
 <style lang="" scoped>
-
+.yt-iframe{
+  width: 100%;
+  height: 180.36px;
+  border-radius: 8px;
+}
 .ytp-overflow-button-visible{
   display: none !important;
 }
