@@ -14,8 +14,8 @@
           <div v-else class="row">
             <div class="latest_news slider multiple-items col-md-12">
               <div class="row p-2">
-                <div v-for="(file, index) in files" :key="file.id" class="col-lg-4 col-md-6 col-12 mb-3">
-                  <div class="">
+                <div v-for="(file, index) in files" :key="file.id" class="col-lg-4 col-md-6 col-12 mb-3" style="    padding-right: 10px !important; padding-left: 10px !important;">
+                  <div class="border rounded p-3">
                     <!-- Thumbnail with play button -->
                     <div v-if="!file.showPlayer" class="thumbnail-wrapper" @click="playVideo(index)">
                       <img  class="thumb-img" :src="`${baseUrl}/uploads/video_file/${file.thumbnail}`" />
@@ -55,7 +55,12 @@
                     </div>
 
                     <p v-b-tooltip.hover.left="file.title" class="vid-title" style="padding-top: 5px !important; padding-bottom: 0px !important">{{ file.title }}</p>
-                    <h6 v-b-tooltip.hover.left="file.subtitle" v-if="file.subtitle" class="vid-description ">{{file.subtitle}}</h6>
+                    <h6 v-b-tooltip.hover.left="file.subtitle" v-if="file.subtitle" class="vid-description ">{{file.subtitle}}
+                      <br>
+                      <span class="invisible">
+                        1
+                      </span>
+                    </h6>
                     <h6 v-else class="vid-description invisible">asd alskdjaskjd a slaksjd laksdj as;ldkj aslkdj aslkdj as;kjd as;kjkd ;asljkd asdkj;l asdlk jasd ;kjasd ;kjasd lkjasd </h6>
                   </div>
                 </div>
@@ -150,7 +155,7 @@ export default {
 
 .thumb-img{
   width: 100%;
-  height: 190.2px;
+  height: 175.86px;
   border-radius: 8px;
 }
 .vid-title{
