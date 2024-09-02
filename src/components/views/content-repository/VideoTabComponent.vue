@@ -133,7 +133,7 @@ export default {
 <style lang="" scoped>
 .yt-iframe{
   width: 100%;
-  height: 180.36px;
+  height: 177.86px;
   border-radius: 8px;
 }
 .ytp-overflow-button-visible{
@@ -147,7 +147,7 @@ export default {
 
 .thumb-img{
   width: 100%;
-  height: 180.36px;
+  height: 177.86px;
   border-radius: 8px;
 }
 .vid-title{
