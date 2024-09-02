@@ -283,7 +283,6 @@ export default {
 
 
 
-
 .gReport {
   margin-top: 40px;
   margin-bottom: 60px;

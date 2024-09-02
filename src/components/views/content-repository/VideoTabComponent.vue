@@ -14,7 +14,7 @@
           <div v-else class="row">
             <div class="latest_news slider multiple-items col-md-12">
               <div class="row p-2">
-                <div v-for="(file, index) in files" :key="file.id" class="col-lg-4 col-md-6 col-12 ">
+                <div v-for="(file, index) in files" :key="file.id" class="col-lg-4 col-md-6 col-12 mb-3">
                   <div class="">
                     <!-- Thumbnail with play button -->
                     <div v-if="!file.showPlayer" class="thumbnail-wrapper" @click="playVideo(index)">
@@ -54,7 +54,9 @@
                       </vue-plyr>
                     </div>
 
-                    <p v-b-tooltip.hover.left="file.title" class="vid-title" style="padding-top: 5px !important;">{{ file.title }}</p>
+                    <p v-b-tooltip.hover.left="file.title" class="vid-title" style="padding-top: 5px !important; padding-bottom: 0px !important">{{ file.title }}</p>
+                    <h6 v-b-tooltip.hover.left="file.subtitle" v-if="file.subtitle" class="vid-description ">{{file.subtitle}}</h6>
+                    <h6 v-else class="vid-description invisible">asd alskdjaskjd a slaksjd laksdj as;ldkj aslkdj aslkdj as;kjd as;kjkd ;asljkd asdkj;l asdlk jasd ;kjasd ;kjasd lkjasd </h6>
                   </div>
                 </div>
               </div>
@@ -136,6 +138,11 @@ export default {
 };
 </script>
 <style lang="" scoped>
+
+.ytp-overflow-button-visible{
+  display: none !important;
+}
+
 .video-thumbnail {
   width: 100%;
   cursor: pointer;
@@ -147,7 +154,7 @@ export default {
   border-radius: 8px;
 }
 .vid-title{
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 600;
   overflow: hidden;
@@ -155,6 +162,19 @@ export default {
   white-space: nowrap;
   cursor: pointer;
 
+}
+
+.vid-description{
+  padding-top: 3px;
+  color: #484848 !important;
+  font-size: 1rem;
+  line-height: 1.35rem;
+  font-weight: 400;
+  overflow: hidden !important;
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-line-clamp: 2 !important;
+  cursor: pointer;
 }
 
 

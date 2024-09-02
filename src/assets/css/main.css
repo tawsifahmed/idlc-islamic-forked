@@ -1989,6 +1989,7 @@ p {
 
 .plyr__control--overlaid {
   background: #00a6b4 !important;
+  z-index: 11 !important;
 }
 
 .plyr--video .plyr__control.plyr__tab-focus,
@@ -2004,3 +2005,14 @@ p {
 .plyr__menu__container .plyr__control[role=menuitemradio][aria-checked=true]::before {
   background: #00a6b4 !important;
 }
+
+.plyr__video-embed iframe {
+  z-index: 11;
+	pointer-events: all !important;
+}
+
+.plyr__controls{
+  z-index: 12 !important;
+}
+
+
