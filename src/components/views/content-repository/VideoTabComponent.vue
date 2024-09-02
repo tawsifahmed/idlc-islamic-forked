@@ -1,19 +1,12 @@
 <template>
   <section class="my-5">
-    <b-card class="product-card">
-      <a v-b-toggle="'annualReportcollapse' + 2" block class="d-flex cursor_pointer">
-        <strong class="question_product" style="color:white; font-size: 1.25rem;">
-          Videos
-        </strong>
-      </a>
       <div v-bind:id="'annualReportcollapse' + 2">
-        <b-card class="question-card">
           <b-card v-if="files.length <= 0" class="question-card loading">
             <div>No Content Available</div>
           </b-card>
-          <div v-else class="row">
+          <div v-else>
             <div class="latest_news slider multiple-items col-md-12">
-              <div class="row p-2">
+              <div class="row">
                 <div v-for="(file, index) in files" :key="file.id" class="col-lg-4 col-md-6 col-12 mb-3" style="    padding-right: 10px !important; padding-left: 10px !important;">
                   <div class="border rounded p-3">
                     <!-- Thumbnail with play button -->
@@ -54,7 +47,7 @@
                       </vue-plyr>
                     </div>
 
-                    <p v-b-tooltip.hover.left="file.title" class="vid-title" style="padding-top: 5px !important; padding-bottom: 0px !important">{{ file.title }}</p>
+                    <p v-b-tooltip.hover.left="file.title" class="vid-title" style="padding-top: 0.7rem !important; padding-bottom: 0px !important">{{ file.title }}</p>
                     <h6 v-b-tooltip.hover.left="file.subtitle" v-if="file.subtitle" class="vid-description ">{{file.subtitle}}
                       <br>
                       <span class="invisible">
@@ -67,9 +60,7 @@
               </div>
             </div>
           </div>
-        </b-card>
       </div>
-    </b-card>
   </section>
 </template>
 
@@ -155,7 +146,7 @@ export default {
 
 .thumb-img{
   width: 100%;
-  height: 175.86px;
+  height: 180.36px;
   border-radius: 8px;
 }
 .vid-title{
