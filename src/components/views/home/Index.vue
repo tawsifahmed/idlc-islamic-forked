@@ -193,7 +193,7 @@
       </h2>
       <!-- <pre>{{homeFeaturedProducts}}</pre> -->
       <div class="featuredProduct">
-        <div v-for="fProduct in homeFeaturedProducts" :key="fProduct" class="featuredProduct_box">
+        <div v-for="fProduct in homeFeaturedProducts" :key="fProduct" class="featuredProduct_box" :style="`flex-basis: ${homeFeaturedProducts.length > 3 ? '25%' : '32%'}`">
           <router-link :to="fProduct.link">
             <div class="featuredProduct_box_inner">
               <div class="icon " :style="`background-image: url(${fProduct.image})`">
@@ -411,7 +411,7 @@ export default {
       axios.get('get-feature-product').then(res => {
         // console.log('res =>', res)
         this.homeFeaturedProducts = res.data.details;
-        console.log('homeFeaturedProducts =>', this.homeFeaturedProducts)
+        // console.log('homeFeaturedProducts =>', this.homeFeaturedProducts)
       }).catch(err => {
         console.log(err);
       })
@@ -1216,6 +1216,7 @@ export default {
   -ms-flex-pack: justify;
   justify-content: center;
   padding: 20px 0 15px 0;
+  flex-wrap: wrap;
 }
 
 @media (min-width: 768px) {
@@ -1227,7 +1228,7 @@ export default {
 
 .featuredProduct_box {
   -ms-flex-preferred-size: 32%;
-  flex-basis: 32%;
+
   padding: 3px;
   position: relative;
   -webkit-transition: all 0.4s;
