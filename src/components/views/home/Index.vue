@@ -191,8 +191,31 @@
         ">
         Featured Products
       </h2>
+      <!-- <pre>{{homeFeaturedProducts}}</pre> -->
       <div class="featuredProduct">
-        <div class="featuredProduct_box">
+        <div v-for="fProduct in homeFeaturedProducts" :key="fProduct" class="featuredProduct_box">
+          <router-link :to="fProduct.link">
+            <div class="featuredProduct_box_inner">
+              <div class="icon " :style="`background-image: url(${fProduct.image})`">
+
+              </div>
+              <div class="heading">
+                <h1>{{fProduct.name}}</h1>
+              </div>
+              <div class="short_detail">
+                <p>
+                  {{fProduct.description}}
+                </p>
+              </div>
+              <button>
+                <router-link :to="fProduct.link">Learn More</router-link>
+              </button>
+            </div>
+          </router-link>
+        </div>
+
+
+        <!-- <div class="featuredProduct_box">
           <router-link to="/islamic-deposits">
             <div class="featuredProduct_box_inner">
               <div class="icon icon_1"></div>
@@ -209,8 +232,9 @@
               </button>
             </div>
           </router-link>
-        </div>
-        <div class="featuredProduct_box">
+        </div> -->
+
+        <!-- <div class="featuredProduct_box">
           <router-link to="/islamic-retail">
             <div class="featuredProduct_box_inner">
               <div class="icon icon_11"></div>
@@ -227,8 +251,9 @@
               </button>
             </div>
           </router-link>
-        </div>
-        <div class="featuredProduct_box">
+        </div> -->
+
+        <!-- <div class="featuredProduct_box">
           <router-link to="/islamic-sme">
             <div class="featuredProduct_box_inner">
               <div class="icon icon_2"></div>
@@ -245,8 +270,9 @@
               </button>
             </div>
           </router-link>
-        </div>
-        <div class="featuredProduct_box">
+        </div> -->
+
+        <!-- <div class="featuredProduct_box">
           <router-link to="/islamic-corporate">
             <div class="featuredProduct_box_inner">
               <div class="icon icon_3"></div>
@@ -263,7 +289,7 @@
               </button>
             </div>
           </router-link>
-        </div>
+        </div> -->
 
       </div>
 
@@ -324,6 +350,7 @@ export default {
       menuVideos: "",
       menuNews: [],
       homeKeyFeature: null,
+      homeFeaturedProducts: null,
       shareBase: this.$store.state.shareBaseUrl,
       comments: [],
       baseUrl: axios.defaults.baseURL.replace('/api/v1/', ''),
@@ -380,6 +407,15 @@ export default {
         console.log(err);
       })
     },
+    getHomePageFeaturedProducts() {
+      axios.get('get-feature-product').then(res => {
+        // console.log('res =>', res)
+        this.homeFeaturedProducts = res.data.details;
+        console.log('homeFeaturedProducts =>', this.homeFeaturedProducts)
+      }).catch(err => {
+        console.log(err);
+      })
+    },
     onImageLoad() {
       this.isPlaceholder = false;
       this.isImageLoaded = true;
@@ -415,6 +451,7 @@ export default {
     this.getHomeSliderData()
     this.getComments()
     this.getHomePageKeyFeature()
+    this.getHomePageFeaturedProducts()
   },
 
   mounted() {
