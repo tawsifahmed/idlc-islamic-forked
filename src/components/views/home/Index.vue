@@ -182,7 +182,7 @@
       </div>
     </div>
 
-    <div class="container-lg my-3">
+    <div v-if="homeFeaturedProducts" class="container-lg my-3">
       <h2 class="featuredProductHeading h2Responsive fpt" style="
           text-align: center;
           margin-top: 15px;
