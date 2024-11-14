@@ -109,8 +109,8 @@
                               </router-link>
                           </li>
                           <li>
-                            <router-link to="/news-and-events"
-                              >News & Events
+                            <router-link to="/vision-mission-values"
+                              >Vision Mission & Values
                               </router-link>
                           </li>
                           <li>

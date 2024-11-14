@@ -13,7 +13,7 @@
               <router-link to="/idlc-islamic-at-a-glance">About IDLC Islamic</router-link>
             </li>
             <li>
-              <router-link to="/news-and-events">News & Events</router-link>
+              <router-link to="/vision-mission-values">Vission, Mission & Values</router-link>
             </li>
             <li><router-link to="/shariah-supervisory-committee">Shariah Supervisory Committee</router-link></li>
 

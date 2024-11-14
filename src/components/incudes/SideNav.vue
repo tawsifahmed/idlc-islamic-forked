@@ -220,7 +220,7 @@
                   <router-link to="/idlc-islamic-at-a-glance" class="py-3" style="color: #00a6b4 !important;">IDLC Islamic at a Glance</router-link>
                 </li>
                 <li style="background: #fbfbfb;">
-                  <router-link to="/news-and-events" class="py-3" style="color: #00a6b4 !important;">News & Events</router-link>
+                  <router-link to="/vision-mission-values" class="py-3" style="color: #00a6b4 !important;">Vission, Mission & Values</router-link>
                 </li>
                 <li style="background: #fbfbfb;">
                   <router-link to="/shariah-supervisory-committee" class="py-3" style="color: #00a6b4 !important;">Shariah Supervisory Committee</router-link>

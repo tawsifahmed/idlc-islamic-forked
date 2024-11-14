@@ -51,7 +51,7 @@
                     </li>
 
                     <li style="padding-top: 10px">
-                      <router-link class="menu_link" to="/news-and-events" style="margin-bottom: 0px;">
+                      <router-link class="menu_link" to="/vision-mission-values" style="margin-bottom: 0px;">
                         <div class="menuIcon">
                           <img
                             src="~@/assets/img/menu_icon/Menubar/News-_-Events.png"
@@ -59,10 +59,10 @@
                           />
                         </div>
                         <div class="menuContent">
-                          <h3 class="title">News & Events</h3>
-                          <p class="subTitle">
+                          <h3 class="title">Vission, Mission & Values</h3>
+                          <!-- <p class="subTitle">
                             Latest updates of IDLC
-                          </p>
+                          </p> -->
                         </div>
                       </router-link>
                     </li>

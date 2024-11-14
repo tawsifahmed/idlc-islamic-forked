@@ -20,7 +20,7 @@
         <p v-html="this.contentData.description"></p>
       </div>
 
-      <div class="philosophy">
+      <!-- <div class="philosophy">
         <h2 style="text-align: center; " class="h2Responsive ">
           Our Philosophy
         </h2>
@@ -39,7 +39,7 @@
           <div v-html="articleData.phiosophy">
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
     <div class="ourJourneyHeading">
       <!-- <pre>{{journeyData}}</pre> -->
