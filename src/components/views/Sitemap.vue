@@ -254,7 +254,7 @@
                         <a>About Us</a>
                         <ul>
                              <li>
-                                <router-link to="/world-of-idlc">IDLC at a Glance</router-link>
+                                <router-link to="/world-of-idlc">IDLC Islamic at a Glance</router-link>
                             </li>
                              <li>
                                 <router-link to="/our-achievement">Our Achievements</router-link>

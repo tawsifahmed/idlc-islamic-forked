@@ -217,7 +217,7 @@
             <b-card-body style="padding: 0px;">
               <ul class="list-unstyled f_list">
                 <li style="background: #fbfbfb;">
-                  <router-link to="/idlc-at-a-glance" class="py-3" style="color: #00a6b4 !important;">IDLC at a Glance</router-link>
+                  <router-link to="/idlc-islamic-at-a-glance" class="py-3" style="color: #00a6b4 !important;">IDLC Islamic at a Glance</router-link>
                 </li>
                 <li style="background: #fbfbfb;">
                   <router-link to="/news-and-events" class="py-3" style="color: #00a6b4 !important;">News & Events</router-link>

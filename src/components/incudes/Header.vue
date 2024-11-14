@@ -34,15 +34,15 @@
                 <div class="desktop_menu_sub_blocks desktop_menu_sub_blocks_3">
                   <div class="block">
                     <li>
-                      <router-link class="menu_link" to="/idlc-at-a-glance">
+                      <router-link class="menu_link" to="/idlc-islamic-at-a-glance">
                         <div class="menuIcon">
                           <img
-                            src="~@/assets/img/menu_icon/Menubar/Idlc-at-a-glance.png"
+                            src="~@/assets/img/menu_icon/Menubar/idlc-at-a-glance.png"
                             alt=""
                           />
                         </div>
                         <div class="menuContent">
-                          <h3 class="title">IDLC at a Glance</h3>
+                          <h3 class="title">IDLC Islamic at a Glance</h3>
                           <p class="subTitle">
                             About IDLC | Our Journey
                           </p>

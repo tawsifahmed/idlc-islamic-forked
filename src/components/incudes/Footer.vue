@@ -104,8 +104,8 @@
                         </h3>
                         <ul class="list-unstyled f_list">
                           <li>
-                            <router-link to="/idlc-at-a-glance"
-                              >IDLC at a Glance
+                            <router-link to="/idlc-islamic-at-a-glance"
+                              >IDLC Islamic at a Glance
                               </router-link>
                           </li>
                           <li>

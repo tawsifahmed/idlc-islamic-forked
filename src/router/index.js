@@ -585,10 +585,10 @@ export default new Router({
       component: News
     },
     {
-      path: "/idlc-at-a-glance",
+      path: "/idlc-islamic-at-a-glance",
       name: "TheWorldOfIDLC",
       meta: {
-        title: "IDLC at a Glance",
+        title: "IDLC Islamic at a Glance",
         description: "About IDLC | Our Journey",
         seo_keyword: ""
       },

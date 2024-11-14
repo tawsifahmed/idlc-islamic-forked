@@ -10,7 +10,7 @@
         <b-card-body>
           <ul class="list-unstyled f_list">
             <li>
-              <router-link to="/idlc-at-a-glance">About IDLC</router-link>
+              <router-link to="/idlc-islamic-at-a-glance">About IDLC</router-link>
             </li>
             <li>
               <router-link to="/news-and-events">News & Events</router-link>
