@@ -79,9 +79,9 @@
                         </div>
                         <div class="menuContent">
                           <h3 class="title">Shariah Committee</h3>
-                          <p class="subTitle">
+                          <!-- <p class="subTitle">
                             See our Shariah Team
-                          </p>
+                          </p> -->
                         </div>
                       </router-link>
                     </li>
