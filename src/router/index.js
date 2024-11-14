@@ -97,6 +97,12 @@ const TheWorldOfIDLC = resolve => {
   });
 };
 
+const VisionMissionValues = resolve => {
+  require.ensure(["../components/views/vision-mission-values/VisionMissionValues"], () => {
+    resolve(require("../components/views/vision-mission-values/VisionMissionValues"));
+  });
+};
+
 const ContactUs = resolve => {
   require.ensure(["../components/views/contact-us/ContactUs"], () => {
     resolve(require("../components/views/contact-us/ContactUs"));
@@ -593,6 +599,17 @@ export default new Router({
         seo_keyword: ""
       },
       component: TheWorldOfIDLC
+    },
+
+    {
+      path: "/vision-mission-values",
+      name: "VisionMissionValues",
+      meta: {
+        title: "Vision, Mission, Values",
+        description: "Vision, Mission, Values of IDLC Islamic",
+        seo_keyword: ""
+      },
+      component: VisionMissionValues
     },
     // {
     //   path: "/green-finance",

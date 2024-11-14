@@ -765,7 +765,7 @@ h3.hMainTitle {
     right: -4px!important;
   }
   div#quick_menu ul {
-    display: none!important;
+    display: block !important;
   }
   .minmaxHide {
     display: none;
