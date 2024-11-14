@@ -199,7 +199,7 @@
                   <router-link to="/content-repository/documents" class="py-3" style="color: #00a6b4 !important;">Product Brochures</router-link>
                 </li>
                 <li style="background: #fbfbfb;">
-                  <router-link to="/content-repository/videos" class="py-3" style="color: #00a6b4 !important;">Videos</router-link>
+                  <router-link to="/content-repository/videos" class="py-3" style="color: #00a6b4 !important;">Educative Contents</router-link>
                 </li>
               </ul>
             </b-card-body>

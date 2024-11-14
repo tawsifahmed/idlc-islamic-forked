@@ -313,7 +313,7 @@
                           />
                         </div>
                         <div class="menuContent">
-                          <h3 class="title">Videos</h3>
+                          <h3 class="title">Educative Contents</h3>
                           <!-- <p class="subTitle">
                             Latest updates of IDLC
                           </p> -->
