@@ -6,12 +6,12 @@
     <app-top-curve />
     <app-static-image />
     <div class="container mb-4">
-      <div class="iconBlocks">
+      <!-- <div class="iconBlocks">
         <div class="block" v-for="(icon, index) in aboutIcons" :key="icon">
           <img :src="`${baseUrl}/${icon.icon}`" width="80" height="80" alt="Icon">
           <p>{{icon.name}}</p>
         </div>
-      </div>
+      </div> -->
       <div class="homePageTitleDetails sectionTitle" style="padding-top: 0;">
         <!-- <h2 style="text-align: center; " class="h2Responsive ">
           {{this.contentData.second_title}}
