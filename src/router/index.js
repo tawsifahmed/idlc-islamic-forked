@@ -570,16 +570,19 @@ export default new Router({
     //   },
     //   component: OurAchivement
     // },
-    {
-      path: "/news-and-events",
-      name: "NewsAndEvents",
-      meta: {
-        title: "News And Events",
-        description: "Latest Updates and Media Releases of IDLC",
-        seo_keyword: ""
-      },
-      component: NewsAndEvents
-    },
+
+
+
+    // {
+    //   path: "/news-and-events",
+    //   name: "NewsAndEvents",
+    //   meta: {
+    //     title: "News And Events",
+    //     description: "Latest Updates and Media Releases of IDLC",
+    //     seo_keyword: ""
+    //   },
+    //   component: NewsAndEvents
+    // },
     {
       path: "/news/:newsId",
       name: "News",
