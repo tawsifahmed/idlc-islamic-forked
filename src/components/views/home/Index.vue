@@ -119,7 +119,7 @@
       <div class="bottom_curve"></div>
     </div>
 
-    <div class="container-lg productFeatures">
+    <!-- <div class="container-lg productFeatures">
       <div class="tab">
         <button class="tablinks1 active">
           Why Us?
@@ -130,11 +130,11 @@
         <span v-if="homePageData.homePageFeatured" v-html="homePageData.homePageFeatured.why_us"></span>
         <router-link target="_blank" class="tabcontent1Button">Apply Now</router-link>
       </div>
-    </div>
+    </div> -->
 
 
 
-    <div v-if="homeKeyFeature" class="container-lg productFeatures mt-3 pt-2 pb-4">
+    <!-- <div v-if="homeKeyFeature" class="container-lg productFeatures mt-3 pt-2 pb-4">
       <h2 class="featuredProductHeading h2Responsive mb-3" style="
           text-align: center;
           margin-top: 30px;
@@ -158,29 +158,8 @@
             </div>
           </div>
         </div>
-
-        <!-- <div class="" >
-
-          <div class="border">
-            <div class="featuredProduct_box_inner">
-              <div class="icon ">
-                <img :src="`${baseUrl}/uploads/${keyFeature.icon_link}`" alt="">
-              </div>
-              <div class="heading">
-                <h1>{{ keyFeature.title }}</h1>
-              </div>
-              <div class="short_detail">
-                <p>
-                  {{ keyFeature.description }}
-                </p>
-              </div>
-            </div>
-          </div>
-
-        </div> -->
-
       </div>
-    </div>
+    </div> -->
 
     <div v-if="homeFeaturedProducts" class="container-lg my-3">
       <h2 class="featuredProductHeading h2Responsive fpt" style="
