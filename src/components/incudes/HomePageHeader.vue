@@ -44,7 +44,7 @@
                         <div class="menuContent">
                           <h3 class="title">IDLC Islamic at a Glance</h3>
                           <p class="subTitle">
-                            About IDLC | Our Journey
+                            About IDLC Islamic
                           </p>
                         </div>
                       </router-link>
@@ -144,7 +144,7 @@
                         <div class="menuContent">
                           <h3 class="title">Islamic Deposit Products</h3>
                           <!-- <p class="subTitle">
-                            About IDLC | Our Journey
+                            About IDLC Islamic
                           </p> -->
                         </div>
                       </router-link>
@@ -235,7 +235,7 @@
                         <div class="menuContent">
                           <h3 class="title">Islamic SME</h3>
                           <p class="subTitle">
-                            About IDLC | Our Journey
+                            About IDLC Islamic
                           </p>
                         </div>
                       </router-link>
@@ -298,7 +298,7 @@
                         <div class="menuContent">
                           <h3 class="title">Documents</h3>
                           <!-- <p class="subTitle">
-                            About IDLC | Our Journey
+                            About IDLC Islamic
                           </p> -->
                         </div>
                       </router-link>

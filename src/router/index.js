@@ -589,7 +589,7 @@ export default new Router({
       name: "TheWorldOfIDLC",
       meta: {
         title: "IDLC Islamic at a Glance",
-        description: "About IDLC | Our Journey",
+        description: "About IDLC Islamic ",
         seo_keyword: ""
       },
       component: TheWorldOfIDLC
