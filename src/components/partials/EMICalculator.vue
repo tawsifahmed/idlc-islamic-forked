@@ -46,7 +46,7 @@
                                         </div>
                                         <div class="EMIInput interestRate">
                                             <div class="row align-items-center">
-                                                <div class="col-md-8"><label for="interestRate">Rate of Interest (%)</label></div>
+                                                <div class="col-md-8"><label for="interestRate">Rate of Return (%)</label></div>
                                                 <div class="col-md-4">
                                                     <input min="1" max="20" type="number" id="interestRate" v-model="rateOfInterest">
                                                 </div>
@@ -85,7 +85,7 @@
                                     <div class="amt">{{ReplaceNumberWithCommas(loanAmount.toFixed(0))}}</div>
                                 </div>
                                 <div class="detailSingle">
-                                    <div class="name">Interest Amount</div>
+                                    <div class="name">Return Amount</div>
                                     <div class="amt">{{ReplaceNumberWithCommas((totalPayableAmount-loanAmount).toFixed(0))}}</div>
                                 </div>
                                 <div class="detailSingle">

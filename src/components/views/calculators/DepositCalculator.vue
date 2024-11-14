@@ -65,7 +65,7 @@
 
                       <div class="DepositInput interestRate">
                         <div class="row align-items-center  mb-2">
-                          <div class="col-md-7"><label for="interestRate">Rate of Interest (%)</label></div>
+                          <div class="col-md-7"><label for="interestRate">Rate of Return (%)</label></div>
                           <div class="col-md-5">
                             <input min="1" max="20" type="number" id="interestRate" v-model="rateOfInterest">
                           </div>
@@ -123,7 +123,7 @@
                   <div class="result mb-4 ">
                     <div class="row align-items-center">
                       <div class="col-6">
-                        <h6>Rate of Interest</h6>
+                        <h6>Rate of Return</h6>
                       </div>
                       <div class="col-6 text-right">
                         <h6>{{rateOfInterest}}%</h6>
@@ -172,7 +172,7 @@
         tenure: null,
         tenureDay: "0",
         depositAmount: 50000,
-        FDTypes: ['Flexible Term Deposit', 'Days Term Deposit', 'Earners Deposit'],
+        FDTypes: ['IDLC Islamic Term Deposit', 'IDLC Islamic Monthly Earner Scheme', 'IDLC Islamic Quarterly Earner Scheme', 'IDLC Islamic Monthly Deposit Pension Scheme'],
         months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
         isTypeOfFD: false,
         resultOfFD: [],
