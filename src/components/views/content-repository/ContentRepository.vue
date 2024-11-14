@@ -8,7 +8,7 @@
     <div class="homePageTitleDetails sectionTitle dFTagline">
       <div class="page_heading">
         <h2 style="text-align: center; " class="h2Responsive textUpperCase">
-        Content Repository - Documents
+        Content Repository - Product Brochures
       </h2>
       </div>
     </div>

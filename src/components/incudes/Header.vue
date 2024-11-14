@@ -78,7 +78,7 @@
                           />
                         </div>
                         <div class="menuContent">
-                          <h3 class="title">Shariah Committee</h3>
+                          <h3 class="title">Shariah Supervisor Committee (SSC) of IDLC Finance PLC</h3>
                           <!-- <p class="subTitle">
                             See our Shariah Team
                           </p> -->
@@ -298,7 +298,7 @@
                           />
                         </div>
                         <div class="menuContent">
-                          <h3 class="title">Documents</h3>
+                          <h3 class="title">Product Brochures</h3>
                           <!-- <p class="subTitle">
                             About IDLC Islamic
                           </p> -->

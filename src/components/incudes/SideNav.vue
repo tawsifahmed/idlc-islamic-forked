@@ -26,7 +26,7 @@
             :strings="[
               'Search...',
                 'IDLC Islamic',
-                'Shariah Committee',
+                'Shariah Supervisor Committee (SSC) of IDLC Finance PLC',
                 'Financing Products',
                 'Islamic Deposits',
                 'FAQ'
@@ -196,7 +196,7 @@
             <b-card-body style="padding: 0px;">
               <ul class="list-unstyled f_list">
                 <li style="background: #fbfbfb;">
-                  <router-link to="/content-repository/documents" class="py-3" style="color: #00a6b4 !important;">Documents</router-link>
+                  <router-link to="/content-repository/documents" class="py-3" style="color: #00a6b4 !important;">Product Brochures</router-link>
                 </li>
                 <li style="background: #fbfbfb;">
                   <router-link to="/content-repository/videos" class="py-3" style="color: #00a6b4 !important;">Videos</router-link>
