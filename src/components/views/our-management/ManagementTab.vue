@@ -14,29 +14,7 @@
         </div>
         <div id="bod" class="tabcontent" style="display: block;">
           <div class="managementTabBody">
-            <div class="row">
-                <div v-for="(data, index) in boardOfDirectors" :class="`${index === 0 ? 'member_two col-12' : 'member_two col-lg-6 col-md-6 col-12'}`">
-                  <div class="left">
-                    <div class="image">
-                      <img style="width: 242px; height: 242px;" v-lazy="data && data.image" alt="Management Team Member">
-                    </div>
-                  </div>
-                  <div class="right">
-                    <div class="nameAndDesignation">
-                      <h5>{{ data.name}}</h5>
-                      <p>{{ data.designation }}</p>
-                    </div>
-                    <!-- <span v-html="data.description" class="description"></span> -->
-                    <button class="tabcontent2Button mr-0" @click="viewDetails(data)" >View Details</button>
-                  </div>
-                </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="mc" class="tabcontent">
-          <div class="managementTabBody">
-            <div class="member" v-for="data in managementCommittee" >
+            <div class="member" v-for="data in boardOfDirectors" >
               <div class="left">
                 <div class="image">
                   <img v-lazy="data.image" alt="Management Team Member">
@@ -48,7 +26,27 @@
                   <p>{{ data.designation }}</p>
                 </div>
                 <span v-html="data.description" class="description"></span>
-                <button class="tabcontent2Button"  @click="viewDetails(data)" >View Details</button>
+                <!-- <button class="tabcontent2Button" @click="viewDetails(data)" >View Details</button> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="mc" class="tabcontent">
+          <div class="managementTabBody">
+            <div class="member" v-for="data in managementCommittee" >
+              <div class="left">
+                <div class="image">
+                  <img v-lazy="data && data.image" alt="Management Team Member">
+                </div>
+              </div>
+              <div class="right">
+                <div class="nameAndDesignation">
+                  <h5>{{ data.name}}</h5>
+                  <p>{{ data.designation }}</p>
+                </div>
+                <span v-html="data.description" class="description"></span>
+                <button class="tabcontent2Button" @click="viewDetails(data)">View Details</button>
               </div>
             </div>
           </div>
@@ -326,6 +324,7 @@
     text-align: center;
     padding: 30px;
     text-align: justify;
+    background: #f2f2f2;
   }
 
   .ourManagement .tabcontent .managementTabBody .member {
@@ -334,6 +333,7 @@
     display: flex;
     border-radius: 7px;
     margin-bottom: 15px;;
+    align-items: center;
   }
 
   .ourManagement .tabcontent .managementTabBody .member_two {
@@ -392,7 +392,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 20;
   }
 
   .ourManagement .tabcontent .managementTabBody .member .right p {

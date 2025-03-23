@@ -26,12 +26,12 @@
                           <li>
                             <router-link to="/priority">Priority</router-link>
                           </li>
-                          <li>
+                          <!-- <li>
                             <router-link to="/online-mudarabah-deposit">Online Mudarabah Deposit</router-link>
                           </li>
                           <li>
                             <router-link to="/online-mudarabah-dps">Online Mudarabah DPS</router-link>
-                          </li>
+                          </li> -->
                           <li >
                             <router-link to="/islamic-retail">Islamic Retail</router-link>
                           </li>
@@ -118,6 +118,11 @@
                               >Shariah Supervisory Committee
                               </router-link>
                           </li>
+                          <li>
+                            <router-link to="/news-and-events"
+                              >News & Events
+                              </router-link>
+                          </li>
                         </ul>
                       </div>
                     </div>
@@ -131,7 +136,11 @@
                           Quick Links
                         </h3>
                         <ul class="list-unstyled f_list">
+                          <!-- <li><a style="cursor: pointer;" to="/">Schedule of Charges</a></li> -->
+                          <!-- <li><a style="cursor: pointer;" to="/">PSR & Actual Profit Rate</a></li> -->
+                          <!-- <li><a style="cursor: pointer;" to="/">Rate of Rent (ROR)</a></li> -->
                           <li><router-link to="/download-forms-required-documents">Download Forms</router-link></li>
+                          <!-- <li><a style="cursor: pointer;" to="/">Sharia'h Certificate</a></li> -->
                           <li><router-link to="/faq">FAQ</router-link></li>
                           <!-- <li><router-link to="/content-repository/documents">Content Repository (Documents)</router-link></li>
                           <li><router-link to="/content-repository/videos">Content Repository (Videos)</router-link></li> -->
@@ -187,12 +196,11 @@
                                 style="font-size: 12px; "
                               >
                                 <span class="" style="font-weight: bold; "
-                                  >IDLC Finance PLC Corporate Head
-                                  Office</span
-                                >
+                                  >Islamic Finance Division <br> IDLC Finance PLC
+                                  </span>
                                 <br />
-                                Bay’s Galleria (1st Floor), 57 Gulshan Avenue,
-                                Dhaka 1212, Bangladesh</router-link
+                                Bay’s Galleria (4th Floor), 57 Gulshan Avenue,
+                                Dhaka 1212, Bangladesh <br> Contact No: 16409, +8809609994352 </router-link
                               >
                             </li>
                           </ul>
@@ -202,8 +210,8 @@
                   </div>
                 </div>
                 <div class="footer_bg">
-                  <!-- <div class="footer_bg_one"></div>
-                  <div class="footer_bg_two"></div> -->
+                  <div class="footer_bg_one"></div>
+                  <div class="footer_bg_two"></div>
                 </div>
               </div>
             </footer>
@@ -442,14 +450,14 @@ export default {
 .new_footer_top .footer_bg {
   position: absolute;
   bottom: 0;
-  background: url("~@/assets/img/Footer_BG.png") no-repeat scroll center 0;
+  background: url("~@/assets/img/footer_bg_aqua-color.png") no-repeat scroll center 0;
   width: 100%;
   height: 266px;
   z-index: -1;
 }
 
 .new_footer_top .footer_bg .footer_bg_one {
-  background: url("~@/assets/img/volks.gif") no-repeat center center;
+  background: url("~@/assets/img/volks-02.gif") no-repeat center center;
   width: 330px;
   height: 105px;
   background-size: 100%;
@@ -461,7 +469,7 @@ export default {
 }
 
 .new_footer_top .footer_bg .footer_bg_two {
-  background: url("~@/assets/img/Cyclist_94.29.gif") no-repeat center center;
+  background: url("~@/assets/img/Cyclist_02.gif") no-repeat center center;
   width: 88px;
   height: 100px;
   background-size: 100%;

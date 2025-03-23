@@ -33,7 +33,12 @@
         <li class="navSection navSearch">
           <form action="" v-on:submit.prevent>
             <vue-typed-js
-              :strings="['Search...','SME Loan','Home Loan', 'Corporate Loan', 'Deposit','Jobs']"
+              :strings="['Search...',
+                'IDLC Islamic',
+                'Shariah Supervisory Committee (SSC) of IDLC Finance PLC',
+                'Financing Products',
+                'Islamic Deposits',
+                'FAQ']"
               :loop="true" :attr="'placeholder'">
               <input @keyup="getSearchData()" style="color:#000000; text-decoration: none; font-size: 14px;" type="text" class="typing"
                      id="userInput" name="" v-model="search"/>

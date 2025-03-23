@@ -16,7 +16,7 @@
         <li style="display: none;"></li>
         <li class="navSection logo">
           <router-link style="display: flex;" class="rootLink item-home colorize" to="/"
-          ><img src="~@/assets/img/logo/IDLC_NEW2.png" style="width: 160px;" alt="logo"
+          ><img src="~@/assets/img/logo/IDLC_NEW2.png" style="width: 135px;" alt="logo"
         /></router-link>
         </li>
 
@@ -59,7 +59,7 @@
                           />
                         </div>
                         <div class="menuContent">
-                          <h3 class="title">Vission, Mission & Values</h3>
+                          <h3 class="title">Vision, Mission & Values</h3>
                           <!-- <p class="subTitle">
                             Latest updates of IDLC
                           </p> -->
@@ -78,7 +78,7 @@
                           />
                         </div>
                         <div class="menuContent">
-                          <h3 class="title">Shariah Supervisor Committee (SSC) of IDLC Finance PLC</h3>
+                          <h3 class="title">Shariah Supervisory Committee (SSC) of IDLC Finance PLC</h3>
                           <!-- <p class="subTitle">
                             See our Shariah Team
                           </p> -->
@@ -166,7 +166,8 @@
                         </div>
                       </router-link>
                     </li>
-                    <li style="padding-top: 9.5px">
+
+                    <!-- <li style="padding-top: 9.5px">
                       <router-link class="menu_link" to="/online-mudarabah-deposit" style="margin-bottom: 0px;">
                         <div class="menuIcon">
                           <img
@@ -176,9 +177,7 @@
                         </div>
                         <div class="menuContent">
                           <h3 class="title">Online Mudarabah Deposit</h3>
-                          <!-- <p class="subTitle">
-                            Latest updates of IDLC
-                          </p> -->
+
                         </div>
                       </router-link>
                     </li>
@@ -192,12 +191,10 @@
                         </div>
                         <div class="menuContent">
                           <h3 class="title">Online Mudarabah DPS</h3>
-                          <!-- <p class="subTitle">
-                            Latest updates of IDLC
-                          </p> -->
+
                         </div>
                       </router-link>
-                    </li>
+                    </li> -->
 
                   </div>
 
@@ -303,7 +300,20 @@
                         </div>
                       </router-link>
                     </li>
+                    <!-- <li style="padding-top: 4.5px">
+                      <router-link class="menu_link" to="/content-repository/educative-contents">
+                        <div class="menuIcon">
+                          <img
+                            src="~@/assets/img/menu_icon/Menubar/SME-Success-Stories.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="menuContent">
+                          <h3 class="title">Educative Contents</h3>
 
+                        </div>
+                      </router-link>
+                    </li>
                     <li style="padding-top: 4.5px">
                       <router-link class="menu_link" to="/content-repository/videos" style="margin-bottom: 0px;">
                         <div class="menuIcon">
@@ -313,13 +323,11 @@
                           />
                         </div>
                         <div class="menuContent">
-                          <h3 class="title">Educative Contents</h3>
-                          <!-- <p class="subTitle">
-                            Latest updates of IDLC
-                          </p> -->
+                          <h3 class="title">Videos</h3>
+
                         </div>
                       </router-link>
-                    </li>
+                    </li> -->
 
                   </div>
                   <!-- <div class="block">
@@ -412,7 +420,7 @@
               :strings="[
                 'Search...',
                 'IDLC Islamic',
-                'Shariah Supervisor Committee (SSC) of IDLC Finance PLC',
+                'Shariah Supervisory Committee (SSC) of IDLC Finance PLC',
                 'Financing Products',
                 'Islamic Deposits',
                 'FAQ'

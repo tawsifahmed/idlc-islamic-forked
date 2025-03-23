@@ -79,17 +79,14 @@
                                   <p>{{ downloadForm.downloadable_title }}</p>
                                 </div>
 
-                                <div class="download-report-btn">
-                                  <a
-                                    :href="downloadForm.downloadable_file"
-                                    target="_blank"
-                                    >Download PDF File</a
-                                  >
-                                  <img
+                                <a :href="downloadForm.downloadable_file"
+                                target="_blank" class="download-report-btn d-flex justify-content-center align-items-center py-2">
+
+                                  <img style="height: 25px;"
                                     src="../../../assets/img/report/Download-PDF.png"
                                     alt=""
                                   />
-                                </div>
+                                </a>
                               </div>
                             </div>
                           </div>
@@ -124,17 +121,14 @@
                             <div class="report-name">
                               <p>{{ baseDownloadData.downloadable_title }}</p>
                             </div>
-                            <div class="download-report-btn">
-                              <a
-                                :href="baseDownloadData.downloadable_file"
-                                target="_blank"
-                                >Download PDF File</a
-                              >
-                              <img
+                            <a :href="baseDownloadData.downloadable_file"
+                            target="_blank" class="download-report-btn d-flex justify-content-center align-items-center py-2">
+
+                              <img style="height: 25px;"
                                 src="../../../assets/img/report/Download-PDF.png"
                                 alt=""
                               />
-                            </div>
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -148,9 +142,9 @@
         <b-card class="product-card">
           <a v-b-toggle="'baseCategory_new_01'" block class="d-flex">
             <strong class="question_product"
-              >Service Request Form for Deposit Product</strong
+              >Islamic Service Request Form Deposit</strong
             >
-            <!-- replace these with your preferred icons -->
+
             <strong v-if="isVisible" aria-hidden="true" class="ml-auto"
               >-</strong
             >
@@ -172,20 +166,17 @@
                       />
                     </div>
                     <div class="report-name">
-                      <p>Service Request Form for Deposit Product</p>
+                      <p>Islamic Service Request Form Deposit</p>
                     </div>
 
-                    <div class="download-report-btn">
-                      <a
-                        href="./static/Service_Request_Form_1.pdf"
-                        target="_blank"
-                        >Download PDF File</a
-                      >
-                      <img
+                    <a href="./static/Islamic_Service_Request_Form_Deposit.pdf"
+                    target="_blank" class="download-report-btn d-flex justify-content-center align-items-center py-2">
+
+                      <img style="height: 25px;"
                         src="../../../assets/img/report/Download-PDF.png"
                         alt=""
                       />
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -195,9 +186,9 @@
         <b-card class="product-card">
           <a v-b-toggle="'baseCategory_new_02'" block class="d-flex">
             <strong class="question_product"
-              >Service Request Form for Loan & Others</strong
+              >Islamic Service Request Form Financing</strong
             >
-            <!-- replace these with your preferred icons -->
+
             <strong v-if="isVisible" aria-hidden="true" class="ml-auto"
               >-</strong
             >
@@ -219,20 +210,17 @@
                       />
                     </div>
                     <div class="report-name">
-                      <p>Service Request Form for Loan & Others</p>
+                      <p>Islamic Service Request Form Financing</p>
                     </div>
 
-                    <div class="download-report-btn">
-                      <a
-                        href="./static/Service_Request_Form_2.pdf"
-                        target="_blank"
-                        >Download PDF File</a
-                      >
-                      <img
+                    <a href="./static/Islamic_Service_Request_Form_Financing.pdf"
+                    target="_blank" class="download-report-btn d-flex justify-content-center align-items-center py-2">
+
+                      <img style="height: 25px;"
                         src="../../../assets/img/report/Download-PDF.png"
                         alt=""
                       />
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>

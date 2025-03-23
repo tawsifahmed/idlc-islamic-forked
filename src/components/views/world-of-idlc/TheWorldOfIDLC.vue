@@ -57,14 +57,14 @@
         <div class="newses">
 
           <div class="topRow">
-            <div class="news" v-for="(journeyDataItemEven,index) in journeyDataItem.content"   :key="journeyDataItemEven" v-if="index % 2 == 0">
+            <div class="news" v-for="(journeyDataItemEven,index) in journeyDataItem.content"   :key="journeyDataItemEven" v-if="index % 2 != 0">
               <div class="pin"></div>
               <p class="text">{{journeyDataItemEven.title}}</p>
             </div>
           </div>
           <div class="middleLine"></div>
           <div class="bottomRow">
-            <div class="news" v-for="(journeyDataItemOdd,index) in journeyDataItem.content"   :key="journeyDataItemOdd"  v-if="index % 2 != 0">
+            <div class="news" v-for="(journeyDataItemOdd,index) in journeyDataItem.content"   :key="journeyDataItemOdd"  v-if="index % 2 == 0">
               <div class="pin"></div>
               <p class="text">{{journeyDataItemOdd.title}}</p>
             </div>

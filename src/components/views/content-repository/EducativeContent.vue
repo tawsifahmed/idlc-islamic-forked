@@ -8,12 +8,13 @@
     <div class="homePageTitleDetails sectionTitle dFTagline">
       <div class="page_heading">
         <h2 style="text-align: center; " class="h2Responsive textUpperCase">
-        Content Repository - Videos
+        Content Repository - Educative Contents
       </h2>
       </div>
     </div>
     <div class="container">
-      <app-video-tab-content/>
+      <h2 class="text-center" style="margin: 150px 0;">Coming Soon</h2>
+      <!-- <app-tab-content/> -->
 
     </div>
     <app-footer />
@@ -29,7 +30,7 @@ export default {
     AppHeader: () => import('../../incudes/Header'),
     AppSideNav: () => import('../../incudes/SideNav'),
     AppTopCurve: () => import('../../incudes/SlimTopCurve'),
-    AppVideoTabContent: () => import('./VideoTabComponent'),
+    AppTabContent: () => import('./TabComponent'),
     AppFooter: () => import('../../incudes/Footer'),
 
   },

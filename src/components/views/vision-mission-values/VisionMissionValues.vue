@@ -24,16 +24,18 @@
         <h2 style="text-align: center; " class="h2Responsive ">
           Our Philosophy
         </h2>
-        <div v-if="articleData.mission">
-          <h6>Mission</h6>
-          <div v-html="articleData.mission">
-          </div>
-        </div>
+
         <div v-if="articleData.vision">
           <h6>Vision</h6>
           <div v-html="articleData.vision">
           </div>
         </div>
+        <div v-if="articleData.mission">
+          <h6>Mission</h6>
+          <div v-html="articleData.mission">
+          </div>
+        </div>
+        
         <h6>Our Values</h6>
         <div v-if="articleData.phiosophy" class="our_values">
           <div v-html="articleData.phiosophy">

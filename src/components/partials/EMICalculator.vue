@@ -17,7 +17,7 @@
                                     <form class="calculatorForm">
                                         <div class="EMIInput loanAmount">
                                             <div class="row align-items-center">
-                                                <div class="col-md-8"><label for="loanAmount">Loan Amount (BDT)</label></div>
+                                                <div class="col-md-8"><label for="loanAmount">Financing Amount (BDT)</label></div>
                                                 <div class="col-md-4">
                                                     <div class="loanAmountInput">
                                                       <input min="100000" max="20000000" type="number" id="loanAmount"  v-model.number="loanAmount">
@@ -33,7 +33,7 @@
                                         </div>
                                         <div class="EMIInput loanTenure">
                                             <div class="row align-items-center">
-                                                <div class="col-md-8"><label for="loanTenure">Loan Tenure ({{ tenureUnit }})</label></div>
+                                                <div class="col-md-8"><label for="loanTenure">Financing Tenure ({{ tenureUnit }})</label></div>
                                                 <div class="col-md-4">
                                                     <input min="1" max="20" type="number" id="loanTenure" v-model.number="loanTuner">
                                                 </div>
@@ -46,7 +46,7 @@
                                         </div>
                                         <div class="EMIInput interestRate">
                                             <div class="row align-items-center">
-                                                <div class="col-md-8"><label for="interestRate">Rate of Return (%)</label></div>
+                                                <div class="col-md-8"><label for="interestRate">Rent / Profit Rate (%)</label></div>
                                                 <div class="col-md-4">
                                                     <input min="1" max="20" type="number" id="interestRate" v-model="rateOfInterest">
                                                 </div>
@@ -85,7 +85,7 @@
                                     <div class="amt">{{ReplaceNumberWithCommas(loanAmount.toFixed(0))}}</div>
                                 </div>
                                 <div class="detailSingle">
-                                    <div class="name">Return Amount</div>
+                                    <div class="name">Rent / Profit Amount</div>
                                     <div class="amt">{{ReplaceNumberWithCommas((totalPayableAmount-loanAmount).toFixed(0))}}</div>
                                 </div>
                                 <div class="detailSingle">

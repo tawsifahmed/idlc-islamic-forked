@@ -5,7 +5,7 @@
     <div class="whyChoseBg">
       <div class="container-lg">
         <div class="header">
-          <h2 class="h2Responsive">WHY CHOOSE IDLC?</h2>
+          <h2 class="h2Responsive">WHY YOU SHOULD CONSIDER IDLC ISLAMIC <br> FOR YOUR SHARIAH-COMPLIANT FINANCING NEEDS</h2>
         </div>
         <div class="body">
           <div class="reason">

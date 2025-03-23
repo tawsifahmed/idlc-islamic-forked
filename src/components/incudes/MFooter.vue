@@ -13,9 +13,10 @@
               <router-link to="/idlc-islamic-at-a-glance">About IDLC Islamic</router-link>
             </li>
             <li>
-              <router-link to="/vision-mission-values">Vission, Mission & Values</router-link>
+              <router-link to="/vision-mission-values">Vision, Mission & Values</router-link>
             </li>
             <li><router-link to="/shariah-supervisory-committee">Shariah Supervisory Committee</router-link></li>
+            <li><router-link to="/news-and-events">News & Events</router-link></li>
 
           </ul>
         </b-card-body>
@@ -36,12 +37,12 @@
             <li>
               <router-link to="/priority">Priority</router-link>
             </li>
-            <li>
+            <!-- <li>
               <router-link to="/online-mudarabah-deposit">Online Mudarabah Deposit</router-link>
             </li>
             <li>
               <router-link to="/online-mudarabah-dps">Online Mudarabah DPS</router-link>
-            </li>
+            </li> -->
             <li><router-link to="/islamic-retail" >Islamic Retail</router-link></li>
             <li>
               <router-link to="/islamic-sme">Islamic SME</router-link>
@@ -63,9 +64,11 @@
       <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
         <b-card-body>
           <ul class="list-unstyled f_list">
-
-
+            <!-- <li><a style="cursor: pointer;" to="/">Schedule of Charges</a></li> -->
+            <!-- <li><a style="cursor: pointer;" to="/">PSR & Actual Profit Rate</a></li> -->
+            <!-- <li><a style="cursor: pointer;" to="/">Rate of Rent (ROR)</a></li> -->
             <li><router-link to="/download-forms-required-documents">Download Forms</router-link></li>
+            <!-- <li><a style="cursor: pointer;" to="/">Sharia'h Certificate</a></li> -->
             <li><router-link to="/faq">FAQ</router-link></li>
             <!-- <li><router-link to="/content-repository/documents">Content Repository (Documents)</router-link></li>
             <li><router-link to="/content-repository/videos">Content Repository (Videos)</router-link></li> -->
@@ -113,11 +116,13 @@
                 style="font-size: 12px; color: #000"
               >
                 <span class="" style="font-weight: bold;"
-                  >IDLC Finance PLC Corporate Head Office</span
+                  >Islamic Finance Division <br>
+                  IDLC Finance PLC</span
                 >
                 <br />
-                Bay’s Galleria (1st Floor), 57 Gulshan Avenue, Dhaka 1212,
-                Bangladesh</router-link
+                Bay’s Galleria (4th Floor), 57 Gulshan Avenue, Dhaka 1212,
+                Bangladesh <br>
+                Contact No: 16409, +8809609994352 </router-link
               >
             </li>
           </ul>

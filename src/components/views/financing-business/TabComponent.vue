@@ -34,13 +34,13 @@
 
                         <b-collapse id="collapse-1"  style="display: block;">
                           <b-card class="question-card" v-for="(faqItem, index) in faqs" :key="index">
-                            <a  v-b-toggle="'collapse-home-loan-'+index" block class="d-flex" aria-expanded="true" style="display: block" >
+                            <a  v-b-toggle="'collapse-home-loan-'+index" block class="d-flex" aria-expanded="true" style="display: block; background-color: #f2f2f2; margin: 2px 4px; border-radius: 5px;">
                               <strong>{{ faqItem.question}}</strong>
                               <!-- replace these with your preferred icons -->
                               <strong v-if="isVisible" aria-hidden="true" class="ml-auto">-</strong>
                               <strong v-else aria-hidden="true" class="ml-auto">+</strong>
                             </a>
-                            <b-collapse :id="'collapse-home-loan-'+ index"  >
+                            <b-collapse :id="'collapse-home-loan-'+ index" style="margin: 12px 5px;">
                               <span v-html="faqItem.answer" class="commonFont faqAnswer" ></span>
                             </b-collapse>
                           </b-card>

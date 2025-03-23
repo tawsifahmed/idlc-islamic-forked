@@ -269,7 +269,7 @@ b {
   .globalNav {
     position: unset;
     top: 0;
-    display: block !important;
+    /* display: block !important; */
   }
 }
 

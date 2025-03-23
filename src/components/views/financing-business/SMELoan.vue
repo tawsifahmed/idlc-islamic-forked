@@ -18,7 +18,7 @@
     <app-categorized-product class="mb-5" />
     <app-EMICalculator/>
 
-    <app-faq-tab/>
+    <!-- <app-faq-tab/> -->
 
     <!-- <app-success-strories-button /> -->
     <app-footer />

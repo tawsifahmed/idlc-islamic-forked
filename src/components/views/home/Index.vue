@@ -80,37 +80,38 @@
       <div class="whyChoseBg">
         <div class="container-lg">
           <div class="header">
-            <h2 class="h2Responsive">WHY CHOOSE IDLC Islamic?</h2>
+            <h2 class="h2Responsive why-choose-header">WHY YOU SHOULD CONSIDER IDLC ISLAMIC </h2>
+            <h2 class="h2Responsive why-choose-header"> FOR YOUR SHARIAH-COMPLIANT FINANCING NEEDS</h2>
           </div>
           <div class="body">
             <div class="reason">
               <img :src="homePageLowerTabContent.why_choose_one_image" alt="" v-if="homePageLowerTabContent" />
               <h6 class="text-white">{{ homePageLowerTabContent.why_choose_one_title }}</h6>
-              <div class="line"></div>
+              <!-- <div class="line"></div> -->
               <p>{{ homePageLowerTabContent.why_choose_one_subtitle }}</p>
             </div>
             <div class="reason">
               <img :src="homePageLowerTabContent.why_choose_two_image" alt="" />
               <h6 class="text-white">{{ homePageLowerTabContent.why_choose_two_title }}</h6>
-              <div class="line"></div>
+              <!-- <div class="line"></div> -->
               <p>{{ homePageLowerTabContent.why_choose_two_subtitle }}</p>
             </div>
             <div class="reason">
               <img :src="homePageLowerTabContent.why_choose_three_image" alt="" />
               <h6 class="text-white">{{ homePageLowerTabContent.why_choose_three_title }}</h6>
-              <div class="line"></div>
+              <!-- <div class="line"></div> -->
               <p>{{ homePageLowerTabContent.why_choose_three_subtitle }}</p>
             </div>
             <div class="reason">
               <img :src="homePageLowerTabContent.why_choose_four_image" alt="" />
               <h6 class="text-white">{{ homePageLowerTabContent.why_choose_four_title }}</h6>
-              <div class="line"></div>
+              <!-- <div class="line"></div> -->
               <p>{{ homePageLowerTabContent.why_choose_four_subtitle }}</p>
             </div>
             <div class="reason">
               <img :src="homePageLowerTabContent.why_choose_five_image" alt="" />
               <h6 class="text-white">{{ homePageLowerTabContent.why_choose_five_title }}</h6>
-              <div class="line"></div>
+              <!-- <div class="line"></div> -->
               <p>{{ homePageLowerTabContent.why_choose_five_subtitle }}</p>
             </div>
           </div>
@@ -483,6 +484,8 @@ export default {
 };
 </script>
 <style>
+
+
 .topShape {
   height: 445.4px;
 }
@@ -496,6 +499,31 @@ export default {
 @media (max-width: 600px) {
   .topShape {
     height: 250.4px;
+  }
+
+  .why-choose-header{
+    font-size: 1.35rem !important;
+  }
+}
+
+@media (max-width: 513px) {
+
+  .why-choose-header{
+    font-size: 1.15rem !important;
+  }
+}
+
+@media (max-width: 441px) {
+
+  .why-choose-header{
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 388px) {
+
+  .why-choose-header{
+    font-size: 0.9rem !important;
   }
 }
 

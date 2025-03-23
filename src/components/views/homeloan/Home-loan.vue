@@ -30,9 +30,9 @@
     </div>
     <br>
     <br>
-    <app-previous-profit :depoPrevProfits="depoPrevProfits"/>
+    <!-- <app-previous-profit :depoPrevProfits="depoPrevProfits"/> -->
     <app-deposit-calculator />
-    <app-faq-tab />
+    <!-- <app-faq-tab /> -->
     <!-- <app-e-m-i-calculator/> -->
     <!-- <app-common-w-h-tab/> -->
     <!-- <app-related-product/> -->

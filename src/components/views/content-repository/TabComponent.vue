@@ -23,16 +23,15 @@
                       <img src="../../../assets/img/report/PDF-File.png" alt="" />
                     </div>
                     <div class="report-name">
-                      <h6 class="file-name" :title="file.downloadable_title">{{ file.downloadable_title.length >= 20 ? file.downloadable_title.substring(0, 20) + '...' + file.downloadable_title.substring(file.downloadable_title.length - 14) : file.downloadable_title }}</h6>
+                      <h6 class="file-name" :title="file.downloadable_title">{{  file.downloadable_title }}</h6>
                       <p v-if="file.description" class="file-brief" v-b-tooltip.hover.bottom="file.description">{{file.description.length >= 35 ? file.description.substring(0, 35) + '...' : file.description}}</p>
                       <p class="invisible" v-else>asd</p>
 
                     </div>
-                    <div class="download-report-btn">
-                      <a :href="file.downloadable_file" target="_blank" style="color: white !important;"
-                        download>View</a>
-                      <img src="../../../assets/img/report/Download-PDF.png" alt="" />
-                    </div>
+                    <a :href="file.downloadable_file" target="_blank" class="download-report-btn d-flex justify-content-center align-items-center py-2">
+
+                      <img style="height: 25px;" src="../../../assets/img/report/Download-PDF.png" alt="" />
+                    </a>
                   </div>
 
                 </div>
@@ -61,7 +60,7 @@ export default {
   },
   methods: {
     getContentFiles() {
-      axios.get('get-downloadable-file').then(res => {
+      axios.get('get-content-file').then(res => {
         this.contentFiles = res.data.details
         this.contentFiles.filter(item => {
           this.files.push(item)
@@ -917,6 +916,11 @@ p.tag span {
 
     .file-name{
       cursor: pointer !important;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin: 0 13px;
+      text-transform: none;
     }
 
     .file-brief{

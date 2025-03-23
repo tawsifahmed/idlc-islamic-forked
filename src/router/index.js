@@ -85,6 +85,12 @@ const DocumentsContentRepository = resolve => {
   });
 };
 
+const EducativeContentRepository = resolve => {
+  require.ensure(["../components/views/content-repository/EducativeContent"], () => {
+    resolve(require("../components/views/content-repository/EducativeContent"));
+  });
+};
+
 const VideoContentRepository = resolve => {
   require.ensure(["../components/views/content-repository/Videos"], () => {
     resolve(require("../components/views/content-repository/Videos"));
@@ -546,6 +552,16 @@ export default new Router({
       component: DocumentsContentRepository
     },
     {
+      path: "/content-repository/educative-contents",
+      name: "Content Repository - Educative Contents",
+      meta: {
+        title: "Content Repository - Educative Contents",
+        description: "Content Repository to upload and show required files",
+        seo_keyword: ""
+      },
+      component: EducativeContentRepository
+    },
+    {
       path: "/content-repository/videos",
       name: "Content Repository - Videos",
       meta: {
@@ -573,16 +589,16 @@ export default new Router({
 
 
 
-    // {
-    //   path: "/news-and-events",
-    //   name: "NewsAndEvents",
-    //   meta: {
-    //     title: "News And Events",
-    //     description: "Latest Updates and Media Releases of IDLC",
-    //     seo_keyword: ""
-    //   },
-    //   component: NewsAndEvents
-    // },
+    {
+      path: "/news-and-events",
+      name: "NewsAndEvents",
+      meta: {
+        title: "News And Events",
+        description: "Latest Updates and Media Releases of IDLC",
+        seo_keyword: ""
+      },
+      component: NewsAndEvents
+    },
     {
       path: "/news/:newsId",
       name: "News",

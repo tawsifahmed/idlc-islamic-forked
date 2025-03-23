@@ -18,7 +18,7 @@
                     <div class="col-md-6">
                       <div class="DepositInput FDType">
                         <div class=" align-items-center  mb-2">
-                          <label>Type of Fixed Deposit</label>
+                          <label>Types of Islamic Deposits</label>
                           <select @change="onChangeTypeOfFD($event)">
                             <option value="" disabled selected>Choose One</option>
                             <option v-for="(FDType, index) in FDTypes" :value="FDType" :key="index">{{ FDType }}
@@ -27,7 +27,7 @@
                         </div>
                         <div class=" align-items-center  mb-2" v-show="isTypeOfFD">
                           <label for=""></label>
-                          <select @change="onChangeResultOfFD($event)">
+                          <select id="secondSelection" @change="onChangeResultOfFD($event)">
                             <option value="" disabled selected>Choose One</option>
                             <option v-for="(item, index) in resultOfFD" :value="item" :key="index">{{ item }}</option>
                           </select>
@@ -65,7 +65,7 @@
 
                       <div class="DepositInput interestRate">
                         <div class="row align-items-center  mb-2">
-                          <div class="col-md-7"><label for="interestRate">Rate of Return (%)</label></div>
+                          <div class="col-md-7"><label for="interestRate">Provisional Rate of Return (%)</label></div>
                           <div class="col-md-5">
                             <input min="1" max="20" type="number" id="interestRate" v-model="rateOfInterest">
                           </div>
@@ -100,7 +100,7 @@
                   <div class="result  mb-2" v-show="isEarnerDeposit">
                     <div class="row align-items-center">
                       <div class="col-6">
-                        <h6>Gross Interest Amount</h6>
+                        <h6>Provisional Gross Profit Amount</h6>
                       </div>
                       <div class="col-6 text-right">
                         <h6>{{ this.ReplaceNumberWithCommas(grossInterestAmount.toFixed(2)) }} </h6>
@@ -123,7 +123,7 @@
                   <div class="result mb-4 ">
                     <div class="row align-items-center">
                       <div class="col-6">
-                        <h6>Rate of Return</h6>
+                        <h6>Provisional Rate of Return</h6>
                       </div>
                       <div class="col-6 text-right">
                         <h6>{{rateOfInterest}}%</h6>
@@ -172,7 +172,11 @@
         tenure: null,
         tenureDay: "0",
         depositAmount: 50000,
-        FDTypes: ['IDLC Islamic Term Deposit', 'IDLC Islamic Monthly Earner Scheme', 'IDLC Islamic Quarterly Earner Scheme', 'IDLC Islamic Monthly Deposit Pension Scheme'],
+        FDTypes: ['Mudarabah Term Deposit',
+        'Mudarabah Earner Deposit',
+        // 'IDLC Islamic Quarterly Earner Scheme',
+        // 'IDLC Islamic Monthly Deposit Pension Scheme'
+      ],
         months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
         isTypeOfFD: false,
         resultOfFD: [],
@@ -204,9 +208,12 @@
       },
 
       onChangeTypeOfFD(event) {
+        $(".tenure").prop('disabled', false);
+        let secondSelection = document.getElementById('secondSelection');
+        secondSelection.value = '';
         this.isTypeOfFD = true;
         let data = event.target.value;
-        if (data === 'Flexible Term Deposit') {
+        if (data === 'Mudarabah Term Deposit') {
           this.maxAmount = 10000000000;
           this.resultOfFD = [];
           this.resultOfFD = ['Terms greater than or equal to 13 months', 'Less than 13 months'];
@@ -222,10 +229,11 @@
           this.tenure = null;
           this.isEarnerDeposit = true;
           this.monthlyOrQuaterly = '';
-        } else {
+        }
+        else {
           this.maxAmount = 100000;
           this.resultOfFD = [];
-          this.resultOfFD = ['Monthly Earner', 'Quarterly Earner'];
+          this.resultOfFD = ['Mudarabah Monthly Earner Deposit', 'Mudarabah Quarterly Earner Deposit'];
           this.dateType = '';
           $(".tenure").prop('disabled', true);
           this.tenure = null;
@@ -255,7 +263,7 @@
           this.dateType = '500 Days';
           $(".tenure").prop('disabled', true);
           this.tenure = null;
-        } else if (this.finalResultOfFD === 'Monthly Earner') {
+        } else if (this.finalResultOfFD === 'Mudarabah Monthly Earner Deposit') {
           this.commonTenure = 30;
           this.note = '';
           this.dateType = 'Monthly Earner';

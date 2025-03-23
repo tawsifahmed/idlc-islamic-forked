@@ -26,7 +26,7 @@
             :strings="[
               'Search...',
                 'IDLC Islamic',
-                'Shariah Supervisor Committee (SSC) of IDLC Finance PLC',
+                'Shariah Supervisory Committee (SSC) of IDLC Finance PLC',
                 'Financing Products',
                 'Islamic Deposits',
                 'FAQ'
@@ -164,12 +164,12 @@
                 <li style="background: #fbfbfb;">
                   <router-link to="/priority" class="py-3" style="color: #00a6b4 !important;">Priority</router-link>
                 </li>
-                <li style="background: #fbfbfb;">
+                <!-- <li style="background: #fbfbfb;">
                   <router-link to="/online-mudarabah-deposit" class="py-3" style="color: #00a6b4 !important;">Online Mudarabah Deposit</router-link>
                 </li>
                 <li style="background: #fbfbfb;">
                   <router-link to="/online-mudarabah-dps" class="py-3" style="color: #00a6b4 !important;">Online Mudarabah DPS</router-link>
-                </li>
+                </li> -->
                 <li style="background: #fbfbfb;">
                   <router-link to="/islamic-retail" class="py-3" style="color: #00a6b4 !important;">Islamic Retail</router-link>
                 </li>
@@ -198,9 +198,12 @@
                 <li style="background: #fbfbfb;">
                   <router-link to="/content-repository/documents" class="py-3" style="color: #00a6b4 !important;">Product Brochures</router-link>
                 </li>
-                <li style="background: #fbfbfb;">
-                  <router-link to="/content-repository/videos" class="py-3" style="color: #00a6b4 !important;">Educative Contents</router-link>
+                <!-- <li style="background: #fbfbfb;">
+                  <router-link to="/content-repository/educative-contents" class="py-3" style="color: #00a6b4 !important;">Educative Contents</router-link>
                 </li>
+                <li style="background: #fbfbfb;">
+                  <router-link to="/content-repository/videos" class="py-3" style="color: #00a6b4 !important;">Videos</router-link>
+                </li> -->
               </ul>
             </b-card-body>
           </b-collapse>
@@ -220,7 +223,7 @@
                   <router-link to="/idlc-islamic-at-a-glance" class="py-3" style="color: #00a6b4 !important;">IDLC Islamic at a Glance</router-link>
                 </li>
                 <li style="background: #fbfbfb;">
-                  <router-link to="/vision-mission-values" class="py-3" style="color: #00a6b4 !important;">Vission, Mission & Values</router-link>
+                  <router-link to="/vision-mission-values" class="py-3" style="color: #00a6b4 !important;">Vision, Mission & Values</router-link>
                 </li>
                 <li style="background: #fbfbfb;">
                   <router-link to="/shariah-supervisory-committee" class="py-3" style="color: #00a6b4 !important;">Shariah Supervisory Committee</router-link>
