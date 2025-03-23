@@ -79,6 +79,12 @@ const DownloadFormsRequiredDocuments = resolve => {
   );
 };
 
+const MonthlyActualProfitDisclosure = resolve => {
+  require.ensure(["../components/views/content-repository/MonthlyActualProfitDisclosure"], () => {
+    resolve(require("../components/views/content-repository/MonthlyActualProfitDisclosure"));
+  });
+};
+
 const DocumentsContentRepository = resolve => {
   require.ensure(["../components/views/content-repository/ContentRepository"], () => {
     resolve(require("../components/views/content-repository/ContentRepository"));
@@ -550,6 +556,16 @@ export default new Router({
         seo_keyword: ""
       },
       component: DocumentsContentRepository
+    },
+    {
+      path: "/content-repository/monthly-actual-profit-disclosure",
+      name: "Content Repository - Monthly Actual Profit Disclosure",
+      meta: {
+        title: "Content Repository - Monthly Actual Profit Disclosure",
+        description: "Content Repository to upload and show required files",
+        seo_keyword: ""
+      },
+      component: MonthlyActualProfitDisclosure
     },
     {
       path: "/content-repository/educative-contents",

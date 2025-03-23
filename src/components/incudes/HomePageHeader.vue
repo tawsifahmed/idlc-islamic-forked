@@ -300,6 +300,22 @@
                         </div>
                       </router-link>
                     </li>
+                    <li>
+                      <router-link class="menu_link" to="/content-repository/monthly-actual-profit-disclosure">
+                        <div class="menuIcon">
+                          <img
+                            src="~@/assets/img/menu_icon/Menubar/icons8-document-50.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="menuContent">
+                          <h3 class="title">Monthly Actual Profit Disclosure</h3>
+                          <!-- <p class="subTitle">
+                            About IDLC Islamic
+                          </p> -->
+                        </div>
+                      </router-link>
+                    </li>
                     <!-- <li style="padding-top: 4.5px">
                       <router-link class="menu_link" to="/content-repository/educative-contents">
                         <div class="menuIcon">
