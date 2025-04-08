@@ -549,9 +549,9 @@ export default new Router({
     // },
     {
       path: "/content-repository/documents",
-      name: "Content Repository - Documents",
+      name: "Product Brochures",
       meta: {
-        title: "Content Repository - Documents",
+        title: "Product Brochures",
         description: "Content Repository to upload and show required files",
         seo_keyword: ""
       },
@@ -559,9 +559,9 @@ export default new Router({
     },
     {
       path: "/content-repository/monthly-actual-profit-disclosure",
-      name: "Content Repository - Monthly Actual Profit Disclosure",
+      name: "Monthly Actual Profit Disclosure",
       meta: {
-        title: "Content Repository - Monthly Actual Profit Disclosure",
+        title: "Monthly Actual Profit Disclosure",
         description: "Content Repository to upload and show required files",
         seo_keyword: ""
       },
@@ -569,9 +569,9 @@ export default new Router({
     },
     {
       path: "/content-repository/educative-contents",
-      name: "Content Repository - Educative Contents",
+      name: "Educative Contents",
       meta: {
-        title: "Content Repository - Educative Contents",
+        title: "CoEducative Contents",
         description: "Content Repository to upload and show required files",
         seo_keyword: ""
       },

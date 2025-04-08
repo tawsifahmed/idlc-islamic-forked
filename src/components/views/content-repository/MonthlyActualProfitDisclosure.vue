@@ -8,7 +8,7 @@
     <div class="homePageTitleDetails sectionTitle dFTagline">
       <div class="page_heading">
         <h2 style="text-align: center; " class="h2Responsive textUpperCase">
-        Content Repository - Monthly Actual Profit Disclosure
+         Monthly Actual Profit Disclosure
       </h2>
       </div>
     </div>

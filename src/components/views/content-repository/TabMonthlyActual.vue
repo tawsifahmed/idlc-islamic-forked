@@ -3,7 +3,7 @@
     <b-card class="product-card">
       <a v-b-toggle="'annualReportcollapse' + 2" block class="d-flex cursor_pointer">
         <strong class="question_product" style="color:white; font-size: 1.25rem;">
-          Monthly Actual Profit Disclosure
+          Click to download
         </strong>
       </a>
       <div v-bind:id="'annualReportcollapse' + 2">
